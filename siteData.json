@@ -140,7 +140,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: TIC4001 Software Engineering Practicum I",
+      "title": "Admin: TIC4001: SE Practicum I",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -149,7 +149,7 @@
       "src": "admin/index.md",
       "layout": "default",
       "headings": {
-        "tic4001-software-engineering-practicum-i-optional": "TIC4001 Software Engineering Practicum I : OPTIONAL"
+        "tic4001-se-practicum-i-optional": "TIC4001: SE Practicum I : OPTIONAL"
       },
       "headingKeywords": {}
     },
@@ -763,7 +763,7 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: TIC4001 Software Engineering Practicum I",
+      "title": "Admin: TIC4001: SE Practicum I",
       "header": "header.md",
       "footer": "footer.md",
       "siteNav": "adminSiteNav.md",
@@ -772,7 +772,7 @@
       "src": "admin/moduleOverview.md",
       "layout": "default",
       "headings": {
-        "tic4001-software-engineering-practicum-i-optional": "TIC4001 Software Engineering Practicum I : OPTIONAL"
+        "tic4001-se-practicum-i-optional": "TIC4001: SE Practicum I : OPTIONAL"
       },
       "headingKeywords": {}
     },
@@ -2591,7 +2591,6 @@
         "introduction": "Introduction",
         "equivalence-partitions": "Equivalence partitions",
         "boundary-value-analysis": "Boundary value analysis",
-        "combining-test-inputs": "Combining test inputs",
         "more": "More",
         "what": "What",
         "positive-vs-negative-test-cases": "Positive vs Negative Test Cases",
@@ -2601,11 +2600,6 @@
         "intermediate": "Intermediate",
         "what-3": "What",
         "how": "How",
-        "why": "Why",
-        "test-input-combination-strategies": "Test Input Combination Strategies",
-        "heuristic-each-valid-input-at-least-once-in-a-positive-test-case": "Heuristic: Each Valid Input at Least Once in a Positive Test Case",
-        "heuristic-no-more-than-one-invalid-input-in-a-test-case": "Heuristic: No More Than One Invalid Input In A Test Case",
-        "mix": "Mix",
         "testing-based-on-use-cases": "Testing Based on Use Cases",
         "test-case-design": "Test case design"
       },
