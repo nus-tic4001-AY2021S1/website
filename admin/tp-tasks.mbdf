@@ -1,7 +1,8 @@
 {% from "common/admin.njk" import show_admin_page with context %}
-{% from "common/macros.njk" import embed_topic, thumb, timing_badge with context %}
+{% from "common/macros.njk" import button, embed_topic, show_as_tab, show_as_rounded_tab, thumb, timing_badge with context %}
 {% from "admin/ip-tasks.mbdf" import show_xp_page  with context %}
 {% from "_module-" + module + "/weeklyTpTasks.mbdf" import weekly_tp_tasks  with context %}
+{% from "_module-" + module + "/studentData.mbdf" import tp_dg_review_allocation with context %}
 {% from "common/topics.njk" import panopto, slugify, topic_followup, topic_preamble with context %}
 
 
@@ -73,7 +74,7 @@
 {#====================================================================================================================#}
 <span id="cs2113-week10-intro">
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 Some things to note as you start the {{ version_penultimate }} iteration:
 * **Set moderate targets for functionality.** Adding more functionality than needed will not earn you more marks but can expose you to higher risk of bugs.<br>
   **Focus on improving the process and the quality** instead.
@@ -84,7 +85,7 @@ Some things to note as you start the {{ version_penultimate }} iteration:
 {#====================================================================================================================#}
 <span id="cs2113-week11-intro">
 
-{% call topic_preamble() %}
+{% call topic_preamble(reuse=false) %}
 ==This week, you get a chance to fix your tP bugs (in the project, as well as documentation) without any penalty.== What's more, others will help you find those bugs (via tutorial activities and the PE Dry Run happening in this week).
 
 To take advantage of the above, try to make your {{ version_penultimate }} (product, DG, and UG) as close to what you intend to submit as your final version (i.e., {{ version_final }}).
@@ -182,17 +183,39 @@ Get together with your team members and <trigger trigger="click" for="modal:v10-
 <span id="heading_prioritize_user_stories">{{ icon_team }} Choose user stories for {{ version_first }}</span>
 <span id="desc_prioritize_user_stories">
 
-**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}. We try to make it small because you will have only two weeks to implement {{ version_first }} and coding as a team is a lot harder than writing code alone.
+<div class="indented">
+
+<box type="success" light>
+
+##### <span class="text-success">Project planning, with a twist</span>
+
+Intuitively, you might think the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
+
+Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
+
+Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
+
+How is that better?
+* Shorter-term plans have a better chance of being accurate and doable.
+* You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.
+* As each iteration produces a working product, you always have a working product, which reduces the risk overshooting the final deadline.
+
+</box>
+
+**The goal of this activity is to come up with the _smallest possible product that is still usable_** so that it can be implemented as {{ version_first }}, to be delivered at the end of the first project iteration. We try to make it small because ==you will have only two weeks to implement {{ version_first }}== and coding as a team is a lot harder than writing code alone.
+
+</div>
+
 * If the product _can_ be of some use without a given user story, that user story should be left out of {{ version_first }}, even if the omission makes the product hard to use, as long as the product is not _impossible_ to use %%e.g., in most cases a product can be used without an 'edit item' feature because the user can always delete an item and add a new item instead of editing an existing an item%%.
 * Don't worry about {{ version_penultimate  }}. You can design {{ version_penultimate }} after {{ version_first }} done.
 * Don't worry about {{ version_first }} being 'too small'. You can always add more features to {{ version_first }} if you finish it ahead of schedule.
 * If possible, narrow the scope of {{ version_first }} further e.g., narrower target user, a smaller value proposition.
 
 Suggested workflow:
-* **First stage** [10 minutes]:
+* **First stage**:
   * Divide the user stories among team members.
-  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed for {{ version_first }}_.
-* **Second stage** [10 minutes]:
+  * Each member will go through their user stories to discard (e.g., cross out, or move to a different location, but not delete) which are _definitely not needed_ for {{ version_first }}.
+* **Second stage**:
   * All members discuss the remaining user stories (i.e., the ones not discarded in the first stage), and try to trim the list further.
 </span>
 {#====================================================================================================================#}
@@ -227,7 +250,8 @@ Suggested workflow:
 <span id="heading_conceptualize_first_version">{{ icon_team }} Conceptualize {{ version_first }}</span>
 <span id="desc_conceptualize_first_version">
 
-* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ version_first }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.
+* Based on your user story selected previously, conceptualize the product in terms of how it will look like at {{ version_first }}. Suggestion: this can be in the form of a <trigger trigger="click" for="modal:v10-featureLists">feature list</trigger>.<br>
+  Note down the feature list in your online project notes document.
 
 <modal large header="Textbook {{ icon_embedding }}" id="modal:v10-featureLists">
   <include src="../book/specifyingRequirements/featureList/what/unit-inElsewhere-asFlat.md" boilerplate/>
@@ -240,7 +264,7 @@ Suggested workflow:
 
 * Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at {{ version_first }}.
   * We recommend that you follow the [AB3 User Guide]({{ url_ab3_fork_website }}/UserGuide.html) in terms of structure and format.
-  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
+  * As this is a very rough draft and the final version will be in a different format altogether %%(i.e., in Markdown format)%%, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.
   * Do try to come up with concrete command syntax for the CLI commands that you will deliver at {{ version_first }}.
   * Include only features that will be delivered in {{ version_first }}.
   * Consider including some UI mock-ups too %%(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or [Balsamiq](https://balsamiq.com/))%%.
@@ -377,26 +401,9 @@ Update the following pages in your project repo:
 
 <div class="indented-level2">
 
-<box type="success" light>
-
-##### <span class="text-success">Project planning, but with a twist</span>
-
-Intuitively, you might thing the right thing to do is to decide what features will be in {{ version_final }} and then plan the intermediate versions based on that. But that's not what we are going to do.
-
-Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.
-
-Instead, what we will do is to ==assume the current iteration is the last iteration==, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if _it's_ the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.
-
-How is that better?
-* Shorter-term plans have a better chance of being accurate and doable.
-* You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.
-* As each iteration produces a working product, you always have a working product, which reduces the risk overshooting the final deadline.
-
-</box>
-
 </div>
 
-* {{ icon_team }} **Plan the next iteration**. As per the project planning approach described in the box above, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
+* {{ icon_team }} **Plan the next iteration**. As you know, you should follow the _breadth-first iterative_ process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for {{ version_first }}, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
   * ==Aim to produce a _working_ [MVP](https://en.wikipedia.org/wiki/Minimum_viable_product)== at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).
   * If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.
   * "I'll do the back-end part of feature X in this iteration" is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
@@ -538,7 +545,9 @@ How is that better?
 
 <div id="demo">
 
-* **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `v1.2` in the `master` branch %%i.e. only features included in the current release should be demoed%%.
+<!-- * **Do an informal demo** of the new features during the tutorial. To save time, we recommend that one member demos all new features, using the commit tagged as `{{ version_first }}` in the `master` branch %%i.e. only features included in the current release should be demoed%%.-->
+* As we don't have in-class tutorials this semester, do the following in lieu of a live demo:<br>
+  [one member] Run your app using the version tagged `{{ version_first }}`. Take screenshots of each available feature in action. Add those screenshots to your product notes document with an appropriate heading e.g., `{{ version_first }} features demo`. Alternatively, you can screen-record a demo, upload it to somewhere, and post the link in the project notes document.
 </div>
 </span>
 {#====================================================================================================================#}
@@ -650,6 +659,46 @@ In addition,
 </span>
 </span>
 {#====================================================================================================================#}
+<span id="heading_smoke_test_catcher">{{ icon_individual }} Smoke-test CATcher</span>
+<span id="desc_smoke_test_catcher">
+
+* **This activity is <span class="text-danger">compulsory</span> and counts for `3` participation points.** Please do it before the deadline.
+<div class="indented-level2">
+
+<box dismissible>
+
+%%**{{ icon_info }} Some background:** As you know, our <tooltip content="i.e., Practical Exam">PE</tooltip> includes peer-testing tP products under exam conditions. In the past, we used GitHub as the platform for that -- which was not optimal (e.g., it was hard to ensure the compulsory labels have been applied). As a remedy, some ex-students have been developing an app called <tooltip content="CAT stands for Crowd-sourced Anonymous Testing">CATcher</tooltip> that we'll be using for the PE this semester.%%
+</box>
+
+This week, we would like you to smoke-test the CATcher app **to ensure it can run in your computer**.
+<p/>
+
+<panel type="info" header="**The steps for smoke-testing CATcher:**" minimized>
+
+1. **Download the latest version** of the CATcher executable from [https://github.com/CATcher-org/CATcher/releases](https://github.com/CATcher-org/CATcher/releases).
+1. **Launch the app.** Allow the app to run if there are security warnings %%(e.g., for Win 10, click the `More Info` link in the security warning and choose `Run anyway`)%%.<br>
+   {{ icon_tip }} If the app is blocked by your virus scanner, put it in a new folder and add the folder to the _exclusions_ list of the virus scanner.<br>
+   {{ icon_info }} If you encounter other problems at the app launch, refer to the [Notes on using the CATcher Desktop App](https://github.com/CATcher-org/CATcher/blob/master/usage-notes.md).
+1. **Login**: Choose the _session_ `{{ module }}/T Alpha Test`, and submit.
+   <img src="images/catcherLogin.png" />
+1. In the next screen, submit your GitHub credentials directly or choose to the `Use GitHub login interface` to login to CATcher using your GitHub account.<br>
+   If the app asks for public repo access permissions, grant it (just go with the default settings).
+1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
+1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+   {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
+   {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
+   {{ icon_info }} The `severity` and `type` labels are compulsory.
+1. {{ icon_important_big_red }} **Being able to run CATcher is important for the PE** -- if you are unable to run it, please follow up via the [CATcher issue tracker](https://github.com/CATcher-org/CATcher/issues) until you resolve the issue ASAP.
+1. **Do NOT delete the `alpha` repo** created by CATcher in your GitHub account (keep it until the end of the semester) as our scripts will look for it later to check if you have done this activity.
+
+
+</panel>
+<p/>
+
+</div>
+
+</span>
+{#====================================================================================================================#}
 <span id="heading_deliver_the_feature">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
 <span id="desc_deliver_the_feature">
 
@@ -680,6 +729,7 @@ In addition,
 <span id="desc_add_sd_to_dg">
 
 * Add sequence diagrams to enhance your DG wherever they can be useful. Note that diagrams you add in this week will receive feedback while diagrams added later will not.
+* {{ icon_tip }} Try to do this before {{ day_first_tutorial }} so that the added sequence diagrams can get peer feedback via the DG peer review that will happen during this week's tutorial.
 </span>
 {#====================================================================================================================#}
 <span id="heading_deliver_penultimate_version">{{ icon_individual }} Deliver {{ version_penultimate }}</span>
@@ -703,6 +753,99 @@ In addition,
 <span id="desc_wrap_up_penultimate_version">
 
 * as before
+</span>
+{#====================================================================================================================#}
+<span id="heading_review_others_dg">{{ icon_individual }} Review others' DG</span>
+<span id="desc_review_others_dg">
+
+<!--
+* ~~**Divide into two sub-teams**, ensuring that each team has at least one member who is good with UML.~~<br>
+  <span class="text-info">This activity is to be done individually.</span>
+-->
+
+* To be done during the tutorial. Please don't do this task before the tutorial as others need time to update their DGs.
+* ==Read _all_ instructions== before you start the activity.
+* **Find the team choices you have been allocated to review**, as given in the panel below.
+
+{% macro get_review_allocation_for_team(reviewing_team) -%}
+{%- set reviewed_team = "" -%}
+{% for allocation in team_review_allocation  -%}
+{% if allocation[0] == reviewing_team %}{% set reviewed_team %}{{ allocation[1] }}{% endset %}{% endif %}
+{%- endfor %}{{ reviewed_team }}
+{%- endmacro %}
+
+{% macro get_pr_link(team_id) -%}
+<a href="https://github.com/nus-{{ module | lower}}-{{ semester }}/tp/pulls?q=is%3Aopen+is%3Apr+{{ team_id }}+" class="badge badge-primary">PR</a>
+{%- endmacro  %}
+
+{% macro get_dg_link(team_id) -%}
+<a href="https://{{ semester }}-{{ team_id | lower}}.github.io/tp/DeveloperGuide.html" class="badge badge-primary">DG</a>
+{%- endmacro  %}
+
+{% macro get_links(team_id) -%}
+`{{ team_id }}`  {{ get_dg_link(team_id) }} {{ get_pr_link(team_id) }}
+{%- endmacro  %}
+
+<div class="indented-level2">
+
+<panel header="Allocation for DG review" >
+
+Your GitHub  | First choice | Second choice | Third choice
+-------------|--------------|---------------|-------------
+{% for allocation in tp_dg_review_allocation  %}`{{ allocation[0] }}` | {{ get_links(allocation[1]) }} | {{ get_links(allocation[2]) }} | {{ get_links(allocation[3]) }}
+{% endfor %}
+</panel>
+</div>
+
+* **Decide which of the given team(s) to review**:
+  * Open the <span class="badge badge-primary">DG</span> link of the team allocated as 'First choice'.
+  * Confirm that the DG has significant updates, to the diagrams in particular. If it doesn't, you can try the DG of the 'Second choice' team, and failing that, 'Third choice' team.
+  * If neither _one_ of the three has enough updates but collectively they have enough updates, you can also review all of them.
+  * Failing all above, you can pick any other team(s) to review.
+  * Try to give at least 4 comments in total.
+  * If the PR already has reviews, you can give your own input of the existing review comments too.
+
+* **Go to the <span class="badge badge-primary">PR</span>** of the team(s) you have chosen to review.
+* **Review the `Design` and the `Implementation` sections w.r.t possible DG bugs** (given further down); add your observations as comments.<br>
+
+<div class="indented-level2">
+
+<box>
+
+* In the PR, add _review comments_ (i.e., in the {{ show_as_rounded_tab(':octicon-diff: files changed') }} tab) in the corresponding place of the code.
+  * In this case, choose the {{ button('Start a review', button_style="success") }} option rather than {{ button('Add single comment') }} option.
+* But ==if the 'files changed' tab is too laggy, you can add a normal comment instead== in the {{ show_as_rounded_tab(':octicon-comment-discussion: conversation') }} tab.<br>
+  * In this case, enter each observation as a separate comment %%(reason: our bot will count the number of comments you have given to determine if you qualify for participation points)%%
+* As you know, it is better to phrase your comments as question/doubts (e.g., `Is this format correct? Should it be ... instead?`) rather than directives (e.g., `Change this to ...`).<br>
+  Where possible, use screenshots from their DG in your comments, preferably with annotations. This is particularly useful when commenting on diagrams. An example given below:<br>
+  <img src="images/ReviewCommentExample.png">
+* The understanding you gain from this exercise can indirectly determine how well you do in your own project. Note that your comments will be reviewed by a tutor later.
+<!--
+* Do not finalize the review at this stage. Just keep adding comments.
+* <span class="text-success">**The understanding you gain from this exercise can indirectly determine how well you do in your own project.**</span> ==If you have even the slightest doubt about your observations in this exercise, please discuss it with the tutor== to ensure you have the right understanding of the criteria used.
+-->
+</box>
+
+<box border-left-color="green">
+
+##### <span class="text-success">DG - Possible Bugs</span>
+{{ icon_important_big_red }} Pay attention to these as they are same as the final evaluation criteria of the DG.<br>
+
+{{ embed_topic("tp-grading-bugs.mbdf#umlDiagramBugs", "Admin " + icon_embedding + " tP Grading → DG Bugs → UML Diagrams → Possible Bugs", "3", indent="1", status="expanded", type="danger") }}
+{{ embed_topic("tp-grading-bugs.mbdf#generalDocBugs", "Admin " + icon_embedding + " tP Grading → General Documentation Bugs", "3", indent="1", status="expanded", type="danger") }}
+
+Also see:
+{{ embed_topic("tp-deliverables-dg.mbdf#dgTips", "Admin " + icon_embedding + " tP: Deliverables → DG → Tips", "3", indent="1", status="expanded", type="success") }}
+
+</box>
+
+</div>
+
+<!--
+* **Discuss your comments/observations/doubts with the tutor** and other team members to confirm the comments you entered are correct.
+* **Update your review comments if necessary**, based on the discussion you just had. After that, you can submit the review.<br>
+-->
+* **After the tutorial**, if you are unsure about a concern raised by a reviewer, you can post in the [forum]({{ url_forum }}) to seek the opinion of the teaching team.
 </span>
 {#====================================================================================================================#}
 <span id="heading_attend_the_PED">{{ icon_individual }} Attend the practical exam dry run</span>
@@ -798,7 +941,7 @@ Not applicable this semester
 </div>
 
 <div class="indented-level2" id="tip-how-to-convert-to-pdf">
-<box type="important" light>
+<box type="important" seamless>
 
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 

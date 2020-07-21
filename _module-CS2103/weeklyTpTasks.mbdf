@@ -45,6 +45,7 @@ week10: [
   {id: 'start_on_the_penultimate_version'},
   {id: 'update_dg_with_design_details', deadline: 'IMPORTANT'},
   {id: 'do_a_release'},
+  {id: 'smoke_test_catcher', deadline: 'IMPORTANT', graded: true},
   {id: 'make_code_reposense_compatible'}
 ],
 week11: [
@@ -65,7 +66,7 @@ week13: [
   {id: 'submit_final_deliverables', deadline: get_date(date_final_submission)},
   {id: 'wrap_up_final_milesone', deadline: get_date(date_final_submission, 2)},
   {id: 'demo_the_product', deadline: get_date(date_final_submission, 2)},
-  {id: 'prepare_for_PE', deadline: "before lecture on " + get_date(date_w13_start, 7)},
+  {id: 'prepare_for_PE'},
   {id: 'attend_the_PE', deadline: "during lecture on " + get_date(date_w13_start, 7)}
 ]
 } %}
