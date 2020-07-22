@@ -1,0 +1,17 @@
+2020-07-22T16:44:11.756Z - info: Website generation (lazy) started at 12:44:04 AM
+2020-07-22T16:44:30.019Z - info: Building assets...
+2020-07-22T16:44:41.519Z - info: Assets built
+2020-07-22T16:44:41.520Z - info: Generating landing page...
+2020-07-22T16:44:42.284Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-07-22T16:44:42.385Z - info: Website generation (lazy) complete! Total build time: 38.253s
+2020-07-22T16:44:43.407Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-07-22T16:44:43.408Z - info: Press CTRL+C to stop ...
+2020-07-22T16:44:43.467Z - info: Site data built
+2020-07-22T16:47:05.458Z - info: [12:47:05 AM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\variables.md
+2020-07-22T16:47:06.667Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2020-07-22T16:47:06.699Z - info: Rebuilding 1 pages
+2020-07-22T16:47:07.311Z - info: Pages rebuilt
+2020-07-22T16:47:07.311Z - info: Website regeneration complete! Total build time: 0.845s
+2020-07-22T16:47:07.316Z - info: Site data built
+2020-07-22T16:49:21.111Z - info: Website generation started at 12:49:18 AM
+2020-07-22T16:49:33.492Z - info: Building assets...
