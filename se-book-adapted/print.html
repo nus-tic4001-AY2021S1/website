@@ -635,7 +635,7 @@
                           <div id="main">
                             <div>
                               <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                              <box type="definition">
+                              <box type="definition" seamless>
                                 <div>
                                   <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                                   <box>
@@ -693,7 +693,7 @@
               <div class="indented-less">
                 <div>
                   <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                       <box>
@@ -762,7 +762,7 @@
               <h4 id="abstract-classes">Abstract Classes <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#abstract-classes" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Abstract class</strong>: A class declared as an <em>abstract class</em> cannot be instantiated, but it can be subclassed.</p>
                     </div>
@@ -771,7 +771,7 @@
                   <box>
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>Animal</code> class that exist as a generalization of its subclasses <code v-pre>Cat</code>, <code v-pre>Dog</code>, <code v-pre>Horse</code>, <code v-pre>Tiger</code> etc. can be declared as abstract because it does not make sense to instantiate an <code v-pre>Animal</code> object.</p>
                   </box>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Abstract method</strong>: An <em>abstract method</em> is a method signature without a method implementation.</p>
                     </div>
@@ -806,7 +806,7 @@
                     </small></small></span><a class="fa fa-anchor" href="#dynamic-and-static-binding" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Dynamic binding</strong> (<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document</span>aka late binding</span>) : a mechanism where method calls in code are <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">deciding which method implementation to execure</span>resolved</span> at <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">at the moment the method call is executed</span>runtime</span>, rather than at compile time.</p>
                     </div>
@@ -874,7 +874,7 @@
                                     <div id="main">
                                       <div>
                                         <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                                        <box type="definition">
+                                        <box type="definition" seamless>
                                           <div>
                                             <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                                             <box>
@@ -964,7 +964,7 @@
                     <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{<br></span><span>    <span class="hljs-keyword">for</span> (Staff s: staff) {<br></span><span>        s.adjustSalary(byPercent);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                     <p>However, at runtime <code v-pre>s</code> can receive an object of any subclass of <code v-pre>Staff</code>. That means the <code v-pre>adjustSalary(int)</code> operation of the actual subclass object will be called. If the subclass does not override that operation, the operation defined in the superclass (in this case, <code v-pre>Staff</code> class) will be called.</p>
                   </box>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Static binding</strong> (aka early binding): When a method call is resolved at compile time.</p>
                     </div>
@@ -983,7 +983,7 @@
                         <div id="main">
                           <div>
                             <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                            <box type="definition">
+                            <box type="definition" seamless>
                               <div>
                                 <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                                 <box>
@@ -1052,7 +1052,7 @@
               <h4 id="what-6">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-6" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Polymorphism</strong>:</p>
                       <blockquote>
@@ -1134,7 +1134,7 @@
                   </ul>
                   <p>In either case, requirements need to be gathered, analyzed, specified, and managed.</p>
                   <p><strong>Requirements come from <em>stakeholders</em>.</strong></p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Stakeholder</strong>: A party that is potentially affected by the software project. e.g. users, sponsors, developers, interest groups, government agencies, etc.</p>
                     </div>
@@ -1262,7 +1262,7 @@
               <h4 id="brainstorming">Brainstorming <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#brainstorming" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Brainstorming</strong>: A group activity designed to <em>generate a large number of diverse and creative ideas</em> for the <em>solution</em> of a problem.</p>
                     </div>
@@ -1323,7 +1323,7 @@
               <h4 id="prototyping">Prototyping <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#prototyping" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Prototype</strong>: A prototype is a <em>mock up, a scaled down version, or a partial system constructed</em></p>
                       <ul>
@@ -1400,7 +1400,7 @@
               <h4 id="what-8">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-8" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Feature list</strong>: A list of features of a product <em>grouped according to some criteria</em> such as aspect, priority, order of delivery, etc.</p>
                     </div>
@@ -1434,13 +1434,13 @@
               <h4 id="introduction-3">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-3" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
                     </div>
                   </box>
                   <p><strong>A common format</strong> for writing user stories is:</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>User story format</strong>: <code v-pre>As a {user type/role} I can {function} so that {benefit}</code></p>
                     </div>
@@ -1857,7 +1857,7 @@
               <h4 id="introduction-4">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-4" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Use case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></span>]</p>
                       <span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></span>
@@ -1950,7 +1950,7 @@ Extensions:
               <h4 id="what-9">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-9" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Glossary</strong>: A glossary serves to ensure that <em>all stakeholders have a common understanding</em> of the noteworthy terms, abbreviations, acronyms etc.</p>
                     </div>
@@ -2078,7 +2078,7 @@ Extensions:
               <h4 id="what-11">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-11" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <p>Design in the creative process of transforming the problem into a solution; the solution is also called design. <sub>-- 📖 <em>Software Engineering Theory and Practice</em>, Shari Lawrence; Atlee, Joanne M. Pfleeger</sub></p>
                   </box>
                   <p><strong>Software design has two main aspects:</strong></p>
@@ -2106,7 +2106,7 @@ Extensions:
               <h4 id="what-12">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-12" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                     </div>
@@ -2265,7 +2265,7 @@ Extensions:
                         </div>
                         <div id="main">
                           <div>
-                            <box type="definition">
+                            <box type="definition" seamless>
                               <div>
                                 <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                               </div>
@@ -2771,10 +2771,9 @@ Extensions:
             </div>
           </div>
           <p style="page-break-after: always;">&nbsp;</p>
-          <h1 id="section-implementation"><strong>SECTION: IMPLEMENTATION</strong><a class="fa fa-anchor" href="#section-implementation" onclick="event.stopPropagation()"></a></h1>
           <div id="title">
             <div>
-              <h1 id="ides"><span>IDEs</span><a class="fa fa-anchor" href="#ides" onclick="event.stopPropagation()"></a></h1>
+              <h1 id="software-design-patterns"><span>Software design patterns</span><a class="fa fa-anchor" href="#software-design-patterns" onclick="event.stopPropagation()"></a></h1>
             </div>
           </div>
           <p>
@@ -2784,7 +2783,172 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-17">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-17" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-17">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-17" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <box type="definition" seamless>
+                    <div>
+                      <p><strong>Design pattern</strong> : An <em>elegant reusable solution</em> to a <em>commonly recurring problem</em> within a <em>given context</em> in software design.</p>
+                    </div>
+                  </box>
+                  <p>In software development, there are certain problems that recur in a certain context.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of recurring design problems:</p>
+                    <div class="table-responsive">
+                      <table class="markbind-table table table-bordered table-striped">
+                        <thead>
+                          <tr>
+                            <th>Design Context</th>
+                            <th>Recurring Problem</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Assembling a system that makes use of other existing systems implemented using different technologies</td>
+                            <td>What is the best architecture?</td>
+                          </tr>
+                          <tr>
+                            <td>UI needs to be updated when the data in application backend changes</td>
+                            <td>How to initiate an update to the UI when data changes without coupling the backend to the UI?</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </box>
+                  <p>After repeated attempts at solving such problems, better solutions are discovered and refined over time. These solutions are known as design patterns, <strong>a term popularized by the seminal book</strong> <a href="https://en.wikipedia.org/wiki/Design_Patterns"><strong><em>Design Patterns: Elements of Reusable Object-Oriented Software</em> by the so-called &quot;Gang of Four&quot; (GoF)</strong></a> written by Eric Gamma, Richard Helm, Ralph Johnson,and John Vlissides.</p>
+                </div>
+              </div>
+            </div>
+            <div class="indented-less">
+              <h4 id="format">Format <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#format" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <p>The common format to describe a pattern consists of the following components:</p>
+                  <ul>
+                    <li><strong>Context</strong>: The situation or scenario where the design problem is encountered.</li>
+                    <li><strong>Problem</strong>: The main difficulty to be resolved.</li>
+                    <li><strong>Solution</strong>: The core of the solution. It is important to note that the solution presented only includes the most general details, which may need further refinement for a specific context.</li>
+                    <li><strong>Anti-patterns</strong> (optional): Commonly used solutions, which are usually incorrect and/or inferior to the Design Pattern.</li>
+                    <li><strong>Consequences</strong> (optional): Identifying the pros and cons of applying the pattern.</li>
+                    <li><strong>Other useful information</strong> (optional): Code examples, known uses, other related patterns, etc.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+          <div>
+            <h2 id="singleton-pattern"><span>Singleton pattern</span><a class="fa fa-anchor" href="#singleton-pattern" onclick="event.stopPropagation()"></a></h2>
+          </div>
+          </p>
+          <div class="indented-less">
+            <div class="indented-less">
+              <h4 id="what-18">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-18" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <p><strong>Context</strong></p>
+                  <p>A certain classes should have no more than just one instance (e.g. the main controller class of the system). These single instances are commonly known as <em>singletons</em>.</p>
+                  <p><strong>Problem</strong></p>
+                  <p>A normal class can be instantiated multiple times by invoking the constructor.</p>
+                  <p><strong>Solution</strong></p>
+                  <p>Make the constructor of the singleton class <code v-pre>private</code>, <span class="dimmed">because a <code v-pre>public</code> constructor will allow others to instantiate the class at will</span>. Provide a <code v-pre>public</code> class-level method to access the <em>single instance</em>.</p>
+                  <box>
+                    <p>Example:</p>
+                    <p>
+                      <pic src="/website/book/designPatterns/singleton/what/images/singleton.png"></pic>
+                    </p>
+                    <p></p>
+                  </box>
+                </div>
+              </div>
+            </div>
+            <div class="indented-less">
+              <h4 id="implementation">Implementation <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#implementation" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <p>Here is the typical implementation of how the Singleton pattern is applied to a class:</p>
+                  <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Logic</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Logic theOne = <span class="hljs-keyword">null</span>;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-title">Logic</span><span class="hljs-params">()</span> </span>{<br></span><span>        ...<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> Logic <span class="hljs-title">getInstance</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-keyword">if</span> (theOne == <span class="hljs-keyword">null</span>) {<br></span><span>            theOne = <span class="hljs-keyword">new</span> Logic();<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> theOne;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                  <p>Notes:</p>
+                  <ul>
+                    <li>The constructor is <code v-pre>private</code>, which prevents instantiation from outside the class.</li>
+                    <li>The single instance of the singleton class is maintained by a <code v-pre>private</code> class-level variable.</li>
+                    <li>Access to this object is provided by a <code v-pre>public</code> class-level operation <code v-pre>getInstance()</code> which instantiates a single copy of the singleton class when it is executed for the first time. Subsequent calls to this operation return the single instance of the class.</li>
+                  </ul>
+                  <p>If <code v-pre>Logic</code> was not a Singleton class, an object is created like this:</p>
+                  <pre><code class="hljs java" v-pre><span>Logic m = <span class="hljs-keyword">new</span> Logic();<br></span></code></pre>
+                  <p>But now, the <code v-pre>Logic</code> object needs to be accessed like this:</p>
+                  <pre><code class="hljs java" v-pre><span>Logic m = Logic.getInstance();<br></span></code></pre>
+                </div>
+              </div>
+            </div>
+            <div class="indented-less">
+              <h4 id="evaluation">Evaluation <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#evaluation" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <p><strong>Pros:</strong></p>
+                  <ul>
+                    <li>easy to apply</li>
+                    <li>effective in achieving its goal with minimal extra work</li>
+                    <li>provides an easy way to access the singleton object from anywhere in the code base</li>
+                  </ul>
+                  <p><strong>Cons:</strong></p>
+                  <ul>
+                    <li>The singleton object acts like a global variable that increases coupling across the code base.</li>
+                    <li>In testing, it is difficult to replace Singleton objects with stubs (static methods cannot be overridden)</li>
+                    <li>In testing, singleton objects carry data from one test to another even when you want each test to be independent of the others.</li>
+                  </ul>
+                  <p>Given there are some significant cons, it is recommended that you apply the Singleton pattern when, in addition to requiring only one instance of a class, there is a risk of creating multiple objects by mistake, and creating such multiple objects has real negative consequences.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p>
+          <div>
+            <h2 id="facade-pattern"><span>Facade pattern</span><a class="fa fa-anchor" href="#facade-pattern" onclick="event.stopPropagation()"></a></h2>
+          </div>
+          </p>
+          <div class="indented-less">
+            <div class="indented-less">
+              <h4 id="what-19">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-19" onclick="event.stopPropagation()"></a></h4>
+              <div class="indented-less">
+                <div>
+                  <p><strong>Context</strong></p>
+                  <p>Components need to access functionality deep inside other components.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <code v-pre>UI</code> component of a <code v-pre>Library</code> system might want to access functionality of the <code v-pre>Book</code> class contained inside the <code v-pre>Logic</code> component.</p>
+                    <img src="/website/book/designPatterns/facade/what/images/textBook.png" height="120">
+                    <p></p>
+                  </box>
+                  <p><strong>Problem</strong></p>
+                  <p>Access to the component should be allowed without exposing its internal details. <span class="dimmed">e.g. the <code v-pre>UI</code> component should access the functionality of the <code v-pre>Logic</code> component without knowing that it contained a <code v-pre>Book</code> class within it.</span></p>
+                  <p><strong>Solution</strong></p>
+                  <p>Include a <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a French word that means 'front of a building'</span>Façade</span> class that sits between the component internals and users of the component such that all access to the component happens through the Facade class.</p>
+                  <box>
+                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The following class diagram applies the Façade pattern to the <code v-pre>Library System</code> example. The <code v-pre>LibraryLogic</code> class is the Facade class.</p>
+                    <img src="/website/book/designPatterns/facade/what/images/textLibraryBook.png" height="120">
+                    <p></p>
+                  </box>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p style="page-break-after: always;">&nbsp;</p>
+          <h1 id="section-implementation"><strong>SECTION: IMPLEMENTATION</strong><a class="fa fa-anchor" href="#section-implementation" onclick="event.stopPropagation()"></a></h1>
+          <div id="title">
+            <div>
+              <h1 id="ides"><span>IDEs</span><a class="fa fa-anchor" href="#ides" onclick="event.stopPropagation()"></a></h1>
+            </div>
+          </div>
+          <p>
+          <div>
+            <h2 id="introduction-8"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-8" onclick="event.stopPropagation()"></a></h2>
+          </div>
+          </p>
+          <div class="indented-less">
+            <div class="indented-less">
+              <h4 id="what-20">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-20" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Professional software engineers often write code using <em>Integrated Development Environments (IDEs)</em>. IDEs support most development-related work within the same tool</strong> (hence, the term <em>integrated</em>).</p>
@@ -2815,7 +2979,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-18">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-18" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-21">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-21" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Debugging</em> is the process of discovering defects in the program.</strong> Here are some approaches to debugging:</p>
@@ -2851,7 +3015,7 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-8"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-8" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-9"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-9" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
@@ -2879,7 +3043,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-9">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-9" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="introduction-10">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-10" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <blockquote>
@@ -3222,11 +3386,11 @@ Extensions:
                             </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="what-19"><span>What</span><a class="fa fa-anchor" href="#what-19" onclick="event.stopPropagation()"></a></h4>
+                          <h4 id="what-22"><span>What</span><a class="fa fa-anchor" href="#what-22" onclick="event.stopPropagation()"></a></h4>
                         </div>
                         <div id="main">
                           <div>
-                            <box type="definition">
+                            <box type="definition" seamless>
                               <div>
                                 <p><strong>Abstraction</strong> is a technique for dealing with complexity. It works by establishing a level of complexity we are interested in, and suppressing the more complex details below that level.</p>
                               </div>
@@ -3307,7 +3471,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-10">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-10" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="introduction-11">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-11" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>One essential way to improve code quality is to follow a consistent style. That is why software engineers follow a strict coding standard (aka <em>style guide</em>).</strong></p>
@@ -3339,7 +3503,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-11">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-11" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="introduction-12">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-12" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Proper naming improves the readability. It also reduces bugs caused by ambiguities regarding the intent of a variable or a method.</p>
@@ -3603,9 +3767,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-12">Introduction <span class="badge badge-light"><small><small>
+              <h4 id="introduction-13">Introduction <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#introduction-12" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#introduction-13" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>It is safer to use language constructs in the way they are meant to be used, even if the language allows shortcuts. Some such coding practices are common sources of bugs. Know them and avoid them.</p>
@@ -3737,7 +3901,7 @@ Extensions:
                         </div>
                         <div id="main">
                           <div>
-                            <box type="definition">
+                            <box type="definition" seamless>
                               <div>
                                 <p><strong>DRY (Don't Repeat Yourself) principle</strong>: Every piece of knowledge must have a single, unambiguous, authoritative representation within a system <sub><em>The Pragmatic Programmer</em>, by Andy Hunt and Dave Thomas</sub></p>
                               </div>
@@ -3765,7 +3929,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-13">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-13" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="introduction-14">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-14" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <blockquote>
@@ -3883,7 +4047,7 @@ Extensions:
           </div>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-20">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-20" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-23">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-23" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>The first version of the code you write may not be of production quality. It is OK to first concentrate on making the code work, rather than worry over the quality of the code, as long as you improve the quality later. This process of <strong>improving a program's internal structure in small steps without modifying its external behavior is called <em>refactoring</em>.</strong></p>
@@ -4007,14 +4171,14 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-14"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-14" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-15"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-15" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-21">What <span class="badge badge-light"><small><small>
+              <h4 id="what-24">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-21" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-24" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Developer-to-developer documentation can be in one of two forms:</strong></p>
@@ -4116,7 +4280,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-22">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-22" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-25">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-25" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Javadoc is a tool for generating API documentation in HTML format from doc comments in source.</strong> In addition, modern IDEs use JavaDoc comments to generate explanatory tool tips.</p>
@@ -4154,12 +4318,12 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-15"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-15" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-16"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-16" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-23">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-23" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-26">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-26" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <blockquote>
@@ -4176,11 +4340,11 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-24">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-24" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-27">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-27" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Exceptions are used to deal with <em>'unusual' but not entirely unexpected</em> situations</strong> that the program might encounter at run time.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Exception</strong>:</p>
                       <blockquote>
@@ -4233,7 +4397,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-25">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-25" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-28">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-28" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Assertions</em> are used to define assumptions about the program state so that the runtime can verify them.</strong> An assertion failure indicates a possible bug in the code <span class="dimmed">because the code has resulted in a program state that violates an assumption about how the code <em>should</em> behave</span>.</p>
@@ -4297,7 +4461,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-26">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-26" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-29">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-29" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Logging</em> is the deliberate recording of certain information during a program execution for future reference.</strong> Logs are typically written to a log file but it is also possible to log information in other ways <span class="dimmed">e.g. into a database or a remote server</span>.</p>
@@ -4342,12 +4506,12 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-16"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-16" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-17"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-17" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-27">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-27" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-30">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-30" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Combining parts of a software product to form a whole is called <em>integration</em></strong>. It is also one of the most troublesome tasks and it rarely goes smoothly.</p>
@@ -4362,9 +4526,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-28">What <span class="badge badge-light"><small><small>
+              <h4 id="what-31">What <span class="badge badge-light"><small><small>
                       <font color="Crimson"><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-28" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-31" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Build automation tools automate the steps of the build process, usually by means of build scripts.</strong></p>
@@ -4405,12 +4569,12 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-17"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-17" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-18"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-18" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-29">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-29" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-32">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-32" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Reuse is a major theme in software engineering practices. <strong>By reusing tried-and-tested components, the robustness of a new software system can be enhanced while reducing the manpower and time requirement.</strong> Reusable components come in many forms; it can be reusing a piece of code, a subsystem, or a whole software.</p>
@@ -4441,7 +4605,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-30">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-30" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-33">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-33" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An <em>Application Programming Interface (API)</em> specifies the interface through which other programs can interact with a software component.</strong> It is a contract between the component and its clients.</p>
@@ -4463,12 +4627,12 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-18"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-18" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-19"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-19" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-31">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-31" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-34">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-34" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Software <em>Quality Assurance</em> (QA) is the process of ensuring that the software being built has the required levels of quality.</strong></p>
@@ -4498,7 +4662,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-32">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-32" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-35">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-35" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Code review is the systematic examination code with the intention of finding where the code can be improved.</strong></p>
@@ -4518,7 +4682,7 @@ Extensions:
                     </li>
                   </ul>
                   <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming"><template slot="modal-title">Pair Programming</template>
-                    <box type="definition">
+                    <box type="definition" seamless>
                       <div>
                         <p><strong>Pair programming</strong>:</p>
                         <blockquote>
@@ -4568,10 +4732,10 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-33">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-33" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-36">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-36" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Static analysis</strong>: Static analysis is the analysis of code without actually executing the code.</p>
                     </div>
@@ -4594,7 +4758,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-34">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-34" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-37">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-37" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
@@ -4628,15 +4792,15 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-19"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-19" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-20"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-20" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-35">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-35" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-38">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-38" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Testing</strong>: Operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
                     </div>
@@ -4717,10 +4881,10 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-36">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-36" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-39">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-39" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Unit testing</strong>: testing individual units (methods, classes, subsystems, ...) to ensure each piece works correctly</p>
                     </div>
@@ -4754,7 +4918,7 @@ Extensions:
                     <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If a <code v-pre>Logic</code> class depends on a <code v-pre>Storage</code> class, unit testing the <code v-pre>Logic</code> class requires isolating the <code v-pre>Logic</code> class from the <code v-pre>Storage</code> class.</p>
                   </box>
                   <p><strong><em>Stubs</em> can isolate the <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">Software Under Test (in this case, the <em>unit</em> being tested)</span>SUT</span> from its dependencies</strong>.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Stub</strong>: A stub has the same interface as the component it replaces, but its implementation is so simple that it is unlikely to have any bugs. It mimics the responses of the component, but only for the a limited set of predetermined inputs. That is, it does not know how to respond to any other inputs. Typically, these mimicked responses are hard-coded in the stub rather than computed or retrieved from elsewhere, e.g. from a database.</p>
                     </div>
@@ -4787,7 +4951,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-37">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-37" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-40">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-40" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Integration testing</em> : testing whether different parts of the software <em>work together</em> (i.e. integrates) as expected.</strong> Integration tests aim to discover bugs in the 'glue code' related to how components interact with each other. These bugs are often the result of misunderstanding of what the parts are supposed to do vs what the parts are actually doing.</p>
@@ -4829,10 +4993,10 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-38">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-38" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-41">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-41" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong><em>System testing</em>: take the <em>whole system</em> and test it <em>against the system specification</em>.</strong></p>
                     </div>
@@ -4864,7 +5028,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-39">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-39" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-42">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-42" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Alpha testing</em> is performed by the users, under controlled conditions set by the software development team.</strong></p>
@@ -4881,9 +5045,9 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-40">What <span class="badge badge-light"><small><small>
+              <h4 id="what-43">What <span class="badge badge-light"><small><small>
                       <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-40" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-43" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Eating your own dog food</em> (aka dogfooding), is a creators of a product use their own product to test the product.</strong></p>
@@ -4898,7 +5062,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-41">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-41" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-44">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-44" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Developer testing</em> is the testing done by the developers themselves</strong> as opposed to professional testers or end-users.</p>
@@ -4934,7 +5098,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-42">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-42" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-45">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-45" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
@@ -4992,10 +5156,10 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-43">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-43" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-46">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-46" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong><em>Acceptance testing</em> (aka <em>User Acceptance Testing (UAT)</em>: test the system to ensure it meets the user requirements.</strong></p>
                     </div>
@@ -5084,7 +5248,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-44">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-44" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-47">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-47" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>When you modify a system, the modification may result in some unintended and undesirable effects on the system. Such an effect is called a <em>regression</em>.</strong></p>
@@ -5101,7 +5265,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-45">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-45" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-48">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-48" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <tabs>
@@ -5259,9 +5423,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-46">What <span class="badge badge-light"><small><small>
+              <h4 id="what-49">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-46" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-49" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Test coverage</em> is a metric used to measure the extent to which testing exercises the code</strong> i.e., how much of the code is 'covered' by the tests.</p>
@@ -5330,12 +5494,12 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-20"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-20" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-21"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-21" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-47">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-47" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-50">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-50" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
@@ -5430,9 +5594,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-48">What <span class="badge badge-light"><small><small>
+              <h4 id="what-51">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-48" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-51" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Consider the testing of the following operation.</p>
@@ -5444,7 +5608,7 @@ Extensions:
                   <p>It is inefficient and impractical to test this method for all integer values <code v-pre>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code v-pre>233</code> failed to produce the correct result, the input <code v-pre>234</code> is likely to fail too; there is no need to test both.</p>
                   <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
                     <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
                     </div>
@@ -5611,9 +5775,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-49">What <span class="badge badge-light"><small><small>
+              <h4 id="what-52">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-49" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-52" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong><em>Boundary Value Analysis (BVA)</em> is test case design heuristic that is based on the observation that bugs often result from incorrect handling of boundaries of equivalence partitions.</strong> This is not surprising, as the end points of the boundary are often used in branching instructions etc. where the programmer can make mistakes.</p>
@@ -5729,7 +5893,7 @@ Extensions:
                             </span></strong></span></p>
                       <div id="title-and-body">
                         <div>
-                          <h4 id="what-50"><span>What</span><a class="fa fa-anchor" href="#what-50" onclick="event.stopPropagation()"></a></h4>
+                          <h4 id="what-53"><span>What</span><a class="fa fa-anchor" href="#what-53" onclick="event.stopPropagation()"></a></h4>
                         </div>
                         <div id="main">
                           <div>
@@ -5832,7 +5996,7 @@ Extensions:
           </div>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-51">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-51" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-54">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-54" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <tabs>
@@ -5856,12 +6020,12 @@ Extensions:
                       <p><a href="http://hgbook.red-bean.com/"><em><strong>Mercurial: The Definitive Guide</strong></em></a> by Bryan O'Sullivan retrieved on 2012/07/11</p>
                     </div>
                   </b-modal>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>RCS</strong>: <strong>Revision control software</strong> are the software tools that automate the process of <em>Revision Control</em> i.e. managing revisions of software artifacts.</p>
                     </div>
                   </box>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Revision</strong>: A <em>revision</em> (some seem to use it interchangeably with <em>version</em> while others seem to distinguish the two -- here, let us treat them as the same, for simplicity) is a state of a piece of information at a specific time that is a result of some changes to it <span class="dimmed">e.g., if you modify the code and save the file, you have a new revision (or a version) of that file</span>.</p>
                     </div>
@@ -5874,7 +6038,7 @@ Extensions:
               <h4 id="repositories">Repositories <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#repositories" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Repository</strong> (<em>repo</em> for short): The database of the history of a directory being tracked by an RCS software (e.g. Git).</p>
                     </div>
@@ -6291,14 +6455,14 @@ Extensions:
           </div>
           <p>
           <div>
-            <h2 id="introduction-21"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-21" onclick="event.stopPropagation()"></a></h2>
+            <h2 id="introduction-22"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-22" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-52">What <span class="badge badge-light"><small><small>
+              <h4 id="what-55">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-52" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-55" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Software development goes through different stages such as <em>requirements, analysis, design, implementation</em> and <em>testing</em>. These stages are collectively known as the <em>software development life cycle</em> (SDLC).</strong> There are several approaches, known as <em>software development life cycle models</em> (also called <em>software process models</em>) that describe different ways to go through the SDLC. Each process model prescribes a &quot;roadmap&quot; for the software developers to manage the development effort. The roadmap describes the aims of the development stage(s), the artifacts or outcome of each stage as well as the workflow i.e. the relationship between stages.</p>
@@ -6354,7 +6518,7 @@ Extensions:
                     </small></small></span><a class="fa fa-anchor" href="#single-responsibility-principle" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Single responsibility principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p>
                     </div>
@@ -6376,7 +6540,7 @@ Extensions:
               <div class="indented-less">
                 <div>
                   <p><strong>The Open-Close Principle aims to make a code entity easy to adapt and reuse without needing to modify the code entity itself.</strong></p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Open-closed principle (OCP)</strong>: A module should be <em>open</em> for extension but <em>closed</em> for modification. That is, modules should be written so that they can be extended, without requiring them to be modified. <sub>-- proposed by <a href="https://en.wikipedia.org/wiki/Bertrand_Meyer">Bertrand Meyer</a></sub></p>
                     </div>
@@ -6395,12 +6559,10 @@ Extensions:
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="separation-of-concerns-principle">Separation of Concerns Principle <span class="badge badge-light"><small><small>
-                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#separation-of-concerns-principle" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="separation-of-concerns-principle">Separation of Concerns Principle <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#separation-of-concerns-principle" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Separation of concerns principle (SoC)</strong>: To achieve better modularity, separate the code into distinct sections, such that each section addresses a separate <em>concern</em>. -- Proposed by <a href="https://en.wikipedia.org/wiki/Edsger_W._Dijkstra">Edsger W. Dijkstra</a></p>
                     </div>
@@ -6579,11 +6741,11 @@ Extensions:
           <div class="indented-less">
             <p>
             <div>
-              <h3 id="introduction-22"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-22" onclick="event.stopPropagation()"></a></h3>
+              <h3 id="introduction-23"><span>Introduction</span><a class="fa fa-anchor" href="#introduction-23" onclick="event.stopPropagation()"></a></h3>
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-53">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-53" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-56">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-56" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
@@ -6602,7 +6764,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-54">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-54" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-57">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-57" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>The basic UML notations used to represent a <em>class</em>:<br></p>
@@ -6707,7 +6869,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-55">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-55" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-58">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-58" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>You should use a solid line to show an association between two classes.</p>
@@ -6837,7 +6999,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-56">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-56" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-59">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-59" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
@@ -6858,7 +7020,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-57">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-57" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-60">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-60" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
@@ -6887,7 +7049,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-58">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-58" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-61">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-61" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Notation:</p>
@@ -6908,7 +7070,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-59">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-59" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-62">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-62" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
@@ -6929,7 +7091,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-60">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-60" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-63">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-63" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a solid diamond symbol to denote composition.</strong></p>
@@ -6952,7 +7114,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-61">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-61" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-64">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-64" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
@@ -6978,7 +7140,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-62">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-62" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-65">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-65" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>You can use a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
@@ -7001,7 +7163,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-63">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-63" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-66">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-66" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An interface is shown similar to a class with an additional keyword <code v-pre>&lt;&lt;interface&gt;&gt;</code>. When a class implements an interface, it is shown similar to class inheritance except a dashed line is used instead of a solid line.</strong></p>
@@ -7021,7 +7183,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-64">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-64" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-67">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-67" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>You can use <em>italics</em> or <code v-pre>{abstract}</code> (preferred) keyword to denote abstract classes/methods.</strong></p>
@@ -7056,7 +7218,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-23">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-23" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="introduction-24">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-24" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>A UML sequence diagram <em>captures the interactions between multiple objects for a given scenario.</em></strong></p>
@@ -7278,7 +7440,7 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="introduction-24">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-24" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="introduction-25">Introduction <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#introduction-25" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An object diagram shows an object structure at a given point of time.</strong></p>
@@ -7501,12 +7663,12 @@ Extensions:
               <div class="indented-less">
                 <div>
                   <p><strong>After initializing a repository, Git can help you with revision controlling files inside the <em>working directory</em>. However, it is not automatic.</strong> It is up to you to tell Git which of your changes (aka <em>revisions</em>) should be <em>committed</em> to its memory for later use. Saving changes into Git's memory in that way is often called <em>committing</em> and a change saved to the revision history is called a <em>commit</em>.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Working directory</strong>: the root directory revision-controlled by Git (e.g., the directory in which the repo was initialized).</p>
                     </div>
                   </box>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Commit</strong> (noun): a change (aka a <em>revision</em>) saved in the Git revision history.<br>
                         (verb): the act of creating a commit i.e., saving a change in the working directory into the Git revision history.</p>
@@ -7533,7 +7695,7 @@ Extensions:
                     </tab>
                   </tabs>
                   <p><strong>3. Stage the changes to commit</strong>: Although Git has detected the file in the working directory, it will not do anything with the file unless you tell it to. Suppose you want to commit the current changes to the file. First, you should <em>stage</em> the file.</p>
-                  <box type="definition">
+                  <box type="definition" seamless>
                     <div>
                       <p><strong>Stage</strong> (verb): Instructing Git to prepare a file for committing.</p>
                     </div>
@@ -8742,7 +8904,7 @@ Extensions:
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Thu, 23 Jul 2020, 0:49:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 0:46:28 GMT+8]</small></div>
     </footer>
   </div>
 </body>

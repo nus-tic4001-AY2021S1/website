@@ -59,7 +59,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
 
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
 
           <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -278,7 +278,7 @@
               <div>
                 <ul>
                   <li>
-                    <p><strong>Deadline</strong> for all v3.0 submissions is <strong>Mon, Nov 9th 2359</strong> unless stated otherwise.</p>
+                    <p><strong>Deadline</strong> for all v3.0 submissions is <strong>Mon, Nov 16th 2359</strong> unless stated otherwise.</p>
                   </li>
                   <li>
                     <p>
@@ -288,7 +288,6 @@
                       Penalty for delays beyond 24 hours is determined on a case by case basis.
                     </p>
                     <ul>
-                      <li>Even a one-second delay is considered late, irrespective of the reason.</li>
                       <li>For submissions done via LumiNUS, the submission time is the timestamp shown by LumiNUS.</li>
                       <li>When determining the late submission penalty, <strong>we take the latest submission</strong> even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.</li>
                       <li>The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.</li>
@@ -330,7 +329,7 @@
                     <ul>
                       <li>Do a release on GitHub, tagged as <code v-pre>v3.0</code>.</li>
                       <li>Upload the jar file to LumiNUS.<br>
-                        File name: <code v-pre>[team ID][product name].jar</code> <span class="dimmed">e.g. [TIC4001-F18-2][ContactsPlus].jar</span></li>
+                        File name: <code v-pre>[team ID][product name].jar</code> <span class="dimmed">e.g. [TIC4001-2][ContactsPlus].jar</span></li>
                     </ul>
                   </li>
                 </ul>
@@ -392,7 +391,7 @@
                 <p></p>
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>User Guide</strong>: Convert to pdf and upload to LumiNUS.<br>
-                    File name: <code v-pre>[TEAM_ID][product Name]UG.pdf</code> <span class="dimmed">e.g.[TIC4001-F18-2][Contacts Plus]UG.pdf</span></li>
+                    File name: <code v-pre>[TEAM_ID][product Name]UG.pdf</code> <span class="dimmed">e.g.[TIC4001-2][Contacts Plus]UG.pdf</span></li>
                 </ul>
                 <div class="indented-level2">
                   <panel type class="embedding" minimized><template slot="_header">
@@ -447,7 +446,7 @@
                 <p></p>
                 <ul>
                   <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Developer Guide</strong>: submission is similar to the UG<br>
-                    File name: <code v-pre>[TEAM_ID][product Name]DG.pdf</code> <span class="dimmed">e.g. [TIC4001-F18-2][Contacts Plus]DG.pdf</span></li>
+                    File name: <code v-pre>[TEAM_ID][product Name]DG.pdf</code> <span class="dimmed">e.g. [TIC4001-2][Contacts Plus]DG.pdf</span></li>
                 </ul>
                 <div class="indented-level2">
                   <panel type class="embedding" minimized><template slot="_header">
@@ -475,15 +474,14 @@
                                 <li>Appendix B: User Stories</li>
                                 <li>Appendix C: Non Functional Requirements</li>
                                 <li>Appendix D: Glossary</li>
-                                <li>Appendix E: Instructions for Manual Testing (more details below)</li>
+                                <li><span class="badge badge-pill badge-success">OPTIONAL</span> Appendix E: Instructions for Manual Testing (more details below)</li>
                               </ul>
                             </li>
                           </ul>
                         </div>
                         <ul>
-                          <li><strong>Optionally, can include proposed implementations of future features.</strong></li>
-                          <li>
-                            <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
+                          <li><strong><span class="badge badge-pill badge-success">OPTIONAL</span> You can include proposed implementations of future features.</strong></li>
+                          <li><strong><span class="badge badge-pill badge-success">OPTIONAL</span> Include an appendix named <em>Instructions for Manual Testing</em></strong>, to give some guidance to the tester to chart a path through the features, and provide some important test inputs the tester can copy-paste into the app.
                             <ul>
                               <li><strong>Cover all user-testable features</strong>.</li>
                               <li><strong>No need to give a long list of test cases</strong> including all possible variations. It is upto the tester to come up with those variations.</li>
@@ -579,7 +577,7 @@
                   <li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Project Portfolio Page (PPP)</strong>:
                     <ul>
                       <li>PDF file: submission is similar to the UG<br>
-                        File name: <code v-pre>[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf</code> <span class="dimmed">e.g.[TIC4001-F18-2][Leow Wai Kit, John]PPP.pdf</span><br>
+                        File name: <code v-pre>[TEAM_ID][Your full Name as Given in LumiNUS]PPP.pdf</code> <span class="dimmed">e.g.[TIC4001-2][Leow Wai Kit, John]PPP.pdf</span><br>
                         <span><span aria-hidden="true" class="fas fa-info-circle"></span></span> Use <code v-pre>-</code> in place of <code v-pre>/</code> if your name has it e.g., <code v-pre>Ravi s/o Veegan</code> → <code v-pre>Ravi s-o Veegan</code> (reason: Windows does not allow <code v-pre>/</code> in file names)</li>
                       <li>HTML version: make available on <code v-pre>github.io</code></li>
                     </ul>
@@ -686,12 +684,12 @@
                                 </tr>
                                 <tr>
                                   <td>[Optional] Contributions to the User Guide</td>
-                                  <td>1-3</td>
+                                  <td>0.5</td>
                                   <td></td>
                                 </tr>
                                 <tr>
                                   <td>[Optional] Contributions to the Developer Guide</td>
-                                  <td>3-6</td>
+                                  <td>1.5</td>
                                   <td></td>
                                 </tr>
                               </tbody>
@@ -814,7 +812,7 @@
                             <li><strong>Audio explanations</strong> are strongly encouraged (but not compulsory) -- alternatively, you can switch between slides and the app to give additional explanations.</li>
                             <li><strong>Annotations and other enhancements</strong> to the video are optional (those will not earn any extra marks).</li>
                             <li><strong>All members taking part</strong> in the demo video is encouraged but not compulsory.</li>
-                            <li><strong>File name:</strong> <code v-pre>[TEAM_ID][product Name].mp4</code> <span class="dimmed">e.g.[TIC4001-F18-2][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
+                            <li><strong>File name:</strong> <code v-pre>[TEAM_ID][product Name].mp4</code> <span class="dimmed">e.g.[TIC4001-2][Contacts Plus].mp4</span> (other video formats are acceptable but use a format that works on all major OS'es).</li>
                             <li><strong>File size:</strong> Recommended to keep below 200Mb. You can use a low resolution as long as the video is in usable quality.</li>
                             <li><strong>Submission:</strong> Submit to LumiNUS (different folder).</li>
                             <li><strong>Deadline:</strong> 2 days after the main deadline</li>
@@ -903,7 +901,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Thu, 23 Jul 2020, 0:49:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 0:46:28 GMT+8]</small></div>
     </footer>
   </div>
 </body>

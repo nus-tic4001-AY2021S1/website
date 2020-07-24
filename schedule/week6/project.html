@@ -59,7 +59,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
 
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
 
           <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -172,7 +172,7 @@
           <div>
             <span tags="m--cs2113 m--tic4001" id="as-parallel-prs">
               <ul>
-                <li>Note how to merge PRs:</li>
+                <li><strong>Note how to merge PRs</strong>:</li>
               </ul>
               <div class="indented-level2">
                 <panel type class="embedding" minimized><template slot="_header">
@@ -254,7 +254,7 @@
               </div>
               <p></p>
               <ul>
-                <li>Practice using parallel git branches <em>and</em> PRs, as explained below:</li>
+                <li><strong>Practice using parallel git branches <em>and</em> PRs</strong>, as explained below:</li>
               </ul>
               <ol>
                 <li>First, do each increment as a parallel branch (follow the branch naming convention you followed earlier <code v-pre>branch-Level-8</code> etc.), but do not merge any.</li>
@@ -362,13 +362,13 @@
               <box type="success" seamless>
                 <h5 id="project-planning-with-a-twist"><span class="text-success">Project planning, with a twist</span><span id="project-planning-with-a-twist" class="anchor"></span><a class="fa fa-anchor" href="#project-planning-with-a-twist" onclick="event.stopPropagation()"></a></h5>
                 <p>Intuitively, you might think the right thing to do is to decide what features will be in v3.0 and then plan the intermediate versions based on that. But that's not what we are going to do.</p>
-                <p>Why? You don't have enough experience to reliably estimate effort each feature will need, and hence, any such long range plan is likely to be inaccurate.</p>
-                <p>Instead, what we will do is to <mark>assume the current iteration is the last iteration</mark>, plan that iteration accordingly, and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if <em>it's</em> the last iteration. But that time, factor in the experience from the previous iteration to do a better job of planning.</p>
+                <p>Why? Given the difficulty of reliably estimating the effort each feature will need, any such long-range plan is likely to be inaccurate.</p>
+                <p>Instead, what we will do is to <mark>assume the current iteration is the last iteration</mark>, plan that iteration to deliver the product (based on available time), and try to follow that plan as best as we can. After the iteration is over, we plan the next iteration as if <em>it's</em> the last iteration. But that time, you can factor in the experience from the previous iteration to do a better job of planning.</p>
                 <p>How is that better?</p>
                 <ul>
                   <li>Shorter-term plans have a better chance of being accurate and doable.</li>
                   <li>You get multiple clean shots at project planning. Each try can learn from the previous tries. Hence, more learning.</li>
-                  <li>As each iteration produces a working product, you always have a working product, which reduces the risk overshooting the final deadline.</li>
+                  <li>As each iteration produces a working product, you always have a working product, which practically eliminates the risk failing to deliver a working product by the final deadline.</li>
                 </ul>
               </box>
               <p><strong>The goal of this activity is to come up with the <em>smallest possible product that is still usable</em></strong> so that it can be implemented as v1.0, to be delivered at the end of the first project iteration. We try to make it small because <mark>you will have only two weeks to implement v1.0</mark> and coding as a team is a lot harder than writing code alone.</p>
@@ -398,7 +398,7 @@
           <h4 id="2-conceptualize-v1-0"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Conceptualize v1.0</span><span id="2-conceptualize-v1-0" class="anchor"></span><a class="fa fa-anchor" href="#2-conceptualize-v1-0" onclick="event.stopPropagation()"></a></h4>
           <div>
             <ul>
-              <li>Based on your user story selected previously, conceptualize the product in terms of how it will look like at v1.0. Suggestion: this can be in the form of a <span trigger="click" for="modal:v10-featureLists" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-featureLists'].show()" class="trigger-click">feature list</span>.<br>
+              <li>Based on your user stories selected previously, conceptualize the product in terms of how it will look like at v1.0 <mark>in the form of a <span trigger="click" for="modal:v10-featureLists" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-featureLists'].show()" class="trigger-click">feature list</span></mark>.<br>
                 Note down the feature list in your online project notes document.</li>
             </ul>
             <b-modal id="modal:v10-featureLists" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-featureLists"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
@@ -413,7 +413,7 @@
                   </div>
                   <div id="main">
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Feature list</strong>: A list of features of a product <em>grouped according to some criteria</em> such as aspect, priority, order of delivery, etc.</p>
                         </div>
@@ -446,20 +446,20 @@
             <ul>
               <li>Draft a user guide in a convenient medium (e.g., a GoogleDoc) to describe what the product would be like when it is at v1.0.
                 <ul>
-                  <li>We recommend that you follow the <a href="https://nus-tic4001-ay2021s1.github.io/tp/UserGuide.html">AB3 User Guide</a> in terms of structure and format.</li>
+                  <li>We recommend that you follow the <a href="https://se-education.org/addressbook-level3/UserGuide.html">AB3 User Guide</a> in terms of structure and format.</li>
                   <li>As this is a very rough draft and the final version will be in a different format altogether <span class="dimmed">(i.e., in Markdown format)</span>, don't waste time in formatting, copy editing etc. It is fine as long as the tutor can get a rough idea of the features from this draft. You can also do just the 'Features' section and omit the other parts.</li>
                   <li>Do try to come up with concrete command syntax for the CLI commands that you will deliver at v1.0.</li>
                   <li>Include only features that will be delivered in v1.0.</li>
-                  <li>Consider including some UI mock-ups too <span class="dimmed">(they can be hand-drawn or created using a tool such as PowerPoint, PlantUML or <a href="https://balsamiq.com/">Balsamiq</a>)</span>.</li>
+                  <li><span tags="m--cs2113 m--tic4001">Consider including examples of expected outputs too</span>.</li>
                   <li>
-                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Submission</strong>: Save the draft UG as a PDF file, name it <code v-pre>{team-id}.pdf</code> e.g., <code v-pre>TIC4001-F18-2.pdf</code>, and upload to LumiNUS.<br><br>
+                    <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> <strong>Submission</strong>: Save the draft UG as a PDF file, name it <code v-pre>{team-id}.pdf</code> e.g., <code v-pre>TIC4001-2.pdf</code>, and upload to LumiNUS.<br><br>
                   </li>
                 </ul>
               </li>
             </ul>
             <div id="divideDocs" class="indented">
               <box>
-                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide documentation work (in the User Guide and the Developer Guide) among team members equally; preferably based on enhancements/features each person would be adding</strong> <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
+                <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., work related to the User Guide and the Developer Guide</span>documentation work</span> among team members equally; preferably based on enhancements/features each person would be adding</strong> <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
                 <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
                 <panel type class="embedding" minimized><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
@@ -536,7 +536,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Thu, 23 Jul 2020, 0:49:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 0:46:28 GMT+8]</small></div>
     </footer>
   </div>
 </body>

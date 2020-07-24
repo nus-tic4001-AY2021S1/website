@@ -59,7 +59,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
 
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
 
           <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -103,6 +103,14 @@
           </nav>
           <p></p>
           <h1 id="week-3-fri-aug-21st-topics">Week 3 <small><small><span class="dimmed">[Fri, Aug 21st]</span> - Topics</small></small><span id="week-3-fri-aug-21st-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-3-fri-aug-21st-topics" onclick="event.stopPropagation()"></a></h1>
+          <div>
+            <p></p>
+            <box type="info">
+              <p>Similar to last week, most topics for this week are TIC2002 topics given here for reference. But there are some new topics too (they are marked by one of these icons: <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>, <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>, <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>, <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>)
+              </p>
+            </box>
+            <p></p>
+          </div>
           <panel type="seamless"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
@@ -1210,7 +1218,7 @@
                     <p></p>
                     <div>
                       <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                           <box>
@@ -1328,7 +1336,7 @@
                               <div id="main">
                                 <div>
                                   <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                                  <box type="definition">
+                                  <box type="definition" seamless>
                                     <div>
                                       <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                                       <box>
@@ -1677,7 +1685,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Polymorphism</strong>:</p>
                           <blockquote>
@@ -1763,7 +1771,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Dynamic binding</strong> (<span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">There are subtle differences between late binding and dynamic binding, but they are beyond the scope of this document</span>aka late binding</span>) : a mechanism where method calls in code are <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">deciding which method implementation to execure</span>resolved</span> at <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">at the moment the method call is executed</span>runtime</span>, rather than at compile time.</p>
                         </div>
@@ -1831,7 +1839,7 @@
                                         <div id="main">
                                           <div>
                                             <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                                            <box type="definition">
+                                            <box type="definition" seamless>
                                               <div>
                                                 <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                                                 <box>
@@ -1921,7 +1929,7 @@
                         <pre><code class="hljs java" v-pre><span><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">adjustSalary</span><span class="hljs-params">(<span class="hljs-keyword">int</span> byPercent)</span> </span>{<br></span><span>    <span class="hljs-keyword">for</span> (Staff s: staff) {<br></span><span>        s.adjustSalary(byPercent);<br></span><span>    }<br></span><span>}<br></span></code></pre>
                         <p>However, at runtime <code v-pre>s</code> can receive an object of any subclass of <code v-pre>Staff</code>. That means the <code v-pre>adjustSalary(int)</code> operation of the actual subclass object will be called. If the subclass does not override that operation, the operation defined in the superclass (in this case, <code v-pre>Staff</code> class) will be called.</p>
                       </box>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Static binding</strong> (aka early binding): When a method call is resolved at compile time.</p>
                         </div>
@@ -1940,7 +1948,7 @@
                             <div id="main">
                               <div>
                                 <p><strong>Method overloading is when there are multiple methods with the same name but different type signatures.</strong> Overloading is used to indicate that multiple operations do similar things but take different parameters.</p>
-                                <box type="definition">
+                                <box type="definition" seamless>
                                   <div>
                                     <p><strong>Type signature</strong>: The <em>type signature</em> of an operation is the type sequence of the parameters. The return type and parameter names are not part of the type signature. However, the parameter order is significant.</p>
                                     <box>
@@ -3031,7 +3039,7 @@
                     <p></p>
                     <p></p>
                     <div>
-                      <box type="definition">
+                      <box type="definition" seamless>
                         <div>
                           <p><strong>Testing</strong>: Operating a system or component under specified conditions, observing or recording the results, and making an evaluation of some aspect of the system or component. –- source: IEEE</p>
                         </div>
@@ -3318,6 +3326,14 @@
           </div>
           <p></p>
         </div>
+        <div id="notices" tags="m--tic4001" class="d-none">
+          <p></p>
+          <box type="info">
+            <p>Similar to last week, most topics for this week are TIC2002 topics given here for reference. But there are some new topics too (they are marked by one of these icons: <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>, <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>, <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>, <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>)
+            </p>
+          </box>
+          <p></p>
+        </div>
       </div>
 
       <nav id="page-nav" class="navbar navbar-light bg-transparent">
@@ -3363,7 +3379,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Thu, 23 Jul 2020, 0:49:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 0:46:28 GMT+8]</small></div>
     </footer>
   </div>
 </body>

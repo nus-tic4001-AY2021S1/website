@@ -59,7 +59,7 @@
           <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
 
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/intermediate.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
 
           <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
@@ -160,8 +160,8 @@
           <h4 id="2-submit-the-final-version-mon-sep-28th-2359"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Submit the final version</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> Mon, Sep 28th 2359</span></span><span id="2-submit-the-final-version-mon-sep-28th-2359" class="anchor"></span><a class="fa fa-anchor" href="#2-submit-the-final-version-mon-sep-28th-2359" onclick="event.stopPropagation()"></a></h4>
           <div>
             <ul>
-              <li><strong>Create a new jar file</strong> using Gradle. Creating jar file using Intellij is not recommended unless the product is very simple <span class="dimmed">(e.g., no GUI or 3rd party libraries).</span> The jar file should be <mark>cross-platform and should work in a computer that has Java 11</mark>.</li>
-              <li><strong>Do the following <a href="https://en.wikipedia.org/wiki/Smoke_testing_(software)"><em>smoke tests</em></a></strong> to ensure the jar file works <span class="dimmed">(reason: it will be used to grade your iP)</span>.<br>
+              <li><strong>Create a new jar file</strong> using Intellij (unless you have added a GUI or using third-party libraries in which case you should <a href="https://se-education.org/guides/tutorials/gradle.html">use Gradle</a> to create the jar file). The jar file should be <mark>cross-platform and should work in a computer that has Java 11</mark>.</li>
+              <li><strong>Do the following <a href="https://en.wikipedia.org/wiki/Smoke_testing_(software)"><em>smoke tests</em></a></strong> to ensure the jar file works <span class="dimmed">(reason: a similar flow will be used when grading your iP)</span>.<br>
                 <ol>
                   <li>Copy the jar file to an empty folder and test it from there. This should surface issues with hard-coded file paths.</li>
                   <li>Pass the jar file to team members and ask them to do a test drive. Assuming some of your team members' OS differ from yours, this should verify if the app is cross-platform.</li>
@@ -217,7 +217,7 @@
                   <ul>
                     <li>Create a GitHub organization with the following details:
                       <ul>
-                        <li><strong>Organization name</strong> <mark>(all UPPER CASE) : <code v-pre>AY2021S1-TEAM_ID</code></mark>. e.g.  <code v-pre>AY2021S1-TIC4001-F18-2</code></li>
+                        <li><strong>Organization name</strong> <mark>(all UPPER CASE) : <code v-pre>AY2021S1-TEAM_ID</code></mark>. e.g.  <code v-pre>AY2021S1-TIC4001-2</code></li>
                         <li>Plan:  Open Source ($0/month)</li>
                         <li>This organization belongs to: My personal account</li>
                       </ul>
@@ -321,14 +321,13 @@
             <ul>
               <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Plan the next iteration</strong>. As you know, you should follow the <em>breadth-first iterative</em> process. Therefore, first you must decide what functionalities should be in the product if you had only two weeks to implement it. You have done that already when you chose user stories for v1.0, translated that to features, and even drafted the UG based on those features. You can tweak that plan further at this point if you wish, given that you now have some idea of how fast the team can work when using the prescribed workflow.
                 <ul>
-                  <li><mark>Aim to produce a <em>working</em> <a href="https://en.wikipedia.org/wiki/Minimum_viable_product">MVP</a></mark> at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).</li>
-                  <li>If possible, break the iteration into two increments i.e., aim to produce an even simpler but working version after one week.</li>
-                  <li>&quot;I'll do the back-end part of feature X in this iteration&quot; is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
+                  <li><mark><strong>Aim to produce a <em>working</em> <a href="https://en.wikipedia.org/wiki/Minimum_viable_product">MVP</a></strong></mark> at the end of this iteration even if the functionalities are not polished (polishing can be done in a later iteration).</li>
+                  <li><strong>If possible, break the iteration into two <em>increments</em></strong> i.e., aim to produce an even simpler but working version after one week.</li>
+                  <li><strong>Avoid depth-first implementations</strong>: &quot;I'll do the back-end part of feature X in this iteration&quot; is not acceptable as that is not in the spirit of iterative development. Remember, we are pretending this to be the last iteration; why would you implement the back-end part of a feature in the last iteration?<br>
                     It is OK to add simpler versions of bigger features, but not OK to add partial features that can't be used yet i.e., go <em>breadth-first iterative</em> not <em>depth-first iterative</em>.</li>
                 </ul>
               </li>
-              <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Divide the work</strong> (i.e., the work required to produce that version) among the team members.</li>
-              <li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Divide the work assigned to you into at least two increments</strong> i.e., have at least one task to do in each of the coming two weeks.</li>
+              <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Divide the work among the team members</strong> i.e., the work required for the current iteration.</li>
               <li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Reflect the above plan in the issue tracker</strong> by assigning the corresponding issues (create new issues if necessary) to yourself and to the corresponding milestone. <span class="dimmed">For example, the user story pertaining to the increment <code v-pre>show a place holder for photo, showing a generic default image</code> should be assigned to Jake and to milestone <code v-pre>v1.0</code></span><br>
                 Optionally, you can define a <code v-pre>mid-v1.0</code> milestone to keep track of things to be done within the first half of the milestone.</li>
             </ul>
@@ -362,7 +361,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Thu, 23 Jul 2020, 0:49:45 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.14.1</a>, generated on Sat, 25 Jul 2020, 0:46:28 GMT+8]</small></div>
     </footer>
   </div>
 </body>
