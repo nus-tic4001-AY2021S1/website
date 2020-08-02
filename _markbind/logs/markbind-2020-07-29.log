@@ -324,3 +324,91 @@ Missing reference in C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\moduleExp
 2020-07-29T15:28:25.635Z - info: Site data built
 2020-07-29T15:37:01.233Z - info: Website generation started at 11:36:58 PM
 2020-07-29T15:37:12.509Z - info: Building assets...
+2020-07-29T15:37:19.742Z - info: Assets built
+2020-07-29T15:37:19.743Z - info: Generating pages...
+2020-07-29T15:37:32.104Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:32.105Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:35.545Z - debug:  
+2020-07-29T15:37:35.545Z - debug:  
+2020-07-29T15:37:35.545Z - debug:  
+2020-07-29T15:37:35.545Z - debug:  
+2020-07-29T15:37:40.692Z - debug:  
+2020-07-29T15:37:40.692Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:40.692Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:40.693Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:40.693Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:40.693Z - debug:  
+2020-07-29T15:37:40.693Z - debug:  
+2020-07-29T15:37:40.693Z - debug:  
+2020-07-29T15:37:40.693Z - debug:  
+2020-07-29T15:37:43.297Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:43.297Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:43.576Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:43.577Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:37:44.869Z - debug:  
+2020-07-29T15:37:44.870Z - debug:  
+2020-07-29T15:38:09.413Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:38:09.417Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:38:10.620Z - debug:  
+2020-07-29T15:38:10.728Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:38:11.000Z - debug:  
+2020-07-29T15:38:13.157Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:38:13.616Z - debug:  
+2020-07-29T15:38:14.940Z - debug:  
+2020-07-29T15:38:22.789Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:38:24.660Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-07-29T15:38:25.070Z - debug:  
+2020-07-29T15:38:51.532Z - debug:  
+2020-07-29T15:38:51.533Z - debug:  
+2020-07-29T15:38:51.533Z - debug:  
+2020-07-29T15:38:51.534Z - debug:  
+2020-07-29T15:38:55.446Z - debug:  
+2020-07-29T15:38:55.511Z - debug:  
+2020-07-29T15:39:07.081Z - debug:  
+2020-07-29T15:39:07.088Z - debug:  
+2020-07-29T15:39:07.089Z - debug:  
+2020-07-29T15:39:07.089Z - debug:  
+2020-07-29T15:39:07.089Z - debug:  
+2020-07-29T15:39:14.473Z - debug:  
+2020-07-29T15:39:14.473Z - debug:  
+2020-07-29T15:39:18.693Z - debug:  
+2020-07-29T15:39:30.834Z - debug:  
+2020-07-29T15:39:42.440Z - debug:  
+2020-07-29T15:39:42.441Z - debug:  
+2020-07-29T15:40:05.432Z - debug:  
+2020-07-29T15:40:16.282Z - debug:  
+2020-07-29T15:40:16.282Z - debug:  
+2020-07-29T15:40:25.289Z - info: Pages built
+2020-07-29T15:40:52.977Z - info: Website generation complete! Total build time: 234.769s
+2020-07-29T15:40:52.981Z - info: Build success!
+2020-07-29T15:40:52.981Z - debug:  
+2020-07-29T15:40:52.984Z - info: Site data built
+2020-07-29T15:41:46.233Z - info: Deployed!
+2020-07-29T15:50:10.380Z - info: Website generation (lazy) started at 11:50:04 PM
+2020-07-29T15:50:21.777Z - info: Building assets...
+2020-07-29T15:50:28.246Z - info: Assets built
+2020-07-29T15:50:28.247Z - info: Generating landing page...
+2020-07-29T15:50:30.590Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-07-29T15:50:30.675Z - info: Website generation (lazy) complete! Total build time: 26.609s
+2020-07-29T15:50:31.566Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-07-29T15:50:31.567Z - info: Press CTRL+C to stop ...
+2020-07-29T15:50:31.629Z - info: Site data built
+2020-07-29T15:59:50.781Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week1\index as some of its dependencies were changed since the last visit
+2020-07-29T15:59:51.538Z - info: Site data built
+2020-07-29T15:59:51.539Z - info: Lazy website regeneration complete! Total build time: 0.767s
