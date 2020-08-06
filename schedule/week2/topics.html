@@ -339,15 +339,15 @@
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-10b">W2.10b</a>] <span>Tools → Git and GitHub →
-                          </span></span> <span><code v-pre>diff</code>: Comparing revisions</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span><code v-pre>tag</code>: Naming commits</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-10c">W2.10c</a>] <span>Tools → Git and GitHub →
-                          </span></span> <span><code v-pre>checkout</code>: Retrieving a specific revision</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span><code v-pre>diff</code>: Comparing revisions</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-10d">W2.10d</a>] <span>Tools → Git and GitHub →
-                          </span></span> <span><code v-pre>tag</code>: Naming commits</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
+                          </span></span> <span><code v-pre>checkout</code>: Retrieving a specific revision</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                     <li>
                       <p><span class="dimmed">[<a href="/website/schedule/week2/topics.html#W2-10e">W2.10e</a>] <span>Tools → Git and GitHub →
@@ -719,8 +719,8 @@
                           </template>
                           <div>
                             <div>
-                              <panel type="dark" expanded id="key-exercise-run-helloworld"><template slot="_header">
-                                  <h3 id="key-exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] Run HelloWorld</small></small><span id="key-exercise-run-helloworld" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-run-helloworld" onclick="event.stopPropagation()"></a></h3>
+                              <panel type="secondary" expanded id="exercise-run-helloworld"><template slot="_header">
+                                  <h3 id="exercise-run-helloworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Exercise] Run HelloWorld</small></small><span id="exercise-run-helloworld" class="anchor"></span><a class="fa fa-anchor" href="#exercise-run-helloworld" onclick="event.stopPropagation()"></a></h3>
                                 </template>
                                 <question>
                                   <ul>
@@ -728,6 +728,16 @@
                                     <li>Write, compile and run a small Java program <span class="dimmed">(e.g., a HelloWorld program)</span> in your computer. You can use any code editor to write the program but use the command prompt to compile and run the program.</li>
                                     <li>Modify the code to print something else, save, compile, and run the program again.</li>
                                   </ul>
+                                </question>
+                              </panel>
+                            </div>
+                            <div>
+                              <panel type="dark" expanded id="key-exercise-byeworld"><template slot="_header">
+                                  <h3 id="key-exercise-byeworld"><small><small><span><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></span> [Key Exercise] ByeWorld</small></small><span id="key-exercise-byeworld" class="anchor"></span><a class="fa fa-anchor" href="#key-exercise-byeworld" onclick="event.stopPropagation()"></a></h3>
+                                </template>
+                                <question>
+                                  <p>Modify the code below to print &quot;Bye World!&quot;.</p>
+                                  <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span>  <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span class="highlighted">    <span class="hljs-comment">// add code here</span><br></span><span>  }<br></span><span>}<br></span></code></pre>
                                 </question>
                               </panel>
                             </div>
@@ -1467,6 +1477,7 @@
                                       </div>
                                     </div>
                                   </div>
+                                  <p><mark>Do not change the code of the <code v-pre>main</code> method!</mark></p>
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">// ADD YOUR CODE HERE</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        System.out.println(<span class="hljs-string">"A+: "</span> + getGradeCap(<span class="hljs-string">"A+"</span>));<br></span><span>        System.out.println(<span class="hljs-string">"B : "</span> + getGradeCap(<span class="hljs-string">"B"</span>));<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>A+: 5.0<br></span><span>B : 3.5<br></span></code></pre>
@@ -1606,6 +1617,7 @@
                                       </div>
                                     </div>
                                   </div>
+                                  <p><mark>Do not change the code of the <code v-pre>main</code> method!</mark></p>
                                   <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Main</span> </span>{<br></span><span><br></span><span>    <span class="hljs-comment">// ADD YOUR CODE HERE</span><br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">double</span> <span class="hljs-title">getGradeCap</span><span class="hljs-params">(String grade)</span> </span>{<br></span><span>        <span class="hljs-keyword">double</span> cap = <span class="hljs-number">0</span>;<br></span><span>        <span class="hljs-keyword">switch</span> (grade) {<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A+"</span>:<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A"</span>:<br></span><span>            cap = <span class="hljs-number">5.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"A-"</span>:<br></span><span>            cap = <span class="hljs-number">4.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B+"</span>:<br></span><span>            cap = <span class="hljs-number">4.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B"</span>:<br></span><span>            cap = <span class="hljs-number">3.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"B-"</span>:<br></span><span>            cap = <span class="hljs-number">3.0</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">case</span> <span class="hljs-string">"C"</span>:<br></span><span>            cap = <span class="hljs-number">2.5</span>;<br></span><span>            <span class="hljs-keyword">break</span>;<br></span><span>        <span class="hljs-keyword">default</span>:<br></span><span>        }<br></span><span>        <span class="hljs-keyword">return</span> cap;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{<br></span><span>        String[] grades = <span class="hljs-keyword">new</span> String[]{<span class="hljs-string">"A+"</span>, <span class="hljs-string">"A"</span>, <span class="hljs-string">"A-"</span>};<br></span><span>        <span class="hljs-keyword">double</span>[] caps = getMultipleGradeCaps(grades);<br></span><span>        <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; grades.length; i++) {<br></span><span>            System.out.println(grades[i] + <span class="hljs-string">":"</span> + caps[i]);<br></span><span>        }<br></span><span>    }<br></span><span>}<br></span></code></pre>
                                   <p><span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
                                   <pre><code class="hljs" v-pre><span>A+:5.0<br></span><span>A:5.0<br></span><span>A-:4.5<br></span></code></pre>
@@ -2997,6 +3009,11 @@
                   <span class="badge badge-pill badge-light text-mute">W2.8c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-init-getting-started"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>init</code>: Getting started</span></strong><span id="tools-git-and-github-init-getting-started" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-init-getting-started" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=b5ca72a1-8366-4971-a523-ac090090f68b&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div>
@@ -3112,6 +3129,11 @@
                   <span class="badge badge-pill badge-light text-mute">W2.8e</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-commit-saving-changes-to-history"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>commit</code>: Saving changes to history</span></strong><span id="tools-git-and-github-commit-saving-changes-to-history" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-commit-saving-changes-to-history" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=8f288870-1d75-4218-94fe-ac0900a026de&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div>
@@ -3258,6 +3280,11 @@
                   <span class="badge badge-pill badge-light text-mute">W2.8f</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-omitting-files-from-revision-control"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Omitting files from revision control</span></strong><span id="tools-git-and-github-omitting-files-from-revision-control" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-omitting-files-from-revision-control" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=47b7180e-9acb-4fc7-8ad7-ac0900a53544&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div>
@@ -3338,6 +3365,11 @@
                   <span class="badge badge-pill badge-light text-mute">W2.9a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="project-management-revision-control-remote-repositories"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Remote repositories</span></strong><span id="project-management-revision-control-remote-repositories" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-remote-repositories" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=d5c79357-9778-4cf7-8e5d-ac0900c337ae&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div></div>
@@ -3389,6 +3421,11 @@
                   <span class="badge badge-pill badge-light text-mute">W2.9b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-clone-copying-a-repo"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>clone</code>: Copying a repo</span></strong><span id="tools-git-and-github-clone-copying-a-repo" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-clone-copying-a-repo" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=3bcdcf56-7456-46e3-a163-ac0900d28d6e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div>
@@ -3494,11 +3531,79 @@
               </div>
               <p><span id="W2-10b"></span></p>
               <div></div>
+              <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/tag" id="tools-git-and-github-tag-naming-commits">
+                <span slot="header" class="card-title">
+                  <span class="badge badge-pill badge-light text-mute">W2.10b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <h4 id="tools-git-and-github-tag-naming-commits"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>tag</code>: Naming commits</span></strong><span id="tools-git-and-github-tag-naming-commits" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-tag-naming-commits" onclick="event.stopPropagation()"></a></h4>
+                </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=9f40b219-58d7-4192-8ec8-ac0900a64410&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
+                <div>
+                  <div class="indented">
+                    <div>
+                      <p>
+                        <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory"><template slot="_header">
+                            <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Saving History</span></p>
+                          </template></panel>
+                      </p>
+                    </div>
+                    <p></p>
+                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can tag commits using Git</span></span></span></span></p>
+                    <p></p>
+                    <p></p>
+                    <p></p>
+                    <div>
+                      <p><strong>Each Git commit is uniquely identified by a hash</strong> e.g., <code v-pre>d670460b4b4aece5915caf5c68d12f560a9fe3e4</code>. As you can imagine, using such an identifier is not very convenient for our day-to-day use. As a solution, Git allows adding a more human-readable <em>tag</em> to a commit e.g., <code v-pre>v1.0-beta</code>.</p>
+                      <p>Here's how you can tag a commit in a local repo (e.g. in the <code v-pre>sampelrepo-things</code> repo)</p>
+                      <tabs>
+                        <tab><template slot="_header">SourceTree</template>
+                          <div>
+                            <p>Right-click on the commit (in the graphical revision graph) you want to tag and choose <code v-pre>Tag…</code></p>
+                            <p>Specify the tag name e.g. <code v-pre>v1.0</code> and click <code v-pre>Add Tag</code>.</p>
+                            <p>The added tag will appear in the revision graph view.</p>
+                            <img src="/website/book/gitAndGithub/tag/images/sourcetree_1.png" height="70">
+                            <p></p>
+                          </div>
+                        </tab>
+                        <tab><template slot="_header">CLI</template>
+                          <div>
+                            <p>To add a tag to the current commit as <code v-pre>v1.0</code>,</p>
+                            <pre><code class="hljs" v-pre><span>git tag –a v1.0<br></span></code></pre>
+                            <p>To view tags</p>
+                            <pre><code class="hljs" v-pre><span>git tag<br></span></code></pre>
+                            <p>To learn how to add a tag to a past commit, go to the <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">‘Git Basics – Tagging’ page of the git-scm book</a> and refer the ‘Tagging Later’ section.</p>
+                            <box type="warning">
+                              <p>Remember to push tags to the repo. A normal push does not include tags.</p>
+                              <pre><code class="hljs" v-pre><span># push a specific tag<br></span><span>git push origin v1.0b<br></span><span><br></span><span># push all tags<br></span><span>git push origin --tags<br></span></code></pre>
+                            </box>
+                          </div>
+                        </tab>
+                      </tabs>
+                      <p>After adding a tag to a commit, you can use the tag to refer to that commit, as an alternative to using the hash.</p>
+                    </div>
+                    <div></div>
+                  </div>
+                </div>
+              </panel>
+              <p></p>
+              <div class="indented">
+                <div></div>
+              </div>
+              <p><span id="W2-10c"></span></p>
+              <div></div>
               <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/diff" id="tools-git-and-github-diff-comparing-revisions">
                 <span slot="header" class="card-title">
-                  <span class="badge badge-pill badge-light text-mute">W2.10b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <span class="badge badge-pill badge-light text-mute">W2.10c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-diff-comparing-revisions"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>diff</code>: Comparing revisions</span></strong><span id="tools-git-and-github-diff-comparing-revisions" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-diff-comparing-revisions" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=cccc7475-1bfa-4d88-8e2f-ac0900a8dbd2&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div>
@@ -3574,13 +3679,18 @@
               <div class="indented">
                 <div></div>
               </div>
-              <p><span id="W2-10c"></span></p>
+              <p><span id="W2-10d"></span></p>
               <div></div>
               <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/checkout" id="tools-git-and-github-checkout-retrieving-a-specific-revision">
                 <span slot="header" class="card-title">
-                  <span class="badge badge-pill badge-light text-mute">W2.10c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
+                  <span class="badge badge-pill badge-light text-mute">W2.10d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-checkout-retrieving-a-specific-revision"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>checkout</code>: Retrieving a specific revision</span></strong><span id="tools-git-and-github-checkout-retrieving-a-specific-revision" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-checkout-retrieving-a-specific-revision" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f16e2d7f-5f78-455c-830e-ac0900b7a747&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div>
@@ -3658,64 +3768,6 @@
               <div class="indented">
                 <div></div>
               </div>
-              <p><span id="W2-10d"></span></p>
-              <div></div>
-              <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/tag" id="tools-git-and-github-tag-naming-commits">
-                <span slot="header" class="card-title">
-                  <span class="badge badge-pill badge-light text-mute">W2.10d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-                  <h4 id="tools-git-and-github-tag-naming-commits"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>tag</code>: Naming commits</span></strong><span id="tools-git-and-github-tag-naming-commits" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-tag-naming-commits" onclick="event.stopPropagation()"></a></h4>
-                </span>
-                <div>
-                  <div class="indented">
-                    <div>
-                      <p>
-                        <panel src="/website/book/revisionControl/savingHistory/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/savingHistory"><template slot="_header">
-                            <p><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> <span class="dimmed">Project Management → Revision Control → Saving History</span></p>
-                          </template></panel>
-                      </p>
-                    </div>
-                    <p></p>
-                    <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can tag commits using Git</span></span></span></span></p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                    <div>
-                      <p><strong>Each Git commit is uniquely identified by a hash</strong> e.g., <code v-pre>d670460b4b4aece5915caf5c68d12f560a9fe3e4</code>. As you can imagine, using such an identifier is not very convenient for our day-to-day use. As a solution, Git allows adding a more human-readable <em>tag</em> to a commit e.g., <code v-pre>v1.0-beta</code>.</p>
-                      <p>Here's how you can tag a commit in a local repo (e.g. in the <code v-pre>sampelrepo-things</code> repo)</p>
-                      <tabs>
-                        <tab><template slot="_header">SourceTree</template>
-                          <div>
-                            <p>Right-click on the commit (in the graphical revision graph) you want to tag and choose <code v-pre>Tag…</code></p>
-                            <p>Specify the tag name e.g. <code v-pre>v1.0</code> and click <code v-pre>Add Tag</code>.</p>
-                            <p>The added tag will appear in the revision graph view.</p>
-                            <img src="/website/book/gitAndGithub/tag/images/sourcetree_1.png" height="70">
-                            <p></p>
-                          </div>
-                        </tab>
-                        <tab><template slot="_header">CLI</template>
-                          <div>
-                            <p>To add a tag to the current commit as <code v-pre>v1.0</code>,</p>
-                            <pre><code class="hljs" v-pre><span>git tag –a v1.0<br></span></code></pre>
-                            <p>To view tags</p>
-                            <pre><code class="hljs" v-pre><span>git tag<br></span></code></pre>
-                            <p>To learn how to add a tag to a past commit, go to the <a href="https://git-scm.com/book/en/v2/Git-Basics-Tagging">‘Git Basics – Tagging’ page of the git-scm book</a> and refer the ‘Tagging Later’ section.</p>
-                            <box type="warning">
-                              <p>Remember to push tags to the repo. A normal push does not include tags.</p>
-                              <pre><code class="hljs" v-pre><span># push a specific tag<br></span><span>git push origin v1.0b<br></span><span><br></span><span># push all tags<br></span><span>git push origin --tags<br></span></code></pre>
-                            </box>
-                          </div>
-                        </tab>
-                      </tabs>
-                      <p>After adding a tag to a commit, you can use the tag to refer to that commit, as an alternative to using the hash.</p>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </panel>
-              <p></p>
-              <div class="indented">
-                <div></div>
-              </div>
               <p><span id="W2-10e"></span></p>
               <div></div>
               <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/stash" id="tools-git-and-github-stash-shelving-changes-temporarily">
@@ -3723,6 +3775,11 @@
                   <span class="badge badge-pill badge-light text-mute">W2.10e</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
                   <h4 id="tools-git-and-github-stash-shelving-changes-temporarily"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span><code v-pre>stash</code>: Shelving changes temporarily</span></strong><span id="tools-git-and-github-stash-shelving-changes-temporarily" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-stash-shelving-changes-temporarily" onclick="event.stopPropagation()"></a></h4>
                 </span>
+                <panel type="seamless">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=683017df-21c8-4890-8c42-ac0900c15bf4&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
                 <div>
                   <div class="indented">
                     <div></div>
@@ -3950,7 +4007,8 @@
               <a class="nav-link py-1" href="#w2-1-java-intro">[W2.1] Java: Intro &#x200E;</a>
               <a class="nav-link py-1" href="#w2-2-java-helloworld">[W2.2] Java: HelloWorld &#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#key-exercise-run-helloworld"> [Key Exercise] Run HelloWorld&#x200E;</a>
+                <a class="nav-link py-1" href="#exercise-run-helloworld"> [Exercise] Run HelloWorld&#x200E;</a>
+                <a class="nav-link py-1" href="#key-exercise-byeworld"> [Key Exercise] ByeWorld&#x200E;</a>
               </nav>
               <a class="nav-link py-1" href="#w2-3-java-data-types">[W2.3] Java: Data Types &#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
@@ -3987,7 +4045,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sun, 2 Aug 2020, 22:26:09 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 6 Aug 2020, 23:59:59 GMT+8]</small></div>
     </footer>
   </div>
 </body>
