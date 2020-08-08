@@ -741,7 +741,8 @@
       "src": "admin/lectures.md",
       "layout": "default",
       "headings": {
-        "lectures-tutorials": "Lectures/Tutorials "
+        "lectures-tutorials": "Lectures/Tutorials ",
+        "tips-for-watching-lecture-videos": "Tips for watching lecture videos"
       },
       "headingKeywords": {}
     },
