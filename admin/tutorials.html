@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="icon" href="/website/favicon.ico">
@@ -78,7 +79,7 @@
                 </li>
               </ul>
               <div class="indented-level2">
-                <panel type class="embedding" minimized><template slot="_header">
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D: How to get Help in TIC4001 <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                   </template>
                   <div>
@@ -136,7 +137,7 @@
                         </ul>
                       </li>
                     </ul>
-                    <b-modal id="modal:appendixHelp-rubberDuckDebugging" hide-footer size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging"><template slot="modal-title">Rubber Duck Debugging</template>
+                    <b-modal id="modal:appendixHelp-rubberDuckDebugging" hide-footer size="lg" modal-class="mb-zoom" ref="modal:appendixHelp-rubberDuckDebugging" class="algolia-no-index"><template slot="modal-title">Rubber Duck Debugging</template>
                       <p><img src="/website/admin/images/Rubber_duck_assisting_with_debugging.jpg" width="220"><br></p>
                       <p><em>Rubber duck debugging</em> is an informal term used in software engineering to refer to a method of debugging code. The name is a reference to a story in the book <em>The Pragmatic Programmer</em> in which a programmer would carry around a rubber duck and debug his code by forcing himself to explain it, line-by-line, to the duck.</p>
                       <p>[for more, see <a href="https://en.wikipedia.org/wiki/Rubber_duck_debugging">wikipedia entry</a>]<br></p>
@@ -194,7 +195,7 @@
                 <li><strong>No ‘mini-lectures’</strong>: Tutors are prohibited from 'teaching' on concepts that are covered in lectures or other learning resources given to you as self-learning is a vital part of the module. For example, <mark>the tutor will not do a mini-lecture at the start of the tutorial</mark>. Of course tutors can help you clarify doubts under the right circumstances.</li>
               </ul>
               <div class="indented-level2">
-                <panel type class="embedding" minimized><template slot="_header">
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Appendix D (extract): Questions suitable for tutor <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                   </template>
                   <div>
@@ -249,6 +250,21 @@
   const enableSearch = true
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "369d0a5a75795bb334b8da938b3bb288",
+      indexName: "nus-tic4001-ay2021s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

@@ -50,10 +50,17 @@
   ],
   "enableSearch": true,
   "headingIndexingLevel": 5,
-  "plugins": ["filterTags"],
+  "plugins": ["filterTags", "algolia"],
   "pluginsContext": {
     "filterTags" : {
       "tags": ["m--tic4001"]
+    },
+    "algolia": {
+      "apiKey": "369d0a5a75795bb334b8da938b3bb288",
+      "indexName": "nus-tic4001-ay2021s1",
+      "algoliaOptions": { "hitsPerPage": 10 },
+      "facetFilters": [["tags:admin", "tags:se-book-adapted", "tags:schedule"]],
+      "debug": false
     }
   },
   "deploy": {

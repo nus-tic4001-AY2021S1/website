@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../markbind/css/octicons.css">
   <link rel="stylesheet" href="../markbind/css/github.min.css">
   <link rel="stylesheet" href="../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
   <link rel="icon" href="/website/favicon.ico">
@@ -33,7 +34,7 @@
               <h4 id="pe-d-overview"><span class="badge badge-primary">PE-D</span> <span class="text-primary">Overview</span><a class="fa fa-anchor" href="#pe-d-overview" onclick="event.stopPropagation()"></a></h4>
               <p><strong>What</strong>: The v2.0 is subjected to a round of peer <em>acceptance/system testing</em>, also called the <em>Practical Exam (PE) Dry Run</em> as this round of testing will be similar to the graded <span trigger="click" for="modal:projectDeliverablesPeDryRun-pe" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:projectDeliverablesPeDryRun-pe'].show()" class="trigger-click">Practical Exam that will be done at v3.0</span>.</p>
               <p><strong>When, where</strong>: uses a 40 minute slot at the start of week 11 lecture slot (to be done online).</p>
-              <b-modal id="modal:projectDeliverablesPeDryRun-pe" hide-footer size="lg" modal-class="mb-zoom" ref="modal:projectDeliverablesPeDryRun-pe"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Practical Exam</template>
+              <b-modal id="modal:projectDeliverablesPeDryRun-pe" hide-footer size="lg" modal-class="mb-zoom" ref="modal:projectDeliverablesPeDryRun-pe" class="algolia-no-index"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Practical Exam</template>
                   <div>
                   <div>
                     <h4 id="pe-overview"><span class="badge badge-success">PE</span> <span class="text-success">Overview</span><a class="fa fa-anchor" href="#pe-overview" onclick="event.stopPropagation()"></a></h4>
@@ -52,7 +53,7 @@
                         <li>Also see:</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -84,7 +85,7 @@
                       <li>It's similar to,</li>
                     </ul>
                     <div class="indented-level2">
-                      <panel type="primary" minimized><template slot="_header">
+                      <panel type="primary" minimized class="algolia-no-index"><template slot="_header">
                           <p>PE-D Preparation</p>
                         </template>
                         <div>
@@ -100,7 +101,7 @@
                             </li>
                           </ul>
                           <div class="indented-level2">
-                            <panel minimized><template slot="_header">
+                            <panel minimized class="algolia-no-index"><template slot="_header">
                                 <p>If not using CATcher</p>
                               </template>
                               <div id="not-using-catcher-warning">
@@ -160,7 +161,7 @@
                                 <li>After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.</li>
                               </ul>
                             </tab>
-                            <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                            <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                               <ul>
                                 <li>After you have been notified of the download location, download the zip file that bears your name.</li>
                               </ul>
@@ -221,7 +222,7 @@
                               <li>Download the jar file from the team's releases page, if you haven't done this already.</li>
                             </ul>
                           </tab>
-                          <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                             <ul>
                               <li>Download the zip file from the given location, if you haven't done that already.</li>
                               <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code v-pre>_inner.zip</code>.</li>
@@ -246,7 +247,7 @@
                               <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
                             </ul>
                           </tab>
-                          <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                             <ul>
                               <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
                               <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system-testing bugs can earn you more credit.</li>
@@ -263,7 +264,7 @@
                               <li>You may report functionality bugs, UG bugs, and feature flaws.</li>
                             </ul>
                             <div class="indented-level2">
-                              <panel type class="embedding" minimized><template slot="_header">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                 </template>
                                 <div>
@@ -273,7 +274,7 @@
                                     <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
                                 </div>
                               </panel>
-                              <panel type class="embedding" minimized><template slot="_header">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                 </template>
                                 <div>
@@ -284,7 +285,7 @@
                                     <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
                                 </div>
                               </panel>
-                              <panel type class="embedding" minimized><template slot="_header">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                 </template>
                                 <div>
@@ -335,12 +336,12 @@
                                 <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
                             </ul>
                           </tab>
-                          <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                          <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                             <ul>
                               <li>Report functionality bugs:</li>
                             </ul>
                             <div class="indented-level2">
-                              <panel type class="embedding" minimized><template slot="_header">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                 </template>
                                 <div>
@@ -356,7 +357,7 @@
                               <li>Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code v-pre>Type.FeatureFlaw</code>.</li>
                             </ul>
                             <div class="indented-level2">
-                              <panel type class="embedding" minimized><template slot="_header">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                 </template>
                                 <div>
@@ -373,7 +374,7 @@
                               <li>You may also report UG bugs.</li>
                             </ul>
                             <div class="indented-level2">
-                              <panel type class="embedding" minimized><template slot="_header">
+                              <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                                   <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                                 </template>
                                 <div>
@@ -444,7 +445,7 @@
                                 </li>
                               </ul>
                             </tab>
-                            <tab><template slot="_header">Not using CATcher</template>
+                            <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
 
                               <div class="indented-less">
                                 <div>
@@ -513,7 +514,7 @@
                       <li><strong>For each bug reported, cite evidence and justify.</strong> For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.</li>
                     </ul>
                     <div class="indented-level2">
-                      <panel type class="embedding" minimized><template slot="_header">
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                           <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                         </template>
                         <div>
@@ -560,12 +561,12 @@
                     </div>
                     <p></p>
                     <div class="indented-level2">
-                      <panel type class="embedding" minimized><template slot="_header">
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                           <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                         </template>
                         <div>
                           <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
-                          <panel type="seamless"><template slot="_header">
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
                               <p>Those given as possible UG bugs ...</p>
                             </template>
                             <div>
@@ -801,7 +802,7 @@
                           <li>Respond to the bug reports shown.
                           </li>
                         </tab>
-                        <tab><template slot="_header">Not using CATcher</template>
+                        <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
 
                           <div class="indented-less">
                             <div><span id="warning-use-catcher">
@@ -935,7 +936,7 @@
                       <li>You can also refer to the below guidelines:</li>
                     </ul>
                     <div class="indented-level2">
-                      <panel type class="embedding" minimized><template slot="_header">
+                      <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                           <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> PE → Phase 2 → Additional Guidelines for Bug Triaging</p>
                         </template>
                         <div>
@@ -982,7 +983,7 @@
                             <li>Note that only bugs that require your response will be shown by CATcher. <strong>Bugs already accepted by the team will not appear in CATcher</strong> as there is nothing for you to do about them.</li>
                           </ul>
                         </tab>
-                        <tab><template slot="_header">Not using CATcher</template>
+                        <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
                           <div class="indented-less">
                             <div>
                               <div>
@@ -1036,7 +1037,7 @@
                   </li>
                 </ul>
                 <div class="indented-level2">
-                  <panel minimized><template slot="_header">
+                  <panel minimized class="algolia-no-index"><template slot="_header">
                       <p>If not using CATcher</p>
                     </template>
                     <div id="not-using-catcher-warning">
@@ -1096,7 +1097,7 @@
                       <li>After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.</li>
                     </ul>
                   </tab>
-                  <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                  <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                     <ul>
                       <li>After you have been notified of the download location, download the zip file that bears your name.</li>
                     </ul>
@@ -1124,7 +1125,7 @@
                         <li>Download the jar file from the team's releases page, if you haven't done this already.</li>
                       </ul>
                     </tab>
-                    <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                    <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                       <ul>
                         <li>Download the zip file from the given location, if you haven't done that already.</li>
                         <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code v-pre>_inner.zip</code>.</li>
@@ -1149,7 +1150,7 @@
                         <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
                       </ul>
                     </tab>
-                    <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                    <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                       <ul>
                         <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
                         <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system-testing bugs can earn you more credit.</li>
@@ -1166,7 +1167,7 @@
                         <li>You may report functionality bugs, UG bugs, and feature flaws.</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1176,7 +1177,7 @@
                               <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
                           </div>
                         </panel>
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1187,7 +1188,7 @@
                               <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
                           </div>
                         </panel>
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1238,12 +1239,12 @@
                           <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
                       </ul>
                     </tab>
-                    <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                    <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                       <ul>
                         <li>Report functionality bugs:</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1259,7 +1260,7 @@
                         <li>Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code v-pre>Type.FeatureFlaw</code>.</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1276,7 +1277,7 @@
                         <li>You may also report UG bugs.</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1347,7 +1348,7 @@
                           </li>
                         </ul>
                       </tab>
-                      <tab><template slot="_header">Not using CATcher</template>
+                      <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
 
                         <div class="indented-less">
                           <div>
@@ -1410,7 +1411,7 @@
                   </div>
                 </box>
               </div>
-              <b-modal id="modal:v1.3-ppp" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v1.3-ppp"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
+              <b-modal id="modal:v1.3-ppp" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v1.3-ppp" class="algolia-no-index"><template slot="modal-title">Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Project →</template>
                   <div>
                   <div>
                     <p>At the end of the project each student is required to submit a <em>Project Portfolio Page</em>.</p>
@@ -1439,11 +1440,11 @@
                         </ul>
                       </li>
                     </ul>
-                    <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks"><template slot="modal-title">Team-Based Tasks</template>
+                    <b-modal id="modal:deliverablesPPP-teamTasks" hide-footer size="lg" modal-class="mb-zoom" ref="modal:deliverablesPPP-teamTasks" class="algolia-no-index"><template slot="modal-title">Team-Based Tasks</template>
                       <div>
                         <box>
                           <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do.</p>
-                          <panel type="seamless"><template slot="_header">
+                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p>
                             </template>
                             <span id="example-team-tasks">
@@ -1562,7 +1563,7 @@
                   <li>Also see:</li>
                 </ul>
                 <div class="indented-level2">
-                  <panel type class="embedding" minimized><template slot="_header">
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                       <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → Notes on how marks are calculated for PE <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                     </template>
                     <div>
@@ -1594,7 +1595,7 @@
                 <li>It's similar to,</li>
               </ul>
               <div class="indented-level2">
-                <panel type="primary" minimized><template slot="_header">
+                <panel type="primary" minimized class="algolia-no-index"><template slot="_header">
                     <p>PE-D Preparation</p>
                   </template>
                   <div>
@@ -1610,7 +1611,7 @@
                       </li>
                     </ul>
                     <div class="indented-level2">
-                      <panel minimized><template slot="_header">
+                      <panel minimized class="algolia-no-index"><template slot="_header">
                           <p>If not using CATcher</p>
                         </template>
                         <div id="not-using-catcher-warning">
@@ -1670,7 +1671,7 @@
                           <li>After you have been notified which team to test (likely to be in the morning of PE-D day), download the jar file from the team's releases page.</li>
                         </ul>
                       </tab>
-                      <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                      <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                         <ul>
                           <li>After you have been notified of the download location, download the zip file that bears your name.</li>
                         </ul>
@@ -1731,7 +1732,7 @@
                         <li>Download the jar file from the team's releases page, if you haven't done this already.</li>
                       </ul>
                     </tab>
-                    <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                    <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                       <ul>
                         <li>Download the zip file from the given location, if you haven't done that already.</li>
                         <li>Unzip the downloaded zip file with the password (to be given to you at the start of the PE, via LumiNUS gradebook). This will give you another zip file with the name suffix <code v-pre>_inner.zip</code>.</li>
@@ -1756,7 +1757,7 @@
                         <li>Do <mark><em>system</em> testing first</mark> <span class="dimmed">i.e., does the product work as specified by the documentation?</span>. If there is time left, you can <mark>do <em>acceptance</em> testing as well</mark> <span class="dimmed">i.e., does the product solve the problem it claims to solve?</span>.</li>
                       </ul>
                     </tab>
-                    <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                    <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                       <ul>
                         <li>Test <mark>based on the Developer Guide</mark> (Appendix named <em>Instructions for Manual Testing</em>) <mark>and the User Guide</mark>. The testing instructions in the Developer Guide can provide you some guidance but if you follow those instructions strictly, you are unlikely to find many bugs. You can deviate from the instructions to probe areas that are more likely to have bugs.</li>
                         <li>As before, do both <mark>system testing and acceptance testing</mark> but give priority to system testing as system-testing bugs can earn you more credit.</li>
@@ -1773,7 +1774,7 @@
                         <li>You may report functionality bugs, UG bugs, and feature flaws.</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1783,7 +1784,7 @@
                               <span aria-hidden="true" class="fas fa-bug"></span> Behavior is not specified and differs from normal expectations <span class="dimmed">e.g. error message does not match the error</span><br></p>
                           </div>
                         </panel>
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1794,7 +1795,7 @@
                               <span aria-hidden="true" class="fas fa-bug"></span> Features that are not optimized enough for fast-typists or target users</p>
                           </div>
                         </panel>
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1845,12 +1846,12 @@
                           <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Be diplomatic when reporting bugs or suggesting improvements. For example, instead of criticising the current behavior, simply suggest alternatives to consider.</li>
                       </ul>
                     </tab>
-                    <tab><template slot="_header">PE (at <strong>v3.0</strong>)</template>
+                    <tab class="algolia-no-index"><template slot="_header">PE (at <strong>v3.0</strong>)</template>
                       <ul>
                         <li>Report functionality bugs:</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Functionality Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1866,7 +1867,7 @@
                         <li>Do not post suggestions but if a feature is missing a critical functionality that makes the feature less useful to the intended user, it can be reported as a bug of type <code v-pre>Type.FeatureFlaw</code>.</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Feature Flaws</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1883,7 +1884,7 @@
                         <li>You may also report UG bugs.</li>
                       </ul>
                       <div class="indented-level2">
-                        <panel type class="embedding" minimized><template slot="_header">
+                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                             <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                           </template>
                           <div>
@@ -1954,7 +1955,7 @@
                           </li>
                         </ul>
                       </tab>
-                      <tab><template slot="_header">Not using CATcher</template>
+                      <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
 
                         <div class="indented-less">
                           <div>
@@ -2023,7 +2024,7 @@
                 <li><strong>For each bug reported, cite evidence and justify.</strong> For example, if you think the explanation of a feature is too brief, explain what information is missing and why the omission hinders the reader.</li>
               </ul>
               <div class="indented-level2">
-                <panel type class="embedding" minimized><template slot="_header">
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible UG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                   </template>
                   <div>
@@ -2070,12 +2071,12 @@
               </div>
               <p></p>
               <div class="indented-level2">
-                <panel type class="embedding" minimized><template slot="_header">
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Grading → <strong>Possible DG Bugs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
                   </template>
                   <div>
                     <p><strong>These are considered DG bugs (if they hinder the reader):</strong></p>
-                    <panel type="seamless"><template slot="_header">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p>Those given as possible UG bugs ...</p>
                       </template>
                       <div>
@@ -2311,7 +2312,7 @@
                     <li>Respond to the bug reports shown.
                     </li>
                   </tab>
-                  <tab><template slot="_header">Not using CATcher</template>
+                  <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
 
                     <div class="indented-less">
                       <div><span id="warning-use-catcher">
@@ -2445,7 +2446,7 @@
                 <li>You can also refer to the below guidelines:</li>
               </ul>
               <div class="indented-level2">
-                <panel type class="embedding" minimized><template slot="_header">
+                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
                     <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> PE → Phase 2 → Additional Guidelines for Bug Triaging</p>
                   </template>
                   <div>
@@ -2492,7 +2493,7 @@
                       <li>Note that only bugs that require your response will be shown by CATcher. <strong>Bugs already accepted by the team will not appear in CATcher</strong> as there is nothing for you to do about them.</li>
                     </ul>
                   </tab>
-                  <tab><template slot="_header">Not using CATcher</template>
+                  <tab class="algolia-no-index"><template slot="_header">Not using CATcher</template>
                     <div class="indented-less">
                       <div>
                         <div>
@@ -2533,6 +2534,21 @@
   const enableSearch = true
 </script>
 <script src="../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "369d0a5a75795bb334b8da938b3bb288",
+      indexName: "nus-tic4001-ay2021s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../markbind/layouts/default/scripts.js"></script>
 
 </html>

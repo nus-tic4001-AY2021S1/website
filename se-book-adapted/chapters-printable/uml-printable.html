@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="icon" href="/website/favicon.ico">
@@ -80,7 +81,7 @@
                       <pic src="/website/book/uml/classDiagrams/classes/what/7955b802860949dbd1c562a5b8913660.png"></pic>
                     </div>
                     <p></p>
-                    <panel type="seamless"><template slot="_header">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p>The equivalent code</p>
                       </template>
                       <div class="alt-java">
@@ -101,7 +102,7 @@
                     <li><code v-pre>#</code> : protected</li>
                     <li><code v-pre>~</code> : package private</li>
                   </ul>
-                  <panel type="seamless"><template slot="_header">
+                  <panel type="seamless" class="algolia-no-index"><template slot="_header">
                       <p>How visibilities map to programming language features</p>
                     </template>
                     <div class="table-responsive">
@@ -149,7 +150,7 @@
                       <pic src="/website/book/uml/classDiagrams/classes/what/a1fc57ed7b16ae0837fcdb38fa9d5653.png"></pic>
                     </div>
                     <p></p>
-                    <panel type="seamless"><template slot="_header">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p>The equivalent code</p>
                       </template>
                       <div class="alt-java">
@@ -851,7 +852,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 0:30:31 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 20:01:10 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -865,6 +866,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "369d0a5a75795bb334b8da938b3bb288",
+      indexName: "nus-tic4001-ay2021s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

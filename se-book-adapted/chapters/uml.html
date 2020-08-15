@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/site-nav.css">
@@ -29,7 +30,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
@@ -48,7 +49,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
@@ -77,7 +78,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -309,7 +310,7 @@
                         <pic src="/website/book/uml/classDiagrams/classes/what/7955b802860949dbd1c562a5b8913660.png"></pic>
                       </div>
                       <p></p>
-                      <panel type="seamless"><template slot="_header">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header">
                           <p>The equivalent code</p>
                         </template>
                         <div class="alt-java">
@@ -330,7 +331,7 @@
                       <li><code v-pre>#</code> : protected</li>
                       <li><code v-pre>~</code> : package private</li>
                     </ul>
-                    <panel type="seamless"><template slot="_header">
+                    <panel type="seamless" class="algolia-no-index"><template slot="_header">
                         <p>How visibilities map to programming language features</p>
                       </template>
                       <div class="table-responsive">
@@ -378,7 +379,7 @@
                         <pic src="/website/book/uml/classDiagrams/classes/what/a1fc57ed7b16ae0837fcdb38fa9d5653.png"></pic>
                       </div>
                       <p></p>
-                      <panel type="seamless"><template slot="_header">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header">
                           <p>The equivalent code</p>
                         </template>
                         <div class="alt-java">
@@ -392,11 +393,11 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable><template slot="_header">
+                      <panel expandable class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which classes are correct?</p>
                             </template>
                             <question>
@@ -410,7 +411,7 @@
                                 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 4</li>
                                 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 5</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <ol>
                                   <li>Incorrect : <em>Attributes</em> compartment should be above the <em>Methods</em> compartment.</li>
                                   <li>Incorrect : All attributes should be inside the same compartment.</li>
@@ -423,7 +424,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Car class</p>
                             </template>
                             <question>
@@ -504,11 +505,11 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable><template slot="_header">
+                      <panel expandable class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What does the navigability given by this diagram mean?</p>
                             </template>
                             <question>
@@ -519,7 +520,7 @@
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="29fa9" type="radio"> b. An <code v-pre>Item</code> object knows about the <code v-pre>Unit</code> object it is linked to</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="29fa9" type="radio"> c. Depends on the programming language</label></li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(a)</p>
                                 <p>Explanation: The diagram indicates that <code v-pre>Unit</code> object should know about the <code v-pre>Item</code> object. In the implementation, the <code v-pre>Unit</code> object will hold an <code v-pre>Item</code> object in one of its variables.</p>
                               </div>
@@ -628,11 +629,11 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable><template slot="_header">
+                      <panel expandable class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which statement agrees with the multiplicity shown in this diagram?</p>
                             </template>
                             <question>
@@ -644,7 +645,7 @@
                                 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. A <code v-pre>Unit</code> object must be linked 1,2,3, or 4 <code v-pre>Item</code> objects</li>
                                 <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. A <code v-pre>Item</code> object can be 0 or more <code v-pre>Unit</code> objects.</li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(c)(d)</p>
                               </div>
                             </question>
@@ -748,7 +749,7 @@
                         </template>
                         <div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Define WeekDay Enum</p>
                               </template>
                               <question has-input="true">
@@ -848,11 +849,11 @@
                   </div>
                   <div>
                     <div>
-                      <panel expandable><template slot="_header">
+                      <panel expandable class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not recommended to use?</p>
                             </template>
                             <question>
@@ -861,7 +862,7 @@
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> a. Composition symbol</label></li>
                                 <li class="radio-list-item"><label><input class="radio-list-input" name="29b56" type="radio"> b. Aggregation symbol</label></li>
                               </ul>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <p>(b)</p>
                               </div>
                             </question>
@@ -973,11 +974,11 @@
                   <div></div>
                   <div>
                     <div>
-                      <panel expandable><template slot="_header">
+                      <panel expandable class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                         </template>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Class Diagram for code</p>
                             </template>
                             <question>
@@ -993,13 +994,13 @@
                                 <p>Draw a class diagram for the code below. Also draw an object diagram that will represent the object structure after running the code. Make the multiplicities as strict as possible without contradicting the code.</p>
                                 <pre><code class="hljs python" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Box</span>:</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self, item)</span>:</span><br></span><span>    self.__item = item <span class="hljs-comment"># type: Item</span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span>:</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">__init__</span><span class="hljs-params">(self)</span>:</span><br></span><span>    self.__previous_boxes = [] <span class="hljs-comment"># type: list of Box objects</span><br></span><span>    self.__main_card = <span class="hljs-literal">None</span>    <span class="hljs-comment"># type: Car</span><br></span><span>    self.__sub_card = <span class="hljs-literal">None</span>     <span class="hljs-comment"># type: Card</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_main_card</span><span class="hljs-params">(self, card)</span>:</span><br></span><span>    self.__main_card = card <span class="hljs-comment"># type: Card</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">set_sub_card</span><span class="hljs-params">(self, card)</span>:</span><br></span><span>    self.__sub_card = card <span class="hljs-comment"># type: Card</span><br></span><span><br></span><span>  <span class="hljs-function"><span class="hljs-keyword">def</span> <span class="hljs-title">add_previous_box</span><span class="hljs-params">(self, previous_box)</span>:</span><br></span><span>    self.__previous_boxes.append(previous_box)<br></span><span><br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Card</span>:</span><br></span><span>  <span class="hljs-keyword">pass</span><br></span><span><br></span><span><br></span><span>item1 = Item();<br></span><span>item2 = Item();<br></span><span>box1 = Box(item1);<br></span><span>box2 = Box(item2);<br></span><span>item2.set_main_card(Card());<br></span><span>item2.add_previous_box(box1);<br></span><span>item2.add_previous_box(box2);<br></span></code></pre>
                               </div>
-                              <div slot="answer">
+                              <div slot="answer" class="algolia-no-index">
                                 <img src="/website/book/uml/classDiagrams/combine/basic/images/classDiagramForCodeAnswer.png" width="600"></div>
                             </question>
                           </panel>
                         </div>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Implement Class Diagram</p>
                             </template>
                             <question>
@@ -1010,7 +1011,7 @@
                           </panel>
                         </div>
                         <div>
-                          <panel><template slot="_header">
+                          <panel class="algolia-no-index"><template slot="_header">
                               <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw an Object Diagrams for the Class Diagram (Person-Guardian)</p>
                             </template>
                             <question>
@@ -1036,7 +1037,7 @@
                                   <p><code v-pre>Alfred</code> has a an office address at <code v-pre>Wayne Industries</code> building which is different from his home address (i.e. <code v-pre>Bat Cave</code>).</p>
                                 </li>
                               </ol>
-                              <div slot="hint">
+                              <div slot="hint" class="algolia-no-index">
                                 <p>After step 2, the diagram should be like this:</p>
                                 <img src="/website/book/uml/classDiagrams/combine/basic/images/objectDiagramsForClassDiagramHint.png" width="600">
                               </div>
@@ -1396,11 +1397,11 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable><template slot="_header">
+                    <panel expandable class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
-                        <panel><template slot="_header">
+                        <panel class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw Car object</p>
                           </template>
                           <question>
@@ -1503,11 +1504,11 @@
                 </div>
                 <div>
                   <div>
-                    <panel expandable><template slot="_header">
+                    <panel expandable class="algolia-no-index"><template slot="_header">
                         <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                       </template>
                       <div>
-                        <panel><template slot="_header">
+                        <panel class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class diagrams match object diagram?</p>
                           </template>
                           <question>
@@ -1518,7 +1519,7 @@
                               <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 1</li>
                               <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> 2</li>
                             </ul>
-                            <div slot="answer">
+                            <div slot="answer" class="algolia-no-index">
                               <p>(1) (2)</p>
                               <p>Explanation: Both class diagrams allow one <code v-pre>Unit</code> object to be linked to one <code v-pre>Item</code> object.</p>
                             </div>
@@ -1637,7 +1638,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 0:30:31 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 20:01:10 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -1651,6 +1652,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "369d0a5a75795bb334b8da938b3bb288",
+      indexName: "nus-tic4001-ay2021s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>

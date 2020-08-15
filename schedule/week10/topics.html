@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="../../markbind/css/octicons.css">
   <link rel="stylesheet" href="../../markbind/css/github.min.css">
   <link rel="stylesheet" href="../../markbind/css/markbind.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
   <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
   <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
   <link rel="stylesheet" href="../../markbind/css/page-nav.css">
@@ -30,7 +31,7 @@
       <navbar placement="top" type="dark" class="temp-navbar">
         <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
         <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Schedule</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
           <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
           <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
           <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
@@ -49,7 +50,7 @@
         <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
         <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
         <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown"><template slot="_header"><strong>Links</strong></template>
+        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
           <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
           <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
           <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
@@ -78,7 +79,7 @@
         </dropdown>
         <li slot="right" class="nav-link">
           <form class="navbar-form">
-            <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar>
+            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
           </form>
         </li>
       </navbar>
@@ -103,7 +104,7 @@
           <p></p>
           <h1 id="week-10-fri-oct-16th-topics">Week 10 <small><small><span class="dimmed">[Fri, Oct 16th]</span> - Topics</small></small><span id="week-10-fri-oct-16th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-10-fri-oct-16th-topics" onclick="event.stopPropagation()"></a></h1>
           <div></div>
-          <panel type="seamless"><template slot="_header">
+          <panel type="seamless" class="algolia-no-index"><template slot="_header">
               <p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p>
             </template>
             <span id="toc">
@@ -363,11 +364,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about API documentation</p>
                               </template>
                               <question>
@@ -377,7 +378,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. There are tools that can generate API documents from code comments.</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. API documentation may contain code examples.</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>All</p>
                                 </div>
                               </question>
@@ -451,7 +452,7 @@
                     </div>
                     <div>
                       <div>
-                        <panel><template slot="_header">
+                        <panel class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p>
                           </template>
                           <p><strong>Side readings:</strong></p>
@@ -482,7 +483,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what"><template slot="_header">
+                        <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header">
                             <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p>
                           </template></panel>
                       </p>
@@ -532,11 +533,11 @@
                         </panel>
                       </div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p>
                               </template>
                               <question>
@@ -545,7 +546,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>True</p>
                                 </div>
                               </question>
@@ -578,11 +579,11 @@
                     <p></p>
                     <div>
                       <p><strong><em>Dependency injection</em> is the process of 'injecting' objects to replace current dependencies with a different object.</strong> This is often used to inject <span trigger="click" for="modal:explainDi-stub" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:explainDi-stub'].show()" class="trigger-click">stubs</span> to isolate the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> from its <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">objects it depends on</span>dependencies</span> so that it can be tested in isolation.</p>
-                      <b-modal id="modal:explainDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub"><template slot="modal-title"></template>
+                      <b-modal id="modal:explainDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:explainDi-stub" class="algolia-no-index"><template slot="modal-title"></template>
                         <div>
                           <div>
                             <p>
-                              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what"><template slot="_header">
+                              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header">
                                   <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p>
                                 </template></panel>
                             </p>
@@ -635,11 +636,11 @@
                                   </panel>
                                 </div>
                                 <div>
-                                  <panel expandable><template slot="_header">
+                                  <panel expandable class="algolia-no-index"><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                     </template>
                                     <div>
-                                      <panel><template slot="_header">
+                                      <panel class="algolia-no-index"><template slot="_header">
                                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p>
                                         </template>
                                         <question>
@@ -648,7 +649,7 @@
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>True</p>
                                           </div>
                                         </question>
@@ -685,7 +686,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/testing/dependencyInjection/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/dependencyInjection/what"><template slot="_header">
+                        <panel src="/website/book/testing/dependencyInjection/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/dependencyInjection/what" class="algolia-no-index"><template slot="_header">
                             <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Dependency Injection → What</span></p>
                           </template></panel>
                       </p>
@@ -697,11 +698,11 @@
                     <p></p>
                     <div>
                       <p><strong>Polymorphism can be used to implement dependency injection</strong>, as can be seen in the example given in <span trigger="click" for="modal:useDi-stub" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:useDi-stub'].show()" class="trigger-click">[Quality Assurance → Testing → Unit Testing → Stubs]</span> where a stub is injected to replace a dependency.</p>
-                      <b-modal id="modal:useDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:useDi-stub"><template slot="modal-title"></template>
+                      <b-modal id="modal:useDi-stub" hide-footer size="lg" modal-class="mb-zoom" ref="modal:useDi-stub" class="algolia-no-index"><template slot="modal-title"></template>
                         <div>
                           <div>
                             <p>
-                              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what"><template slot="_header">
+                              <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header">
                                   <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p>
                                 </template></panel>
                             </p>
@@ -754,11 +755,11 @@
                                   </panel>
                                 </div>
                                 <div>
-                                  <panel expandable><template slot="_header">
+                                  <panel expandable class="algolia-no-index"><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                     </template>
                                     <div>
-                                      <panel><template slot="_header">
+                                      <panel class="algolia-no-index"><template slot="_header">
                                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Purpose of stubs</p>
                                         </template>
                                         <question>
@@ -767,7 +768,7 @@
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="a0303" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>True</p>
                                           </div>
                                         </question>
@@ -790,11 +791,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about dependency injection</p>
                               </template>
                               <question>
@@ -805,7 +806,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. It can be done using polymorphism</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. It can be used to substitute a component with a stub</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p><s>(a)</s>(b)(c)(d)</p>
                                   <p>Explanation: It is a technique we can use to substitute an existing dependency with another, not increase dependencies. It is useful when you want to test a component in isolation but the SUT depends on other components. Using dependency injection, we can substitute those other components with test-friendly stubs. This is often done using polymorphism.</p>
                                 </div>
@@ -836,7 +837,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what"><template slot="_header">
+                        <panel src="/website/book/testing/testingTypes/unitTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/unitTesting/what" class="algolia-no-index"><template slot="_header">
                             <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Unit Testing → What →</span></p>
                           </template></panel>
                       </p>
@@ -871,7 +872,7 @@
                   <div class="indented">
                     <div>
                       <p>
-                        <panel src="/website/book/testing/testingTypes/integrationTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/integrationTesting/what"><template slot="_header">
+                        <panel src="/website/book/testing/testingTypes/integrationTesting/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/testing/testingTypes/integrationTesting/what" class="algolia-no-index"><template slot="_header">
                             <p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Quality Assurance → Testing → Integration Testing → What →</span></p>
                           </template></panel>
                       </p>
@@ -992,7 +993,7 @@
                           </li>
                           <li>
                             <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
-                            <panel type="seamless" class="non-printable"><template slot="_header">
+                            <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> demo video of automated testing of a Web application</p>
                               </template>
                               <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
@@ -1004,11 +1005,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> API testing vs GUI testing</p>
                               </template>
                               <question>
@@ -1017,7 +1018,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="dc574" type="radio"> True</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="dc574" type="radio"> False</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>False</p>
                                 </div>
                               </question>
@@ -1151,11 +1152,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about system testing and acceptance testing.</p>
                               </template>
                               <question>
@@ -1168,7 +1169,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. In smaller projects, the developers may do system testing as well, in addition to developer testing.</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. If system testing is adequately done, we need not do acceptance testing.</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(a)(b)(c)(d)(e)<s>(f)</s></p>
                                   <p>Explanation:</p>
                                   <p>(b) is correct because system testing can aim to cover all specified behaviors and can even go beyond the system specification. Therefore, system testing is typically more extensive than acceptance testing.</p>
@@ -1283,11 +1284,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Test cases for <code v-pre>TriangleDetector</code></p>
                               </template>
                               <question has-input="true">
@@ -1295,7 +1296,7 @@
                                 <pre><code class="hljs" v-pre><span>C:\&gt; java TriangleDetector<br></span><span>Enter side 1: 34<br></span><span>Enter side 2: 34<br></span><span>Enter side 3: 32<br></span><span>Can this be a triangle?:  Yes<br></span><span>Enter side 1:<br></span></code></pre>
                                 <p>Sample test cases,</p>
                                 <pre><code class="hljs" v-pre><span>34,34,34: Yes<br></span><span>0, any valid, any valid: No<br></span></code></pre>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>In addition to obvious test cases such as</p>
                                   <ul>
                                     <li>sum of two sides == third,</li>
@@ -1316,12 +1317,12 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Exhaustive testing in Minesweeper</p>
                               </template>
                               <question has-input="true">
                                 <p>Explain the why exhaustive testing is not practical using the example of testing <code v-pre>newGame()</code> operation in the <code v-pre>Logic</code> class of a Minesweeper game.</p>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>Consider this sequence of test cases:</p>
                                   <ul>
                                     <li>Test case 1. Start Minesweeper. Activate <code v-pre>newGame()</code> and see if it works.</li>
@@ -1336,7 +1337,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about E&amp;E of testing</p>
                               </template>
                               <question>
@@ -1349,7 +1350,7 @@
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. minimize redundant test cases.</li>
                                   <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. forces us to understand the SUT better.</li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(a)(b)(c)(d)(e)(f)</p>
                                 </div>
                               </question>
@@ -1401,7 +1402,7 @@
                       <box>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                       </box>
-                      <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                      <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                         <div>
                           <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
@@ -1409,11 +1410,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about exploratory and scripted testing</p>
                               </template>
                               <question>
@@ -1422,7 +1423,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>False</p>
                                   <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
                                 </div>
@@ -1430,7 +1431,7 @@
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which testing technique is better?</p>
                               </template>
                               <question>
@@ -1442,19 +1443,19 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>(e)</p>
                                 </div>
                               </question>
                             </panel>
                           </div>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Explain the concept of exploratory testing using Minesweeper as an example.</p>
                               </template>
                               <question has-input="true">
                                 <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
                                 </div>
                               </question>
@@ -1493,7 +1494,7 @@
                         <p>In some contexts, you will achieve your testing mission better through a more scripted approach; in other contexts, your mission will benefit more from the ability to create and improve tests as you execute them. I find that most situations benefit from a mix of scripted and exploratory approaches.
                           --<span trigger="click" for="modal:ExploratoryWhen-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:ExploratoryWhen-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span></p>
                       </blockquote>
-                      <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                      <b-modal id="modal:ExploratoryWhen-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:ExploratoryWhen-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                         <div>
                           <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                         </div>
@@ -1501,11 +1502,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which is better?</p>
                               </template>
                               <question>
@@ -1514,7 +1515,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> True</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="7d3ff" type="radio"> False</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>False</p>
                                   <p>Explanation: Each has pros and cons. Relying on only one is not recommended. A combination is better.</p>
                                 </div>
@@ -1592,7 +1593,7 @@
                           <p><strong><em>Gray-box</em> approach</strong>: test case design uses <em>some</em> important information about the implementation. For example, if the implementation of a sort operation uses different algorithms to sort lists shorter than 1000 items and lists longer than 1000 items, more meaningful test cases can then be added to verify the correctness of both algorithms.</p>
                         </li>
                       </ul>
-                      <panel type="seamless"><template slot="_header">
+                      <panel type="seamless" class="algolia-no-index"><template slot="_header">
                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> <span class="dimmed">Black-box and white-box testing</span></p>
                         </template>
                         <p><sub>Note: these videos are from the <a href="https://www.udacity.com/course/software-development-process--ud805">Udacity course <em>Software Development Process</em> by Georgia Tech</a></sub></p>
@@ -1600,10 +1601,10 @@
                           <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box vs White-box testing</template>
                             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/jRwwb7iaRsU" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                           </tab>
-                          <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box testing example</template>
+                          <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Black-box testing example</template>
                             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/6pbB37nFUZw" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                           </tab>
-                          <tab><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> White-box testing example</template>
+                          <tab class="algolia-no-index"><template slot="_header"><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> White-box testing example</template>
                             <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/KIAkoae6_jE" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
                           </tab>
                         </tabs>
@@ -1635,7 +1636,7 @@
                     <div>
                       <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code v-pre>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
                       <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger-click">E&amp;E of testing</span>, high-priority use cases are given more attention. For example, a <span trigger="click" for="modal:usecaseBased-scripted" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usecaseBased-scripted'].show()" class="trigger-click">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                      <b-modal id="modal:usebaseBased-EandE" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
+                      <b-modal id="modal:usebaseBased-EandE" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE" class="algolia-no-index"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
                         <div>
                           <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
                           <ul>
@@ -1649,7 +1650,7 @@
                           <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test you add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
                         </div>
                       </b-modal>
-                      <b-modal id="modal:usecaseBased-scripted" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+                      <b-modal id="modal:usecaseBased-scripted" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
                         <div>
                           <div></div>
                           <p></p>
@@ -1681,7 +1682,7 @@
                                 <box>
                                   <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
                                 </box>
-                                <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
+                                <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
                                   <div>
                                     <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
                                   </div>
@@ -1689,11 +1690,11 @@
                               </div>
                               <div>
                                 <div>
-                                  <panel expandable><template slot="_header">
+                                  <panel expandable class="algolia-no-index"><template slot="_header">
                                       <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                                     </template>
                                     <div>
-                                      <panel><template slot="_header">
+                                      <panel class="algolia-no-index"><template slot="_header">
                                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about exploratory and scripted testing</p>
                                         </template>
                                         <question>
@@ -1702,7 +1703,7 @@
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>False</p>
                                             <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
                                           </div>
@@ -1710,7 +1711,7 @@
                                       </panel>
                                     </div>
                                     <div>
-                                      <panel><template slot="_header">
+                                      <panel class="algolia-no-index"><template slot="_header">
                                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which testing technique is better?</p>
                                         </template>
                                         <question>
@@ -1722,19 +1723,19 @@
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
                                             <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
                                           </ul>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>(e)</p>
                                           </div>
                                         </question>
                                       </panel>
                                     </div>
                                     <div>
-                                      <panel><template slot="_header">
+                                      <panel class="algolia-no-index"><template slot="_header">
                                           <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Explain the concept of exploratory testing using Minesweeper as an example.</p>
                                         </template>
                                         <question has-input="true">
                                           <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                          <div slot="answer">
+                                          <div slot="answer" class="algolia-no-index">
                                             <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
                                           </div>
                                         </question>
@@ -1915,11 +1916,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> EPs for <code v-pre>isValidName</code> method</p>
                               </template>
                               <question>
@@ -1942,7 +1943,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> c. A string that is 40 characters long</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="f35e9" type="radio"> d. null</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>A. (d)</p>
                                   <p>Explanation: The description does not mention anything about the content of the string. Therefore, the method is unlikely to behave differently for strings consisting of numbers.</p>
                                   <p>B. (a) or (c)</p>
@@ -2073,11 +2074,11 @@
                     </div>
                     <div>
                       <div>
-                        <panel expandable><template slot="_header">
+                        <panel expandable class="algolia-no-index"><template slot="_header">
                             <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
                           </template>
                           <div>
-                            <panel><template slot="_header">
+                            <panel class="algolia-no-index"><template slot="_header">
                                 <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What BVA recommends</p>
                               </template>
                               <question>
@@ -2086,7 +2087,7 @@
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> True</label></li>
                                   <li class="radio-list-item"><label><input class="radio-list-input" name="f8ff4" type="radio"> False</label></li>
                                 </ul>
-                                <div slot="answer">
+                                <div slot="answer" class="algolia-no-index">
                                   <p>False</p>
                                   <p>Explanation: It does not recommend testing <em>only</em> those values <em>on</em> the boundary. It merely suggests that values on and around a boundary are more likely to cause errors.</p>
                                 </div>
@@ -2223,7 +2224,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 0:30:31 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 15 Aug 2020, 20:01:10 GMT+8]</small></div>
     </footer>
   </div>
 </body>
@@ -2237,6 +2238,21 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+  function initAlgolia() {
+    docsearch({
+      apiKey: "369d0a5a75795bb334b8da938b3bb288",
+      indexName: "nus-tic4001-ay2021s1",
+      inputSelector: "#algolia-search-input",
+      algoliaOptions: {
+        "hitsPerPage": 10
+      },
+      debug: false,
+    });
+  }
+  MarkBind.afterSetup(initAlgolia);
+</script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
 
 </html>
