@@ -267,1054 +267,14 @@
           <div id="main">
             <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
               <ol>
-                <li><span>Review some peer PRs</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during lecture</span></span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li>
                 <li>Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code></li>
+                <li><span>Review some peer PRs</span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li>
               </ol>
             </div>
             <div id="body">
               <div></div>
               <p></p>
-              <h4 id="1-review-some-peer-prs-during-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Review some peer PRs</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> during lecture</span></span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="1-review-some-peer-prs-during-lecture" class="anchor"></span><a class="fa fa-anchor" href="#1-review-some-peer-prs-during-lecture" onclick="event.stopPropagation()"></a></h4>
-              <div>
-                <box type="info" add-class="ml-4">
-                  <p>This task is worth <code v-pre>2x2=4</code> participtaion points.
-                  </p>
-                </box>
-                <p></p>
-                <ul>
-                  <li><strong>Learn <em>how</em> you should review PRs in this task</strong>:</li>
-                </ul>
-                <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                      <p>Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Git &amp; GitHub → <strong>Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                    </template>
-                    <div>
-                      <p><em>PR review</em> stage is a dialog between the PR author and members of the repo that received the PR, in order to refine and eventually merge the PR.</p>
-                      <p>Given below are some steps you can follow when reviewing a PR.</p>
-                      <p><strong>1. Locate the PR:</strong></p>
-                      <ol>
-                        <li>Go to the GitHub page of the repo.</li>
-                        <li>Click on the <span class="tab"><span><svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-git-pull-request" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z" /></svg></span> Pull requests</span> tab.</li>
-                        <li>Click on the PR you want to review.</li>
-                      </ol>
-                      <p><strong>2. Read the PR description.</strong> It might contain information relevant to reviewing the PR.</p>
-                      <p><strong>3. Click on the</strong> <span class="tab"><svg version="1.1" width="13" height="16" viewBox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z" /></svg> Files changed</span> tab to see the <em>diff</em> view.</p>
-                      <p><strong>4. Add review comments:</strong></p>
-                      <ol>
-                        <li>Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon that appears on the left margin. That should create a text box for you to enter your comment.<br>
-                          <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> To mark multiple lines, click-and-drag the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon.</li>
-                        <li>Enter your comment.<br>
-                          <span><span aria-hidden="true" class="fas fa-paperclip"></span></span> <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">This page @SE-EDU/guides</a> has some best practices PR reviewers can follow.</li>
-                        <li>After typing in the comment, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Start a review</span> button (not the <span class="btn btn-light pl-1 pr-1 pb-0 pt-0 border">Add single comment</span> button. This way, your comment is saved but not visible to others yet. It will be visible to others only when you have finished the entire review.<br>
-                          <img src="/website/book/gitAndGithub/reviewPRs/images/addComment.png" width="800">
-                          <p></p>
-                        </li>
-                        <li>Repeat the above steps to add more comments.</li>
-                      </ol>
-                      <p><strong>5. Submit the review:</strong><br>
-                        <img src="/website/book/gitAndGithub/reviewPRs/images/submitReview.png" width="500"></p>
-                      <p></p>
-                      <ol>
-                        <li>When there are no more comments to add, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Review changes <svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-triangle-down" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M0 5l6 6 6-6H0z" /></svg></span> button (on the top right of the diff page).</li>
-                        <li>Type in an overall comment about the PR, if any. e.g.,
-                          <pre><code class="hljs" v-pre><span>Overall, I found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. I noted a few minor coding standard violations<br></span><span>too. Some of the classes are getting quite long. Consider splitting into smaller<br></span><span>classes if that makes sense.<br></span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>LGTM</code> is often used in such overall comments, to indicate <code v-pre>Looks good to merge</code>.<br>
-                          <code v-pre>nit</code> is another such term, used to indicate minor flaw e.g., <code v-pre>LGTM, almost. Just a few nits to fix.</code></li>
-                        <li>Choose <code v-pre>Approve</code>, <code v-pre>Comment</code>, or <code v-pre>Request changes</code> option as appropriate and click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Submit review</span> button.</li>
-                      </ol>
-                    </div>
-                  </panel>
-                </div>
-                <p></p>
-                <ul>
-                  <li>
-                    <p><span class="badge badge-dark">Step 1</span> <strong>Note these additional guidelines</strong>:</p>
-                    <ul>
-                      <li>Read the <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html"><em>Best practices for reviewing PRs</em> @SE-EDU/guides</a>. You are <mark>expected to follow all of them</mark>.</li>
-                      <li>If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.</li>
-                      <li>At the end of the review, choose <code v-pre>Comment</code> (i.e., not <code v-pre>Approve</code> or <code v-pre>Request changes</code>)</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <p><strong>Do the first PR review</strong> as follows.</p>
-                    <ul>
-                      <li>Comment on <mark><a href="https://se-education.org/guides/conventions/java/basic.html">coding standard</a> violations only</mark>.</li>
-                      <li>The review allocation is given in the panel below.</li>
-                    </ul>
-                  </li>
-                </ul>
-                <div class="indented-level4">
-                  <div>
-                    <panel minimized class="algolia-no-index"><template slot="_header">
-                        <p>iP PR review allocation</p>
-                      </template>
-                      <div class="table-responsive">
-                        <table class="markbind-table table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                              <th>Tutorial</th>
-                              <th>Reviewer</th>
-                              <th>First PR to review</th>
-                              <th>Backup PR to review</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>E0309556</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/alwayshuizhen">alwayshuizhen</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>Keith-JK</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/yantingsanity">yantingsanity</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>jichngan</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/jinfayap">jinfayap</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>joelczk</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JensonWee">JensonWee</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>lwxymere</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/cheongisabella">cheongisabella</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>JensonWee</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/zi-hui">zi-hui</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>alwayshuizhen</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/lwxymere">lwxymere</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>cheongisabella</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/jichngan">jichngan</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>jinfayap</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/joelczk">joelczk</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>yantingsanity</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/E0309556">E0309556</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>zi-hui</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Keith-JK">Keith-JK</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>MeLoveCarbs</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/sliu107">sliu107</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>lowxizhi</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ananda-lye">ananda-lye</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>matthewc97</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/GanapathySanathBalaji">GanapathySanathBalaji</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>synCKun</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/btricec">btricec</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>Janicetyy</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JTWang2000">JTWang2000</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>NyanWunPaing</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/quinnyyy">quinnyyy</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>itskesin</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/NizarMohd">NizarMohd</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>sitinadiah25</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/siuhian">siuhian</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>GanapathySanathBalaji</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/SibingWu">SibingWu</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>NizarMohd</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/alexlim510">alexlim510</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>hongquan448</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/g-lilian">g-lilian</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>terrytay</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/DDzuikeai">DDzuikeai</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>anqi-nus</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/iceclementi">iceclementi</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>benchan911</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Andrew880228">Andrew880228</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>harithadiv</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/trishaangelica">trishaangelica</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>lowjiayee</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JosephLimWeiJie">JosephLimWeiJie</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>JLoh579</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/matthewc97">matthewc97</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>Shannonwje</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/yuchenlichuck">yuchenlichuck</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>jiajuinphoon</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/lowxizhi">lowxizhi</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>kokjoon97</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Janicetyy">Janicetyy</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>trishaangelica</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/hongquan448">hongquan448</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>A11riseforme</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/synCKun">synCKun</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>HAOYUN49</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/melylopez99">melylopez99</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>iceclementi</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Jeremy733">Jeremy733</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>wangqinNick</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yukilite">Yukilite</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>JustinnT</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JeremiasLiew">JeremiasLiew</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>Yukilite</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/jiajuinphoon">jiajuinphoon</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>andy-aw-why</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dejunnn">dejunnn</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>brandoncjh</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/nigellenl">nigellenl</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>thanhduc2000</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Zhilin-Huang">Zhilin-Huang</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>Andrew880228</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/andy-aw-why">andy-aw-why</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>Zhilin-Huang</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Bencotti">Bencotti</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>g-lilian</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/wangqinNick">wangqinNick</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>quinnyyy</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/nguan1">nguan1</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>sliu107</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JustinnT">JustinnT</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>alaukiknpant</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JLoh579">JLoh579</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>katelo731</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/lamyuewei">lamyuewei</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>melylopez99</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/rsanchez-macias">rsanchez-macias</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>yolanmz</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/gmuthu17">gmuthu17</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>Bencotti</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/lowjiayee">lowjiayee</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>JTWang2000</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/harithadiv">harithadiv</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>rsanchez-macias</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/anqi-nus">anqi-nus</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>yuchenlichuck</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/alaukiknpant">alaukiknpant</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>JosephLimWeiJie</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/kcubey">kcubey</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>SibingWu</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/benchan911">benchan911</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>gmuthu17</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/RenzoTsai">RenzoTsai</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>nguan1</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/terrytay">terrytay</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>ananda-lye</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/chengTzeNing">chengTzeNing</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>btricec</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/sitinadiah25">sitinadiah25</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>nigellenl</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/NyanWunPaing">NyanWunPaing</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>rdimaio</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/bennychanya">bennychanya</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>siuhian</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/itskesin">itskesin</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>JeremiasLiew</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/katelo731">katelo731</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>Jeremy733</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/DeetoMok">DeetoMok</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>alexlim510</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/HAOYUN49">HAOYUN49</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>kcubey</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/thanhduc2000">thanhduc2000</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>DeetoMok</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/yolanmz">yolanmz</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>RenzoTsai</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/yuxianglim">yuxianglim</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>bennychanya</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/MeLoveCarbs">MeLoveCarbs</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>chengTzeNing</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/rdimaio">rdimaio</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>DDzuikeai</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Shannonwje">Shannonwje</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>dejunnn</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/kokjoon97">kokjoon97</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>lamyuewei</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/brandoncjh">brandoncjh</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>yuxianglim</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/A11riseforme">A11riseforme</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </panel>
-                    <p></p>
-                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the <em>Backup PR to review</em> provided in the allocation table. Failing both, review another PR allocated to another student in your own tutorial <ins>but not in your team</ins>.</p>
-                    <p></p>
-                    <box type="tip" light>
-                      <p>Tip for future reference: GitHub allows you to filter PRs/Issues using various criteria such as <code v-pre>author:AuthorUsername</code> (<a href="https://github.com/reposense/RepoSense/pulls?utf8=%E2%9C%93&amp;q=is%3Apr+author%3Afzdy1914+">example</a> -- see the <code v-pre>filters</code> text box in the target page).</p>
-                      <p>Alternatively, you can use PR labels (if any) to filter PRs/Issues.<br>
-                        <img src="/website/admin/images/filterPrsUsingLabels.png"></p>
-                    </box>
-                    <p></p>
-                  </div>
-                </div>
-                <ul>
-                  <li><span class="badge badge-dark">Step 2</span> <strong>Do the second PR review</strong> as follows.
-                    <ul>
-                      <li>Comment on <mark>other code quality guidelines</mark> (see the <span tags="m--cs2113 m--tic4001">sections on <em>Naming</em> and <em>Readability</em></span> in <a href="/website/se-book-adapted/chapters/codeQuality.html">this textbook chapter</a>) you have learned so far. It's optional to comment on coding standard violations in this PR review.</li>
-                      <li>The review allocation is given in the panel below.</li>
-                    </ul>
-                  </li>
-                </ul>
-                <div class="indented-level4">
-                  <div>
-                    <panel minimized class="algolia-no-index"><template slot="_header">
-                        <p>iP PR review allocation</p>
-                      </template>
-                      <div class="table-responsive">
-                        <table class="markbind-table table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                              <th>Tutorial</th>
-                              <th>Reviewer</th>
-                              <th>Second PR to review</th>
-                              <th>Backup PR to review</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>E0309556</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>Keith-JK</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>jichngan</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>joelczk</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-1</td>
-                              <td>lwxymere</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>JensonWee</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>alwayshuizhen</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>cheongisabella</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>jinfayap</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>yantingsanity</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-M16-2</td>
-                              <td>zi-hui</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>MeLoveCarbs</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>lowxizhi</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>matthewc97</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-1</td>
-                              <td>synCKun</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>Janicetyy</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>NyanWunPaing</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>itskesin</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-2</td>
-                              <td>sitinadiah25</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>GanapathySanathBalaji</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>NizarMohd</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>hongquan448</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-3</td>
-                              <td>terrytay</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>anqi-nus</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>benchan911</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>harithadiv</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T12-4</td>
-                              <td>lowjiayee</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>JLoh579</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>Shannonwje</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>jiajuinphoon</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>kokjoon97</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-1</td>
-                              <td>trishaangelica</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>A11riseforme</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>HAOYUN49</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>iceclementi</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-2</td>
-                              <td>wangqinNick</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>JustinnT</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>Yukilite</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>andy-aw-why</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>brandoncjh</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113T-T13-3</td>
-                              <td>thanhduc2000</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>Andrew880228</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>Zhilin-Huang</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>g-lilian</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>quinnyyy</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-1</td>
-                              <td>sliu107</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>alaukiknpant</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>katelo731</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>melylopez99</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-2</td>
-                              <td>yolanmz</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>Bencotti</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>JTWang2000</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>rsanchez-macias</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-3</td>
-                              <td>yuchenlichuck</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>JosephLimWeiJie</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>SibingWu</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>gmuthu17</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T14-4</td>
-                              <td>nguan1</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>ananda-lye</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>btricec</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>nigellenl</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>rdimaio</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-1</td>
-                              <td>siuhian</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>JeremiasLiew</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>Jeremy733</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>alexlim510</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-2</td>
-                              <td>kcubey</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>DeetoMok</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>RenzoTsai</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>bennychanya</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-3</td>
-                              <td>chengTzeNing</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>DDzuikeai</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>dejunnn</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>lamyuewei</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                            <tr>
-                              <td>CS2113-T15-4</td>
-                              <td>yuxianglim</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/"></a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </panel>
-                    <p></p>
-                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the allocated PR is not suitable, use the same strategy as before to find an alternative PR to review.</p>
-                    <p></p>
-                  </div>
-                </div>
-                <ul>
-                  <li><span class="badge badge-dark">Step 3</span> <strong>[When you receive reviews for your own PR] Respond to comments received</strong>. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">these guidelines</a>, do not get into arguments with PR reviewers/authors.</li>
-                </ul>
-              </div>
-              <p></p>
-              <h4 id="2-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code><span id="2-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" class="anchor"></span><a class="fa fa-anchor" href="#2-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code><span id="1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" class="anchor"></span><a class="fa fa-anchor" href="#1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" onclick="event.stopPropagation()"></a></h4>
               <div>
                 <span tags="m--cs2113 m--tic4001">
                   <ul>
@@ -1438,6 +398,165 @@
                 </div>
               </div>
               <p></p>
+              <h4 id="2-review-some-peer-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Review some peer PRs</span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="2-review-some-peer-prs" class="anchor"></span><a class="fa fa-anchor" href="#2-review-some-peer-prs" onclick="event.stopPropagation()"></a></h4>
+              <div>
+                <div tags="m--cs2103 m--tic4001">
+                  <box type="wrong" add-class="ml-4" icon-size="2x" seamless><template slot="icon"><span aria-hidden="true" class="fas fa-hand-paper"></span></template>
+                    <p><strong>Please wait till Mon, Aug 31st</strong> to start this task, to give others a few extra days to create the PR if they haven't done so yet.
+                    </p>
+                  </box>
+                  <p></p>
+                </div>
+                <box type="info" add-class="ml-4">
+                  <p>This task is worth <code v-pre>2x2=4</code> participtaion points.
+                  </p>
+                </box>
+                <p></p>
+                <ul>
+                  <li><strong>Learn <em>how</em> you should review PRs in this task</strong>:</li>
+                </ul>
+                <panel type="seamless" class="algolia-no-index">
+                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span></div>
+                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=c001244c-01b5-4471-ab9d-ac1b0098110a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
+                </panel>
+                <p></p>
+                <div class="indented-level2">
+                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
+                      <p>Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Git &amp; GitHub → <strong>Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
+                    </template>
+                    <div>
+                      <p><em>PR review</em> stage is a dialog between the PR author and members of the repo that received the PR, in order to refine and eventually merge the PR.</p>
+                      <p>Given below are some steps you can follow when reviewing a PR.</p>
+                      <p><strong>1. Locate the PR:</strong></p>
+                      <ol>
+                        <li>Go to the GitHub page of the repo.</li>
+                        <li>Click on the <span class="tab"><span><svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-git-pull-request" aria-hidden="true">
+                                <path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z" /></svg></span> Pull requests</span> tab.</li>
+                        <li>Click on the PR you want to review.</li>
+                      </ol>
+                      <p><strong>2. Read the PR description.</strong> It might contain information relevant to reviewing the PR.</p>
+                      <p><strong>3. Click on the</strong> <span class="tab"><svg version="1.1" width="13" height="16" viewBox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z" /></svg> Files changed</span> tab to see the <em>diff</em> view.</p>
+                      <p><strong>4. Add review comments:</strong></p>
+                      <ol>
+                        <li>Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon that appears on the left margin. That should create a text box for you to enter your comment.<br>
+                          <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> To mark multiple lines, click-and-drag the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon.</li>
+                        <li>Enter your comment.<br>
+                          <span><span aria-hidden="true" class="fas fa-paperclip"></span></span> <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">This page @SE-EDU/guides</a> has some best practices PR reviewers can follow.</li>
+                        <li>After typing in the comment, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Start a review</span> button (not the <span class="btn btn-light pl-1 pr-1 pb-0 pt-0 border">Add single comment</span> button. This way, your comment is saved but not visible to others yet. It will be visible to others only when you have finished the entire review.<br>
+                          <img src="/website/book/gitAndGithub/reviewPRs/images/addComment.png" width="800">
+                          <p></p>
+                        </li>
+                        <li>Repeat the above steps to add more comments.</li>
+                      </ol>
+                      <p><strong>5. Submit the review:</strong><br>
+                        <img src="/website/book/gitAndGithub/reviewPRs/images/submitReview.png" width="500"></p>
+                      <p></p>
+                      <ol>
+                        <li>When there are no more comments to add, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Review changes <svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-triangle-down" aria-hidden="true">
+                              <path fill-rule="evenodd" d="M0 5l6 6 6-6H0z" /></svg></span> button (on the top right of the diff page).</li>
+                        <li>Type in an overall comment about the PR, if any. e.g.,
+                          <pre><code class="hljs" v-pre><span>Overall, I found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. I noted a few minor coding standard violations<br></span><span>too. Some of the classes are getting quite long. Consider splitting into smaller<br></span><span>classes if that makes sense.<br></span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>LGTM</code> is often used in such overall comments, to indicate <code v-pre>Looks good to merge</code>.<br>
+                          <code v-pre>nit</code> is another such term, used to indicate minor flaw e.g., <code v-pre>LGTM, almost. Just a few nits to fix.</code></li>
+                        <li>Choose <code v-pre>Approve</code>, <code v-pre>Comment</code>, or <code v-pre>Request changes</code> option as appropriate and click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Submit review</span> button.</li>
+                      </ol>
+                    </div>
+                  </panel>
+                </div>
+                <p></p>
+                <ul>
+                  <li>
+                    <p><span class="badge badge-dark">Step 1</span> <strong>Note these additional guidelines</strong>:</p>
+                    <ul>
+                      <li>Read the <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html"><em>Best practices for reviewing PRs</em> @SE-EDU/guides</a>. You are <mark>expected to follow all of them</mark>.</li>
+                      <li>If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.</li>
+                      <li>At the end of the review, choose <code v-pre>Comment</code> (i.e., not <code v-pre>Approve</code> or <code v-pre>Request changes</code>)</li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p><span class="badge badge-dark">Step 2</span> <strong>Do the first PR review</strong> as follows.</p>
+                    <ul>
+                      <li>Comment on <mark><a href="https://se-education.org/guides/conventions/java/basic.html">coding standard</a> violations only</mark>.</li>
+                      <li>The review allocation is given in the panel below.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="indented-level4">
+                  <div>
+                    <panel minimized class="algolia-no-index"><template slot="_header">
+                        <p>iP PR review allocation</p>
+                      </template>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Tutorial</th>
+                              <th>Reviewer</th>
+                              <th>First PR to review</th>
+                              <th>Backup PR to review</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>tutorial_id</td>
+                              <td>reviewer_github1</td>
+                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/github2">github2</a></td>
+                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/github3">github3</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </panel>
+                    <p></p>
+                    <div tags="m--tic4001">
+                      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the <em>Backup PR to review</em> provided in the allocation table. Failing both, pick a PR at random to review.</p>
+                    </div>
+                  </div>
+                </div>
+                <ul>
+                  <li><span class="badge badge-dark">Step 3</span> <strong>Do the second PR review</strong> as follows.
+                    <ul>
+                      <li>Comment on <mark>other code quality guidelines</mark> (see the <span tags="m--cs2113 m--tic4001">sections on <em>Naming</em> and <em>Readability</em></span> in <a href="/website/se-book-adapted/chapters/codeQuality.html">this textbook chapter</a>) you have learned so far. It's optional to comment on coding standard violations in this PR review.</li>
+                      <li>The review allocation is given in the panel below.</li>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="indented-level4">
+                  <div>
+                    <panel minimized class="algolia-no-index"><template slot="_header">
+                        <p>iP PR review allocation</p>
+                      </template>
+                      <div class="table-responsive">
+                        <table class="markbind-table table table-bordered table-striped">
+                          <thead>
+                            <tr>
+                              <th>Tutorial</th>
+                              <th>Reviewer</th>
+                              <th>Second PR to review</th>
+                              <th>Backup PR to review</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>tutorial_id</td>
+                              <td>reviewer_github1</td>
+                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/github4">github4</a></td>
+                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/github5">github5</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </panel>
+                    <p></p>
+                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the allocated PR is not suitable, use the same strategy as before to find an alternative PR to review.</p>
+                    <p></p>
+                  </div>
+                </div>
+                <ul>
+                  <li><span class="badge badge-dark">Step 4</span> <strong>[When you receive reviews for your own PR] Respond to comments received</strong>. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">these guidelines</a>, do not get into arguments with PR reviewers/authors.</li>
+                </ul>
+              </div>
+              <p></p>
             </div>
           </div>
           <br>
@@ -1455,8 +574,8 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#ip-week-4">iP: Week 4 &#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-review-some-peer-prs-during-lecture">1 Review some peer PRs during lecture counted for participation&#x200E;</a>
-              <a class="nav-link py-1" href="#2-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages">2 Add Increments as branches: Level-5, A-CodeQuality, A-AbstractClasses, A-Packages&#x200E;</a>
+              <a class="nav-link py-1" href="#1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages">1 Add Increments as branches: Level-5, A-CodeQuality, A-AbstractClasses, A-Packages&#x200E;</a>
+              <a class="nav-link py-1" href="#2-review-some-peer-prs">2 Review some peer PRs counted for participation&#x200E;</a>
             </nav>
 
           </nav>
@@ -1466,7 +585,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sat, 22 Aug 2020, 11:05:39 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 27 Aug 2020, 15:10:46 GMT+8]</small></div>
     </footer>
   </div>
 </body>
