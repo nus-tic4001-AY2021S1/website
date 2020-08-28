@@ -1,0 +1,25 @@
+2020-08-28T07:00:14.090Z - info: Website generation (lazy) started at 3:00:06 PM
+2020-08-28T07:00:30.269Z - info: Building assets...
+2020-08-28T07:00:37.531Z - info: Assets built
+2020-08-28T07:00:37.532Z - info: Generating landing page...
+2020-08-28T07:00:39.299Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-08-28T07:00:39.423Z - info: Website generation (lazy) complete! Total build time: 33.198s
+2020-08-28T07:00:40.463Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-08-28T07:00:40.463Z - info: Press CTRL+C to stop ...
+2020-08-28T07:00:40.538Z - info: Site data built
+2020-08-28T07:01:01.504Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\index as some of its dependencies were changed since the last visit
+2020-08-28T07:01:02.697Z - info: Site data built
+2020-08-28T07:01:02.698Z - info: Lazy website regeneration complete! Total build time: 1.195s
+2020-08-28T07:02:38.247Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\admin as some of its dependencies were changed since the last visit
+2020-08-28T07:02:39.066Z - info: Site data built
+2020-08-28T07:02:39.066Z - info: Lazy website regeneration complete! Total build time: 0.82s
+2020-08-28T07:02:42.884Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\project as some of its dependencies were changed since the last visit
+2020-08-28T07:02:44.693Z - info: Site data built
+2020-08-28T07:02:44.693Z - info: Lazy website regeneration complete! Total build time: 1.81s
+2020-08-28T07:04:13.916Z - info: [3:04:13 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\tp-tasks.mbdf
+2020-08-28T07:04:14.931Z - info: Rebuilding 1 pages
+2020-08-28T07:04:16.908Z - info: Pages rebuilt
+2020-08-28T07:04:16.909Z - info: Website regeneration complete! Total build time: 1.981s
+2020-08-28T07:04:16.919Z - info: Site data built
+2020-08-28T07:06:33.748Z - info: Website generation started at 3:06:30 PM
+2020-08-28T07:06:46.581Z - info: Building assets...
