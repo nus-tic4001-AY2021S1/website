@@ -150,7 +150,8 @@
                       <p><strong>If you did well in the TIC2002 project</strong>, use this as an opportunity to stretch yourself and improve your skills further <span class="dimmed">e.g., go beyond the minimum requirements, try different design options</span></p>
                     </div>
                     <p><strong>All skills you will learn in the iP will be useful in the team project (tP)</strong>. Furthermore, some of the iP code can be adapted for the tP.<br>
-                      <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The more you do in the iP and farther you push beyond the minimal expectations, the easier it will be in your tP.</p>
+                      <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> The more you do in the iP and farther you push beyond the minimal expectations, the easier it will be in your tP.
+                    </p>
                     <p><strong>The iP is based on the generic project called <a href="/website/se-book-adapted/projectDuke/index.html"><em>Project Duke</em></a></strong>, the overview of which is given below.</p>
                     <div>
                       <div class="indented">
@@ -252,7 +253,8 @@
                   <table class="two-column-content">
                     <tr>
                       <td width="160px">
-                        <img src="/website/admin/images/JamesGosling.png" width="150px"></td>
+                        <img src="/website/admin/images/JamesGosling.png" width="150px">
+                      </td>
                       <td>
                         <p><mark><strong>The main language</strong> used in this module is Java</mark>. You should use
                           Java for all programming activities, the project, and exam answers.</p>
@@ -280,7 +282,8 @@
                   <box>
                     <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong></span></p>
                     <p><strong>Install Git and a Git GUI client</strong> on your computer.<br>
-                      <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> SourceTree comes bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot. If you are already comfortable using Git command line, you need not install/use a GUI client.</p>
+                      <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> SourceTree comes bundled with Git i.e., if you install SourceTree, you get both Git and a GUI client in one shot. If you are already comfortable using Git command line, you need not install/use a GUI client.
+                    </p>
                     <div id="git-username">
                       <p><strong>Set Git <code v-pre>user.name</code></strong>: We use various tools to analyze your code. For us to be able to identify your commits, we encourage you to <mark>set your Git <code v-pre>user.name</code> in all computers you use</mark> to a sensible string that uniquely identifies you. For example, <mark>you can set it to your GitHub username or your full name</mark>. If this user name is not set properly or if you use multiple usernames for Git, our grading scripts might miss some of your work.</p>
                       <p>After installing Git in a computer, you can set the Git username as follows:</p>
@@ -334,7 +337,8 @@
                         <b-modal id="modal:creatingGitHubAccount-photoCriteria" hide-footer size="lg" modal-class="mb-zoom" ref="modal:creatingGitHubAccount-photoCriteria" class="algolia-no-index"><template slot="modal-title">Our requirements for the profile photo</template>
                             <div>
                             <p>The purpose of the profile photo is for the reader to identify you. Therefore, choose a <mark>recent individual photo showing your face clearly</mark> (i.e., not too small) -- somewhat similar to a passport photo. Given below are some examples of good and bad profile photos.<br>
-                              <img src="/website/admin/images/profilephotos.png" style="width: 365.33px"></p>
+                              <img src="/website/admin/images/profilephotos.png" style="width: 365.33px">
+                            </p>
                             <p>If you are uncomfortable posting your photo due to security reasons, you can post a lower resolution image so that it is hard for someone to misuse that image for fraudulent purposes. If you are concerned about privacy, you may use <a href="https://en.wikipedia.org/wiki/File:Portrait_placeholder.png">a placeholder image</a> in place of the photo in module-related documents that are publicly visible.</p>
                           </div>
                         </b-modal>
@@ -375,7 +379,8 @@
             <ol>
               <li>Fork <a href="https://github.com/nus-tic4001-AY2021S1/ip">https://github.com/nus-tic4001-AY2021S1/ip</a>.</li>
               <li><mark>Enable the issue tracker of your fork</mark> (Go to <code v-pre>Settings</code> of your fork, scroll to the <code v-pre>Features</code> section, and tick the <code v-pre>Issues</code> checkbox). <span class="dimmed">Reason: at times we post feedback on your issue tracker.</span><br>
-                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the issue tracker is enabled, you should be able to visit the following URL <code v-pre>https://github.com/{your_user_name}/ip/issues</code> e.g., <code v-pre>https://github.com/johnDoe/ip/issues</code></li>
+                <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> If the issue tracker is enabled, you should be able to visit the following URL <code v-pre>https://github.com/{your_user_name}/ip/issues</code> e.g., <code v-pre>https://github.com/johnDoe/ip/issues</code>
+              </li>
               <li>Clone the fork onto your computer.</li>
               <li>Set up the project in your IDE as explained in <a href="https://github.com/nus-tic4001-AY2021S1/ip/blob/master/README.md">the README file</a>.<br></li>
             </ol>
@@ -389,6 +394,7 @@
               </ul>
             </div>
           </div>
+          <div></div>
           <div>
             <div class="indented">
               <div class="indented border">
@@ -403,7 +409,8 @@
                     <h3 id="level-0-greet">Level 0. Greet<span id="level-0-greet" class="anchor"></span><a class="fa fa-anchor" href="#level-0-greet" onclick="event.stopPropagation()"></a></h3>
                     <p>Implement an initial <em>skeletal</em> version of the Duke that simply greets the user and exits.
                       <br>
-                      Example:</p>
+                      Example:
+                    </p>
                     <pre><code class="no-line-numbers hljs" v-pre><span>____________________________________________________________<br></span><span> Hello! I'm Duke<br></span><span> What can I do for you?<br></span><span>____________________________________________________________<br></span><span> Bye. Hope to see you again soon!<br></span><span>____________________________________________________________<br></span></code></pre>
                     <ul>
                       <li>The indentation and horizontal lines are optional.</li>
@@ -413,6 +420,8 @@
               </div>
             </div>
           </div>
+          <div></div>
+          <div></div>
           <div>
             <div class="indented">
               <div class="indented border">
@@ -427,7 +436,8 @@
                     <h3 id="level-1-greet-echo-exit">Level 1. Greet, Echo, Exit<span id="level-1-greet-echo-exit" class="anchor"></span><a class="fa fa-anchor" href="#level-1-greet-echo-exit" onclick="event.stopPropagation()"></a></h3>
                     <p>Implement a <em>skeletal</em> version of Duke that starts by greeting the user, simply echos commands entered by the user, and exits when the user types <code v-pre>bye</code>.
                       <br>
-                      Example:</p>
+                      Example:
+                    </p>
                     <pre><code class="no-line-numbers hljs" v-pre><span>    ____________________________________________________________<br></span><span>     Hello! I'm Duke<br></span><span>     What can I do for you?<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>list<br></span><span>    ____________________________________________________________<br></span><span>     list<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     blah<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>bye<br></span><span>    ____________________________________________________________<br></span><span>     Bye. Hope to see you again soon!<br></span><span>    ____________________________________________________________<br></span><span><br></span></code></pre>
                     <ul>
                       <li>The indentation and horizontal lines are optional.</li>
@@ -442,6 +452,8 @@
               </div>
             </div>
           </div>
+          <div></div>
+          <div></div>
           <div>
             <div class="indented">
               <div class="indented border">
@@ -466,6 +478,8 @@
               </div>
             </div>
           </div>
+          <div></div>
+          <div></div>
           <div>
             <div class="indented">
               <div class="indented border">
@@ -508,6 +522,7 @@
               </div>
             </div>
           </div>
+          <div></div>
           <p></p>
         </div>
       </div>
@@ -534,7 +549,8 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 11 Sep 2020, 22:51:34 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 17 Sep 2020, 0:30:28 GMT+8]</small>
+      </div>
     </footer>
   </div>
 </body>

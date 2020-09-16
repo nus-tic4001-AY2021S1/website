@@ -100,7 +100,8 @@
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Module Structure
                 <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
+              </div>
               <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
                 <li>
                   <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/weeklySchedule.html"><small>Weekly Schedule</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
@@ -125,7 +126,8 @@
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Individual Project (iP)
                 <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
+              </div>
               <ul class="site-nav-dropdown-container site-nav-list">
                 <li>
                   <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-overview.html"><small>iP (Individual Project): Overview</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
@@ -156,7 +158,8 @@
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Team Project (tP)
                 <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
+              </div>
               <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
                 <li>
                   <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-expectations.html"><small>tP (team project): Expectations</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
@@ -229,7 +232,8 @@
             <li>
               <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Appendices
                 <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div>
+                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
+              </div>
               <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
                 <li>
                   <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixA-principles.html"><small>Apdx A: Module Principles</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
@@ -312,13 +316,9 @@
               <div>
                 <ul>
                   <li>
-                    <p>
-                      <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Do a sincere job in this task as the DG will be reviewed during this week's lecture.
+                    <p><strong>Add the following to the DG</strong>, based on your project notes from the previous weeks.<br>
+                      <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some examples of these can be found in the <a href="https://nus-tic4001-ay2021s1.github.io/tp/DeveloperGuide.html#product-scope">AB3 Developer Guide</a>.
                     </p>
-                  </li>
-                  <li>
-                    <p>Update the following in the DG, based on your project notes from the previous weeks.<br>
-                      <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some examples of these can be found in the <a href="https://nus-tic4001-ay2021s1.github.io/tp/DeveloperGuide.html#product-scope">AB3 Developer Guide</a>.</p>
                     <ul>
                       <li><strong>Target user profile</strong>, <strong>value proposition</strong>, and <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()" class="trigger-click"><strong>user stories</strong></span>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.</li>
                       <li><span trigger="click" for="modal:v10-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-nfr'].show()" class="trigger-click"><strong>Non-functional requirements</strong></span>:
@@ -692,7 +692,8 @@ Extensions:
                           </p>
                           <p>We will be using a tool called <a href="http://reposense.org">RepoSense</a> to make it <strong>easier for you to see (and learn from) code written by others</strong>, and to help us see who wrote which part of the code.</p>
                           <pic src="https://reposense.org/images/report-features.png" alt="RepoSense report screenshot">
-                            <sub>Figure: RepoSense Report Features</sub></pic>
+                            <sub>Figure: RepoSense Report Features</sub>
+                          </pic>
                           <p><strong>Viewing the current status of code authorship data:</strong></p>
                           <ul>
                             <li>The reports generated by the tool for the individual and team projects will be made available in the module website at some point in the semester. The feature that is most relevant to you is the <em>Code Panel</em> (shown on the right side of the screenshot above). It shows the code attributed to a given author.</li>
@@ -809,7 +810,8 @@ Extensions:
                     </panel>
                   </div>
                   <p></p>
-                </span></div>
+                </span>
+              </div>
               <p></p>
             </div>
           </div>
@@ -840,7 +842,8 @@ Extensions:
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 11 Sep 2020, 22:51:34 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 17 Sep 2020, 0:30:28 GMT+8]</small>
+      </div>
     </footer>
   </div>
 </body>

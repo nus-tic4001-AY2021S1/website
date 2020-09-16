@@ -117,7 +117,8 @@
                     <li><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-1a">W10.1a</a>] <span>Implementation → Documentation → Introduction →
                         </span></span> <span>What</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
               <ul>
                 <li>[<a href="/website/schedule/week10/topics.html#W10-2">W10.2</a>] <strong>Types of Testing</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
@@ -181,7 +182,8 @@
                     <li><span class="dimmed">[<a href="/website/schedule/week10/topics.html#W10-2k">W10.2k</a>] <span>Quality Assurance → Testing → Alpha/Beta Testing →
                         </span></span> <span>What</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week10/topics.html#W10-3">W10.3</a>] <strong>Test Case Design</strong> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -213,7 +215,8 @@
                           </span></span> <span>Testing based on use cases</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week10/topics.html#W10-4">W10.4</a>] <strong>Equivalence Partitioning</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -233,7 +236,8 @@
                           </span></span> <span>Intermediate</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <ul>
                 <li>[<a href="/website/schedule/week10/topics.html#W10-5">W10.5</a>] <strong>Boundary Value Analysis</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li>
               </ul>
@@ -249,9 +253,11 @@
                           </span></span> <span>How</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></p>
                     </li>
                   </ul>
-                </small></div>
+                </small>
+              </div>
               <p></p>
-            </span></panel>
+            </span>
+          </panel>
           <hr style="border: 1px dotted #cccccc;">
           <p><span id="W10-1"></span></p>
           <div></div>
@@ -895,7 +901,8 @@
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here's how a hybrid unit+integration approach could be applied to the same example used above:</p>
                         <p>(a) First, unit test <code v-pre>Engine</code> and <code v-pre>Wheel</code>.<br>
                           <s>(b) Next, unit test <code v-pre>Car</code> in isolation of <code v-pre>Engine</code> and <code v-pre>Wheel</code>, using stubs for <code v-pre>Engine</code> and <code v-pre>Wheel</code>.</s><br>
-                          (c) After that, do an integration test for <code v-pre>Car</code> using it together with the <code v-pre>Engine</code> and <code v-pre>Wheel</code> classes to ensure the <code v-pre>Car</code> integrates properly with the <code v-pre>Engine</code> and the <code v-pre>Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code v-pre>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code v-pre>Car</code> with <code v-pre>Wheel</code> and <code v-pre>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).</p>
+                          (c) After that, do an integration test for <code v-pre>Car</code> using it together with the <code v-pre>Engine</code> and <code v-pre>Wheel</code> classes to ensure the <code v-pre>Car</code> integrates properly with the <code v-pre>Engine</code> and the <code v-pre>Wheel</code>. <mark>This step should include test cases that are meant to test the unit <code v-pre>Car</code></mark> (i.e. test cases used in the step (b) of the example above) as well as test cases that are meant to test the integration of <code v-pre>Car</code> with <code v-pre>Wheel</code> and <code v-pre>Engine</code> (i.e. pure integration test cases used of the step (c) in the example above).
+                        </p>
                         <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Note that you no longer need stubs for <code v-pre>Engine</code> and <code v-pre>Wheel</code>. The downside is that <code v-pre>Car</code> is never tested in isolation of its dependencies. Given that its dependencies are already unit tested, the risk of bugs in <code v-pre>Engine</code> and <code v-pre>Wheel</code> affecting the testing of <code v-pre>Car</code> can be considered minimal.</p>
                       </box>
                     </div>
@@ -1267,7 +1274,8 @@
                       </box>
                       <blockquote>
                         <p>Program testing can be used to show the presence of bugs, but never to show their absence!<br>
-                          <sub>--Edsger Dijkstra</sub></p>
+                          <sub>--Edsger Dijkstra</sub>
+                        </p>
                       </blockquote>
                       <div id="e-and-e">
                         <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
@@ -1796,7 +1804,8 @@
                       </box>
                       <p>It is inefficient and impractical to test this method for all integer values <code v-pre>[-MIN_INT to MAX_INT]</code>. Fortunately, there is no need to test all possible input values. For example, if the input value <code v-pre>233</code> failed to produce the correct result, the input <code v-pre>234</code> is likely to fail too; there is no need to test both.</p>
                       <p>In general, <strong>most SUTs do not treat each input in a unique way. Instead, they process all possible inputs in a small number of distinct ways.</strong> That means a range of inputs is treated the same way inside the SUT.
-                        <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong></p>
+                        <strong><em>Equivalence partitioning (EP)</em> is a test case design technique that uses the above observation to improve the E&amp;E of testing.</strong>
+                      </p>
                       <box type="definition" seamless>
                         <div>
                           <p><strong>Equivalence partition (aka equivalence class)</strong>: A group of test inputs that are likely to be processed by the SUT in the same way.</p>
@@ -1986,7 +1995,8 @@
                       </ul>
                       <box>
                         <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider this method in the <code v-pre>DataStack</code> class:
-                          <code v-pre>push(Object o): boolean</code></p>
+                          <code v-pre>push(Object o): boolean</code>
+                        </p>
                         <ul>
                           <li>Adds o to the top of the stack if the stack is not full.</li>
                           <li>returns <code v-pre>true</code> if the push operation was a success.</li>
@@ -2140,7 +2150,8 @@
                             <tr>
                               <td>
                                 <p>[MIN_INT, 0]<br>
-                                  <span class="dimmed">(MIN_INT is the minimum possible integer value allowed by the environment)</span></p>
+                                  <span class="dimmed">(MIN_INT is the minimum possible integer value allowed by the environment)</span>
+                                </p>
                               </td>
                               <td>
                                 <p>MIN_INT, MIN_INT+1, -1, 0 , 1</p>
@@ -2169,7 +2180,8 @@
                             <tr>
                               <td>
                                 <p>[non-empty Stack]<br>
-                                  <span class="dimmed">(assuming a fixed size stack)</span></p>
+                                  <span class="dimmed">(assuming a fixed size stack)</span>
+                                </p>
                               </td>
                               <td>
                                 <p>Stack with: one element, two elements, no empty spaces, only one empty space</p>
@@ -2224,7 +2236,8 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 11 Sep 2020, 22:51:34 GMT+8]</small></div>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 17 Sep 2020, 0:30:28 GMT+8]</small>
+      </div>
     </footer>
   </div>
 </body>
