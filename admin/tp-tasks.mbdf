@@ -40,6 +40,9 @@
 
 <include src="tp-tasks.mbdf#milestoneCumulative" />
 </box>
+
+{{ embed_topic("tp-supervision.md#making-project-decisions", "Admin " + icon_embedding + " tP → Supervision (Extract) → **Tutor's role in making project decisions**", "3", indent="1") }}
+
 </span>
 
 {#====================================================================================================================#}
@@ -338,10 +341,12 @@ Update the following pages in your project repo:
 </div>
 
 * **_AboutUs_ page**:
-  This page is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
+  This page (in the `/docs` folder) is used for module admin purposes. ==Please follow the format closely== or else our scripts will not be able to give credit for your work.
   * Add your own details. Include a ==suitable photo== as described <trigger trigger="click" for="modal:mid-v12-photo">here</trigger>.
   * Including the the supervisor/lecturer is optional.
-  * The filename of the profile photo should be `doc/images/githbub_username_in_lower_case.png` %%e.g. `docs/images/damithc.png`%%. ==If your photo is in jpg format, name the file as `.png` anyway==.
+  * The filename of the profile photo should be `doc/images/githbub_username_in_lower_case.png`<br>
+    ==Note the need for lower case== (<tooltip content="GitHub usernames are not case sensitive, but URLs in GitHub-pages are -- to avoid any mismatches, we have fixed the file name here to be lower case">%%why lowercase?%%</tooltip>) %%e.g. `JohnDoe123` -> `docs/images/johndoe123.png`%%.<br>
+    ==If your photo is in jpg format, name the file as `.png` anyway==.
   * Indicate the different roles played and responsibilities held by each team member. You can reassign these <trigger trigger="click" for="modal:midv11-rolesAndResponsibilities">roles and responsibilities %%(as explained in Admin {{ icon_embedding }} Project Scope)%%</trigger> later in the project, if necessary.
 
 <modal large header="Admin {{ icon_embedding }} Choosing a profile photo" id="modal:mid-v12-photo">
@@ -423,7 +428,7 @@ Update the following pages in your project repo:
 <span id="heading_do_a_practice_iteration">{{ icon_team }} Do a practice iteration</span>
 <span id="desc_do_a_practice_iteration">
 
-* To get some practice of doing project iterations, do this week's tP work as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
+* To get some practice of doing project iterations, do this week's tP work (i.e., updates to various documents) as if it is a project iteration that will reach a milestone `{{ version_practice }}`, as explained in the pane below.
 
 {{ embed_topic("appendixE-gitHub.md#tp-schedule-tracking", "Admin " + icon_embedding + " Appendix E(extract): **Project schedule tracking**", "1", indent="2") }}
 
@@ -447,7 +452,7 @@ Update the following pages in your project repo:
   Optionally, you can define a `mid-{{ version_first }}` milestone to keep track of things to be done within the first half of the milestone.
 </span>
 {#====================================================================================================================#}
-<span id="heading_start_implementing_the_next_version">{{ icon_individual }} start implementing the next version</span>
+<span id="heading_start_implementing_the_next_version">{{ icon_individual }} Start implementing the next version</span>
 <span id="desc_start_implementing_the_next_version">
 
 * If you have time, start implementing v1.2.
@@ -524,7 +529,8 @@ Update the following pages in your project repo:
 <span id="heading_add_first_functionality_increment">{{ icon_individual }} Add the first functionality increment</span>
 <span id="desc_add_first_functionality_increment">
 
-* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).
+* Add functionality in small steps, aiming to deliver the first working version of your product by the mid-milestone (i.e., in one week), and {{ version_first }} at the end of this iteration (i.e., in two weeks).<br>
+  **If you split the iteration into two smaller iterations** of one-week each (recommended), name the first one `{{ version_first }}` and the second one `{{ version_first }}b` so that the dashboard can track them accurately.
 
 * {{ icon_important_big_red }} **From this point onwards each member is expected to contribute <tooltip content="the amount of code does not matter; even small contributions are acceptable">some</tooltip> code to each <tooltip content="{{ version_penultimate }}, {{ version_final }}"> milestone</tooltip>, preferably each week; only merged code is considered as contributions** %%<popover content="The ability to deliver code incrementally is an important learning outcome of this module because incremental delivery, among other things, improves the _visibility_ of your work.">(Reason)</popover>%%. <br>
 </span>
