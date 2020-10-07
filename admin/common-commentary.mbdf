@@ -358,7 +358,7 @@ So far, your iP may have assumed a 'perfect world' e.g., user input is always in
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Logging") }}">
-Given next are **two techniques that help you locate problems in the code**.
+Given next are **two techniques that help you locate problems in the code**: _logging_, and _assertions_
 </div>
 <!-- ==================================================================================================== -->
                                     Testing
@@ -579,9 +579,9 @@ Given next are **two design principles that we can apply when designing OOP syst
 <div id="{{ slugify("Design Patterns") }}">
 Previously, you learned:
 * Three basic design quality aspects: abstraction, coupling, cohesion
-* Two design principles that aims to improve those aspects: SRP, SoC. There are many more principles but we covered only two (to reduce workload) just to give you a taste only.
+* Two design principles that aims to improve those aspects: SRP, SoC. <span tags="m--cs2113">There are many more principles but we covered only two (to reduce workload) just to give you a taste only.</span>
 
-**This week, we cover _design patterns_, a concept that builds upon the above**. Again, we limit to only two of them, for similar reasons.
+**This week, we cover _design patterns_, a concept that builds upon the above**. <span tags="m--cs2113">Again, we limit to only two of them, for similar reasons.</span>
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("designPatterns-introduction-what") }}">
