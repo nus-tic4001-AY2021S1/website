@@ -1279,7 +1279,9 @@
               </template>
               <div class="indented">
                 <span class="badge badge-light">
-                  <span><span class="dimmed"><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></span></span></span>
+                  <span><span class="dimmed">
+                      <font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+                    </span></span></span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain automated GUI testing</span></span></span></span>
                 <p></p>
                 <div>
@@ -1448,7 +1450,9 @@
               </template>
               <div class="indented">
                 <span class="badge badge-light">
-                  <span><span class="dimmed"><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></span></span>
+                  <span><span class="dimmed">
+                      <font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+                    </span></span></span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain dependency injection</span></span></span></span>
                 <p></p>
                 <div>
@@ -1549,7 +1553,9 @@
               </template>
               <div class="indented">
                 <span class="badge badge-light">
-                  <span><span class="dimmed"><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></span></span>
+                  <span><span class="dimmed">
+                      <font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+                    </span></span></span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can use dependency injection</span></span></span></span>
                 <p></p>
                 <div>
@@ -1686,7 +1692,9 @@
               </template>
               <div class="indented">
                 <span class="badge badge-light">
-                  <span><span class="dimmed"><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></span></span>
+                  <span><span class="dimmed">
+                      <font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+                    </span></span></span>
                 <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain TDD</span></span></span></span>
                 <p></p>
                 <div>
@@ -1724,6 +1732,32 @@
                     </panel>
                   </div>
                 </div>
+              </div>
+            </panel>
+            <panel type="seamless" expanded id="how-4"><template slot="_header">
+                <h4 id="how-4">How<span id="how-4" class="anchor"></span><a class="fa fa-anchor" href="#how-4" onclick="event.stopPropagation()"></a></h4>
+              </template>
+              <div class="indented">
+                <span class="badge badge-light">
+                  <span><span class="dimmed">
+                      <font color="ForestGreen"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font>
+                    </span></span></span>
+                <span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can follow TDD</span></span></span></span>
+                <p></p>
+                <div>
+                  <p>Note that TDD does not imply writing all the test cases first before writing functional code. Rather, proceed in small steps:</p>
+                  <ol>
+                    <li>Decide what behavior to implement.</li>
+                    <li>Write test cases to test that behavior.</li>
+                    <li>Run those test cases and watch them fail.</li>
+                    <li>Implement the behavior.</li>
+                    <li>Run the test case.</li>
+                    <li>Keep modifying the code and rerunning test cases until they all pass.</li>
+                    <li>Refactor code to improve quality.</li>
+                    <li>Repeat the cycle for each small unit of behavior that needs to be implemented.</li>
+                  </ol>
+                </div>
+                <div></div>
               </div>
             </panel>
           </panel>
@@ -1806,6 +1840,7 @@
               <a class="nav-link py-1" href="#tdd">TDD&#x200E;</a>
               <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
                 <a class="nav-link py-1" href="#what-14">What&#x200E;</a>
+                <a class="nav-link py-1" href="#how-4">How&#x200E;</a>
               </nav>
             </nav>
 
@@ -1816,7 +1851,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 9 Oct 2020, 22:34:10 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 13 Oct 2020, 13:25:34 GMT+8]</small>
       </div>
     </footer>
   </div>

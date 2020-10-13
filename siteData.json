@@ -1828,7 +1828,6 @@
         "intermediate": "Intermediate",
         "what-3": "What",
         "how": "How",
-        "testing-based-on-use-cases": "Testing Based on Use Cases",
         "test-case-design": "Test case design"
       },
       "headingKeywords": {}
@@ -1884,6 +1883,7 @@
         "what-13": "What",
         "how-3": "How",
         "what-14": "What",
+        "how-4": "How",
         "testing": "Testing"
       },
       "headingKeywords": {}

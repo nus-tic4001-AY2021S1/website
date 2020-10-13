@@ -5405,43 +5405,6 @@ Extensions:
                 </div>
               </div>
             </div>
-            <div class="indented-less">
-              <h4 id="automated-testing-of-guis">Automated Testing of GUIs <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#automated-testing-of-guis" onclick="event.stopPropagation()"></a></h4>
-              <div class="indented-less">
-                <div>
-                  <p>If a software product has a GUI(Graphical User Interface) component, all product-level testing (i.e. the types of testing mentioned above) need to be done using the GUI. However, <strong>testing the GUI is much harder than testing the CLI (command line interface) or API</strong>, for the following reasons:</p>
-                  <ul>
-                    <li>Most GUIs can support a large number of different operations, many of which can be performed in any arbitrary order.</li>
-                    <li>GUI operations are more difficult to automate than API testing. Reliably automating GUI operations and automatically verifying whether the GUI behaves as expected is harder than calling an operation and comparing its return value with an expected value. Therefore, automated regression testing of GUIs is rather difficult.</li>
-                    <li>The appearance of a GUI (and sometimes even behavior) can be different across platforms and even environments. For example, a GUI can behave differently based on whether it is minimized or maximized, in focus or out of focus, and in a high resolution display or a low resolution display.</li>
-                  </ul>
-                  <img src="/website/book/testing/testAutomation/testingGuis/images/diagram.png" height="120">
-                  <p></p>
-                  <p><strong>Moving as much logic as possible out of the GUI can make the GUI testing easier.</strong> That way, you can bypass the GUI to test the rest of the system using automated API testing. While this still requires the GUI to be tested, the number of such test cases can be reduced as most of the system has been tested using automated API testing.</p>
-                  <p><strong>There are testing tools that can automate GUI testing.</strong></p>
-                  <box>
-                    <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some tools used for automated GUI testing:</p>
-                    <ul>
-                      <li>
-                        <p><strong>TestFx</strong> can do automated testing of JavaFX GUIs<br></p>
-                      </li>
-                      <li>
-                        <p><strong>VisualStudio</strong> supports ‘record replay’ type of GUI test automation.</p>
-                      </li>
-                      <li>
-                        <p><a href="http://seleniumhq.org/"><strong>Selenium</strong></a> can be used to automate testing of Web application UIs<br></p>
-                        <panel type="seamless" class="non-printable algolia-no-index"><template slot="_header">
-                            <p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> demo video of automated testing of a Web application</p>
-                          </template>
-                          <p>This video shows automated testing of the <a href="http://github.com/teammates/teammates">TEAMMATES</a> Web app using Selenium</p>
-                          <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/ihst69Zq1xM" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
-                        </panel>
-                      </li>
-                    </ul>
-                  </box>
-                </div>
-              </div>
-            </div>
           </div>
           <p>
           <div>
@@ -5501,18 +5464,6 @@ Extensions:
               </div>
             </div>
           </div>
-          <p>
-          <div>
-            <h2 id="dependency-injection"><span>Dependency injection</span><a class="fa fa-anchor" href="#dependency-injection" onclick="event.stopPropagation()"></a></h2>
-          </div>
-          </p>
-          <div class="indented-less"></div>
-          <p>
-          <div>
-            <h2 id="tdd"><span>TDD</span><a class="fa fa-anchor" href="#tdd" onclick="event.stopPropagation()"></a></h2>
-          </div>
-          </p>
-          <div class="indented-less"></div>
           <p style="page-break-after: always;">&nbsp;</p>
           <div id="title">
             <div>
@@ -5526,7 +5477,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-50">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-50" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-50">What <span class="badge badge-light"><small><small>
+                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#what-50" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Except for trivial <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUTs</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">testing all possible cases</span>exhaustive testing</span> is not practical</strong> because such testing often requires a massive/infinite number of test cases.</p>
@@ -5565,7 +5518,9 @@ Extensions:
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="positive-vs-negative-test-cases">Positive vs Negative Test Cases <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#positive-vs-negative-test-cases" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="positive-vs-negative-test-cases">Positive vs Negative Test Cases <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#positive-vs-negative-test-cases" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>A <em>positive test case</em> is when the test is designed to produce an expected/valid behavior. A negative test case is designed to produce a behavior that indicates an invalid/unexpected situation, such as an error message.</strong></p>
@@ -5580,7 +5535,9 @@ Extensions:
               </div>
             </div>
             <div class="indented-less">
-              <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#black-box-vs-glass-box" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="black-box-vs-glass-box">Black Box vs Glass Box <span class="badge badge-light"><small><small>
+                      <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
+                    </small></small></span><a class="fa fa-anchor" href="#black-box-vs-glass-box" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Test case design can be of three types, based on how much of SUT internal details are considered when designing test cases:</strong></p>
@@ -5894,131 +5851,7 @@ Extensions:
             <h2 id="more-2"><span>More</span><a class="fa fa-anchor" href="#more-2" onclick="event.stopPropagation()"></a></h2>
           </div>
           </p>
-          <div class="indented-less">
-            <div class="indented-less">
-              <h4 id="testing-based-on-use-cases">Testing Based on Use Cases <span class="badge badge-light"><small><small>
-                      <font color="DodgerBlue"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#testing-based-on-use-cases" onclick="event.stopPropagation()"></a></h4>
-              <div class="indented-less">
-                <div>
-                  <p><strong>Use cases can be used for system testing and acceptance testing</strong>. For example, the main success scenario can be one test case while each variation (due to extensions) can form another test case. However, note that use cases do not specify the exact data entered into the system. Instead, it might say something like <code v-pre>user enters his personal data into the system</code>. Therefore, the tester has to choose data by considering equivalence partitions and boundary values. The combinations of these could result in one use case producing many test cases.</p>
-                  <p>To increase <span trigger="click" for="modal:usebaseBased-EandE" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usebaseBased-EandE'].show()" class="trigger-click">E&amp;E of testing</span>, high-priority use cases are given more attention. For example, a <span trigger="click" for="modal:usecaseBased-scripted" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:usecaseBased-scripted'].show()" class="trigger-click">scripted approach</span> can be used to test high priority test cases, while an exploratory approach is used to test other areas of concern that could emerge during testing.</p>
-                  <b-modal id="modal:usebaseBased-EandE" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usebaseBased-EandE" class="algolia-no-index"><template slot="modal-title">Quality Assurance → Test Case Design → Introduction → (extract) E&amp;E of testing</template>
-                    <div>
-                      <p><strong>Every test case adds to the cost of testing.</strong> In some systems, a single test case can cost thousands of dollars <span class="dimmed">e.g. on-field testing of flight-control software</span>. Therefore, <strong>test cases need to be designed to make the best use of testing resources.</strong> In particular:</p>
-                      <ul>
-                        <li>
-                          <p><strong>Testing should be <em>effective</em></strong> i.e., it finds a high percentage of existing bugs <span class="dimmed">e.g., a set of test cases that finds 60 defects is more effective than a set that finds only 30 defects in the same system</span>.</p>
-                        </li>
-                        <li>
-                          <p><strong>Testing should be <em>efficient</em></strong> i.e., it has a high rate of success (bugs found/test cases) <span class="dimmed">a set of 20 test cases that finds 8 defects is more efficient than another set of 40 test cases that finds the same 8 defects</span>.</p>
-                        </li>
-                      </ul>
-                      <p><strong>For testing to be <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Efficient and Effective</span>E&amp;E</span>, each new test you add should be targeting a potential fault that is not already targeted by existing test cases.</strong> There are test case design techniques that can help us improve E&amp;E of testing.</p>
-                    </div>
-                  </b-modal>
-                  <b-modal id="modal:usecaseBased-scripted" hide-footer size="lg" modal-class="mb-zoom" ref="modal:usecaseBased-scripted" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
-                    <div>
-                      <div></div>
-                      <p></p>
-                      <p><span class="dimmed"><strong><span>Quality Assurance → Testing → Exploratory and Scripted Testing →
-                            </span></strong></span></p>
-                      <div id="title-and-body">
-                        <div>
-                          <h4 id="what-53"><span>What</span><a class="fa fa-anchor" href="#what-53" onclick="event.stopPropagation()"></a></h4>
-                        </div>
-                        <div id="main">
-                          <div>
-                            <p><strong>Here are two alternative approaches to testing a software: <em>Scripted</em> testing and <em>Exploratory</em> testing</strong></p>
-                            <ol>
-                              <li>
-                                <p><strong>Scripted testing:</strong> First write a set of test cases based on the expected behavior of the SUT, and then perform testing based on that set of test cases.</p>
-                              </li>
-                              <li>
-                                <p><strong>Exploratory testing:</strong> Devise test cases on-the-fly, creating new test cases based on the results of the past test cases.</p>
-                              </li>
-                            </ol>
-                            <p>Exploratory testing is ‘the simultaneous learning, test design, and test execution’ <span trigger="click" for="modal:exploratoryWhat-bach-et-explained" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:exploratoryWhat-bach-et-explained'].show()" class="trigger-click">[source: bach-et-explained]</span> whereby the nature of the follow-up test case is decided based on the behavior of the previous test cases. In other words, running the system and trying out various operations. It is called <em>exploratory testing</em> because testing is driven by observations during testing. Exploratory testing usually starts with areas identified as error-prone, based on the tester’s past experience with similar systems. One tends to conduct more tests for those operations where more faults are found.</p>
-                            <box>
-                              <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is an example thought process behind a segment of an exploratory testing session:</p>
-                              <blockquote>
-                                <p>“Hmm... looks like feature x is broken. This usually means feature n and k could be broken too; you need to look at them soon.
-                                  But before that, you should give a good test run to feature y because users can still use the product if feature y works, even if x doesn’t work. Now, if feature y doesn’t work 100%, you have a major problem and this has to be made known to the development team sooner rather than later...”</p>
-                              </blockquote>
-                            </box>
-                            <box>
-                              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <strong>Exploratory testing is also known as <em>reactive testing, error guessing technique, attack-based testing,</em> and <em>bug hunting</em>.</strong></p>
-                            </box>
-                            <b-modal id="modal:exploratoryWhat-bach-et-explained" hide-footer size modal-class="mb-zoom" ref="modal:exploratoryWhat-bach-et-explained" class="algolia-no-index"><template slot="modal-title">bach-et-explained <span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></template>
-                              <div>
-                                <p><a href="http://www.satisfice.com/articles/et-article.pdf"><em><strong>Exploratory Testing Explained</strong></em></a>, an online article by <a href="http://www.satisfice.com/aboutjames.shtml">James Bach</a> -- James Bach is an industry thought leader in software testing).</p>
-                              </div>
-                            </b-modal>
-                          </div>
-                          <div>
-                            <div>
-                              <panel expandable class="algolia-no-index"><template slot="_header">
-                                  <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
-                                </template>
-                                <div>
-                                  <panel class="algolia-no-index"><template slot="_header">
-                                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> statements about exploratory and scripted testing</p>
-                                    </template>
-                                    <question>
-                                      <p>Scripted testing requires tests to be written in a scripting language; Manual testing is called exploratory testing.</p>
-                                      <ul radio-group="db31a" class="radio-list">
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> True</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="db31a" type="radio"> False</label></li>
-                                      </ul>
-                                      <div slot="answer" class="algolia-no-index">
-                                        <p>False</p>
-                                        <p>Explanation: “Scripted” means test cases are predetermined. They need not be an executable script. However, exploratory testing is usually manual.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel class="algolia-no-index"><template slot="_header">
-                                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which testing technique is better?</p>
-                                    </template>
-                                    <question>
-                                      <p>Which testing technique is better?</p>
-                                      <ul radio-group="9fd35" class="radio-list">
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> a. error guessing</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> b. bug hunting</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> c. attack-based testing</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> d. reactive testing</label></li>
-                                        <li class="radio-list-item"><label><input class="radio-list-input" name="9fd35" type="radio"> e. These are different names used to describe exploratory testing.</label></li>
-                                      </ul>
-                                      <div slot="answer" class="algolia-no-index">
-                                        <p>(e)</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                                <div>
-                                  <panel class="algolia-no-index"><template slot="_header">
-                                      <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                    </template>
-                                    <question has-input="true">
-                                      <p>Explain the concept of exploratory testing using Minesweeper as an example.</p>
-                                      <div slot="answer" class="algolia-no-index">
-                                        <p>When we test the Minesweeper by simply playing it in various ways, especially trying out those that are likely to be buggy, that would be exploratory testing.</p>
-                                      </div>
-                                    </question>
-                                  </panel>
-                                </div>
-                              </panel>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </b-modal>
-                </div>
-              </div>
-            </div>
-          </div>
+          <div class="indented-less"></div>
           <p style="page-break-after: always;">&nbsp;</p>
           <h1 id="section-project-management"><strong>SECTION: PROJECT MANAGEMENT</strong><a class="fa fa-anchor" href="#section-project-management" onclick="event.stopPropagation()"></a></h1>
           <div id="title">
@@ -6028,7 +5861,7 @@ Extensions:
           </div>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-54">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-54" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-53">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-53" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <tabs>
@@ -6497,9 +6330,9 @@ Extensions:
           </p>
           <div class="indented-less">
             <div class="indented-less">
-              <h4 id="what-55">What <span class="badge badge-light"><small><small>
+              <h4 id="what-54">What <span class="badge badge-light"><small><small>
                       <font color="DarkOrange"><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></font><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span>
-                    </small></small></span><a class="fa fa-anchor" href="#what-55" onclick="event.stopPropagation()"></a></h4>
+                    </small></small></span><a class="fa fa-anchor" href="#what-54" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>Software development goes through different stages such as <em>requirements, analysis, design, implementation</em> and <em>testing</em>. These stages are collectively known as the <em>software development life cycle</em> (SDLC).</strong> There are several approaches, known as <em>software development life cycle models</em> (also called <em>software process models</em>) that describe different ways to go through the SDLC. Each process model prescribes a &quot;roadmap&quot; for the software developers to manage the development effort. The roadmap describes the aims of the development stage(s), the artifacts or outcome of each stage as well as the workflow i.e. the relationship between stages.</p>
@@ -6783,7 +6616,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-56">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-56" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-55">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-55" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML <em>class diagrams</em> describe the structure (but not the behavior) of an OOP solution.</strong> These are possibly the most often used diagrams in the industry and an indispensable tool for an OO programmer.</p>
@@ -6802,7 +6635,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-57">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-57" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-56">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-56" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>The basic UML notations used to represent a <em>class</em>:<br></p>
@@ -6910,7 +6743,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-58">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-58" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-57">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-57" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>You should use a solid line to show an association between two classes.</p>
@@ -7041,7 +6874,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-59">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-59" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-58">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-58" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a dashed arrow to show dependencies.</strong></p>
@@ -7062,7 +6895,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-60">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-60" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-59">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-59" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An association can be shown as an attribute instead of a line.</strong></p>
@@ -7091,7 +6924,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-61">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-61" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-60">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-60" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>Notation:</p>
@@ -7112,7 +6945,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-62">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-62" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-61">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-61" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>In UML class diagrams, <strong>underlines denote class-level attributes and variables.</strong></p>
@@ -7133,7 +6966,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-63">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-63" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-62">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-62" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a solid diamond symbol to denote composition.</strong></p>
@@ -7156,7 +6989,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-64">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-64" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-63">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-63" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>UML uses a hollow diamond is used to indicate an aggregation.</strong></p>
@@ -7182,7 +7015,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-65">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-65" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-64">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-64" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p>You can use a triangle and a solid line (not to be confused with an arrow) to indicate class inheritance.</p>
@@ -7205,7 +7038,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-66">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-66" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-65">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-65" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>An interface is shown similar to a class with an additional keyword <code v-pre>&lt;&lt;interface&gt;&gt;</code>. When a class implements an interface, it is shown similar to class inheritance except a dashed line is used instead of a solid line.</strong></p>
@@ -7225,7 +7058,7 @@ Extensions:
             </div>
             </p>
             <div class="indented-less">
-              <h4 id="what-67">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-67" onclick="event.stopPropagation()"></a></h4>
+              <h4 id="what-66">What <span class="badge badge-light"><small><small><span aria-hidden="true" class="glyphicon glyphicon-education"></span>: <span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star"></span><span aria-hidden="true" class="glyphicon glyphicon-star-empty"></span></small></small></span><a class="fa fa-anchor" href="#what-66" onclick="event.stopPropagation()"></a></h4>
               <div class="indented-less">
                 <div>
                   <p><strong>You can use <em>italics</em> or <code v-pre>{abstract}</code> (preferred) keyword to denote abstract classes/methods.</strong></p>
@@ -9071,7 +8904,7 @@ Extensions:
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 9 Oct 2020, 22:34:10 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 13 Oct 2020, 13:25:34 GMT+8]</small>
       </div>
     </footer>
   </div>
