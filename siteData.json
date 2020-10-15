@@ -786,7 +786,7 @@
         "tp-week-10-mid-v2-0": "tP week 10: mid-v2.0 ",
         "1-start-the-next-iteration": "1  Start the next iteration",
         "2-update-the-dg-user-stories-glossary-nfrs": "2  Update the DG: user stories, glossary, NFRs",
-        "3-make-the-code-reposense-compatible": "3  Make the code RepoSense-compatible"
+        "3-ensure-the-code-reposense-compatible": "3  Ensure the code RepoSense-compatible"
       },
       "headingKeywords": {}
     },

@@ -337,3 +337,246 @@
 2020-10-13T05:24:05.400Z - debug:  
 2020-10-13T05:25:16.153Z - info: Website generation started at 1:25:13 PM
 2020-10-13T05:25:27.714Z - info: Building assets...
+2020-10-13T05:25:34.309Z - info: Assets built
+2020-10-13T05:25:34.311Z - info: Generating pages...
+2020-10-13T05:25:50.711Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:25:50.712Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:25:53.985Z - debug:  
+2020-10-13T05:25:53.985Z - debug:  
+2020-10-13T05:25:53.985Z - debug:  
+2020-10-13T05:25:53.986Z - debug:  
+2020-10-13T05:25:53.995Z - debug:  
+2020-10-13T05:25:59.276Z - debug:  
+2020-10-13T05:25:59.276Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:25:59.276Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:25:59.276Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:25:59.277Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:25:59.277Z - debug:  
+2020-10-13T05:25:59.277Z - debug:  
+2020-10-13T05:25:59.277Z - debug:  
+2020-10-13T05:25:59.277Z - debug:  
+2020-10-13T05:26:02.082Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:02.087Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:02.460Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:02.461Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:03.509Z - debug:  
+2020-10-13T05:26:03.510Z - debug:  
+2020-10-13T05:26:18.652Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:19.481Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:20.156Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:20.157Z - debug:  
+2020-10-13T05:26:21.743Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:22.623Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:24.006Z - debug:  
+2020-10-13T05:26:25.642Z - debug:  
+2020-10-13T05:26:28.082Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:28.083Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:29.751Z - debug:  
+2020-10-13T05:26:29.961Z - debug:  
+2020-10-13T05:26:33.815Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:33.815Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:34.136Z - debug:  
+2020-10-13T05:26:34.213Z - debug:  
+2020-10-13T05:26:43.356Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:45.768Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T05:26:45.946Z - debug:  
+2020-10-13T05:27:12.996Z - debug:  
+2020-10-13T05:27:13.093Z - debug:  
+2020-10-13T05:27:13.093Z - debug:  
+2020-10-13T05:27:13.261Z - debug:  
+2020-10-13T05:27:21.172Z - debug:  
+2020-10-13T05:27:21.172Z - debug:  
+2020-10-13T05:27:21.172Z - debug:  
+2020-10-13T05:27:25.604Z - debug:  
+2020-10-13T05:27:29.041Z - debug:  
+2020-10-13T05:27:29.042Z - debug:  
+2020-10-13T05:27:29.042Z - debug:  
+2020-10-13T05:27:29.043Z - debug:  
+2020-10-13T05:27:37.936Z - debug:  
+2020-10-13T05:27:37.937Z - debug:  
+2020-10-13T05:27:37.937Z - debug:  
+2020-10-13T05:27:43.726Z - debug:  
+2020-10-13T05:27:49.993Z - debug:  
+2020-10-13T05:28:01.530Z - debug:  
+2020-10-13T05:28:06.616Z - debug:  
+2020-10-13T05:28:06.617Z - debug:  
+2020-10-13T05:28:35.583Z - debug:  
+2020-10-13T05:28:47.256Z - debug:  
+2020-10-13T05:28:47.256Z - debug:  
+2020-10-13T05:28:55.968Z - info: Pages built
+2020-10-13T05:29:24.599Z - info: Website generation complete! Total build time: 251.352s
+2020-10-13T05:29:24.600Z - info: Build success!
+2020-10-13T05:29:24.600Z - debug:  
+2020-10-13T05:29:24.607Z - info: Site data built
+2020-10-13T05:30:17.989Z - info: Deployed!
+2020-10-13T14:31:12.975Z - info: Website generation (lazy) started at 10:31:05 PM
+2020-10-13T14:31:23.551Z - info: Building assets...
+2020-10-13T14:31:29.715Z - info: Assets built
+2020-10-13T14:31:29.716Z - info: Generating landing page...
+2020-10-13T14:31:30.730Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-10-13T14:31:30.833Z - info: Website generation (lazy) complete! Total build time: 24.953s
+2020-10-13T14:31:32.087Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-10-13T14:31:32.088Z - info: Press CTRL+C to stop ...
+2020-10-13T14:31:32.221Z - info: Site data built
+2020-10-13T14:31:48.226Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\index as some of its dependencies were changed since the last visit
+2020-10-13T14:31:49.042Z - info: Site data built
+2020-10-13T14:31:49.043Z - info: Lazy website regeneration complete! Total build time: 0.818s
+2020-10-13T14:31:53.775Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\topics as some of its dependencies were changed since the last visit
+2020-10-13T14:31:56.943Z - info: Site data built
+2020-10-13T14:31:56.944Z - info: Lazy website regeneration complete! Total build time: 3.17s
+2020-10-13T14:32:39.290Z - info: [10:32:39 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\commentary-tic2002.mbdf
+2020-10-13T14:32:40.310Z - info: Rebuilding 1 pages
+2020-10-13T14:32:42.237Z - error:  Error: No such segment 'automating-the-build-process' in file: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+Missing reference in C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\commentary-box.md
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:264:21)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:349:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+    at Array.map (<anonymous>)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:43)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:298:50
+    at Array.map (<anonymous>)
+    at _preprocessInclude (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:298:41)
+    at preProcessComponent (C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:349:12)
+    at C:\Users\damithch\AppData\Roaming\npm\node_modules\markbind-cli\node_modules\@markbind\core\src\preprocessors\componentPreprocessor.js:356:52
+2020-10-13T14:32:44.024Z - info: Pages rebuilt
+2020-10-13T14:32:44.024Z - info: Website regeneration complete! Total build time: 3.716s
+2020-10-13T14:32:44.032Z - info: Site data built
+2020-10-13T14:34:48.653Z - info: [10:34:48 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\admin\common-commentary.mbdf
+2020-10-13T14:34:49.665Z - info: Rebuilding 1 pages
+2020-10-13T14:34:53.139Z - info: Pages rebuilt
+2020-10-13T14:34:53.140Z - info: Website regeneration complete! Total build time: 3.475s
+2020-10-13T14:34:53.149Z - info: Site data built
+2020-10-13T14:36:55.527Z - info: [10:36:55 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_module-TIC2002\textbookTopics.mbdf
+2020-10-13T14:36:55.537Z - info: [10:36:55 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week4\commentary-cs2103.mbdf
+2020-10-13T14:36:56.548Z - info: No pages needed to be rebuilt
+2020-10-13T14:37:09.177Z - info: [10:37:09 PM] Reload for file change: C:\repos\nus-cs2103-AY2021S1\cs2103-website\_markbind\variables.md
+2020-10-13T14:37:10.462Z - warn: Rebuilding all pages as variables file was changed, or the --force-reload flag was set
+2020-10-13T14:37:10.468Z - info: Rebuilding 1 pages
+2020-10-13T14:37:20.034Z - info: Website generation (lazy) started at 10:37:17 PM
+2020-10-13T14:37:30.213Z - info: Building assets...
+2020-10-13T14:37:37.075Z - info: Assets built
+2020-10-13T14:37:37.076Z - info: Generating landing page...
+2020-10-13T14:37:38.191Z - info: Landing page built, other pages will be built as you navigate to them!
+2020-10-13T14:37:38.285Z - info: Website generation (lazy) complete! Total build time: 21.008s
+2020-10-13T14:37:39.100Z - info: Serving "C:\repos\nus-cs2103-AY2021S1\cs2103-website\_site" at http://127.0.0.1:8080
+2020-10-13T14:37:39.101Z - info: Press CTRL+C to stop ...
+2020-10-13T14:37:39.201Z - info: Site data built
+2020-10-13T14:39:26.510Z - info: Building C:\repos\nus-cs2103-AY2021S1\cs2103-website\schedule\week9\topics as some of its dependencies were changed since the last visit
+2020-10-13T14:39:31.948Z - info: Site data built
+2020-10-13T14:39:31.952Z - info: Lazy website regeneration complete! Total build time: 5.443s
+2020-10-13T14:40:46.762Z - info: Website generation started at 10:40:42 PM
+2020-10-13T14:40:58.493Z - info: Building assets...
+2020-10-13T14:41:08.316Z - info: Assets built
+2020-10-13T14:41:08.317Z - info: Generating pages...
+2020-10-13T14:41:26.330Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:26.331Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:29.771Z - debug:  
+2020-10-13T14:41:29.771Z - debug:  
+2020-10-13T14:41:29.771Z - debug:  
+2020-10-13T14:41:29.771Z - debug:  
+2020-10-13T14:41:29.772Z - debug:  
+2020-10-13T14:41:37.318Z - debug:  
+2020-10-13T14:41:37.318Z - debug:  
+2020-10-13T14:41:37.318Z - debug:  
+2020-10-13T14:41:37.319Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:40.288Z - debug:  
+2020-10-13T14:41:40.289Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:40.290Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:40.777Z - debug:  
+2020-10-13T14:41:40.777Z - debug:  
+2020-10-13T14:41:40.915Z - debug:  
+2020-10-13T14:41:41.120Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:41.121Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:41:45.240Z - debug:  
+2020-10-13T14:41:45.240Z - debug:  
+2020-10-13T14:42:04.912Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:05.643Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:06.712Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:06.835Z - debug:  
+2020-10-13T14:42:08.565Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:09.341Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:10.451Z - debug:  
+2020-10-13T14:42:12.429Z - debug:  
+2020-10-13T14:42:14.853Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:14.854Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:16.441Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:16.441Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:16.442Z - debug:  
+2020-10-13T14:42:16.597Z - debug:  
+2020-10-13T14:42:20.499Z - debug:  
+2020-10-13T14:42:20.629Z - debug:  
+2020-10-13T14:42:27.832Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:29.804Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:42:29.953Z - debug:  
+2020-10-13T14:42:59.223Z - debug:  
+2020-10-13T14:42:59.225Z - debug:  
+2020-10-13T14:42:59.225Z - debug:  
+2020-10-13T14:42:59.225Z - debug:  
+2020-10-13T14:43:06.427Z - debug:  
+2020-10-13T14:43:06.708Z - debug:  
+2020-10-13T14:43:08.941Z - debug:  
+2020-10-13T14:43:17.679Z - debug:  
+2020-10-13T14:43:18.332Z - debug:  
+2020-10-13T14:43:18.332Z - debug:  
+2020-10-13T14:43:18.332Z - debug:  
+2020-10-13T14:43:18.332Z - debug:  
+2020-10-13T14:43:22.485Z - debug: The process cannot access the file because it is being used by another process.
+
+2020-10-13T14:43:24.779Z - debug:  
+2020-10-13T14:43:26.812Z - debug:  
+2020-10-13T14:43:26.812Z - debug:  
+2020-10-13T14:43:33.092Z - debug:  
+2020-10-13T14:43:42.445Z - debug:  
+2020-10-13T14:43:51.539Z - debug:  
+2020-10-13T14:44:00.726Z - debug:  
+2020-10-13T14:44:00.727Z - debug:  
+2020-10-13T14:44:05.962Z - info: Pages built
+2020-10-13T14:44:41.468Z - info: Website generation complete! Total build time: 238.614s
+2020-10-13T14:44:41.470Z - info: Build success!
+2020-10-13T14:44:41.472Z - info: Site data built
+2020-10-13T14:45:19.607Z - info: Deployed!
