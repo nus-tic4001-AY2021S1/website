@@ -303,6 +303,18 @@ When working with Git, sooner or later you will face a problem called _merge con
 **These are two workflows that are riskier (but simpler) than the forking flow**. After following the forking flow for a while, you may switch to one of these, but at your own risk.
 </div>
 <!-- ==================================================================================================== -->
+                                     Implementation
+<!-- ==================================================================================================== -->
+<div id="{{ slugify("Reuse") }}">
+Do you know the difference between a _library_ and a _framework_?
+
+Programmers often reuse code in various ways. The next few topics aim to clarify the difference between several forms reusable software comes in.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Cloud Computing") }}">
+While not examinable, the next few sections explain some basic cloud computing concepts that are relevant to software engineers.
+</div>
+<!-- ==================================================================================================== -->
                                      IDEs
 <!-- ==================================================================================================== -->
 <div id="{{ slugify("IDEs: Basic Features") }}">
@@ -474,12 +486,14 @@ Previously, you learned about _equivalence partitions_, a heuristic for dividing
 </div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
+<div id="{{ slugify("Test Cases: Combining Multiple Inputs") }}" >
 <div id="{{ slugify("Combining Multiple Test Inputs") }}" >
-The number of test cases can increase when a the SUT takes multiple inputs. Let's have a brief peek into how we can deal with such situations.
+Earlier, you learned <tooltip content="Equivalence Partitioning, Boundary Value Analysis">two heuristics</tooltip> that can improve the test case quality. Even when applying them, the number of test cases can increase when a the SUT takes multiple inputs. Let's see how we can deal with such situations.
+</div>
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("Other QA Techniques") }}" >
-Testing is not the same as Quality Assurance. What else can be done for QA?
+Testing is the first thing that comes to mind when you hear 'Quality Assurance' but there are other QA techniques that can complement testing. Let's first take a step back and take a look at QA in general, followed by a look at some other QA techniques.
 </div>
 <!-- ==================================================================================================== -->
                                     Project Mgt
@@ -632,6 +646,10 @@ Here is an example that shows the steps of drawing an activity diagram to match 
 
 {{ panopto("1cc77229-f9d3-482e-b7e5-ac53003984e5", desc="Activity diagram for the do-while loop") }}
 </div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Other UML Models") }}">
+To complete the picture about UML, given below are a peek into the other types of UML diagrams.
+</div>
 <!-- ==================================================================================================== -->
                                    Design
 <!-- ==================================================================================================== -->
@@ -699,8 +717,27 @@ First, let's learn what _design patterns_ are, in general.
 Now that you know what _design pattern_ is, let's learn a few example design patterns.
 </div>
 <!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("More Design Patterns") }}">
+Previously, you learned about design patterns, and a some example design patterns. Let's continue that journey this week.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("designPatterns-modelViewController-what") }}">
+First, let's learn two more widely-cited design patterns.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("designPatterns-more-otherDesignPatterns") }}">
+Given below are a few more topics that continue the theme of design patterns, but have been made optional to reduce the module workload.</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
 <div id="{{ slugify("Architecture") }}" >
 **While _architecture_ is not of high importance to a small project such as the tP, it is good to know a little bit about it** in case you are thrown into a larger project in future.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("Architectural Styles") }}" >
+The next topic is like 'design patterns at architecture level'. In fact, the MVC pattern you saw earlier comes close to this category too.
+</div>
+<!-- ------------------------------------------------------------------------------------------------------ -->
+<div id="{{ slugify("followup Architectural Styles") }}" >
+As with design patterns, we covered only a few architecture styles. Although you didn't have to design an architecture in the tP, knowing the existence of these styles might come in handy in your future projects.
 </div>
 <!-- ---------------------------------------------------------------------------- -->
 <div id="{{ slugify("designApproaches-multilevelDesign-what") }}" >

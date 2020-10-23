@@ -105,11 +105,37 @@
           <p></p>
           <h1 id="week-13-fri-nov-6th-lecture">Week 13 <small><small><span class="dimmed">[Fri, Nov 6th]</span> - Lecture</small></small><span id="week-13-fri-nov-6th-lecture" class="anchor"></span><a class="fa fa-anchor" href="#week-13-fri-nov-6th-lecture" onclick="event.stopPropagation()"></a></h1>
           <div>
-            <h4 id="lecture-on-fri-nov-6th">Lecture on Fri, Nov 6th<span id="lecture-on-fri-nov-6th" class="anchor"></span><a class="fa fa-anchor" href="#lecture-on-fri-nov-6th" onclick="event.stopPropagation()"></a></h4>
+            <h4 id="exercise-draw-a-sequence-diagram">Exercise: draw a sequence diagram<span id="exercise-draw-a-sequence-diagram" class="anchor"></span><a class="fa fa-anchor" href="#exercise-draw-a-sequence-diagram" onclick="event.stopPropagation()"></a></h4>
             <ul>
-              <li>This lecture will be used mainly to give you feedback about the DG draft</li>
+              <li><strong><mark>[before the lecture]</mark> Do the following exercise</strong> (you may hand-draw or use a drawing software e.g. PowerPoint, <a href="http://draw.io">draw.io</a>.</li>
             </ul>
-            <h4 id="lecture-on-fri-nov-13th">Lecture on Fri, Nov 13th<span id="lecture-on-fri-nov-13th" class="anchor"></span><a class="fa fa-anchor" href="#lecture-on-fri-nov-13th" onclick="event.stopPropagation()"></a></h4>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code v-pre>PersonList</code>, <code v-pre>Person</code>, <code v-pre>Tag</code>)</p>
+                  </template>
+                  <question>
+                    <p>Consider the code below:</p>
+                    <div class="row">
+                      <div class="col-sm-7">
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{<br></span><span>    Tag tag;<br></span><span>    String name;<br></span><span><br></span><span>    Person(String personName, String tagName){<br></span><span>        name = personName;<br></span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                      </div>
+                      <div class="col-sm-5">
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{<br></span><span>    Tag(String value){<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                      </div>
+                    </div>
+                    <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
+                    <pre><code class="hljs java" v-pre><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();<br></span><span><span class="hljs-keyword">while</span> (hasRoom){<br></span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);<br></span><span>    personList.addPerson(p);<br></span><span>}<br></span></code></pre>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+              <p><strong>How would you update the diagram</strong> if the <code v-pre>PersonList</code> class was updated as follows?</p>
+              <pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        add(p);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+            </div>
+            <hr>
+            <hr>
+            <h1 id="lecture-2-fri-nov-13th">Lecture 2 <small><span class="dimmed">[Fri, Nov 13th ]</span></small><span id="lecture-2-fri-nov-13th" class="anchor"></span><a class="fa fa-anchor" href="#lecture-2-fri-nov-13th" onclick="event.stopPropagation()"></a></h1>
             <ul>
               <li>No formal lecture but instructors are available for consultation. Use this slot to work on the project.</li>
             </ul>
@@ -123,9 +149,9 @@
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-13-fri-nov-6th-lecture">Week 13 [Fri, Nov 6th] - Lecture&#x200E;</a>
             <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#lecture-on-fri-nov-6th">Lecture on Fri, Nov 6th&#x200E;</a>
-              <a class="nav-link py-1" href="#lecture-on-fri-nov-13th">Lecture on Fri, Nov 13th&#x200E;</a>
+              <a class="nav-link py-1" href="#exercise-draw-a-sequence-diagram">Exercise: draw a sequence diagram&#x200E;</a>
             </nav>
+            <a class="nav-link py-1" href="#lecture-2-fri-nov-13th">Lecture 2 [Fri, Nov 13th ]&#x200E;</a>
 
           </nav>
         </div>
@@ -134,7 +160,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 20 Oct 2020, 23:52:16 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 23 Oct 2020, 23:45:56 GMT+8]</small>
       </div>
     </footer>
   </div>

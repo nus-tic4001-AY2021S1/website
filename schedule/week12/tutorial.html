@@ -105,11 +105,43 @@
           <p></p>
           <h1 id="week-12-fri-oct-30th-lecture">Week 12 <small><small><span class="dimmed">[Fri, Oct 30th]</span> - Lecture</small></small><span id="week-12-fri-oct-30th-lecture" class="anchor"></span><a class="fa fa-anchor" href="#week-12-fri-oct-30th-lecture" onclick="event.stopPropagation()"></a></h1>
           <div>
+            <h4 id="1-exercise-draw-a-class-diagram-and-an-object-diagram"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Exercise: draw a class diagram and an object diagram<span id="1-exercise-draw-a-class-diagram-and-an-object-diagram" class="anchor"></span><a class="fa fa-anchor" href="#1-exercise-draw-a-class-diagram-and-an-object-diagram" onclick="event.stopPropagation()"></a></h4>
             <ul>
-              <li>v2.0 demo</li>
-              <li>Briefing</li>
-              <li>Activity on sequence diagrams</li>
-              <li>Project work</li>
+              <li><strong><mark>[before the lecture]</mark> Do the following exercise</strong> (you may hand-draw or use a drawing software e.g. PowerPoint, <a href="http://draw.io">draw.io</a>.<br>
+                Use the following layout:<br>
+                <img src="/website/admin/images/draw-stock-cd/classLayout.png" width="600">
+              </li>
+            </ul>
+            <div class="indented-level2">
+              <div>
+                <panel class="algolia-no-index"><template slot="_header">
+                    <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Class Diagram for the code (<code v-pre>StockItem</code>, <code v-pre>Inventory</code>, <code v-pre>Review</code> etc.)</p>
+                  </template>
+                  <question>
+                    <p>Consider the code below:</p>
+                    <div class="row">
+                      <div class="col-sm-6">
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Item</span></span><br></span><span><span class="hljs-class">         <span class="hljs-keyword">implements</span> <span class="hljs-title">Billable</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span></span>;<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StockItem</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Item</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> Review review;<br></span><span>    <span class="hljs-keyword">private</span> String name;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">StockItem</span><span class="hljs-params">(</span></span><br></span><span><span class="hljs-function"><span class="hljs-params">        String name, Rating rating)</span></span>{<br></span><span><br></span><span>        <span class="hljs-keyword">this</span>.name = name;<br></span><span>        <span class="hljs-keyword">this</span>.review = <span class="hljs-keyword">new</span> Review(rating);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-meta">@Override</span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">bill</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre>
+                      </div>
+                      <div class="col-sm-6">
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-keyword">enum</span> Rating {<br></span><span>    GOOD, OK, POOR<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Review</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">final</span> Rating rating;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Review</span><span class="hljs-params">(Rating rating)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.rating = rating;<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                        <pre><code class="hljs java" v-pre><span><span class="hljs-keyword">import</span> java.util.List;<br></span><span><br></span><span><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Inventory</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> List&lt;Item&gt; items;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">getItemCount</span><span class="hljs-params">()</span></span>{<br></span><span>        <span class="hljs-keyword">return</span> items.size();<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">generateBill</span><span class="hljs-params">(Billable b)</span></span>{<br></span><span>        <span class="hljs-comment">// ...</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Item s)</span> </span>{<br></span><span>        items.add(s);<br></span><span>    }<br></span><span>}<br></span></code></pre>
+                      </div>
+                    </div>
+                    <p>(a) Draw a class diagram to represent the code. Show all attributes, methods, associations, navigabilities, visibilities, known multiplicities, and association roles. Show associations as lines.<br>
+                      (b) Draw an object diagram to represent the situation where the inventory has one item with a name <code v-pre>spanner</code> and a review of <code v-pre>POOR</code> rating<br>
+                      i.e., <code class="hljs inline java" v-pre><span class="hljs-keyword">new</span> Inventory().add(<span class="hljs-keyword">new</span> StockItem(<span class="hljs-string">"spanner"</span>, <span class="hljs-keyword">new</span> Review(Rating.POOR)))</code>.</p>
+                  </question>
+                </panel>
+              </div>
+              <p></p>
+            </div>
+            <h4 id="2-v2-0-demo"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> v2.0 demo<span id="2-v2-0-demo" class="anchor"></span><a class="fa fa-anchor" href="#2-v2-0-demo" onclick="event.stopPropagation()"></a></h4>
+            <ul>
+              <li>Demo v2.0 to the teaching tream</li>
             </ul>
           </div>
         </div>
@@ -120,6 +152,10 @@
 
           <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
             <a class="nav-link py-1" href="#week-12-fri-oct-30th-lecture">Week 12 [Fri, Oct 30th] - Lecture&#x200E;</a>
+            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+              <a class="nav-link py-1" href="#1-exercise-draw-a-class-diagram-and-an-object-diagram">1 Exercise: draw a class diagram and an object diagram&#x200E;</a>
+              <a class="nav-link py-1" href="#2-v2-0-demo">2 v2.0 demo&#x200E;</a>
+            </nav>
 
           </nav>
         </div>
@@ -128,7 +164,7 @@
     <footer>
 
       <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Tue, 20 Oct 2020, 23:52:16 GMT+8]</small>
+        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 23 Oct 2020, 23:45:56 GMT+8]</small>
       </div>
     </footer>
   </div>
