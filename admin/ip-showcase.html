@@ -1,209 +1,150 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.15.2">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TIC4001 - iP Showcase</title>
-  <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
-  <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
-  <link rel="stylesheet" href="../markbind/css/octicons.css">
-  <link rel="stylesheet" href="../markbind/css/github.min.css">
-  <link rel="stylesheet" href="../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
-  <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../markbind/css/page-nav.css">
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/schedule.css">
-  <link rel="icon" href="/website/favicon.ico">
-</head>
-
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
-  <div id="app">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIC4001 - iP Showcase</title>
+    <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/css/main.css">
+    <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
+<body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
+<div id="app">
     <header fixed>
-      <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
-        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
-          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
-          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
-          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
-          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
-          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
-          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
-          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
-          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
-          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
-          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
-          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
-        </dropdown>
-        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+<navbar placement="top" type="dark" class="temp-navbar">
+<a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
+  <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+  <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+<li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+<li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+<li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+<li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+<li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+<li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+<li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+<li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+<li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+<li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+<li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+<li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+<li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li></dropdown>
+  <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+  <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+  <div class="nav-link temp-dropdown-placeholder">**Links**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+    <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+    <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+    
+    
+    <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+    
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+    <hr>
+    <span><strong> Individual Project (iP):</strong></span>
+    <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+    <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+    <hr>
+    <span><strong> Team Project (tP):</strong></span>
+    <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+    
+    <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
+  <li slot="right" class="nav-link">
+    <form class="navbar-form">
+        <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+        
+<div id="content-wrapper">
+<h1 id="ip-showcase">iP Showcase<span id="ip-showcase" class="anchor"></span><a class="fa fa-anchor" href="#ip-showcase" onclick="event.stopPropagation()"></a></h1>
+<panel expanded no-close id="tic4001-f18"><template slot="_header"><h2 id="tic4001-f18">TIC4001-F18<span id="tic4001-f18" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-f18" onclick="event.stopPropagation()"></a></h2></template>
+<h3 id="tic4001-1"><span class="badge badge-secondary">TIC4001-1</span><span id="tic4001-1" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-1" onclick="event.stopPropagation()"></a></h3>
+<h4 id="zhen-heng-yiheng0410">ZHEN..HENG (<a href="https://github.com/Yiheng0410"><span class="text-monospace">@Yiheng0410</span></a>) <small><a href="https://Yiheng0410.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Yiheng0410/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Yiheng0410/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Yiheng0410&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Yiheng0410&amp;tabRepo=Yiheng0410%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="zhen-heng-yiheng0410" class="anchor"></span><a class="fa fa-anchor" href="#zhen-heng-yiheng0410" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="wang-quan-impala36">WANG..QUAN (<a href="https://github.com/Impala36"><span class="text-monospace">@Impala36</span></a>) <small><a href="https://Impala36.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Impala36/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Impala36/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Impala36&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Impala36&amp;tabRepo=Impala36%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="wang-quan-impala36" class="anchor"></span><a class="fa fa-anchor" href="#wang-quan-impala36" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="lin-nhui-binbinhui">LIN ..NHUI (<a href="https://github.com/binbinhui"><span class="text-monospace">@binbinhui</span></a>) <small><a href="https://binbinhui.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/binbinhui/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/binbinhui/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=binbinhui&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=binbinhui&amp;tabRepo=binbinhui%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="lin-nhui-binbinhui" class="anchor"></span><a class="fa fa-anchor" href="#lin-nhui-binbinhui" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="lin-qing-linqing42">LIN ..QING (<a href="https://github.com/linqing42"><span class="text-monospace">@linqing42</span></a>) <small><a href="https://linqing42.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/linqing42/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/linqing42/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=linqing42&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=linqing42&amp;tabRepo=linqing42%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="lin-qing-linqing42" class="anchor"></span><a class="fa fa-anchor" href="#lin-qing-linqing42" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h3 id="tic4001-2"><span class="badge badge-secondary">TIC4001-2</span><span id="tic4001-2" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-2" onclick="event.stopPropagation()"></a></h3>
+<h4 id="chan-hong-e0260222">CHAN..HONG (<a href="https://github.com/e0260222"><span class="text-monospace">@e0260222</span></a>) <small><a href="https://e0260222.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/e0260222/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/e0260222/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=e0260222&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=e0260222&amp;tabRepo=e0260222%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="chan-hong-e0260222" class="anchor"></span><a class="fa fa-anchor" href="#chan-hong-e0260222" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="chen-duo-chenduo1412">CHEN.. DUO (<a href="https://github.com/Chenduo1412"><span class="text-monospace">@Chenduo1412</span></a>) <small><a href="https://Chenduo1412.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Chenduo1412/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Chenduo1412/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Chenduo1412&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Chenduo1412&amp;tabRepo=Chenduo1412%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="chen-duo-chenduo1412" class="anchor"></span><a class="fa fa-anchor" href="#chen-duo-chenduo1412" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="dai-wei-daiweinus">DAI .. WEI (<a href="https://github.com/daiweinus"><span class="text-monospace">@daiweinus</span></a>) <small><a href="https://daiweinus.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/daiweinus/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/daiweinus/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=daiweinus&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=daiweinus&amp;tabRepo=daiweinus%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="dai-wei-daiweinus" class="anchor"></span><a class="fa fa-anchor" href="#dai-wei-daiweinus" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="lin-tong-dgc5213">LIN ..TONG (<a href="https://github.com/dgc5213"><span class="text-monospace">@dgc5213</span></a>) <small><a href="https://dgc5213.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/dgc5213/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/dgc5213/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=dgc5213&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=dgc5213&amp;tabRepo=dgc5213%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="lin-tong-dgc5213" class="anchor"></span><a class="fa fa-anchor" href="#lin-tong-dgc5213" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h3 id="tic4001-3"><span class="badge badge-secondary">TIC4001-3</span><span id="tic4001-3" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-3" onclick="event.stopPropagation()"></a></h3>
+<h4 id="janu-lim-januariusjang">JANU.. LIM (<a href="https://github.com/JanuariusJang"><span class="text-monospace">@JanuariusJang</span></a>) <small><a href="https://JanuariusJang.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/JanuariusJang/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/JanuariusJang/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=JanuariusJang&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=JanuariusJang&amp;tabRepo=JanuariusJang%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="janu-lim-januariusjang" class="anchor"></span><a class="fa fa-anchor" href="#janu-lim-januariusjang" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="tay-wen-tototto">TAY .. WEN (<a href="https://github.com/tototto"><span class="text-monospace">@tototto</span></a>) <small><a href="https://tototto.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/tototto/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/tototto/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=tototto&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=tototto&amp;tabRepo=tototto%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="tay-wen-tototto" class="anchor"></span><a class="fa fa-anchor" href="#tay-wen-tototto" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="zhen-ijie-zhengshijienus">ZHEN..IJIE (<a href="https://github.com/ZhengShijieNUS"><span class="text-monospace">@ZhengShijieNUS</span></a>) <small><a href="https://ZhengShijieNUS.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/ZhengShijieNUS/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/ZhengShijieNUS/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=ZhengShijieNUS&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=ZhengShijieNUS&amp;tabRepo=ZhengShijieNUS%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="zhen-ijie-zhengshijienus" class="anchor"></span><a class="fa fa-anchor" href="#zhen-ijie-zhengshijienus" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="hong-heng-pigoliver">HONG..HENG (<a href="https://github.com/pigoliver"><span class="text-monospace">@pigoliver</span></a>) <small><a href="https://pigoliver.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/pigoliver/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/pigoliver/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=pigoliver&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=pigoliver&amp;tabRepo=pigoliver%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="hong-heng-pigoliver" class="anchor"></span><a class="fa fa-anchor" href="#hong-heng-pigoliver" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h3 id="tic4001-4"><span class="badge badge-secondary">TIC4001-4</span><span id="tic4001-4" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-4" onclick="event.stopPropagation()"></a></h3>
+<h4 id="chi-ping-chilaiping">CHI ..PING (<a href="https://github.com/Chilaiping"><span class="text-monospace">@Chilaiping</span></a>) <small><a href="https://Chilaiping.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Chilaiping/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Chilaiping/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Chilaiping&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Chilaiping&amp;tabRepo=Chilaiping%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="chi-ping-chilaiping" class="anchor"></span><a class="fa fa-anchor" href="#chi-ping-chilaiping" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="oliv-n-da-skyventus">OLIV..N DA (<a href="https://github.com/skyventus"><span class="text-monospace">@skyventus</span></a>) <small><a href="https://skyventus.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/skyventus/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/skyventus/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=skyventus&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=skyventus&amp;tabRepo=skyventus%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="oliv-n-da-skyventus" class="anchor"></span><a class="fa fa-anchor" href="#oliv-n-da-skyventus" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="hngo-wen-e0261618">HNGO.. WEN (<a href="https://github.com/e0261618"><span class="text-monospace">@e0261618</span></a>) <small><a href="https://e0261618.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/e0261618/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/e0261618/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=e0261618&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=e0261618&amp;tabRepo=e0261618%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0261618"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="hngo-wen-e0261618" class="anchor"></span><a class="fa fa-anchor" href="#hngo-wen-e0261618" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="li-y-i-yi-timmyly7">LI Y..I YI (<a href="https://github.com/timmyly7"><span class="text-monospace">@timmyly7</span></a>) <small><a href="https://timmyly7.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/timmyly7/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/timmyly7/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=timmyly7&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=timmyly7&amp;tabRepo=timmyly7%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="li-y-i-yi-timmyly7" class="anchor"></span><a class="fa fa-anchor" href="#li-y-i-yi-timmyly7" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr>
+<h4 id="adi-kari-adi-kd0021">ADI ..KARI (<a href="https://github.com/adi-kd0021"><span class="text-monospace">@adi-kd0021</span></a>) <small><a href="https://adi-kd0021.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/adi-kd0021/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/adi-kd0021/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=adi-kd0021&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=adi-kd0021&amp;tabRepo=adi-kd0021%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="adi-kari-adi-kd0021" class="anchor"></span><a class="fa fa-anchor" href="#adi-kari-adi-kd0021" onclick="event.stopPropagation()"></a></h4>
+<p></p><p></p><p></p>
+<hr></panel></div>
 
+        <nav id="page-nav" class="navbar navbar-light bg-transparent">
+<div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+<nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+<a class="nav-link py-1" href="#ip-showcase">iP Showcase&#x200E;</a>
+<nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+<a class="nav-link py-1" href="#tic4001-f18">TIC4001-F18&#x200E;</a>
+</nav>
 
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-
-          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </header>
-    <div id="flex-body">
-
-      <div id="content-wrapper">
-        <h1 id="ip-showcase">iP Showcase<span id="ip-showcase" class="anchor"></span><a class="fa fa-anchor" href="#ip-showcase" onclick="event.stopPropagation()"></a></h1>
-        <panel expanded no-close id="tic4001-f18"><template slot="_header">
-            <h2 id="tic4001-f18">TIC4001-F18<span id="tic4001-f18" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-f18" onclick="event.stopPropagation()"></a></h2>
-          </template>
-          <h3 id="tic4001-1"><span class="badge badge-secondary">TIC4001-1</span><span id="tic4001-1" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-1" onclick="event.stopPropagation()"></a></h3>
-          <h4 id="zhen-heng-yiheng0410">ZHEN..HENG (<a href="https://github.com/Yiheng0410"><span class="text-monospace">@Yiheng0410</span></a>) <small><a href="https://Yiheng0410.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Yiheng0410/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Yiheng0410/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Yiheng0410&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Yiheng0410&amp;tabRepo=Yiheng0410%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="zhen-heng-yiheng0410" class="anchor"></span><a class="fa fa-anchor" href="#zhen-heng-yiheng0410" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="wang-quan-impala36">WANG..QUAN (<a href="https://github.com/Impala36"><span class="text-monospace">@Impala36</span></a>) <small><a href="https://Impala36.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Impala36/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Impala36/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Impala36&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Impala36&amp;tabRepo=Impala36%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="wang-quan-impala36" class="anchor"></span><a class="fa fa-anchor" href="#wang-quan-impala36" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="lin-nhui-binbinhui">LIN ..NHUI (<a href="https://github.com/binbinhui"><span class="text-monospace">@binbinhui</span></a>) <small><a href="https://binbinhui.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/binbinhui/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/binbinhui/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=binbinhui&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=binbinhui&amp;tabRepo=binbinhui%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="lin-nhui-binbinhui" class="anchor"></span><a class="fa fa-anchor" href="#lin-nhui-binbinhui" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="lin-qing-linqing42">LIN ..QING (<a href="https://github.com/linqing42"><span class="text-monospace">@linqing42</span></a>) <small><a href="https://linqing42.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/linqing42/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/linqing42/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=linqing42&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=linqing42&amp;tabRepo=linqing42%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="lin-qing-linqing42" class="anchor"></span><a class="fa fa-anchor" href="#lin-qing-linqing42" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h3 id="tic4001-2"><span class="badge badge-secondary">TIC4001-2</span><span id="tic4001-2" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-2" onclick="event.stopPropagation()"></a></h3>
-          <h4 id="chan-hong-e0260222">CHAN..HONG (<a href="https://github.com/e0260222"><span class="text-monospace">@e0260222</span></a>) <small><a href="https://e0260222.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/e0260222/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/e0260222/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=e0260222&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=e0260222&amp;tabRepo=e0260222%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="chan-hong-e0260222" class="anchor"></span><a class="fa fa-anchor" href="#chan-hong-e0260222" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="chen-duo-chenduo1412">CHEN.. DUO (<a href="https://github.com/Chenduo1412"><span class="text-monospace">@Chenduo1412</span></a>) <small><a href="https://Chenduo1412.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Chenduo1412/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Chenduo1412/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Chenduo1412&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Chenduo1412&amp;tabRepo=Chenduo1412%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="chen-duo-chenduo1412" class="anchor"></span><a class="fa fa-anchor" href="#chen-duo-chenduo1412" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="dai-wei-daiweinus">DAI .. WEI (<a href="https://github.com/daiweinus"><span class="text-monospace">@daiweinus</span></a>) <small><a href="https://daiweinus.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/daiweinus/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/daiweinus/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=daiweinus&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=daiweinus&amp;tabRepo=daiweinus%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="dai-wei-daiweinus" class="anchor"></span><a class="fa fa-anchor" href="#dai-wei-daiweinus" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="lin-tong-dgc5213">LIN ..TONG (<a href="https://github.com/dgc5213"><span class="text-monospace">@dgc5213</span></a>) <small><a href="https://dgc5213.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/dgc5213/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/dgc5213/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=dgc5213&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=dgc5213&amp;tabRepo=dgc5213%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="lin-tong-dgc5213" class="anchor"></span><a class="fa fa-anchor" href="#lin-tong-dgc5213" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h3 id="tic4001-3"><span class="badge badge-secondary">TIC4001-3</span><span id="tic4001-3" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-3" onclick="event.stopPropagation()"></a></h3>
-          <h4 id="janu-lim-januariusjang">JANU.. LIM (<a href="https://github.com/JanuariusJang"><span class="text-monospace">@JanuariusJang</span></a>) <small><a href="https://JanuariusJang.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/JanuariusJang/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/JanuariusJang/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=JanuariusJang&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=JanuariusJang&amp;tabRepo=JanuariusJang%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="janu-lim-januariusjang" class="anchor"></span><a class="fa fa-anchor" href="#janu-lim-januariusjang" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="tay-wen-tototto">TAY .. WEN (<a href="https://github.com/tototto"><span class="text-monospace">@tototto</span></a>) <small><a href="https://tototto.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/tototto/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/tototto/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=tototto&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=tototto&amp;tabRepo=tototto%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="tay-wen-tototto" class="anchor"></span><a class="fa fa-anchor" href="#tay-wen-tototto" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="zhen-ijie-zhengshijienus">ZHEN..IJIE (<a href="https://github.com/ZhengShijieNUS"><span class="text-monospace">@ZhengShijieNUS</span></a>) <small><a href="https://ZhengShijieNUS.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/ZhengShijieNUS/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/ZhengShijieNUS/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=ZhengShijieNUS&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=ZhengShijieNUS&amp;tabRepo=ZhengShijieNUS%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="zhen-ijie-zhengshijienus" class="anchor"></span><a class="fa fa-anchor" href="#zhen-ijie-zhengshijienus" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="hong-heng-pigoliver">HONG..HENG (<a href="https://github.com/pigoliver"><span class="text-monospace">@pigoliver</span></a>) <small><a href="https://pigoliver.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/pigoliver/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/pigoliver/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=pigoliver&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=pigoliver&amp;tabRepo=pigoliver%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="hong-heng-pigoliver" class="anchor"></span><a class="fa fa-anchor" href="#hong-heng-pigoliver" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h3 id="tic4001-4"><span class="badge badge-secondary">TIC4001-4</span><span id="tic4001-4" class="anchor"></span><a class="fa fa-anchor" href="#tic4001-4" onclick="event.stopPropagation()"></a></h3>
-          <h4 id="chi-ping-chilaiping">CHI ..PING (<a href="https://github.com/Chilaiping"><span class="text-monospace">@Chilaiping</span></a>) <small><a href="https://Chilaiping.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/Chilaiping/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/Chilaiping/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=Chilaiping&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=Chilaiping&amp;tabRepo=Chilaiping%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="chi-ping-chilaiping" class="anchor"></span><a class="fa fa-anchor" href="#chi-ping-chilaiping" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="oliv-n-da-skyventus">OLIV..N DA (<a href="https://github.com/skyventus"><span class="text-monospace">@skyventus</span></a>) <small><a href="https://skyventus.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/skyventus/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/skyventus/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=skyventus&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=skyventus&amp;tabRepo=skyventus%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="oliv-n-da-skyventus" class="anchor"></span><a class="fa fa-anchor" href="#oliv-n-da-skyventus" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="hngo-wen-e0261618">HNGO.. WEN (<a href="https://github.com/e0261618"><span class="text-monospace">@e0261618</span></a>) <small><a href="https://e0261618.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/e0261618/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/e0261618/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=e0261618&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=e0261618&amp;tabRepo=e0261618%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0261618"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="hngo-wen-e0261618" class="anchor"></span><a class="fa fa-anchor" href="#hngo-wen-e0261618" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="li-y-i-yi-timmyly7">LI Y..I YI (<a href="https://github.com/timmyly7"><span class="text-monospace">@timmyly7</span></a>) <small><a href="https://timmyly7.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/timmyly7/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/timmyly7/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=timmyly7&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=timmyly7&amp;tabRepo=timmyly7%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="li-y-i-yi-timmyly7" class="anchor"></span><a class="fa fa-anchor" href="#li-y-i-yi-timmyly7" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-          <h4 id="adi-kari-adi-kd0021">ADI ..KARI (<a href="https://github.com/adi-kd0021"><span class="text-monospace">@adi-kd0021</span></a>) <small><a href="https://adi-kd0021.github.io/ip"><span aria-hidden="true" class="fas fa-home"></span></a> <a href="https://github.com/adi-kd0021/ip"><span aria-hidden="true" class="fab fa-github"></span></a> <a href="https://github.com/adi-kd0021/ip/releases"><span aria-hidden="true" class="fas fa-download"></span></a> <a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&amp;groupSelect=groupByAuthors&amp;search=adi-kd0021&amp;sortWithin=title&amp;timeframe=commit&amp;mergegroup=&amp;breakdown=false&amp;tabOpen=true&amp;tabType=authorship&amp;tabAuthor=adi-kd0021&amp;tabRepo=adi-kd0021%2Fip%5Bmaster%5D&amp;authorshipIsMergeGroup=false&amp;authorshipFileTypes=java~md~fxml~gradle~txt"><span aria-hidden="true" class="fas fa-code"></span></a> <a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021"><span aria-hidden="true" class="fas fa-code-branch"></span></a></small><span id="adi-kari-adi-kd0021" class="anchor"></span><a class="fa fa-anchor" href="#adi-kari-adi-kd0021" onclick="event.stopPropagation()"></a></h4>
-          <p></p>
-          <p></p>
-          <p></p>
-          <hr>
-        </panel>
-      </div>
-
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#ip-showcase">iP Showcase&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#tic4001-f18">TIC4001-F18&#x200E;</a>
-            </nav>
-
-          </nav>
-        </div>
-      </nav>
-    </div>
+</nav>
+</div>
+</nav>
+</div>
     <footer>
-
-      <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 23 Oct 2020, 23:45:56 GMT+8]</small>
-      </div>
-    </footer>
-  </div>
+  
+  <div class="text-center">
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 29 Oct 2020, 15:22:35 GMT+8]</small></div></footer></div>
 </body>
 <script src="../markbind/js/vue.min.js"></script>
 <script src="../markbind/js/components.min.js"></script>
@@ -215,21 +156,18 @@
   const enableSearch = true
 </script>
 <script src="../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "369d0a5a75795bb334b8da938b3bb288",
-      indexName: "nus-tic4001-ay2021s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "369d0a5a75795bb334b8da938b3bb288",
+        indexName: "nus-tic4001-ay2021s1",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../markbind/layouts/default/scripts.js"></script>
-
 </html>

@@ -661,7 +661,20 @@ In addition,
 <span id="heading_update_dg_with_design_details">{{ icon_individual }} Update the DG with design details</span>
 <span id="desc_update_dg_with_design_details">
 
-* **Update the Developer Guide** as follows:
+<div class="indented-level2" tags="m--cs2103">
+
+<panel type="info" header="Why the hurry to update documents? Why not wait till the implementation is finalized?" minimized>
+
+* We want you to take at least two passes at documenting the project so that you can learn how to evolve the documentation along with the code %%(which requires additional considerations, when compared to documenting the project only once)%%.
+
+* Wt is better to get used to the documentation tool chain early, to avoid unexpected problems near the final submission deadline.
+
+* It allows receiving early self/peer/instructor feedback.
+</panel>
+</div>
+
+* **Update the Developer Guide** as follows:{% if tic4001 %}
+  * You can take some inspiration from the [DG of the AB3 (se-edu/addressbook-level 3) project]({{ url_ab3_fork_website }}/DeveloperGuide.html).{% endif %}
   * ==Each member should describe the implementation of at least one enhancement she has added== (or planning to add). <br>
     Expected length: 1+ page per person{% if module == "CS2113" or module == "TIC4001" %}
   * Describing the design at a multiple-levels (e.g., first, describe at _architecture-level_, then describe at _component-level_) is optional. It is also acceptable to have one _Design & Implementation_ section in which you describe the entire thing at the class- and object-level.{% endif %}
@@ -732,7 +745,7 @@ This week, we would like you to smoke-test the CATcher app **to ensure it can ru
 1. In the next screen, login to CATcher using your GitHub account.<br>
    If the app asks for public repo access permissions, grant it (just go with the default settings).
 1. **Let CATcher create a repo named `alpha`** in your GitHub account, when it asks for permission. That repo will be used to hold the bug reports you will create in this testing session.
-1. **Use the app to create 1-2 dummy bug reports**, similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
+1. **Use the app (not the GitHub Web interface) to create 1-2 dummy bug reports**. The steps are similar to how you would enter bug reports in the GitHub issue tracker. Include at least one screenshot in one of those bug reports.<br>
    {{ icon_tip }} you can ==copy-paste screenshots== into the bug description.<br>
    {{ icon_tip }} You can use Markdown syntax in the bug descriptions.<br>
    {{ icon_info }} The `severity` and `type` labels are compulsory.
@@ -984,14 +997,14 @@ Not applicable this semester
 <span id="desc_submit_final_deliverables">
 
 * **Deadline** for all {{ version_final }} submissions is **{{ date_final_submission | date(format_normal)}} 2359** unless stated otherwise.
-* {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}<br>
+* {{ icon_important_big_red }} **Penalty for late submission:** {% if tic4001 %}Given that you are part-time students, we'll try to be as lenient as possible w.r.t. the late submission penalty but there will be no free deadline extensions, to be fair to those who submit on time.{% endif %}{% if not tic4001 %}<br>
   ==-1 mark for missing the deadline (up to 2 hour of delay).==<br>
   -2 for an _extended delay_ (up to 24 hours late).<br>
-  Penalty for delays beyond 24 hours is determined on a case by case basis.{% if not tic4001 %}
-  * Even a one-second delay is considered late, irrespective of the reason.{% endif %}
+  Penalty for delays beyond 24 hours is determined on a case by case basis.
+  * Even a one-second delay is considered late, irrespective of the reason.
   * For submissions done via LumiNUS, the submission time is the timestamp shown by LumiNUS.
   * When determining the late submission penalty, **we take the latest submission** even if the same exact file was submitted earlier. Do not submit the same file multiple times if you want to avoid unnecessary late submission penalties.
-  * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.
+  * The whole team is penalized for problems in team submissions. Only the respective student is penalized for problems in individual submissions.{% endif %}
 * **Submit to LumiNUS folder we have set up**, not to your project space.
   {% if has_t %}{{ module | lower }}T students: documents should be submitted to both modules. It's not enough to submit to CS2101 side only.{% endif %}
 * {{ icon_important_big_red }} **Follow submission instructions closely**. ==Any non-compliance will be penalized==. e.g. wrong file name/format.
@@ -1011,7 +1024,7 @@ Not applicable this semester
 
 **To convert the UG/DG/PPP into PDF format**, go to the generated page in your project's github.io site and use [this technique](https://se-education.org/guides/tutorials/savingPdf.html) to save as a pdf file. ==Using other techniques can result in poor quality resolution (will be considered a bug) and unnecessarily large files.==
 
-**Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be reported as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
+**Ensure hyperlinks in the pdf files work**. Your UG/DG/PPP will be evaluated using PDF files during the PE. ==Broken/non-working hyperlinks in the PDF files will be considered as bugs== and will count against your project score. Again, use the conversion technique given above to ensure links in the PDF files work.
 </box>
 </div>
 

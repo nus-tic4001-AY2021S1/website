@@ -1,808 +1,518 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.15.2">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TIC4001 - Admin: iP: Week 4</title>
-  <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
-  <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
-  <link rel="stylesheet" href="../markbind/css/octicons.css">
-  <link rel="stylesheet" href="../markbind/css/github.min.css">
-  <link rel="stylesheet" href="../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
-  <link rel="stylesheet" href="../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../markbind/css/site-nav.css">
-  <link rel="stylesheet" href="../markbind/css/page-nav.css">
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/admin.css">
-  <link rel="icon" href="/website/favicon.ico">
-</head>
-
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
-  <div id="app">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIC4001 - Admin: iP: Week 4</title>
+    <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../markbind/css/site-nav.css"><link rel="stylesheet" href="../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/css/main.css">
+    <link rel="stylesheet" href="/website/css/admin.css"><link rel="icon" href="/website/favicon.ico"></head>
+<body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
+<div id="app">
     <header fixed>
-      <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
-        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
-          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
-          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
-          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
-          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
-          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
-          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
-          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
-          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
-          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
-          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
-          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
-        </dropdown>
-        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+<navbar placement="top" type="dark" class="temp-navbar">
+<a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
+  <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+  <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+<li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+<li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+<li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+<li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+<li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+<li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+<li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+<li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+<li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+<li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+<li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+<li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+<li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li></dropdown>
+  <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+  <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+  <div class="nav-link temp-dropdown-placeholder">**Links**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+    <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+    <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+    
+    
+    <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+    
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+    <hr>
+    <span><strong> Individual Project (iP):</strong></span>
+    <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+    <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+    <hr>
+    <span><strong> Team Project (tP):</strong></span>
+    <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+    
+    <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
+  <li slot="right" class="nav-link">
+    <form class="navbar-form">
+        <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+        <nav id="site-nav" class="navbar navbar-light bg-transparent">
+<div class="border-right-grey nav-inner position-sticky slim-scroll">
+<ul class="site-nav-list site-nav-list-root">
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleOverview.html">Module Overview</a></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Module Structure 
+<i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/weeklySchedule.html"><small>Weekly Schedule</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/lectures.html"><small>Lectures/Tutorials</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li></ul></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/standardsAndConventions.html">Standards/Conventions</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Individual Project (iP)
+<i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-overview.html"><small>iP (Individual Project): Overview</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w2.html"><small>iP: Week 2</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w3.html"><small>iP: Week 3</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w4.html" class="current"><small>iP: Week 4</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w5.html"><small>iP: Week 5</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w6.html"><small>iP: Week 6</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w7.html"><small>iP: Week 7</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-grading.html"><small>iP: Grading</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li></ul></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Team Project (tP)
+<i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div><ul class="site-nav-dropdown-container site-nav-list">
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-expectations.html"><small>tP (team project): Expectations</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-timeline.html"><small>tP: Timeline</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-constraints.html"><small>tP: Constraints</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-teams.html"><small>tP: Forming Teams</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w3.html"><small>tP week 3: Kickoff</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w4.html"><small>tP week 4: Set direction</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w5.html"><small>tP week 5: Gather requirements</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w6.html"><small>tP week 6: Conceptualize the product</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w7.html"><small>tP week 7: Get ready for iterations</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w8.html"><small>tP week 8: mid-v1.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w9.html"><small>tP week 9: v1.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w10.html"><small>tP week 10: mid-v2.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w11.html"><small>tP week 11: v2.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w12.html"><small>tP week 12: mid-v3.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w13.html"><small>tP week 13: v3.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-deliverables.html"><small>tP: Deliverables</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-grading.html"><small>tP: Grading</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-supervision.html"><small>tP: Supervision</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li></ul></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Appendices 
+<i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
+<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i></div><ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixA-principles.html"><small>Apdx A: Module Principles</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixB-policies.html"><small>Apdx B: Module Policies</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixC-faq.html"><small>Apdx C: FAQ</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixD-help.html"><small>Apdx D: Getting Help</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixE-gitHub.html"><small>Apdx E: Using GitHub</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li>
+<li><div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixF-teamworkIssues.html"><small>Apdx F: Handling Team Issues</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div></li></ul></li></ul></div></nav>
 
+<div id="content-wrapper">
+<div class="website-content">
+<p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span></b-btn></span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn></span></p>
+<br>
+<h1 id="ip-week-4"><span class="display-4">iP: Week 4</span> <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><span id="ip-week-4" class="anchor"></span><a class="fa fa-anchor" href="#ip-week-4" onclick="event.stopPropagation()"></a></h1>
+<div id="main">
+<div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
+<ol>
+<li>Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code></li>
+<li><span>Review some peer PRs</span>  <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li></ol></div>
+<div id="body">
+<div></div>
+<p></p>
+<h4 id="1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code><span id="1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" class="anchor"></span><a class="fa fa-anchor" href="#1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" onclick="event.stopPropagation()"></a></h4>
+<div>
+<span tags="m--cs2113 m--tic4001">
+<ul>
+<li>Do each increment as a Git branch. Here is an example:
+<ul>
+<li>Start a branch named <code v-pre>branch-{increment ID}</code> (e.g. <code v-pre>branch-Level-5</code>). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.</li>
+<li>After the increment is ready, merge the <code v-pre>branch-Level-5</code> back on to <code v-pre>master</code>, <mark>without a <em>fast-forward</em></mark> so that git creates a separate commit for the merge. <code v-pre>git tag</code> that merge commit as <code v-pre>Level-5</code>.</li>
+<li>Push the branch to your fork so that the bot can detect it. As before, push the tag as well.</li>
+<li><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Advanced git users: do not delete the branch after merging.
+</li></ul></li></ul></span></div>
+<div></div>
+<div>
+<div class="indented">
+<div class="indented border">
+<panel type="seamless" no-close class="algolia-no-index">
+<div></div>
+<div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+<div></div>
+<div>
+<p><span><thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-exclamation-triangle"></span></thumbnail></span></p>
+<h3 id="level-5-handle-errors">Level 5. Handle Errors<span id="level-5-handle-errors" class="anchor"></span><a class="fa fa-anchor" href="#level-5-handle-errors" onclick="event.stopPropagation()"></a></h3>
+<p>Teach Duke to deal with errors such as incorrect inputs entered by the user.
+<br>
+<br></p>
+<p>Example:</p>
+<pre><code class="no-line-numbers hljs" v-pre><span>todo<br></span><span>    ____________________________________________________________<br></span><span>     ☹ OOPS!!! The description of a todo cannot be empty.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(<br></span><span>    ____________________________________________________________<br></span></code></pre><div>
+<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
+<div class="indented">
+<panel class="algolia-no-index"><template slot="_header"><p><strong>Extension: <code v-pre>A-Exceptions</code></strong></p></template>
+<div>
+<div>
+<div></div>
+<h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><span id="a-exceptions" class="anchor"></span><a class="fa fa-anchor" href="#a-exceptions" onclick="event.stopPropagation()"></a></h3>
+<p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p></div>
+<p>Use exceptions to handle errors. For example, define a class <code v-pre>DukeException</code> to represent exceptions specific to Duke.</p></div></panel></div></div>
+<ul>
+<li><strong>Minimal</strong>: handle at least the two types of errors shown in the example above.</li>
+<li><strong>Stretch goal</strong>: handle all possible errors in the current version. As you evolve Duke, continue to handle errors related to the new features added.</li></ul></div></panel></div></div></div>
+<div></div>
+<div></div>
+<div>
+<div class="indented">
+<div class="indented border">
+<panel type="seamless" no-close class="algolia-no-index">
+<div></div>
+<div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-CodeQuality</code>: Improve Code Quality</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+<div></div>
+<div>
+<div>
+<div></div>
+<h3 id="a-codequality"><span class="badge badge-pill badge-primary">A-CodeQuality</span><span id="a-codequality" class="anchor"></span><a class="fa fa-anchor" href="#a-codequality" onclick="event.stopPropagation()"></a></h3>
+<p>     <big>↳</big> <strong>Improve code quality</strong></p></div>
+<p>Critically examines the code and refactor to improve the code quality where necessary.</p>
+<p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own intuition about code quality.</p></div></panel></div></div></div>
+<div></div>
+<div></div>
+<div>
+<div class="indented">
+<div class="indented border">
+<panel type="seamless" no-close class="algolia-no-index">
+<div></div>
+<div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-AbstractClasses</code>: Use Abstract Classes</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+<div></div>
+<div>
+<div>
+<div></div>
+<h3 id="a-abstractclasses"><span class="badge badge-pill badge-primary">A-AbstractClasses</span><span id="a-abstractclasses" class="anchor"></span><a class="fa fa-anchor" href="#a-abstractclasses" onclick="event.stopPropagation()"></a></h3>
+<p>     <big>↳</big> <strong>Use abstract classes</strong></p></div>
+<p>Make the <code v-pre>Task</code> class an abstract class. If applicable, use abstract methods as well.</p></div></panel></div></div></div>
+<div></div>
+<div></div>
+<div>
+<div class="indented">
+<div class="indented border">
+<panel type="seamless" no-close class="algolia-no-index">
+<div></div>
+<div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-Packages</code>: Organize into Packages</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
+<div></div>
+<div>
+<div>
+<div></div>
+<h3 id="a-packages"><span class="badge badge-pill badge-primary">A-Packages</span><span id="a-packages" class="anchor"></span><a class="fa fa-anchor" href="#a-packages" onclick="event.stopPropagation()"></a></h3>
+<p>     <big>↳</big> <strong>Divide classes into packages</strong></p></div>
+<p>Organize the classes into suitable java packages.</p>
+<ul>
+<li><strong>Minimal</strong>: put all classes in one package e.g., <code v-pre>duke</code></li>
+<li><strong>Stretch goal</strong>: divide into multiple packages as the number of classes increase e.g., <code v-pre>duke.task</code>, <code v-pre>duke.command</code></li></ul></div></panel></div></div></div>
+<div></div>
+<p></p>
+<h4 id="2-review-some-peer-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Review some peer PRs</span>  <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="2-review-some-peer-prs" class="anchor"></span><a class="fa fa-anchor" href="#2-review-some-peer-prs" onclick="event.stopPropagation()"></a></h4>
+<div>
+<div tags="m--cs2103 m--tic4001">
+<box type="wrong" add-class="ml-4" icon-size="2x" seamless><template slot="icon"><span aria-hidden="true" class="fas fa-hand-paper"></span></template>
+<p><strong>Please wait till Mon, Aug 31st</strong> to start this task, to give others a few extra days to create the PR if they haven't done so yet.
+</p></box><p></p></div>
+<box type="info" add-class="ml-4">
+<p>This task is worth <code v-pre>2x2=4</code> participtaion points.
+</p></box><p></p>
+<ul>
+<li><strong>Learn <em>how</em> you should review PRs in this task</strong>:</li></ul>
+<panel type="seamless" class="algolia-no-index">
+  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
+<iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=c001244c-01b5-4471-ab9d-ac1b0098110a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
+<p></p>
+<div class="indented-level2">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Git &amp; GitHub → <strong>Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<p><em>PR review</em> stage is a dialog between the PR author and members of the repo that received the PR, in order to refine and eventually merge the PR.</p>
+<p>Given below are some steps you can follow when reviewing a PR.</p>
+<p><strong>1. Locate the PR:</strong></p>
+<ol>
+<li>Go to the GitHub page of the repo.</li>
+<li>Click on the <span class="tab"><span><svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-git-pull-request" aria-hidden="true"><path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z"/></svg></span> Pull requests</span> tab.</li>
+<li>Click on the PR you want to review.</li></ol>
+<p><strong>2. Read the PR description.</strong> It might contain information relevant to reviewing the PR.</p>
+<p><strong>3. Click on the</strong> <span class="tab"><svg version="1.1" width="13" height="16" viewBox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true"><path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z"/></svg> Files changed</span> tab to see the <em>diff</em> view.</p>
+<p><strong>4. Add review comments:</strong></p>
+<ol>
+<li>Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon that appears on the left margin. That should create a text box for you to enter your comment.<br>
+<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> To mark multiple lines, click-and-drag the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon.</li>
+<li>Enter your comment.<br>
+<span><span aria-hidden="true" class="fas fa-paperclip"></span></span> <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">This page @SE-EDU/guides</a> has some best practices PR reviewers can follow.</li>
+<li>After typing in the comment, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Start a review</span> button (not the <span class="btn btn-light pl-1 pr-1 pb-0 pt-0 border">Add single comment</span> button. This way, your comment is saved but not visible to others yet. It will be visible to others only when you have finished the entire review.<br>
+<img src="/website/book/gitAndGithub/reviewPRs/images/addComment.png" width="800"><p></p></li>
+<li>Repeat the above steps to add more comments.</li></ol>
+<p><strong>5. Submit the review:</strong><br>
+<img src="/website/book/gitAndGithub/reviewPRs/images/submitReview.png" width="500"></p>
+   <p></p>
+<ol>
+<li>When there are no more comments to add, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Review changes <svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-triangle-down" aria-hidden="true"><path fill-rule="evenodd" d="M0 5l6 6 6-6H0z"/></svg></span> button (on the top right of the diff page).</li>
+<li>Type in an overall comment about the PR, if any. e.g.,<pre><code class="hljs" v-pre><span>Overall, I found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. I noted a few minor coding standard violations<br></span><span>too. Some of the classes are getting quite long. Consider splitting into smaller<br></span><span>classes if that makes sense.<br></span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>LGTM</code> is often used in such overall comments, to indicate <code v-pre>Looks good to merge</code>.<br>
+<code v-pre>nit</code> is another such term, used to indicate minor flaw e.g., <code v-pre>LGTM, almost. Just a few nits to fix.</code></li>
+<li>Choose <code v-pre>Approve</code>, <code v-pre>Comment</code>, or <code v-pre>Request changes</code> option as appropriate and click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Submit review</span> button.</li></ol></div></panel></div><p></p>
+<ul>
+<li>
+<p><span class="badge badge-dark">Step 1</span> <strong>Note these additional guidelines</strong>:</p>
+<ul>
+<li>Read the <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html"><em>Best practices for reviewing PRs</em> @SE-EDU/guides</a>. You are <mark>expected to follow all of them</mark>.</li>
+<li>If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.</li>
+<li>At the end of the review, choose <code v-pre>Comment</code> (i.e., not <code v-pre>Approve</code> or <code v-pre>Request changes</code>)</li></ul></li>
+<li>
+<p><span class="badge badge-dark">Step 2</span> <strong>Do the first PR review</strong> as follows.</p>
+<ul>
+<li>Comment on <mark><a href="https://se-education.org/guides/conventions/java/basic.html">coding standard</a> violations only</mark>.</li>
+<li>The review allocation is given in the panel below.</li></ul></li></ul>
+<div class="indented-level4">
+<div>
+<panel minimized class="algolia-no-index"><template slot="_header"><p>iP PR review allocation</p></template>
+<div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
+<tr>
+<th>Tutorial</th>
+<th>Reviewer</th>
+<th>First PR to review</th>
+<th>Backup PR to review</th></tr></thead>
+<tbody>
+<tr>
+<td>TIC4001-F18</td>
+<td>JanuariusJang</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Yiheng0410</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Chilaiping</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>e0260222</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Chenduo1412</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>skyventus</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Impala36</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>daiweinus</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>dgc5213</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>tototto</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>e02161618</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>timmyly7</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>adi-kd0021</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>binbinhui</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>linqing42</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>ZhengShijieNUS</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>pigoliver</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td></tr></tbody></table></div></panel>
+<p></p>
+<div tags="m--tic4001">
+<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the <em>Backup PR to review</em> provided in the allocation table. Failing both, pick a PR at random to review.</p></div>
+</div></div>
+<ul>
+<li><span class="badge badge-dark">Step 3</span> <strong>Do the second PR review</strong> as follows.
+<ul>
+<li>Comment on <mark>other code quality guidelines</mark> (see the <span tags="m--cs2113 m--tic4001">sections on <em>Naming</em> and <em>Readability</em></span> in <a href="/website/se-book-adapted/chapters/codeQuality.html">this textbook chapter</a>) you have learned so far. It's optional to comment on coding standard violations in this PR review.</li>
+<li>The review allocation is given in the panel below.</li></ul></li></ul>
+<div class="indented-level4">
+<div>
+<panel minimized class="algolia-no-index"><template slot="_header"><p>iP PR review allocation</p></template>
+<div class="table-responsive"><table class="markbind-table table table-bordered table-striped"><thead>
+<tr>
+<th>Tutorial</th>
+<th>Reviewer</th>
+<th>Second PR to review</th>
+<th>Backup PR to review</th></tr></thead>
+<tbody>
+<tr>
+<td>TIC4001-F18</td>
+<td>JanuariusJang</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Yiheng0410</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Chilaiping</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>e0260222</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Chenduo1412</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>skyventus</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>Impala36</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>daiweinus</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>dgc5213</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>tototto</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>e02161618</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>timmyly7</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>adi-kd0021</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>binbinhui</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>linqing42</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>ZhengShijieNUS</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td></tr>
+<tr>
+<td>TIC4001-F18</td>
+<td>pigoliver</td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td>
+<td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td></tr></tbody></table></div></panel>
+<p></p>
+<p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the allocated PR is not suitable, use the same strategy as before to find an alternative PR to review.</p>
+<p></p></div></div>
+<ul>
+<li><span class="badge badge-dark">Step 4</span> <strong>[When you receive reviews for your own PR] Respond to comments received</strong>. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">these guidelines</a>, do not get into arguments with PR reviewers/authors.</li></ul></div>
+<p></p></div></div>
+<br>
+<p><span class="float-left algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span></b-btn></span><span class="float-right algolia-no-index"><b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn></span></p></div></div>
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+        <nav id="page-nav" class="navbar navbar-light bg-transparent">
+<div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+<nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+<a class="nav-link py-1" href="#ip-week-4">iP: Week 4 &#x200E;</a>
+<nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+<a class="nav-link py-1" href="#1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages">1 Add Increments as branches: Level-5, A-CodeQuality, A-AbstractClasses, A-Packages&#x200E;</a>
+<a class="nav-link py-1" href="#2-review-some-peer-prs">2 Review some peer PRs  counted for participation&#x200E;</a>
+</nav>
 
-          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </header>
-    <div id="flex-body">
-      <nav id="site-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-right-grey nav-inner position-sticky slim-scroll">
-          <ul class="site-nav-list site-nav-list-root">
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleOverview.html">Module Overview</a></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/usingThisWebsite.html"><mark>Using this Website</mark></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/moduleExpectations.html">Module Expectations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Module Structure
-                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
-              </div>
-              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/weeklySchedule.html"><small>Weekly Schedule</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/lectures.html"><small>Lectures/Tutorials</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/instructors.html">Instructors</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/textbooks.html">Textbooks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/programmingLanguages.html">Programming Language</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/standardsAndConventions.html">Standards/Conventions</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Individual Project (iP)
-                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
-              </div>
-              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-overview.html"><small>iP (Individual Project): Overview</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w2.html"><small>iP: Week 2</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w3.html"><small>iP: Week 3</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w4.html" class="current"><small>iP: Week 4</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w5.html"><small>iP: Week 5</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w6.html"><small>iP: Week 6</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-w7.html"><small>iP: Week 7</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/ip-grading.html"><small>iP: Grading</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Team Project (tP)
-                <i class="site-nav-dropdown-btn-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
-              </div>
-              <ul class="site-nav-dropdown-container site-nav-list">
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-expectations.html"><small>tP (team project): Expectations</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-timeline.html"><small>tP: Timeline</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-constraints.html"><small>tP: Constraints</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-teams.html"><small>tP: Forming Teams</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w3.html"><small>tP week 3: Kickoff</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w4.html"><small>tP week 4: Set direction</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w5.html"><small>tP week 5: Gather requirements</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w6.html"><small>tP week 6: Conceptualize the product</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w7.html"><small>tP week 7: Get ready for iterations</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w8.html"><small>tP week 8: mid-v1.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w9.html"><small>tP week 9: v1.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w10.html"><small>tP week 10: mid-v2.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w11.html"><small>tP week 11: v2.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w12.html"><small>tP week 12: mid-v3.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-w13.html"><small>tP week 13: v3.0</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-deliverables.html"><small>tP: Deliverables</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-grading.html"><small>tP: Grading</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/tp-supervision.html"><small>tP: Supervision</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/peerEvaluations.html">Peer Evaluations</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/tools.html">Tools</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-info">3<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/participation.html">Participation Marks</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)"><a href="/website/admin/gradeBreakdown.html">Grade Breakdown</a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-            </li>
-            <li>
-              <div class="site-nav-default-list-item site-nav-list-item-0" onclick="handleSiteNavClick(this)">Appendices
-                <i class="site-nav-dropdown-btn-icon site-nav-rotate-icon" onclick="handleSiteNavClick(this.parentNode, false); event.stopPropagation();">
-                  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span></i>
-              </div>
-              <ul class="site-nav-dropdown-container site-nav-dropdown-container-open site-nav-list">
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixA-principles.html"><small>Apdx A: Module Principles</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixB-policies.html"><small>Apdx B: Module Policies</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixC-faq.html"><small>Apdx C: FAQ</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixD-help.html"><small>Apdx D: Getting Help</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-warning">2<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixE-gitHub.html"><small>Apdx E: Using GitHub</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-danger">1<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-                <li>
-                  <div class="site-nav-default-list-item site-nav-list-item-1" onclick="handleSiteNavClick(this)"><a href="/website/admin/appendixF-teamworkIssues.html"><small>Apdx F: Handling Team Issues</small></a> <span class="badge badge-pill badge-light"><span class="font-weight-bold text-success">4<span aria-hidden="true" class="fas fa-star"></span></span></span></div>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      </nav>
-
-      <div id="content-wrapper">
-        <div class="website-content">
-          <p><span class="float-left algolia-no-index">
-              <b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span></b-btn>
-            </span><span class="float-right algolia-no-index">
-              <b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
-            </span></p>
-          <br>
-          <h1 id="ip-week-4"><span class="display-4">iP: Week 4</span> <span style="font-size:15px" class="text-muted text-light"><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span><span id="ip-week-4" class="anchor"></span><a class="fa fa-anchor" href="#ip-week-4" onclick="event.stopPropagation()"></a></h1>
-          <div id="main">
-            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
-              <ol>
-                <li>Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code></li>
-                <li><span>Review some peer PRs</span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li>
-              </ol>
-            </div>
-            <div id="body">
-              <div></div>
-              <p></p>
-              <h4 id="1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> Add Increments as branches: <code v-pre>Level-5</code>, <code v-pre>A-CodeQuality</code>, <code v-pre>A-AbstractClasses</code>, <code v-pre>A-Packages</code><span id="1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" class="anchor"></span><a class="fa fa-anchor" href="#1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages" onclick="event.stopPropagation()"></a></h4>
-              <div>
-                <span tags="m--cs2113 m--tic4001">
-                  <ul>
-                    <li>Do each increment as a Git branch. Here is an example:
-                      <ul>
-                        <li>Start a branch named <code v-pre>branch-{increment ID}</code> (e.g. <code v-pre>branch-Level-5</code>). You are recommended to have multiple commits in that branch. Follow the branch naming convention exactly or else our gradings scripts might miss your branch.</li>
-                        <li>After the increment is ready, merge the <code v-pre>branch-Level-5</code> back on to <code v-pre>master</code>, <mark>without a <em>fast-forward</em></mark> so that git creates a separate commit for the merge. <code v-pre>git tag</code> that merge commit as <code v-pre>Level-5</code>.</li>
-                        <li>Push the branch to your fork so that the bot can detect it. As before, push the tag as well.</li>
-                        <li>
-                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Advanced git users: do not delete the branch after merging.
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
-                </span>
-              </div>
-              <div></div>
-              <div>
-                <div class="indented">
-                  <div class="indented border">
-                    <panel type="seamless" no-close class="algolia-no-index">
-                      <div></div>
-                      <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>Level-5</code>: Handle Errors</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
-                      <div></div>
-                      <div>
-                        <p><span>
-                            <thumbnail font-color="white" add-class="float-left bg-dark mr-2 mt-2" size="80"><span aria-hidden="true" class="fas fa-exclamation-triangle"></span></thumbnail>
-                          </span></p>
-                        <h3 id="level-5-handle-errors">Level 5. Handle Errors<span id="level-5-handle-errors" class="anchor"></span><a class="fa fa-anchor" href="#level-5-handle-errors" onclick="event.stopPropagation()"></a></h3>
-                        <p>Teach Duke to deal with errors such as incorrect inputs entered by the user.
-                          <br>
-                          <br>
-                        </p>
-                        <p>Example:</p>
-                        <pre><code class="no-line-numbers hljs" v-pre><span>todo<br></span><span>    ____________________________________________________________<br></span><span>     ☹ OOPS!!! The description of a todo cannot be empty.<br></span><span>    ____________________________________________________________<br></span><span><br></span><span>blah<br></span><span>    ____________________________________________________________<br></span><span>     ☹ OOPS!!! I'm sorry, but I don't know what that means :-(<br></span><span>    ____________________________________________________________<br></span></code></pre>
-                        <div>
-                          <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> When implementing this feature, you are also recommended to implement the following extension:</p>
-                          <div class="indented">
-                            <panel class="algolia-no-index"><template slot="_header">
-                                <p><strong>Extension: <code v-pre>A-Exceptions</code></strong></p>
-                              </template>
-                              <div>
-                                <div>
-                                  <div></div>
-                                  <h3 id="a-exceptions"><span class="badge badge-pill badge-primary">A-Exceptions</span><span id="a-exceptions" class="anchor"></span><a class="fa fa-anchor" href="#a-exceptions" onclick="event.stopPropagation()"></a></h3>
-                                  <p>     <big>↳</big> <strong>Use Exceptions to handle errors</strong></p>
-                                </div>
-                                <p>Use exceptions to handle errors. For example, define a class <code v-pre>DukeException</code> to represent exceptions specific to Duke.</p>
-                              </div>
-                            </panel>
-                          </div>
-                        </div>
-                        <ul>
-                          <li><strong>Minimal</strong>: handle at least the two types of errors shown in the example above.</li>
-                          <li><strong>Stretch goal</strong>: handle all possible errors in the current version. As you evolve Duke, continue to handle errors related to the new features added.</li>
-                        </ul>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-              <div></div>
-              <div></div>
-              <div>
-                <div class="indented">
-                  <div class="indented border">
-                    <panel type="seamless" no-close class="algolia-no-index">
-                      <div></div>
-                      <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-CodeQuality</code>: Improve Code Quality</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
-                      <div></div>
-                      <div>
-                        <div>
-                          <div></div>
-                          <h3 id="a-codequality"><span class="badge badge-pill badge-primary">A-CodeQuality</span><span id="a-codequality" class="anchor"></span><a class="fa fa-anchor" href="#a-codequality" onclick="event.stopPropagation()"></a></h3>
-                          <p>     <big>↳</big> <strong>Improve code quality</strong></p>
-                        </div>
-                        <p>Critically examines the code and refactor to improve the code quality where necessary.</p>
-                        <p>
-                          <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> When adding this increment, follow closely the 'Code Quality' topics you have learned so far, rather than merely follow your own intuition about code quality.
-                        </p>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-              <div></div>
-              <div></div>
-              <div>
-                <div class="indented">
-                  <div class="indented border">
-                    <panel type="seamless" no-close class="algolia-no-index">
-                      <div></div>
-                      <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-AbstractClasses</code>: Use Abstract Classes</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
-                      <div></div>
-                      <div>
-                        <div>
-                          <div></div>
-                          <h3 id="a-abstractclasses"><span class="badge badge-pill badge-primary">A-AbstractClasses</span><span id="a-abstractclasses" class="anchor"></span><a class="fa fa-anchor" href="#a-abstractclasses" onclick="event.stopPropagation()"></a></h3>
-                          <p>     <big>↳</big> <strong>Use abstract classes</strong></p>
-                        </div>
-                        <p>Make the <code v-pre>Task</code> class an abstract class. If applicable, use abstract methods as well.</p>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-              <div></div>
-              <div></div>
-              <div>
-                <div class="indented">
-                  <div class="indented border">
-                    <panel type="seamless" no-close class="algolia-no-index">
-                      <div></div>
-                      <div slot="header"><span><strong>Duke</strong> <span class="dimmed"><strong><code v-pre>A-Packages</code>: Organize into Packages</strong></span> <span class="badge badge-pill badge-secondary"></span></span></div>
-                      <div></div>
-                      <div>
-                        <div>
-                          <div></div>
-                          <h3 id="a-packages"><span class="badge badge-pill badge-primary">A-Packages</span><span id="a-packages" class="anchor"></span><a class="fa fa-anchor" href="#a-packages" onclick="event.stopPropagation()"></a></h3>
-                          <p>     <big>↳</big> <strong>Divide classes into packages</strong></p>
-                        </div>
-                        <p>Organize the classes into suitable java packages.</p>
-                        <ul>
-                          <li><strong>Minimal</strong>: put all classes in one package e.g., <code v-pre>duke</code></li>
-                          <li><strong>Stretch goal</strong>: divide into multiple packages as the number of classes increase e.g., <code v-pre>duke.task</code>, <code v-pre>duke.command</code></li>
-                        </ul>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-              <div></div>
-              <p></p>
-              <h4 id="2-review-some-peer-prs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Review some peer PRs</span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="2-review-some-peer-prs" class="anchor"></span><a class="fa fa-anchor" href="#2-review-some-peer-prs" onclick="event.stopPropagation()"></a></h4>
-              <div>
-                <div tags="m--cs2103 m--tic4001">
-                  <box type="wrong" add-class="ml-4" icon-size="2x" seamless><template slot="icon"><span aria-hidden="true" class="fas fa-hand-paper"></span></template>
-                    <p><strong>Please wait till Mon, Aug 31st</strong> to start this task, to give others a few extra days to create the PR if they haven't done so yet.
-                    </p>
-                  </box>
-                  <p></p>
-                </div>
-                <box type="info" add-class="ml-4">
-                  <p>This task is worth <code v-pre>2x2=4</code> participtaion points.
-                  </p>
-                </box>
-                <p></p>
-                <ul>
-                  <li><strong>Learn <em>how</em> you should review PRs in this task</strong>:</li>
-                </ul>
-                <panel type="seamless" class="algolia-no-index">
-                  <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
-                  <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=c001244c-01b5-4471-ab9d-ac1b0098110a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe>
-                </panel>
-                <p></p>
-                <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                      <p>Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Git &amp; GitHub → <strong>Reviewing PRs</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                    </template>
-                    <div>
-                      <p><em>PR review</em> stage is a dialog between the PR author and members of the repo that received the PR, in order to refine and eventually merge the PR.</p>
-                      <p>Given below are some steps you can follow when reviewing a PR.</p>
-                      <p><strong>1. Locate the PR:</strong></p>
-                      <ol>
-                        <li>Go to the GitHub page of the repo.</li>
-                        <li>Click on the <span class="tab"><span><svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-git-pull-request" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M11 11.28V5c-.03-.78-.34-1.47-.94-2.06C9.46 2.35 8.78 2.03 8 2H7V0L4 3l3 3V4h1c.27.02.48.11.69.31.21.2.3.42.31.69v6.28A1.993 1.993 0 0010 15a1.993 1.993 0 001-3.72zm-1 2.92c-.66 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2zM4 3c0-1.11-.89-2-2-2a1.993 1.993 0 00-1 3.72v6.56A1.993 1.993 0 002 15a1.993 1.993 0 001-3.72V4.72c.59-.34 1-.98 1-1.72zm-.8 10c0 .66-.55 1.2-1.2 1.2-.65 0-1.2-.55-1.2-1.2 0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2zM2 4.2C1.34 4.2.8 3.65.8 3c0-.65.55-1.2 1.2-1.2.65 0 1.2.55 1.2 1.2 0 .65-.55 1.2-1.2 1.2z" />
-                              </svg></span> Pull requests</span> tab.</li>
-                        <li>Click on the PR you want to review.</li>
-                      </ol>
-                      <p><strong>2. Read the PR description.</strong> It might contain information relevant to reviewing the PR.</p>
-                      <p><strong>3. Click on the</strong> <span class="tab"><svg version="1.1" width="13" height="16" viewBox="0 0 13 16" class="octicon octicon-diff" aria-hidden="true">
-                            <path fill-rule="evenodd" d="M6 7h2v1H6v2H5V8H3V7h2V5h1v2zm-3 6h5v-1H3v1zM7.5 2L11 5.5V15c0 .55-.45 1-1 1H1c-.55 0-1-.45-1-1V3c0-.55.45-1 1-1h6.5zM10 6L7 3H1v12h9V6zM8.5 0H3v1h5l4 4v8h1V4.5L8.5 0z" />
-                          </svg> Files changed</span> tab to see the <em>diff</em> view.</p>
-                      <p><strong>4. Add review comments:</strong></p>
-                      <ol>
-                        <li>Hover over the line you want to comment on and click on the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon that appears on the left margin. That should create a text box for you to enter your comment.<br>
-                          <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> To mark multiple lines, click-and-drag the <span style="color:#0066ff"><span aria-hidden="true" class="fas fa-plus-square"></span></span> icon.
-                        </li>
-                        <li>Enter your comment.<br>
-                          <span><span aria-hidden="true" class="fas fa-paperclip"></span></span> <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">This page @SE-EDU/guides</a> has some best practices PR reviewers can follow.
-                        </li>
-                        <li>After typing in the comment, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Start a review</span> button (not the <span class="btn btn-light pl-1 pr-1 pb-0 pt-0 border">Add single comment</span> button. This way, your comment is saved but not visible to others yet. It will be visible to others only when you have finished the entire review.<br>
-                          <img src="/website/book/gitAndGithub/reviewPRs/images/addComment.png" width="800">
-                          <p></p>
-                        </li>
-                        <li>Repeat the above steps to add more comments.</li>
-                      </ol>
-                      <p><strong>5. Submit the review:</strong><br>
-                        <img src="/website/book/gitAndGithub/reviewPRs/images/submitReview.png" width="500">
-                      </p>
-                      <p></p>
-                      <ol>
-                        <li>When there are no more comments to add, click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Review changes <svg version="1.1" width="12" height="16" viewBox="0 0 12 16" class="octicon octicon-triangle-down" aria-hidden="true">
-                              <path fill-rule="evenodd" d="M0 5l6 6 6-6H0z" />
-                            </svg></span> button (on the top right of the diff page).</li>
-                        <li>Type in an overall comment about the PR, if any. e.g.,
-                          <pre><code class="hljs" v-pre><span>Overall, I found your code easy to read for the most part except a few places<br></span><span>where the nesting was too deep. I noted a few minor coding standard violations<br></span><span>too. Some of the classes are getting quite long. Consider splitting into smaller<br></span><span>classes if that makes sense.<br></span></code></pre><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> <code v-pre>LGTM</code> is often used in such overall comments, to indicate <code v-pre>Looks good to merge</code>.<br>
-                          <code v-pre>nit</code> is another such term, used to indicate minor flaw e.g., <code v-pre>LGTM, almost. Just a few nits to fix.</code>
-                        </li>
-                        <li>Choose <code v-pre>Approve</code>, <code v-pre>Comment</code>, or <code v-pre>Request changes</code> option as appropriate and click on the <span class="btn btn-success pl-1 pr-1 pb-0 pt-0">Submit review</span> button.</li>
-                      </ol>
-                    </div>
-                  </panel>
-                </div>
-                <p></p>
-                <ul>
-                  <li>
-                    <p><span class="badge badge-dark">Step 1</span> <strong>Note these additional guidelines</strong>:</p>
-                    <ul>
-                      <li>Read the <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html"><em>Best practices for reviewing PRs</em> @SE-EDU/guides</a>. You are <mark>expected to follow all of them</mark>.</li>
-                      <li>If the PR has received some review comments already, feel free to confirm/complement/question those comments in your review. Also, look for things the previous reviewers may have missed.</li>
-                      <li>At the end of the review, choose <code v-pre>Comment</code> (i.e., not <code v-pre>Approve</code> or <code v-pre>Request changes</code>)</li>
-                    </ul>
-                  </li>
-                  <li>
-                    <p><span class="badge badge-dark">Step 2</span> <strong>Do the first PR review</strong> as follows.</p>
-                    <ul>
-                      <li>Comment on <mark><a href="https://se-education.org/guides/conventions/java/basic.html">coding standard</a> violations only</mark>.</li>
-                      <li>The review allocation is given in the panel below.</li>
-                    </ul>
-                  </li>
-                </ul>
-                <div class="indented-level4">
-                  <div>
-                    <panel minimized class="algolia-no-index"><template slot="_header">
-                        <p>iP PR review allocation</p>
-                      </template>
-                      <div class="table-responsive">
-                        <table class="markbind-table table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                              <th>Tutorial</th>
-                              <th>Reviewer</th>
-                              <th>First PR to review</th>
-                              <th>Backup PR to review</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>JanuariusJang</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Yiheng0410</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Chilaiping</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>e0260222</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Chenduo1412</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>skyventus</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Impala36</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>daiweinus</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>dgc5213</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>tototto</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>e02161618</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>timmyly7</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>adi-kd0021</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>binbinhui</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>linqing42</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>ZhengShijieNUS</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>pigoliver</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </panel>
-                    <p></p>
-                    <div tags="m--tic4001">
-                      <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the student you have been allocated to review has not created a PR (or the PR has a trivial amount of code), you can review the <em>Backup PR to review</em> provided in the allocation table. Failing both, pick a PR at random to review.</p>
-                    </div>
-                  </div>
-                </div>
-                <ul>
-                  <li><span class="badge badge-dark">Step 3</span> <strong>Do the second PR review</strong> as follows.
-                    <ul>
-                      <li>Comment on <mark>other code quality guidelines</mark> (see the <span tags="m--cs2113 m--tic4001">sections on <em>Naming</em> and <em>Readability</em></span> in <a href="/website/se-book-adapted/chapters/codeQuality.html">this textbook chapter</a>) you have learned so far. It's optional to comment on coding standard violations in this PR review.</li>
-                      <li>The review allocation is given in the panel below.</li>
-                    </ul>
-                  </li>
-                </ul>
-                <div class="indented-level4">
-                  <div>
-                    <panel minimized class="algolia-no-index"><template slot="_header">
-                        <p>iP PR review allocation</p>
-                      </template>
-                      <div class="table-responsive">
-                        <table class="markbind-table table table-bordered table-striped">
-                          <thead>
-                            <tr>
-                              <th>Tutorial</th>
-                              <th>Reviewer</th>
-                              <th>Second PR to review</th>
-                              <th>Backup PR to review</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>JanuariusJang</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Yiheng0410</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Chilaiping</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>e0260222</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Chenduo1412</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/linqing42">linqing42</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>skyventus</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>Impala36</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>daiweinus</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/timmyly7">timmyly7</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>dgc5213</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/pigoliver">pigoliver</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>tototto</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chilaiping">Chilaiping</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/dgc5213">dgc5213</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>e02161618</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/daiweinus">daiweinus</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/adi-kd0021">adi-kd0021</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>timmyly7</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/ZhengShijieNUS">ZhengShijieNUS</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>adi-kd0021</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/skyventus">skyventus</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>binbinhui</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Impala36">Impala36</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e02161618">e02161618</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>linqing42</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/tototto">tototto</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/JanuariusJang">JanuariusJang</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>ZhengShijieNUS</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/binbinhui">binbinhui</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Yiheng0410">Yiheng0410</a></td>
-                            </tr>
-                            <tr>
-                              <td>TIC4001-F18</td>
-                              <td>pigoliver</td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/Chenduo1412">Chenduo1412</a></td>
-                              <td><a href="https://github.com/nus-tic4001-AY2021S1/ip/pulls/e0260222">e0260222</a></td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </panel>
-                    <p></p>
-                    <p><span><span aria-hidden="true" class="fas fa-info-circle"></span></span> If the allocated PR is not suitable, use the same strategy as before to find an alternative PR to review.</p>
-                    <p></p>
-                  </div>
-                </div>
-                <ul>
-                  <li><span class="badge badge-dark">Step 4</span> <strong>[When you receive reviews for your own PR] Respond to comments received</strong>. You are recommended to (but not obliged to) respond to comments received from peers, especially if the PR reviewer asked you for more info. As mentioned in <a href="https://se-education.org/guides/guidelines/PRs-reviewing.html">these guidelines</a>, do not get into arguments with PR reviewers/authors.</li>
-                </ul>
-              </div>
-              <p></p>
-            </div>
-          </div>
-          <br>
-          <p><span class="float-left algolia-no-index">
-              <b-btn variant="light" href="/website/admin/ip-w3.html"><span><span aria-hidden="true" class="far fa-arrow-alt-circle-left"></span> iP: Week 3</span></b-btn>
-            </span><span class="float-right algolia-no-index">
-              <b-btn variant="light" href="/website/admin/ip-w5.html"><span>iP: Week 5 <span aria-hidden="true" class="far fa-arrow-alt-circle-right"></span></span></b-btn>
-            </span></p>
-        </div>
-      </div>
-
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#ip-week-4">iP: Week 4 &#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages">1 Add Increments as branches: Level-5, A-CodeQuality, A-AbstractClasses, A-Packages&#x200E;</a>
-              <a class="nav-link py-1" href="#2-review-some-peer-prs">2 Review some peer PRs counted for participation&#x200E;</a>
-            </nav>
-
-          </nav>
-        </div>
-      </nav>
-    </div>
+</nav>
+</div>
+</nav>
+</div>
     <footer>
-
-      <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 23 Oct 2020, 23:45:56 GMT+8]</small>
-      </div>
-    </footer>
-  </div>
+  
+  <div class="text-center">
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 29 Oct 2020, 15:22:35 GMT+8]</small></div></footer></div>
 </body>
 <script src="../markbind/js/vue.min.js"></script>
 <script src="../markbind/js/components.min.js"></script>
@@ -814,21 +524,18 @@
   const enableSearch = true
 </script>
 <script src="../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "369d0a5a75795bb334b8da938b3bb288",
-      indexName: "nus-tic4001-ay2021s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "369d0a5a75795bb334b8da938b3bb288",
+        indexName: "nus-tic4001-ay2021s1",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../markbind/layouts/default/scripts.js"></script>
-
 </html>

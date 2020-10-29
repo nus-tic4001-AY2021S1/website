@@ -1,514 +1,347 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.15.2">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TIC4001 - Week 5 - Admin Info</title>
-  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
-  <link rel="stylesheet" href="../../markbind/css/octicons.css">
-  <link rel="stylesheet" href="../../markbind/css/github.min.css">
-  <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
-  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/schedule.css">
-  <link rel="icon" href="/website/favicon.ico">
-</head>
-
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
-  <div id="app">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIC4001 - Week 5 - Admin Info</title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/css/main.css">
+    <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
+<body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
+<div id="app">
     <header fixed>
-      <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
-        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
-          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
-          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
-          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
-          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
-          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
-          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
-          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
-          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
-          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
-          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
-          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
-        </dropdown>
-        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+<navbar placement="top" type="dark" class="temp-navbar">
+<a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
+  <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+  <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+<li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+<li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+<li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+<li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+<li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+<li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+<li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+<li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+<li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+<li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+<li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+<li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+<li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li></dropdown>
+  <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+  <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+  <div class="nav-link temp-dropdown-placeholder">**Links**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+    <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+    <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+    
+    
+    <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+    
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+    <hr>
+    <span><strong> Individual Project (iP):</strong></span>
+    <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+    <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+    <hr>
+    <span><strong> Team Project (tP):</strong></span>
+    <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+    
+    <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
+  <li slot="right" class="nav-link">
+    <form class="navbar-form">
+        <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+        
+<div id="content-wrapper">
+<div class="website-content">
+<nav>
+<ul class="pagination mt-2"><li class="page-item"><a class="page-link" href="/website/schedule/week4"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week5/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week5/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Lecture</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week5/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+<li class="page-item active"><a class="page-link" href="/website/schedule/week5/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week5/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week6"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
+<p></p>
+<h1 id="week-5-fri-sep-4th-admin-info">Week 5 <small><small><span class="dimmed">[Fri, Sep 4th]</span> - Admin Info</small></small><span id="week-5-fri-sep-4th-admin-info" class="anchor"></span><a class="fa fa-anchor" href="#week-5-fri-sep-4th-admin-info" onclick="event.stopPropagation()"></a></h1>
+<div id="main">
+<div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
+<ol>
+<li><span>Submit post-lecture quiz</span>  <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li>
+<li><span>Practice peer evaluation on TEAMMATES</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> Thu, Sep 10th 2359</span></span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li></ol></div>
+<div id="body">
+<div></div>
+<p></p>
+<h4 id="1-submit-post-lecture-quiz"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Submit post-lecture quiz</span>  <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="1-submit-post-lecture-quiz" class="anchor"></span><a class="fa fa-anchor" href="#1-submit-post-lecture-quiz" onclick="event.stopPropagation()"></a></h4>
+<div>
+<ul>
+<li><strong>Post-lecture quiz</strong>: Read weekly topics allocated for this week and submit the post-lecture quiz before the following lecture.</li></ul></div>
+<p></p>
+<h4 id="2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Practice peer evaluation on TEAMMATES</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> Thu, Sep 10th 2359</span></span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359" class="anchor"></span><a class="fa fa-anchor" href="#2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359" onclick="event.stopPropagation()"></a></h4>
+<div>
+<ul>
+<li>You should receive the submission link by Monday noon. Email <code v-pre>tic4001@comp.nus.edu.sg</code> if you did not receive the submission link on time.</li></ul>
+<div class="indented-level2">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Introduction <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<p>This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.</p>
+<div class="indented-level1">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → TEAMMATES <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<h2 id="tool-teammates-for-peer-evaluations">Tool: TEAMMATES (for Peer Evaluations)<span id="tool-teammates-for-peer-evaluations" class="anchor"></span><a class="fa fa-anchor" href="#tool-teammates-for-peer-evaluations" onclick="event.stopPropagation()"></a></h2>
+<p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system. <span class="dimmed">TEAMMATES is a project run by NUS SoC students and used by over 0.5 million users from over 1000 universities.</span></p>
+<box>
+<p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong></span>
+When the first feedback session is open on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.</p>
+<p>When you do receive that email, it will contain a unique link that you can use to access TEAMMATES without logging in first. Logging in to TEAMMATES using a Google account is optional (but doing so will allow you to see all your TEAMMATES sessions in one page).
+</p></box><p></p></div></panel></div><p></p>
+<p><font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you can lose participation marks.</mark></p></div></panel></div><p></p>
+<div class="indented-level2">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Practice Peer Evaluation <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<div>
+<h3 id="session-practice-peer-evaluation">Session: <code v-pre>Practice Peer Evaluation</code><span id="session-practice-peer-evaluation" class="anchor"></span><a class="fa fa-anchor" href="#session-practice-peer-evaluation" onclick="event.stopPropagation()"></a></h3>
+<ul>
+<li>Objective: to give you a chance to familiarize with the TEAMMATES tool</li>
+<li>Held early in the semester</li>
+<li>Submission is compulsory. However, your responses will not considered for grading as this session is for practice only.</li></ul></div></div></panel></div><p></p>
+<div class="indented-level2">
+<panel type="primary" class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Deadline Extensions</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<h3 id="policy-on-deadline-extensions-optional">Policy on deadline extensions <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="policy-on-deadline-extensions-optional" class="anchor"></span><a class="fa fa-anchor" href="#policy-on-deadline-extensions-optional" onclick="event.stopPropagation()"></a></h3>
+<div class="indented">
+<div>
+<p>Learning to honor deadlines is a learning outcome of this module. Therefore, <strong>we do not normally extend module deadlines</strong> to accommodate those who missed the deadline, unless there are some extraordinary circumstances.</p></div></div></div></panel></div><p></p></div>
+<p></p></div></div>
+<h4 id="other-info-relevant-to-this-week"><span class="badge badge-pill badge-dark p-2"><big><big>+</big></big></span> Other info relevant to this week:<span id="other-info-relevant-to-this-week" class="anchor"></span><a class="fa fa-anchor" href="#other-info-relevant-to-this-week" onclick="event.stopPropagation()"></a></h4>
+<div class="indented-level2">
+<panel type minimized class="algolia-no-index">
+<span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Grading <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+<div>
+
+<p><strong><strong>Total</strong></strong>: 60 marks (<span><span aria-hidden="true" class="fas fa-user"></span></span> 35 individual marks + <span><span aria-hidden="true" class="fas fa-users"></span></span> 25 team marks)</p>
+<p>See the sections below for details of how we assess each aspect.</p>
+
+<div id="criteria-productDesign">
+<h4 id="1-project-grading-product-design-5-marks"><div class="bg-warning p-1">1. Project Grading: Product Design <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span> 5 marks]</span></div><span id="1-project-grading-product-design-5-marks" class="anchor"></span><a class="fa fa-anchor" href="#1-project-grading-product-design-5-marks" onclick="event.stopPropagation()"></a></h4>
+<p><strong>Evaluates:</strong> how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user</p>
+
+<div tags="m--tic4001">
+<p><strong>Evaluated by</strong> tutors</p>
+<p><strong>Based on</strong> the product features.</p></div></div>
+
+<h4 id="2-project-grading-implementation-20-marks"><div class="bg-warning p-1">2. Project Grading: Implementation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 20 marks]</span></div><span id="2-project-grading-implementation-20-marks" class="anchor"></span><a class="fa fa-anchor" href="#2-project-grading-implementation-20-marks" onclick="event.stopPropagation()"></a></h4>
+<p><strong><big>2A. Code quality</big></strong></p>
+<p><strong>Evaluates:</strong> the quality of the parts of the code you claim as written by you</p>
+<p><strong>Evaluation method:</strong> manual inspection by tutors + automated-analysis by a script</p>
+<p><strong>Criteria:</strong></p>
+<span id="projectGrading-codeQuality-criteria">
+<ul>
+<li>
+<p>At least some evidence of these (see <a href="/website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
+<ul>
+<li>logging</li>
+<li>exceptions</li>
+<li>assertions</li></ul></li>
+<li>
+<p>No <a href="https://se-education.org/guides/conventions/java/basic.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p></li>
+<li>
+<p><a href="/website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p></li>
+<li>
+<p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p></li>
+<li>
+<p>Evidence of applying <a href="/website/book/codeQuality">code quality guidelines covered in the module</a>.</p></li></ul></span>
+<p><strong><big>2B. Effort</big></strong></p>
+<p><strong>Evaluates:</strong> how much value you contributed to the product</p>
+<p><strong>Method:</strong></p>
 
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+<div tags="m--tic4001">
+<ul>
+<li>This is evaluated by tutors.</li>
+<li>The score could be further moderated by this question answered by team members.</li></ul>
+<div class="indented-level2">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<p><thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong></p>
+<div>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p>Uses the <code v-pre>Equal Share +/- N%</code> scale for the answer</p></template>
+<ul radio-group="2ef43" class="radio-list">
+<li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
+<li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
+<li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
+<li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> ...</label></li>
+<li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
+<li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li></ul></panel></div></div></panel></div><p></p></div>
 
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+<h4 id="3-project-grading-qa-10-marks"><div class="bg-warning p-1">3. Project Grading: QA <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 10 marks]</span></div><span id="3-project-grading-qa-10-marks" class="anchor"></span><a class="fa fa-anchor" href="#3-project-grading-qa-10-marks" onclick="event.stopPropagation()"></a></h4>
 
-          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </header>
-    <div id="flex-body">
+<div tags="m--tic4001">
+<p><strong>Evaluated by</strong> tutors.</p>
+<p><strong>Based on</strong>,</p>
+<ul>
+<li><span><span aria-hidden="true" class="fas fa-users"></span></span> the robustness of your product</li>
+<li><span><span aria-hidden="true" class="fas fa-user"></span></span> the quality of test cases</li></ul></div>
 
-      <div id="content-wrapper">
-        <div class="website-content">
-          <nav>
-            <ul class="pagination mt-2">
-              <li class="page-item"><a class="page-link" href="/website/schedule/week4"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week5/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week5/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Lecture</a></li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week5/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
-              <li class="page-item active"><a class="page-link" href="/website/schedule/week5/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week5/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
-              <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-              <li class="page-item"><a class="page-link" href="/website/schedule/week6"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-            </ul>
-          </nav>
-          <p></p>
-          <h1 id="week-5-fri-sep-4th-admin-info">Week 5 <small><small><span class="dimmed">[Fri, Sep 4th]</span> - Admin Info</small></small><span id="week-5-fri-sep-4th-admin-info" class="anchor"></span><a class="fa fa-anchor" href="#week-5-fri-sep-4th-admin-info" onclick="event.stopPropagation()"></a></h1>
-          <div id="main">
-            <div id="summary" class="lead border-bottom border-left ml-3 mb-3" style="color: purple">
-              <ol>
-                <li><span>Submit post-lecture quiz</span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li>
-                <li><span>Practice peer evaluation on TEAMMATES</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> Thu, Sep 10th 2359</span></span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span></li>
-              </ol>
-            </div>
-            <div id="body">
-              <div></div>
-              <p></p>
-              <h4 id="1-submit-post-lecture-quiz"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span>Submit post-lecture quiz</span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="1-submit-post-lecture-quiz" class="anchor"></span><a class="fa fa-anchor" href="#1-submit-post-lecture-quiz" onclick="event.stopPropagation()"></a></h4>
-              <div>
-                <ul>
-                  <li><strong>Post-lecture quiz</strong>: Read weekly topics allocated for this week and submit the post-lecture quiz before the following lecture.</li>
-                </ul>
-              </div>
-              <p></p>
-              <h4 id="2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span>Practice peer evaluation on TEAMMATES</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> Thu, Sep 10th 2359</span></span> <span class="text-info"><span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">counted for participation</span><span aria-hidden="true" class="fab fa-product-hunt"></span></span></span><span id="2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359" class="anchor"></span><a class="fa fa-anchor" href="#2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359" onclick="event.stopPropagation()"></a></h4>
-              <div>
-                <ul>
-                  <li>You should receive the submission link by Monday noon. Email <code v-pre>tic4001@comp.nus.edu.sg</code> if you did not receive the submission link on time.</li>
-                </ul>
-                <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Introduction <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                    </template>
-                    <div>
-                      <p>This module leverages peer feedback/evaluations in many ways. In particular, we do several rounds of peer evaluations using TEAMMATES.</p>
-                      <div class="indented-level1">
-                        <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                            <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → TEAMMATES <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                          </template>
-                          <div>
-                            <h2 id="tool-teammates-for-peer-evaluations">Tool: TEAMMATES (for Peer Evaluations)<span id="tool-teammates-for-peer-evaluations" class="anchor"></span><a class="fa fa-anchor" href="#tool-teammates-for-peer-evaluations" onclick="event.stopPropagation()"></a></h2>
-                            <p>We use the <a href="http://teammatesv4.appspot.com/">TEAMMATES</a> online peer evaluation system. <span class="dimmed">TEAMMATES is a project run by NUS SoC students and used by over 0.5 million users from over 1000 universities.</span></p>
-                            <box>
-                              <p><span style="color:purple"><strong><span aria-hidden="true" class="fas fa-hard-hat"></span> Preparation:</strong></span>
-                                When the first feedback session is open on TEAMMATES, you will receive an eamil from TEAMMATES. There is nothing for you to do until then.</p>
-                              <p>When you do receive that email, it will contain a unique link that you can use to access TEAMMATES without logging in first. Logging in to TEAMMATES using a Google account is optional (but doing so will allow you to see all your TEAMMATES sessions in one page).
-                              </p>
-                            </box>
-                            <p></p>
-                          </div>
-                        </panel>
-                      </div>
-                      <p></p>
-                      <p>
-                        <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Submitting peer evaluations is compulsory. <mark>If you routinely miss submitting peer evaluations, you can lose participation marks.</mark>
-                      </p>
-                    </div>
-                  </panel>
-                </div>
-                <p></p>
-                <div class="indented-level2">
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → Session: Practice Peer Evaluation <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                    </template>
-                    <div>
-                      <div>
-                        <h3 id="session-practice-peer-evaluation">Session: <code v-pre>Practice Peer Evaluation</code><span id="session-practice-peer-evaluation" class="anchor"></span><a class="fa fa-anchor" href="#session-practice-peer-evaluation" onclick="event.stopPropagation()"></a></h3>
-                        <ul>
-                          <li>Objective: to give you a chance to familiarize with the TEAMMATES tool</li>
-                          <li>Held early in the semester</li>
-                          <li>Submission is compulsory. However, your responses will not considered for grading as this session is for practice only.</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-                <p></p>
-                <div class="indented-level2">
-                  <panel type="primary" class="embedding algolia-no-index" minimized><template slot="_header">
-                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>Module Policies → Policy on Deadline Extensions</strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                    </template>
-                    <div>
-                      <h3 id="policy-on-deadline-extensions-optional">Policy on deadline extensions <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="policy-on-deadline-extensions-optional" class="anchor"></span><a class="fa fa-anchor" href="#policy-on-deadline-extensions-optional" onclick="event.stopPropagation()"></a></h3>
-                      <div class="indented">
-                        <div>
-                          <p>Learning to honor deadlines is a learning outcome of this module. Therefore, <strong>we do not normally extend module deadlines</strong> to accommodate those who missed the deadline, unless there are some extraordinary circumstances.</p>
-                        </div>
-                      </div>
-                    </div>
-                  </panel>
-                </div>
-                <p></p>
-              </div>
-              <p></p>
-            </div>
-          </div>
-          <h4 id="other-info-relevant-to-this-week"><span class="badge badge-pill badge-dark p-2"><big><big>+</big></big></span> Other info relevant to this week:<span id="other-info-relevant-to-this-week" class="anchor"></span><a class="fa fa-anchor" href="#other-info-relevant-to-this-week" onclick="event.stopPropagation()"></a></h4>
-          <div class="indented-level2">
-            <panel type minimized class="algolia-no-index">
-              <span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP: Grading <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-              <div>
+<div id="criteria-documentation">
+<h4 id="4-project-grading-documentation-15-marks"><div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 15 marks]</span></div><span id="4-project-grading-documentation-15-marks" class="anchor"></span><a class="fa fa-anchor" href="#4-project-grading-documentation-15-marks" onclick="event.stopPropagation()"></a></h4>
 
-                <p><strong><strong>Total</strong></strong>: 60 marks (<span><span aria-hidden="true" class="fas fa-user"></span></span> 35 individual marks + <span><span aria-hidden="true" class="fas fa-users"></span></span> 25 team marks)</p>
-                <p>See the sections below for details of how we assess each aspect.</p>
+<div tags="m--tic4001">
+<p><strong>Evaluated by</strong> tutors</p>
+<p><strong>Based on</strong> the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.</p></div></div>
 
-                <div id="criteria-productDesign">
-                  <h4 id="1-project-grading-product-design-5-marks">
-                    <div class="bg-warning p-1">1. Project Grading: Product Design <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span> 5 marks]</span></div><span id="1-project-grading-product-design-5-marks" class="anchor"></span><a class="fa fa-anchor" href="#1-project-grading-product-design-5-marks" onclick="event.stopPropagation()"></a>
-                  </h4>
-                  <p><strong>Evaluates:</strong> how well your features fit together to form a cohesive product (not how many features or how big the features are) and how well does it match the target user</p>
+<h4 id="5-project-grading-project-management-5-5-10-marks"><div class="bg-warning p-1">5. Project Grading: Project Management <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span> 5 + <span><span aria-hidden="true" class="fas fa-user"></span></span> 5 = 10 marks]</span></div><span id="5-project-grading-project-management-5-5-10-marks" class="anchor"></span><a class="fa fa-anchor" href="#5-project-grading-project-management-5-5-10-marks" onclick="event.stopPropagation()"></a></h4>
+<div id="project-management-grading"> 
+<p><big><strong>5A. Process:</strong></big></p>
+<p><strong>Evaluates:</strong> How well you did in project management related aspects of the project, as an individual and as a team</p>
+<p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
+<p><strong>Grading criteria:</strong></p>
+<ul>
+<li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li></ul>
 
-                  <div tags="m--tic4001">
-                    <p><strong>Evaluated by</strong> tutors</p>
-                    <p><strong>Based on</strong> the product features.</p>
-                  </div>
-                </div>
+<div tags="m--cs2113 m--tic4001">
+<ul>
+<li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span> at v1.0, v2.0, and v3.0 milestone deadlines.</li>
+<li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li></ul></div>
+<p><big><strong>5B. Team-tasks:</strong></big></p>
+<p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
+<div class="indented-level1">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<p>Here is a non-exhaustive list of team-tasks:</p>
+<ol>
+<li>Setting up the GitHub team org/repo</li>
+<li>Necessary general code enhancements</li>
+<li>Setting up tools e.g., GitHub, Gradle</li>
+<li>Maintaining the issue tracker</li>
+<li>Release management</li>
+<li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+<li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li></ol></div></panel></div><p></p>
+<p><strong>Based on:</strong> peer evaluations, tutor observations</p>
+<p><strong>Grading criteria:</strong> Do these to earn full marks.</p>
+<ul>
+<li>Do close to an equal share of the team tasks (you can earn bonus marks by doing more than an equal share).</li>
+<li>Merge code in at least four of weeks 7, 8, 9, 10, 11, 12</li></ul></div></div></panel><p></p>
+<panel type minimized class="algolia-no-index">
+<span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Apdx B (Policies) → Policy on project work distribution <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
+<div>
+<h3 id="policy-on-project-work-distribution">Policy on project work distribution <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="policy-on-project-work-distribution" class="anchor"></span><a class="fa fa-anchor" href="#policy-on-project-work-distribution" onclick="event.stopPropagation()"></a></h3>
+<div class="indented">
+<div>
+<p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
 
-                <h4 id="2-project-grading-implementation-20-marks">
-                  <div class="bg-warning p-1">2. Project Grading: Implementation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span> 20 marks]</span></div><span id="2-project-grading-implementation-20-marks" class="anchor"></span><a class="fa fa-anchor" href="#2-project-grading-implementation-20-marks" onclick="event.stopPropagation()"></a>
-                </h4>
-                <p><strong><big>2A. Code quality</big></strong></p>
-                <p><strong>Evaluates:</strong> the quality of the parts of the code you claim as written by you</p>
-                <p><strong>Evaluation method:</strong> manual inspection by tutors + automated-analysis by a script</p>
-                <p><strong>Criteria:</strong></p>
-                <span id="projectGrading-codeQuality-criteria">
-                  <ul>
-                    <li>
-                      <p>At least some evidence of these (see <a href="/website/se-book-adapted/chapters/errorHandling.html">here</a> for more info)</p>
-                      <ul>
-                        <li>logging</li>
-                        <li>exceptions</li>
-                        <li>assertions</li>
-                      </ul>
-                    </li>
-                    <li>
-                      <p>No <a href="https://se-education.org/guides/conventions/java/basic.html">coding standard</a> violations <span class="dimmed">e.g. all boolean variables/methods sounds like booleans</span>. Checkstyle can prevent only <em>some</em> coding standard violations; others need to be checked manually.</p>
-                    </li>
-                    <li>
-                      <p><a href="/website/se-book-adapted/chapters/codeQuality.html#slap-hard">SLAP</a> is applied at a reasonable level. Long methods or deeply-nested code are symptoms of low-SLAP.</p>
-                    </li>
-                    <li>
-                      <p>No noticeable code duplications <span class="dimmed">i.e. if there multiple blocks of code that vary only in minor ways, try to extract out similarities into one place</span>, especially in test code.</p>
-                    </li>
-                    <li>
-                      <p>Evidence of applying <a href="/website/book/codeQuality">code quality guidelines covered in the module</a>.</p>
-                    </li>
-                  </ul>
-                </span>
-                <p><strong><big>2B. Effort</big></strong></p>
-                <p><strong>Evaluates:</strong> how much value you contributed to the product</p>
-                <p><strong>Method:</strong></p>
+<h2 class="text-white bg-info p-1" id="fas-user-individual-expectations"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations<span id="fas-user-individual-expectations" class="anchor"></span><a class="fa fa-anchor" href="#fas-user-individual-expectations" onclick="event.stopPropagation()"></a></h2>
+<h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span><span id="individual-expectations-on-implementation" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-implementation" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Contribute to the functional code of the product.</strong></span>
+<ul>
+<li>User-visible features are preferred, but it is not a strict requirement.:</li>
+<li><strong>The enhancement(s) should fit with the rest of the software</strong> (and the target user profile) and should have the consent of the team members. <span class="dimmed">You will lose marks if you go 'rogue' and add things that don't fit with the product.</span></li></ul></li></ul>
 
+<ul>
+<li>
+<p><strong>Tip: Contribute to all aspects of the project</strong> e.g. write backend code, frontend code, test code, user documentation, and developer documentation. <span class="dimmed">Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.</span></p></li>
+<li>
+<p><strong>Tip: Do <em>all</em> the work related to your enhancement yourself.</strong> <span class="dimmed">Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.</span></p></li></ul>
 
-                <div tags="m--tic4001">
-                  <ul>
-                    <li>This is evaluated by tutors.</li>
-                    <li>The score could be further moderated by this question answered by team members.</li>
-                  </ul>
-                  <div class="indented-level2">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Peer Evaluations → <mark>Questions used for Evaluating Implementation Effort</mark> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                      </template>
-                      <div>
-                        <p>
-                          <thumbnail circle background="#28a745" font-color="white" size="25"><strong>Q</strong></thumbnail> <strong>The team members' contribution to the product implementation (excluding UG, DG, and team-based tasks) is,</strong>
-                        </p>
-                        <div>
-                          <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                              <p>Uses the <code v-pre>Equal Share +/- N%</code> scale for the answer</p>
-                            </template>
-                            <ul radio-group="2ef43" class="radio-list">
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share</code> <span class="dimmed">i.e., if the team has 4 members, this person did 1/4 of the work</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share + 10%</code> <span class="dimmed">i.e., this person did about 10% more than an equal share (equal share x 1.10)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share + 20%</code> <span class="dimmed">i.e., this person did about 20% more than an equal share (equal share x 1.20)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> ...</label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share - 10%</code> <span class="dimmed">i.e., this person did about 10% less than an equal share (equal share x 0.90)</span></label></li>
-                              <li class="radio-list-item"><label><input class="radio-list-input" name="2ef43" type="radio"> <code v-pre>Equal share - 20%</code> <span class="dimmed">i.e., this person did about 20% less than an equal share (equal share x 0.80)</span></label></li>
-                            </ul>
-                          </panel>
-                        </div>
-                      </div>
-                    </panel>
-                  </div>
-                  <p></p>
-                </div>
+<h4 id="individual-expectations-on-documentation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Documentation</span><span id="individual-expectations-on-documentation" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-documentation" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><strong>Objective:</strong> showcase your ability to write both <em>user-facing documentation</em> and <em>developer-facing documentation</em>.</li>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Update the User Guide (UG) and the Developer Guide (DG) parts</strong></span> that are related to the enhancements you added. The minimum requirement is given below. <span class="dimmed">(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)</span>
+<ul>
+<li>UG: 0.5 or more pages</li>
+<li>DG: 1.5 or more pages</li></ul></li>
+<li><strong>Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements</strong>, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.</li>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least 2 types of UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li></ul>
+<h4 id="individual-expectations-on-testing"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Testing</span><span id="individual-expectations-on-testing" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-testing" onclick="event.stopPropagation()"></a></h4>
+<div id="testing-expectations">
+<ul>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li></ul>
+<div class="indented">
+<box>
+<p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
+There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p></box><p></p></div></div>
+<h4 id="individual-expectations-on-teamwork"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Teamwork</span><span id="individual-expectations-on-teamwork" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-teamwork" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Do an equal share of the <em>team-tasks</em></strong>.</span></li></ul>
+<div id="team-tasks" class="indented-level2">
+<box>
+<p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do.</p>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p></template>
+<span id="example-team-tasks">
+<p>Here is a non-exhaustive list of team-tasks:</p>
+<ol>
+<li>Setting up the GitHub team org/repo</li>
+<li>Necessary general code enhancements</li>
+<li>Setting up tools e.g., GitHub, Gradle</li>
+<li>Maintaining the issue tracker</li>
+<li>Release management</li>
+<li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
+<li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li></ol></span></panel><p></p></box></div>
+<ul>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Carry an equal share of project roles and responsibilities</strong>.</span></li></ul>
+<div class="indented-level2">
+<box>
+<span id="roles">
+<p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Recommended roles and responsibilities</p></template>
+<p>This is a non-exhaustive list; you may define additional roles.</p>
+<ul>
+<li><em>Team lead</em>: Responsible for overall project coordination.</li>
+<li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
+<li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
+<li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
+<li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
+<li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
+<li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
+<li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li></ul>
 
-                <h4 id="3-project-grading-qa-10-marks">
-                  <div class="bg-warning p-1">3. Project Grading: QA <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 10 marks]</span></div><span id="3-project-grading-qa-10-marks" class="anchor"></span><a class="fa fa-anchor" href="#3-project-grading-qa-10-marks" onclick="event.stopPropagation()"></a>
-                </h4>
+<div tags="m--cs2113 m--tic4001">
+<ul>
+<li><em>In charge of[Area XYZ]</em> of the code: <span class="dimmed">e.g. In charge of the code that deals with storage, etc.</span> If you are in charge of an area, you are expected to know that area well, and review changes done to that code.</li></ul></div></panel><p></p>
+<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>. <span class="dimmed">Reason: when <em>everyone is responsible for everything</em>, no one is.</span></p></span></box><p></p></div>
+<ul>
+<li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Review each others work</strong>.</span> <span class="dimmed">Reason: reviewing skills is a learning outcome, and it is mutually beneficial.</span></li></ul></div></panel></div></div></div></panel><p></p></div></div></div>
 
-                <div tags="m--tic4001">
-                  <p><strong>Evaluated by</strong> tutors.</p>
-                  <p><strong>Based on</strong>,</p>
-                  <ul>
-                    <li><span><span aria-hidden="true" class="fas fa-users"></span></span> the robustness of your product</li>
-                    <li><span><span aria-hidden="true" class="fas fa-user"></span></span> the quality of test cases</li>
-                  </ul>
-                </div>
+        <nav id="page-nav" class="navbar navbar-light bg-transparent">
+<div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-                <div id="criteria-documentation">
-                  <h4 id="4-project-grading-documentation-15-marks">
-                    <div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 15 marks]</span></div><span id="4-project-grading-documentation-15-marks" class="anchor"></span><a class="fa fa-anchor" href="#4-project-grading-documentation-15-marks" onclick="event.stopPropagation()"></a>
-                  </h4>
+<nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+<a class="nav-link py-1" href="#week-5-fri-sep-4th-admin-info">Week 5 [Fri, Sep 4th] - Admin Info&#x200E;</a>
+<nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+<a class="nav-link py-1" href="#1-submit-post-lecture-quiz">1 Submit post-lecture quiz  counted for participation&#x200E;</a>
+<a class="nav-link py-1" href="#2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359">2 Practice peer evaluation on TEAMMATES  Thu, Sep 10th 2359 counted for participation&#x200E;</a>
+<a class="nav-link py-1" href="#other-info-relevant-to-this-week">+ Other info relevant to this week:&#x200E;</a>
+</nav>
 
-                  <div tags="m--tic4001">
-                    <p><strong>Evaluated by</strong> tutors</p>
-                    <p><strong>Based on</strong> the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.</p>
-                  </div>
-                </div>
-
-                <h4 id="5-project-grading-project-management-5-5-10-marks">
-                  <div class="bg-warning p-1">5. Project Grading: Project Management <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-users"></span></span> 5 + <span><span aria-hidden="true" class="fas fa-user"></span></span> 5 = 10 marks]</span></div><span id="5-project-grading-project-management-5-5-10-marks" class="anchor"></span><a class="fa fa-anchor" href="#5-project-grading-project-management-5-5-10-marks" onclick="event.stopPropagation()"></a>
-                </h4>
-                <div id="project-management-grading">
-                  <p><big><strong>5A. Process:</strong></big></p>
-                  <p><strong>Evaluates:</strong> How well you did in project management related aspects of the project, as an individual and as a team</p>
-                  <p><strong>Based on:</strong> tutor/bot observations of project milestones and GitHub data</p>
-                  <p><strong>Grading criteria:</strong></p>
-                  <ul>
-                    <li>Project done iteratively and incrementally <span class="dimmed">(opposite: doing most of the work in one big burst)</span></li>
-                  </ul>
-
-                  <div tags="m--cs2113 m--tic4001">
-                    <ul>
-                      <li>No <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">e.g., the product is not working at all by the milestone deadline</span>major mishaps</span> at v1.0, v2.0, and v3.0 milestone deadlines.</li>
-                      <li>Good attempt to use of at least <em>some</em> Git and GitHub features (e.g., milestones, releases, issue tracker, PRs)</li>
-                    </ul>
-                  </div>
-                  <p><big><strong>5B. Team-tasks:</strong></big></p>
-                  <p><strong>Evaluates:</strong> How much you contributed to team-tasks</p>
-                  <div class="indented-level1">
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: Examples of team-tasks <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                      </template>
-                      <div>
-                        <p>Here is a non-exhaustive list of team-tasks:</p>
-                        <ol>
-                          <li>Setting up the GitHub team org/repo</li>
-                          <li>Necessary general code enhancements</li>
-                          <li>Setting up tools e.g., GitHub, Gradle</li>
-                          <li>Maintaining the issue tracker</li>
-                          <li>Release management</li>
-                          <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
-                          <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-                        </ol>
-                      </div>
-                    </panel>
-                  </div>
-                  <p></p>
-                  <p><strong>Based on:</strong> peer evaluations, tutor observations</p>
-                  <p><strong>Grading criteria:</strong> Do these to earn full marks.</p>
-                  <ul>
-                    <li>Do close to an equal share of the team tasks (you can earn bonus marks by doing more than an equal share).</li>
-                    <li>Merge code in at least four of weeks 7, 8, 9, 10, 11, 12</li>
-                  </ul>
-                </div>
-              </div>
-            </panel>
-            <p></p>
-            <panel type minimized class="algolia-no-index">
-              <span slot="header" class="card-title"> Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Apdx B (Policies) → Policy on project work distribution <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></span>
-              <div>
-                <h3 id="policy-on-project-work-distribution">Policy on project work distribution <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="policy-on-project-work-distribution" class="anchor"></span><a class="fa fa-anchor" href="#policy-on-project-work-distribution" onclick="event.stopPropagation()"></a></h3>
-                <div class="indented">
-                  <div>
-                    <p>As most of the work is graded individually, it is OK to do less or more than equal share in your project team.</p>
-                    <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                        <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP → Expectations: from each student <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                      </template>
-                      <div>
-
-                        <h2 class="text-white bg-info p-1" id="fas-user-individual-expectations"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual Expectations<span id="fas-user-individual-expectations" class="anchor"></span><a class="fa fa-anchor" href="#fas-user-individual-expectations" onclick="event.stopPropagation()"></a></h2>
-                        <h4 id="individual-expectations-on-implementation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Implementation</span><span id="individual-expectations-on-implementation" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-implementation" onclick="event.stopPropagation()"></a></h4>
-                        <ul>
-                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Contribute to the functional code of the product.</strong></span>
-                            <ul>
-                              <li>User-visible features are preferred, but it is not a strict requirement.:</li>
-                              <li><strong>The enhancement(s) should fit with the rest of the software</strong> (and the target user profile) and should have the consent of the team members. <span class="dimmed">You will lose marks if you go 'rogue' and add things that don't fit with the product.</span></li>
-                            </ul>
-                          </li>
-                        </ul>
-
-                        <ul>
-                          <li>
-                            <p><strong>Tip: Contribute to all aspects of the project</strong> e.g. write backend code, frontend code, test code, user documentation, and developer documentation. <span class="dimmed">Reason: If you limit yourself to certain aspects only, you could lose marks allocated for the aspects you did not do. In addition, the final exam assumes that you are familiar with all aspects of the project.</span></p>
-                          </li>
-                          <li>
-                            <p><strong>Tip: Do <em>all</em> the work related to your enhancement yourself.</strong> <span class="dimmed">Reason: If there is no clear division of who did which enhancement, it will be difficult to divide project credit (or assign responsibility for bugs detected by testers) later.</span></p>
-                          </li>
-                        </ul>
-
-                        <h4 id="individual-expectations-on-documentation"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Documentation</span><span id="individual-expectations-on-documentation" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-documentation" onclick="event.stopPropagation()"></a></h4>
-                        <ul>
-                          <li><strong>Objective:</strong> showcase your ability to write both <em>user-facing documentation</em> and <em>developer-facing documentation</em>.</li>
-                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Update the User Guide (UG) and the Developer Guide (DG) parts</strong></span> that are related to the enhancements you added. The minimum requirement is given below. <span class="dimmed">(Reason: Evaluators will not be able to give you marks unless there is sufficient evidence of your documentation skills.)</span>
-                            <ul>
-                              <li>UG: 0.5 or more pages</li>
-                              <li>DG: 1.5 or more pages</li>
-                            </ul>
-                          </li>
-                          <li><strong>Tip: If the UG/DG updates for your enhancements are not enough to reach the above requirements</strong>, you can make up the shortfall by documenting 'proposed' features and alternative designs/implementations.</li>
-                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Use at least 2 types of UML diagrams in your DG updates</strong></span> i.e., diagrams you added yourself or those you modified significantly.</li>
-                        </ul>
-                        <h4 id="individual-expectations-on-testing"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Testing</span><span id="individual-expectations-on-testing" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-testing" onclick="event.stopPropagation()"></a></h4>
-                        <div id="testing-expectations">
-                          <ul>
-                            <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Write <em>some</em> automated tests</strong></span> so that we can evaluate your ability to write tests.</li>
-                          </ul>
-                          <div class="indented">
-                            <box>
-                              <p><strong>🤔 How much testings is enough?</strong> We expect you to decide. You learned different types of testing and what they try to achieve. Based on that, you should decide how much of each type is required. Similarly, you can decide to what extent you want to automate tests, depending on the benefits and the effort required.<br>
-                                There is no requirement for a minimum coverage level. Note that in a production environment you are often required to have at least 90% of the code covered by tests. In this project, it can be less. <mark>The weaker your tests are, the higher the risk of bugs, which will cost marks if not fixed before the final submission.</mark></p>
-                            </box>
-                            <p></p>
-                          </div>
-                        </div>
-                        <h4 id="individual-expectations-on-teamwork"><span class="badge badge-info"><span><span aria-hidden="true" class="fas fa-user"></span></span> Individual</span> <span class="text-info">Expectations on Teamwork</span><span id="individual-expectations-on-teamwork" class="anchor"></span><a class="fa fa-anchor" href="#individual-expectations-on-teamwork" onclick="event.stopPropagation()"></a></h4>
-                        <ul>
-                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Do an equal share of the <em>team-tasks</em></strong>.</span></li>
-                        </ul>
-                        <div id="team-tasks" class="indented-level2">
-                          <box>
-                            <p><em>Team-tasks</em> are the tasks that <em>someone</em> in the team has to do.</p>
-                            <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples of team-tasks</p>
-                              </template>
-                              <span id="example-team-tasks">
-                                <p>Here is a non-exhaustive list of team-tasks:</p>
-                                <ol>
-                                  <li>Setting up the GitHub team org/repo</li>
-                                  <li>Necessary general code enhancements</li>
-                                  <li>Setting up tools e.g., GitHub, Gradle</li>
-                                  <li>Maintaining the issue tracker</li>
-                                  <li>Release management</li>
-                                  <li>Updating user/developer docs that are not specific to a feature <span class="dimmed">e.g. documenting the target user profile</span></li>
-                                  <li>Incorporating more useful tools/libraries/frameworks into the product or the project workflow <span class="dimmed">(e.g. automate more aspects of the project workflow using a GitHub plugin)</span></li>
-                                </ol>
-                              </span>
-                            </panel>
-                            <p></p>
-                          </box>
-                        </div>
-                        <ul>
-                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Carry an equal share of project roles and responsibilities</strong>.</span></li>
-                        </ul>
-                        <div class="indented-level2">
-                          <box>
-                            <span id="roles">
-                              <p><em>Roles</em> indicate aspects you are in charge of and responsible for. <span class="dimmed">E.g., if you are in charge of documentation, you are the person who should allocate which parts of the documentation is to be done by who, ensure the document is in right format, ensure consistency etc.</span></p>
-                              <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                                  <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Recommended roles and responsibilities</p>
-                                </template>
-                                <p>This is a non-exhaustive list; you may define additional roles.</p>
-                                <ul>
-                                  <li><em>Team lead</em>: Responsible for overall project coordination.</li>
-                                  <li><em>Documentation</em> (short for ‘in charge of documentation’): Responsible for the quality of various project documents.</li>
-                                  <li><em>Testing</em>: Ensures the testing of the project is done properly and on time.</li>
-                                  <li><em>Code quality</em>: Looks after code quality, ensures adherence to coding standards, etc.</li>
-                                  <li><em>Deliverables and deadlines</em>: Ensure project deliverables are done on time and in the right format.</li>
-                                  <li><em>Integration</em>: In charge of versioning of the code, maintaining the code repository, integrating various parts of the software to create a whole.</li>
-                                  <li><em>Scheduling and tracking</em>: In charge of defining, assigning, and tracking project tasks.</li>
-                                  <li><em>[Tool ABC] expert</em>: <span class="dimmed">e.g. Intellij expert, Git expert, etc.</span> Helps other team member with matters related to the specific tool.</li>
-                                </ul>
-
-                                <div tags="m--cs2113 m--tic4001">
-                                  <ul>
-                                    <li><em>In charge of[Area XYZ]</em> of the code: <span class="dimmed">e.g. In charge of the code that deals with storage, etc.</span> If you are in charge of an area, you are expected to know that area well, and review changes done to that code.</li>
-                                  </ul>
-                                </div>
-                              </panel>
-                              <p></p>
-                              <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Ensure each of the important roles are assigned to one person in the team. It is OK to have a 'backup' for each role, but <strong>for each aspect there should be one person who is unequivocally the person responsible for it</strong>. <span class="dimmed">Reason: when <em>everyone is responsible for everything</em>, no one is.</span></p>
-                            </span>
-                          </box>
-                          <p></p>
-                        </div>
-                        <ul>
-                          <li><span class="badge badge-info">Expectation</span> <span class="text-info"><strong>Review each others work</strong>.</span> <span class="dimmed">Reason: reviewing skills is a learning outcome, and it is mutually beneficial.</span></li>
-                        </ul>
-                      </div>
-                    </panel>
-                  </div>
-                </div>
-              </div>
-            </panel>
-            <p></p>
-          </div>
-        </div>
-      </div>
-
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
-
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-5-fri-sep-4th-admin-info">Week 5 [Fri, Sep 4th] - Admin Info&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#1-submit-post-lecture-quiz">1 Submit post-lecture quiz counted for participation&#x200E;</a>
-              <a class="nav-link py-1" href="#2-practice-peer-evaluation-on-teammates-thu-sep-10th-2359">2 Practice peer evaluation on TEAMMATES Thu, Sep 10th 2359 counted for participation&#x200E;</a>
-              <a class="nav-link py-1" href="#other-info-relevant-to-this-week">+ Other info relevant to this week:&#x200E;</a>
-            </nav>
-
-          </nav>
-        </div>
-      </nav>
-    </div>
+</nav>
+</div>
+</nav>
+</div>
     <footer>
-
-      <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 23 Oct 2020, 23:45:56 GMT+8]</small>
-      </div>
-    </footer>
-  </div>
+  
+  <div class="text-center">
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 29 Oct 2020, 15:22:35 GMT+8]</small></div></footer></div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/components.min.js"></script>
@@ -520,21 +353,18 @@
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "369d0a5a75795bb334b8da938b3bb288",
-      indexName: "nus-tic4001-ay2021s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "369d0a5a75795bb334b8da938b3bb288",
+        indexName: "nus-tic4001-ay2021s1",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
-
 </html>

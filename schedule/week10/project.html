@@ -1,224 +1,165 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="MarkBind 2.15.2">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>TIC4001 - Week 10 - Project</title>
-  <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
-  <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
-  <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
-  <link rel="stylesheet" href="../../markbind/css/octicons.css">
-  <link rel="stylesheet" href="../../markbind/css/github.min.css">
-  <link rel="stylesheet" href="../../markbind/css/markbind.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css">
-  <link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css">
-  <link rel="stylesheet" href="../../markbind/layouts/default/styles.css">
-  <link rel="stylesheet" href="../../markbind/css/page-nav.css">
-  <link rel="stylesheet" href="/website/book/css/textbook.css">
-  <link rel="stylesheet" href="/website/css/main.css">
-  <link rel="stylesheet" href="/website/css/schedule.css">
-  <link rel="icon" href="/website/favicon.ico">
-</head>
-
-<body data-spy="scroll" data-target="#page-nav" data-offset="100">
-  <div id="app">
+    
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TIC4001 - Week 10 - Project</title>
+    <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../markbind/css/bootstrap-vue.min.css">
+    <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
+    <link rel="stylesheet" href="../../markbind/css/octicons.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="/website/css/main.css">
+    <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
+<body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
+<div id="app">
     <header fixed>
-      <navbar placement="top" type="dark" class="temp-navbar">
-        <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
-        <div class="nav-link temp-dropdown-placeholder">**Schedule**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
-          <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
-          <li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
-          <li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
-          <li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
-          <li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
-          <li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
-          <li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
-          <li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
-          <li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
-          <li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
-          <li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
-          <li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
-          <li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
-          <li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li>
-        </dropdown>
-        <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
-        <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
-        <div class="nav-link temp-dropdown-placeholder">**Links**</div>
-        <dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
-          <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
-          <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
-          <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+<navbar placement="top" type="dark" class="temp-navbar">
+<a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
+  <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
+  <li><a href="/website/schedule/timeline.html" class="dropdown-item"><span><strong>Full Timeline</strong></span></a></li>
+<li><a href="/website/schedule/week1/index.html" class="dropdown-item"> <span><strong>Week 1</strong> [Mon, Aug 10th] </span></a></li>
+<li><a href="/website/schedule/week2/index.html" class="dropdown-item"> <span><strong>Week 2</strong> [Fri, Aug 14th] </span></a></li>
+<li><a href="/website/schedule/week3/index.html" class="dropdown-item"> <span><strong>Week 3</strong> [Fri, Aug 21st] </span></a></li>
+<li><a href="/website/schedule/week4/index.html" class="dropdown-item"> <span><strong>Week 4</strong> [Fri, Aug 28th] </span></a></li>
+<li><a href="/website/schedule/week5/index.html" class="dropdown-item"> <span><strong>Week 5</strong> [Fri, Sep 4th] </span></a></li>
+<li><a href="/website/schedule/week6/index.html" class="dropdown-item"> <span><strong>Week 6</strong> [Fri, Sep 11th] </span></a></li>
+<li><a href="/website/schedule/week7/index.html" class="dropdown-item"> <span><strong>Week 7</strong> [Fri, Sep 18th] </span></a></li>
+<li><a href="/website/schedule/week8/index.html" class="dropdown-item"> <span><strong>Week 8</strong> [Fri, Oct 2nd] </span></a></li>
+<li><a href="/website/schedule/week9/index.html" class="dropdown-item"> <span><strong>Week 9</strong> [Fri, Oct 9th] </span></a></li>
+<li><a href="/website/schedule/week10/index.html" class="dropdown-item"> <span><strong>Week 10</strong> [Fri, Oct 16th] </span></a></li>
+<li><a href="/website/schedule/week11/index.html" class="dropdown-item"> <span><strong>Week 11</strong> [Fri, Oct 23rd] </span></a></li>
+<li><a href="/website/schedule/week12/index.html" class="dropdown-item"> <span><strong>Week 12</strong> [Fri, Oct 30th] </span></a></li>
+<li><a href="/website/schedule/week13/index.html" class="dropdown-item"> <span><strong>Week 13</strong> [Fri, Nov 6th] </span></a></li></dropdown>
+  <li><a href="/website/se-book-adapted/index.html" class="nav-link"><span><strong>Textbook</strong></span></a></li>
+  <li><a href="/website/admin/index.html" class="nav-link"><span><strong>Admin Info</strong></span></a></li>
+  <div class="nav-link temp-dropdown-placeholder">**Links**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Links</strong></template>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-bug"></span> Report Bugs</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/forum/issues" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-comment"></span> Forum</span></a></li>
+    <li tags="m--cs2113 m--cs2103 m--tic4001"><a href="https://gitter.im/nus-tic4001-AY2021S1/community" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-gitter"></span> Gitter (Chat)</span></a></li>
+    <li><a href="/website/admin/instructors.html" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-user-tie"></span> Instructors</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/announcements/active" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-bullhorn"></span> Announcements</span></a></li>
+    <li><a href="https://luminus.nus.edu.sg/modules/0b818216-16ab-4c70-afb7-19f841680069/files" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-file-upload"></span> Files</span></a></li>
+    
+    
+    <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
+    <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
+    
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
+    <hr>
+    <span><strong> Individual Project (iP):</strong></span>
+    <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
+    <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
+    <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
+    <hr>
+    <span><strong> Team Project (tP):</strong></span>
+    <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
+    
+    <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
+    <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
+  <li slot="right" class="nav-link">
+    <form class="navbar-form">
+        <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+        
+<div id="content-wrapper">
+<nav>
+<ul class="pagination mt-2"><li class="page-item"><a class="page-link" href="/website/schedule/week9"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week10/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week10/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Lecture</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week10/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
+<li class="page-item"><a class="page-link" href="/website/schedule/week10/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
+<li class="page-item active"><a class="page-link" href="/website/schedule/week10/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
+<li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
+<p></p>
+<h1 id="week-10-fri-oct-16th-project">Week 10 <small><small><span class="dimmed">[Fri, Oct 16th]</span> - Project</small></small><span id="week-10-fri-oct-16th-project" class="anchor"></span><a class="fa fa-anchor" href="#week-10-fri-oct-16th-project" onclick="event.stopPropagation()"></a></h1>
+<div id="summary" class="lead border-left ml-3 mb-3 pl-2" style="color: purple;">
+<p><strong>tP:</strong></p>
+<div>
+<ol>
+<li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Start the next iteration</span></li>
+<li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Update the DG: user stories, glossary, NFRs</span></li>
+<li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Ensure the code RepoSense-compatible</span></li></ol></div></div>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4" id="tp-mid-v2-0">tP: mid-v2.0<span id="tp-mid-v2-0" class="anchor"></span><a class="fa fa-anchor" href="#tp-mid-v2-0" onclick="event.stopPropagation()"></a></h2>
+<div>
+<div></div>
+<p></p>
+<h4 id="1-start-the-next-iteration"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Start the next iteration</span><span id="1-start-the-next-iteration" class="anchor"></span><a class="fa fa-anchor" href="#1-start-the-next-iteration" onclick="event.stopPropagation()"></a></h4>
+<div>
+<div class="indented">
+<box type="tip" seamless>
 
+<div tags="m--tic4001">
+<p>In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
+Hence, it is in your interest to <mark>finish implementing all your <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">features you want to include in your final version (i.e., v3.0)</span>final features</span> in this iteration itself</mark> so that you can use the final iteration for polishing up the functionalities and adding documentation.</p></div></box>
+<p>As you did in the previous iteration,</p>
+<ul>
+<li><strong>Plan the next iteration</strong> (steps are given below as a reminder):
+<ul>
+<li><span><span aria-hidden="true" class="fas fa-users"></span></span> Decide which enhancements will be added to the product in this iteration, if this is the last iteration.</li>
+<li><span><span aria-hidden="true" class="fas fa-users"></span></span> If possible, split that into two incremental versions.</li>
+<li><span><span aria-hidden="true" class="fas fa-users"></span></span> Divide the work among team members.</li>
+<li><span><span aria-hidden="true" class="fas fa-user"></span></span> Reflect the above plan in the issue tracker.</li></ul></li>
+<li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Start implementing</strong> the features as per the plan made above.</li>
+<li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Track the progress</strong> using GitHub issue tracker, milestones, labels, etc.</li></ul>
+<p>In addition,</p>
+<ul>
+<li><strong>Maintain the defensiveness of the code</strong>: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
+<font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Remember to <a href="https://se-education.org/guides/tutorials/intellijUsefulSettings.html">enable assertions in your IDEA run configurations</a> and <a href="https://se-education.org/guides/tutorials/gradle.html#enabling-assertions">in the gradle file</a>.</li>
+<li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommend: <strong>Each PR should also update the relevant parts of documentation and tests</strong>. That way, your documentation/testing work will not pile up towards the end.</li></ul></div></div>
+<p></p>
+<h4 id="2-update-the-dg-user-stories-glossary-nfrs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Update the DG: user stories, glossary, NFRs</span><span id="2-update-the-dg-user-stories-glossary-nfrs" class="anchor"></span><a class="fa fa-anchor" href="#2-update-the-dg-user-stories-glossary-nfrs" onclick="event.stopPropagation()"></a></h4>
+<div>
+<div tags="m--tic4001" class="indented-level2">
+<div>
+  <box>
+<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., work related to the User Guide and the Developer Guide</span>documentation work</span> among team members equally; preferably based on enhancements/features each person would be adding</strong> <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
+<p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<h4 id="4-project-grading-documentation-15-marks"><div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 15 marks]</span></div><span id="4-project-grading-documentation-15-marks" class="anchor"></span><a class="fa fa-anchor" href="#4-project-grading-documentation-15-marks" onclick="event.stopPropagation()"></a></h4>
 
-          <li tags="m--cs2103 m--cs2113 m--tic2002 m--tic4001"><a href="https://se-education.org/guides/conventions/java/basic.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-code"></span> Java Coding Standard</span></a></li>
-          <li tags="m--cs2103 m--cs2113 m--tic4001"><a href="https://se-education.org/guides/conventions/git.html" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fab fa-git-square"></span> Git Conventions</span></a></li>
-
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/participation.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> Participation Dashboard</span></a></li>
-          <hr>
-          <span><strong> Individual Project (iP):</strong></span>
-          <li><a href="/website/admin/ip-overview.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Individual Project Info</span></a></li>
-          <li><a href="/website/admin/ip-showcase.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> iP List</span></a></li>
-          <li><a href="https://github.com/nus-tic4001-AY2021S1/ip" target="_blank" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-code-branch"></span></span> iP Upstream Repo</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/ip-dashboard/#sort=groupTitle&groupSelect=groupByAuthors" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> iP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/ip-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> iP Progress Dashboard</span></a></li>
-          <hr>
-          <span><strong> Team Project (tP):</strong></span>
-          <li><a href="/website/admin/tp-expectations.html" class="dropdown-item"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span> Team Project Info</span></a></li>
-
-          <li><a href="/website/admin/teamList.html" class="dropdown-item"><span><span aria-hidden="true" class="glyphicon glyphicon-list-alt"></span> Team List</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true" target="_blank" class="dropdown-item"><span><span aria-hidden="true" class="fas fa-chart-area"></span> tP Code Dashboard</span></a></li>
-          <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li>
-        </dropdown>
-        <li slot="right" class="nav-link">
-          <form class="navbar-form">
-            <searchbar placeholder="Search" algolia menu-align-right></searchbar>
-          </form>
-        </li>
-      </navbar>
-    </header>
-    <div id="flex-body">
-
-      <div id="content-wrapper">
-        <nav>
-          <ul class="pagination mt-2">
-            <li class="page-item"><a class="page-link" href="/website/schedule/week9"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week10/index.html"><span><span><span aria-hidden="true" class="fas fa-bell"></span></span></span> Summary</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week10/tutorial.html"><span><span><span aria-hidden="true" class="fas fa-chalkboard-teacher"></span></span></span> Lecture</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week10/topics.html"><span><span><span aria-hidden="true" class="fas fa-book"></span></span></span> Topics</a></li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week10/admin.html"><span><span><span aria-hidden="true" class="fas fa-info-circle"></span></span></span> Admin Info</a></li>
-            <li class="page-item active"><a class="page-link" href="/website/schedule/week10/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
-            <li class="page-item">&nbsp;&nbsp;&nbsp;</li>
-            <li class="page-item"><a class="page-link" href="/website/schedule/week11"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li>
-          </ul>
-        </nav>
-        <p></p>
-        <h1 id="week-10-fri-oct-16th-project">Week 10 <small><small><span class="dimmed">[Fri, Oct 16th]</span> - Project</small></small><span id="week-10-fri-oct-16th-project" class="anchor"></span><a class="fa fa-anchor" href="#week-10-fri-oct-16th-project" onclick="event.stopPropagation()"></a></h1>
-        <div id="summary" class="lead border-left ml-3 mb-3 pl-2" style="color: purple;">
-          <p><strong>tP:</strong></p>
-          <div>
-            <ol>
-              <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Start the next iteration</span></li>
-              <li><span><span><span aria-hidden="true" class="fas fa-users"></span></span> Update the DG: user stories, glossary, NFRs</span></li>
-              <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Ensure the code RepoSense-compatible</span></li>
-            </ol>
-          </div>
-        </div>
-        <h2 class="d-block text-white bg-dark p-1 mb-4 mt-4" id="tp-mid-v2-0">tP: mid-v2.0<span id="tp-mid-v2-0" class="anchor"></span><a class="fa fa-anchor" href="#tp-mid-v2-0" onclick="event.stopPropagation()"></a></h2>
-        <div>
-          <div></div>
-          <p></p>
-          <h4 id="1-start-the-next-iteration"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Start the next iteration</span><span id="1-start-the-next-iteration" class="anchor"></span><a class="fa fa-anchor" href="#1-start-the-next-iteration" onclick="event.stopPropagation()"></a></h4>
-          <div>
-            <div class="indented">
-              <box type="tip" seamless>
-
-                <div tags="m--tic4001">
-                  <p>In the final iteration (i.e., the one after this), you will be doing a lot of additional things e.g., adding documentation.
-                    Hence, it is in your interest to <mark>finish implementing all your <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">features you want to include in your final version (i.e., v3.0)</span>final features</span> in this iteration itself</mark> so that you can use the final iteration for polishing up the functionalities and adding documentation.</p>
-                </div>
-              </box>
-              <p>As you did in the previous iteration,</p>
-              <ul>
-                <li><strong>Plan the next iteration</strong> (steps are given below as a reminder):
-                  <ul>
-                    <li><span><span aria-hidden="true" class="fas fa-users"></span></span> Decide which enhancements will be added to the product in this iteration, if this is the last iteration.</li>
-                    <li><span><span aria-hidden="true" class="fas fa-users"></span></span> If possible, split that into two incremental versions.</li>
-                    <li><span><span aria-hidden="true" class="fas fa-users"></span></span> Divide the work among team members.</li>
-                    <li><span><span aria-hidden="true" class="fas fa-user"></span></span> Reflect the above plan in the issue tracker.</li>
-                  </ul>
-                </li>
-                <li><span><span aria-hidden="true" class="fas fa-user"></span></span> <strong>Start implementing</strong> the features as per the plan made above.</li>
-                <li><span><span aria-hidden="true" class="fas fa-users"></span></span> <strong>Track the progress</strong> using GitHub issue tracker, milestones, labels, etc.</li>
-              </ul>
-              <p>In addition,</p>
-              <ul>
-                <li><strong>Maintain the defensiveness of the code</strong>: Remember to use assertions, exceptions, and logging in your code, as well as other defensive programming measures when appropriate.<br>
-                  <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Remember to <a href="https://se-education.org/guides/tutorials/intellijUsefulSettings.html">enable assertions in your IDEA run configurations</a> and <a href="https://se-education.org/guides/tutorials/gradle.html#enabling-assertions">in the gradle file</a>.
-                </li>
-                <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommend: <strong>Each PR should also update the relevant parts of documentation and tests</strong>. That way, your documentation/testing work will not pile up towards the end.</li>
-              </ul>
-            </div>
-          </div>
-          <p></p>
-          <h4 id="2-update-the-dg-user-stories-glossary-nfrs"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-users"></span></span> Update the DG: user stories, glossary, NFRs</span><span id="2-update-the-dg-user-stories-glossary-nfrs" class="anchor"></span><a class="fa fa-anchor" href="#2-update-the-dg-user-stories-glossary-nfrs" onclick="event.stopPropagation()"></a></h4>
-          <div>
-            <div tags="m--tic4001" class="indented-level2">
-              <div>
-                <box>
-                  <p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., work related to the User Guide and the Developer Guide</span>documentation work</span> among team members equally; preferably based on enhancements/features each person would be adding</strong> <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
-                  <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
-                  <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                      <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                    </template>
-                    <div>
-                      <h4 id="4-project-grading-documentation-15-marks">
-                        <div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 15 marks]</span></div><span id="4-project-grading-documentation-15-marks" class="anchor"></span><a class="fa fa-anchor" href="#4-project-grading-documentation-15-marks" onclick="event.stopPropagation()"></a>
-                      </h4>
-
-                      <div tags="m--tic4001">
-                        <p><strong>Evaluated by</strong> tutors</p>
-                        <p><strong>Based on</strong> the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.</p>
-                      </div>
-                    </div>
-                  </panel>
-                  <p></p>
-                </box>
-                <p></p>
-              </div>
-            </div>
-            <ul>
-              <li>
-                <p><strong>Add the following to the DG</strong>, based on your project notes from the previous weeks.<br>
-                  <span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some examples of these can be found in the <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope">AB3 Developer Guide</a>.
-                </p>
-                <ul>
-                  <li><strong>Target user profile</strong>, <strong>value proposition</strong>, and <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()" class="trigger-click"><strong>user stories</strong></span>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.</li>
-                  <li><span trigger="click" for="modal:v10-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-nfr'].show()" class="trigger-click"><strong>Non-functional requirements</strong></span>:
-                    Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
-                  <li><span trigger="click" for="modal:v10-glossary" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-glossary'].show()" class="trigger-click"><strong>Glossary</strong></span>: Define terms that are worth recording.</li>
-                </ul>
-              </li>
-            </ul>
-            <b-modal id="modal:v10-usecases" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-usecases" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → Use Cases</template>
-                <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="introduction"><span>Introduction</span><span id="introduction" class="anchor"></span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <box type="definition" seamless>
-                        <div>
-                          <p><strong>Use case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></span>]</p>
-                          <span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></span>
-                            <div data-mb-html-for="content">
-                              <div>
-                                <p><strong>Actor</strong>: An actor (in a use case) is a role played by a user. An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p>
-                              </div>
-                            </div>
-                          </span>
-                        </div>
-                      </box>
-                      <p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
-                      <box>
-                        <panel type="seamless" expanded><template slot="_header">
-                            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 1: 'transfer money' use case for an online banking system</p>
-                          </template>
-                          <pre>
+<div tags="m--tic4001">
+<p><strong>Evaluated by</strong> tutors</p>
+<p><strong>Based on</strong> the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.</p></div></div></panel>
+<p></p></box><p></p></div></div>
+<ul>
+<li>
+<p><strong>Add the following to the DG</strong>, based on your project notes from the previous weeks.<br>
+<span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Some examples of these can be found in the <a href="https://se-education.org/addressbook-level3/DeveloperGuide.html#product-scope">AB3 Developer Guide</a>.</p>
+<ul>
+<li><strong>Target user profile</strong>, <strong>value proposition</strong>, and <span trigger="click" for="modal:v10-userstories" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-userstories'].show()" class="trigger-click"><strong>user stories</strong></span>: Update the target user profile and value proposition to match the project direction you have selected. Give a list of the user stories (and update/delete existing ones, if applicable), including priorities. This can include user stories considered but will not be included in the final product.</li>
+<li><span trigger="click" for="modal:v10-nfr" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-nfr'].show()" class="trigger-click"><strong>Non-functional requirements</strong></span>:
+Note: Many of the given project constraints can be considered NFRs. You can add more. e.g. performance requirements, usability requirements, scalability requirements, etc.</li>
+<li><span trigger="click" for="modal:v10-glossary" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v10-glossary'].show()" class="trigger-click"><strong>Glossary</strong></span>: Define terms that are worth recording.</li></ul></li></ul>
+<b-modal id="modal:v10-usecases" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-usecases" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Specifying Requirements → Use Cases</template>
+  <div>
+<div></div><p></p>
+<p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Use Cases →
+</span></strong></span></p>
+<div id="title-and-body">
+<div><h4 id="introduction"><span>Introduction</span><span id="introduction" class="anchor"></span><a class="fa fa-anchor" href="#introduction" onclick="event.stopPropagation()"></a></h4></div>
+<div id="main">
+<div>
+<box type="definition" seamless>
+<div>
+<p><strong>Use case</strong>: A description of a set of sequences of actions, including variants, that a system performs to yield an observable result of value to an <span for="pop:actor" v-b-popover.hover.top.html="popoverGenerator" v-b-tooltip.hover.top.html="tooltipContentGetter" v-on:mouseover="$refs['pop:actor'].show()" class="trigger">actor</span>.[ 📖 : <span effect="fade" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger">uml-user-guide<span data-mb-html-for="content"><span><em><strong>The Unified Modeling Language User Guide</strong></em>, 2e, G Booch, J Rumbaugh, and I Jacobson </span></span></span>]</p>
+<span id="pop:actor" placement="top" data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="header"><span><span aria-hidden="true" class="glyphicon glyphicon-eye-open"></span></span></span>
+  <div data-mb-html-for="content">
+    <div>
+<p><strong>Actor</strong>: An actor (in a use case) is a role played by a user.  An actor can be a human or another system. Actors are not part of the system; they reside outside the system.</p></div></div></span></div></box>
+<p><strong>A use case describes an <em>interaction between the user and the system</em> for a <em>specific functionality</em> of the system.</strong></p>
+<box>
+<panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 1: 'transfer money' use case for an online banking system</p></template>
+<pre>
 System: Online Banking System (OBS)
 Use case: UC23 - Transfer Money
 Actor: User
@@ -231,7 +172,7 @@ MSS:
   6. OBS transfers the money and displays the new account balance.
   Use case ends.
 </pre>
-                          <pre>
+<pre>
 Extensions:
   3a. OBS detects an error in the entered data.
     3a1. OBS requests for the correct data.
@@ -248,461 +189,292 @@ Extensions:
       *a1. OBS requests to confirm the cancellation.
       *a2. User confirms the cancellation.
       Use case ends.
-</pre>
-                        </panel>
-                        <panel type="seamless" class="algolia-no-index"><template slot="_header">
-                            <p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p>
-                          </template>
-                          <div class="text-monospace">
-                            <ul>
-                              <li>System: A Learning Management System (LMS)</li>
-                              <li>Actor: Student</li>
-                              <li>Use Case: Upload file
-                                <ol>
-                                  <li>Student requests to upload file</li>
-                                  <li>LMS requests for the file location</li>
-                                  <li>Student specifies the file location</li>
-                                  <li>LMS uploads the file</li>
-                                </ol>
-                              </li>
-                            </ul>
-                          </div>
-                        </panel>
-                      </box>
-                      <box background-color="white" border-color="white">
-                        <img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
-                        <p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
-                        <p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
-                        <b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml" class="algolia-no-index"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
-                          <div>
-                            <p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p>
-                          </div>
-                        </b-modal>
-                      </box>
-                      <p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </b-modal>
-            <b-modal id="modal:v10-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-nfr" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
-                <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Requirements → Requirements →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="non-functional-requirements"><span>Non-functional requirements</span><span id="non-functional-requirements" class="anchor"></span><a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <p>Requirements can be divided into two in the following way:</p>
-                      <ol>
-                        <li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
-                        <li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li>
-                      </ol>
-                      <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
-                        <ul>
-                          <li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
-                          <li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
-                          <li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li>
-                        </ul>
-                        <panel type="seamless" expanded><template slot="_header">
-                            <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p>
-                          </template>
-                          <ul>
-                            <li>Business/domain rules: e.g. the size of the minefield cannot be smaller than five.</li>
-                            <li>Constraints: e.g. the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
-                            <li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
-                            <li>Performance requirements: e.g. the system should respond within two seconds.</li>
-                            <li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
-                            <li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
-                            <li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
-                            <li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
-                            </li>
-                          </ul>
-                        </panel>
-                      </box>
-                      <p>You may have to spend an extra effort in digging NFRs out as early as possible because,</p>
-                      <ol>
-                        <li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
-                        <li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li>
-                      </ol>
-                    </div>
-                    <div>
-                      <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
-                            <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
-                          </template>
-                          <div>
-                            <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p>
-                              </template>
-                              <question>
-                                <p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
-                                <ul class="contains-task-list">
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li>
-                                </ul>
-                                <div slot="answer" class="algolia-no-index">
-                                  <p>(a)(c)(d)(f)(g)</p>
-                                  <p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is done, both of which are considered non-functional requirements.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </b-modal>
-            <b-modal id="modal:v10-glossary" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-glossary" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
-                <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Glossary →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="what"><span>What</span><span id="what" class="anchor"></span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <box type="definition" seamless>
-                        <div>
-                          <p><strong>Glossary</strong>: A glossary serves to ensure that <em>all stakeholders have a common understanding</em> of the noteworthy terms, abbreviations, acronyms etc.</p>
-                        </div>
-                      </box>
-                      <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
-                        <ul>
-                          <li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
-                          <li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li>
-                        </ul>
-                      </box>
-                    </div>
-                    <div></div>
-                  </div>
-                </div>
-              </div>
-            </b-modal>
-            <b-modal id="modal:v10-userstories" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-userstories" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
-                <div>
-                <div></div>
-                <p></p>
-                <p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → User Stories →
-                      </span></strong></span></p>
-                <div id="title-and-body">
-                  <div>
-                    <h4 id="introduction-2"><span>Introduction</span><span id="introduction-2" class="anchor"></span><a class="fa fa-anchor" href="#introduction-2" onclick="event.stopPropagation()"></a></h4>
-                  </div>
-                  <div id="main">
-                    <div>
-                      <box type="definition" seamless>
-                        <div>
-                          <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
-                        </div>
-                      </box>
-                      <p><strong>A common format</strong> for writing user stories is:</p>
-                      <box type="definition" seamless>
-                        <div>
-                          <p><strong>User story format</strong>: <code v-pre>As a {user type/role} I can {function} so that {benefit}</code></p>
-                        </div>
-                      </box>
-                      <box>
-                        <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples (from a <em>Learning Management System</em>):</p>
-                        <div class="text-monospace">
-                          <ol>
-                            <li><span class="dimmed">As a</span> student, <span class="dimmed">I can</span> download files uploaded by lecturers, <span class="dimmed">so that</span> I can get my own copy of the files</li>
-                            <li><span class="dimmed">As a</span> lecturer, <span class="dimmed">I can</span> create discussion forums, <span class="dimmed">so that</span> students can discuss things online</li>
-                            <li><span class="dimmed">As a</span> tutor, <span class="dimmed">I can</span> print attendance sheets, <span class="dimmed">so that</span> I can take attendance during the class</li>
-                          </ol>
-                        </div>
-                      </box>
-                      <p></p>
-                      <p><strong>You can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, you can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>, Trello, Google Docs, ...) to manage user stories digitally.</p>
-                      <panel class="non-printable" expanded><template slot="_header">
-                          <p><span class="dimmed">User stories in use</span></p>
-                        </template>
-                        <panel type="seamless" expanded><template slot="_header">
-                            <p>With sticky notes</p>
-                          </template>
-                          <img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
-                          <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p>
-                        </panel>
-                        <panel type="seamless" expanded><template slot="_header">
-                            <p>With paper</p>
-                          </template>
-                          <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
-                          <p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p>
-                        </panel>
-                        <panel type="seamless" expanded><template slot="_header">
-                            <p>With software</p>
-                          </template>
-                          <img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
-                          <p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p>
-                        </panel>
-                      </panel>
-                    </div>
-                    <div>
-                      <div>
-                        <panel expandable class="algolia-no-index"><template slot="_header">
-                            <p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p>
-                          </template>
-                          <div>
-                            <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are true about user stories?</p>
-                              </template>
-                              <question>
-                                <ul class="contains-task-list">
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. They are written from the user/customer perspective</li>
-                                  <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. They are always written in some physical medium such as index cards or sticky notes</li>
-                                </ul>
-                                <div slot="answer" class="algolia-no-index">
-                                  <ul class="contains-task-list">
-                                    <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. Reason: Despite the name, user stories are not related to 'stories' about the software.</li>
-                                    <li class="task-list-item enabled"><input class="task-list-item-checkbox" checked type="checkbox"> b.</li>
-                                    <li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. Reason: It is possible to use software to record user stories. When the team members are not co-located this may be the only option.</li>
-                                  </ul>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What's wrong with this user story?</p>
-                              </template>
-                              <question has-input="true">
-                                <p>Critique the following user story taken from a software project to build an e-commerce website.</p>
-                                <p><code v-pre>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
-                                <div slot="hint" class="algolia-no-index">
-                                  <p>Refer to the definition of a user story.</p>
-                                  <p><span></span></p>
-                                  <p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
-                                  <p></p>
-                                </div>
-                                <div slot="answer" class="algolia-no-index">
-                                  <p>This user story is not written from the perspective of the user/customer.</p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                          <div>
-                            <panel class="algolia-no-index"><template slot="_header">
-                                <p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Extract user stories from customer statement</p>
-                              </template>
-                              <question has-input="true">
-                                <p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">The number of leave days not yet taken</span>leave balance</span></em>. What are the user stories you can extract from that statement?</p>
-                                <div slot="hint" class="algolia-no-index">
-                                  <p>Remember to follow the correct format when writing user stories.</p>
-                                  <div>
-                                    <p><strong>User story format</strong>: <code v-pre>As a {user type/role} I can {function} so that {benefit}</code></p>
-                                  </div>
-                                </div>
-                                <div slot="answer" class="algolia-no-index">
-                                  <p><code v-pre>As an employee, I can view my leave balance, so that I can know how many leave days I have left.</code></p>
-                                  <p><span class="dimmed">Note: the <code v-pre>{benefit}</code> part may vary as it is not specifically mentioned in the question.</span></p>
-                                </div>
-                              </question>
-                            </panel>
-                          </div>
-                        </panel>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </b-modal>
-          </div>
-          <p></p>
-          <h4 id="3-ensure-the-code-reposense-compatible"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Ensure the code RepoSense-compatible</span><span id="3-ensure-the-code-reposense-compatible" class="anchor"></span><a class="fa fa-anchor" href="#3-ensure-the-code-reposense-compatible" onclick="event.stopPropagation()"></a></h4>
-          <div>
-            <span id="midV13-repoSenseCompatible">
-              <ul>
-                <li>
-                  <p><strong>Ensure your code is <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., RepoSense can detect your code as yours</span>RepoSense-compatible</span></strong> and the <strong>code it attributes to you is indeed the code written by you</strong>, as explained below:</p>
-                  <ul>
-                    <li>Go to the <a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true">tp Code Dashboard</a>. Click on the <code v-pre>&lt;/&gt;</code> icon against your name and verify that the <mark>lines attributed to you (i.e., lines marked as green)</mark> reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
-                          <img src="/website/admin/images/greenLines.png" width="600"></li>
-                  </ul>
-                  <p></p>
-                  <ul>
-                    <li>More info on how to make the code RepoSense compatible:</li>
-                  </ul>
-                </li>
-              </ul>
-              <div class="indented-level4">
-                <panel type class="embedding algolia-no-index" minimized><template slot="_header">
-                    <p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → RepoSense <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p>
-                  </template>
-                  <div>
-                    <h2 id="tool-reposense-for-authorship-tracking">Tool: RepoSense (for authorship tracking)<span id="tool-reposense-for-authorship-tracking" class="anchor"></span><a class="fa fa-anchor" href="#tool-reposense-for-authorship-tracking" onclick="event.stopPropagation()"></a></h2>
-                    <div>
-                      <p>
-                        <pic src="https://reposense.org/images/reposenseOverview.png"></pic>
-                      </p>
-                      <p>We will be using a tool called <a href="http://reposense.org">RepoSense</a> to make it <strong>easier for you to see (and learn from) code written by others</strong>, and to help us see who wrote which part of the code.</p>
-                      <pic src="https://reposense.org/images/report-features.png" alt="RepoSense report screenshot">
-                        <sub>Figure: RepoSense Report Features</sub>
-                      </pic>
-                      <p><strong>Viewing the current status of code authorship data:</strong></p>
-                      <ul>
-                        <li>The reports generated by the tool for the individual and team projects will be made available in the module website at some point in the semester. The feature that is most relevant to you is the <em>Code Panel</em> (shown on the right side of the screenshot above). It shows the code attributed to a given author.</li>
-                        <li>Click on your name to load the code attributed to you (based on Git blame/log data) onto the code panel on the right.</li>
-                        <li>If the code shown roughly matches the code you wrote, all is fine and there is nothing for you to do.</li>
-                      </ul>
-                      <p><strong>2. If the code does not match the actual authorship:</strong></p>
-                      <ul>
-                        <li>
-                          <p>Here are the possible reasons for the code shown not to match the code you wrote:</p>
-                          <ul>
-                            <li>the git username in some of your commits does not match your GitHub username.</li>
-                            <li>the actual authorship does not match the authorship determined by git blame/log e.g., another student touched your code after you wrote it, and Git log attributed the code to that student instead</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p>For cases such as the following, you can create a PR to update our config files <a href="https://github.com/nus-tic4001-AY2021S1/tp-dashboard/tree/master/configs">here</a>. The meaning of the config files are given in the [<a href="https://reposense.org/RepoSense/ug/configFiles.html">https://reposense.org/RepoSense/ug/configFiles.html</a>).</p>
-                          <ul>
-                            <li>missing some commits due to using multiple git <code v-pre>user.name</code>s</li>
-                            <li>some commits/files need to be omitted from the analysis</li>
-                          </ul>
-                        </li>
-                        <li>
-                          <p>If some lines of code are being attributed to the wrong person, you can add <code v-pre>@@author</code> annotations as explained in the panel below:</p>
-                        </li>
-                      </ul>
-                      <div class="indented-level2">
-                        <panel class="algolia-no-index"><template slot="_header">
-                            <p>Adding <code v-pre>@@author</code> tags to indicate authorship</p>
-                          </template>
-                          <div>
-                            <h4 id="adding-author-tags-indicate-authorship">Adding <code v-pre>@@author</code> tags indicate authorship<span id="adding-author-tags-indicate-authorship" class="anchor"></span><a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship" onclick="event.stopPropagation()"></a></h4>
-                            <ul>
-                              <li>
-                                <p>Mark your code with a <code v-pre>//@@author {yourGithubUsername}</code>. Note the double <code v-pre>@</code>.<br>
-                                  The <code v-pre>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code v-pre>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
-                                  Here is a sample code file:</p>
-                                <pre><code class="hljs" v-pre><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author sarahkhoo<br></span><span>method 3 ...<br></span><span>//@@author johndoe<br></span><span>method 4 ...<br></span></code></pre>
-                              </li>
-                              <li>
-                                <p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code v-pre>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
-                                  Here is a sample code with an empty <code v-pre>author</code> tag:</p>
-                                <pre><code class="hljs" v-pre><span>method 0 ...<br></span><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author<br></span><span>method 3 ...<br></span><span>method 4 ...<br></span></code></pre>
-                              </li>
-                              <li>
-                                <p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
-                                  Here is an example code from an xml/fxml file.</p>
-                                <pre><code class="hljs" v-pre><span>&lt;!-- @@author sereneWong --&gt;<br></span><span>&lt;textbox&gt;<br></span><span>  &lt;label&gt;...&lt;/label&gt;<br></span><span>  &lt;input&gt;...&lt;/input&gt;<br></span><span>&lt;/textbox&gt;<br></span><span>...<br></span></code></pre>
-                              </li>
-                              <li>
-                                <p><strong>Do not put the <code v-pre>//@@author</code> inside java header comments</strong>.<br>
-                                  👎<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                                <pre><code class="hljs" v-pre><span>/**<br></span><span>  * Returns true if ...<br></span><span>  * @@author johndoe<br></span><span>  */<br></span></code></pre>
-                                <p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
-                                <pre><code class="hljs" v-pre><span>//@@author johndoe<br></span><span>/**<br></span><span>  * Returns true if ...<br></span><span>  */<br></span></code></pre>
-                              </li>
-                            </ul>
-                            <h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<span id="what-to-and-what-not-to-annotate" class="anchor"></span><a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate" onclick="event.stopPropagation()"></a></h4>
-                            <ul>
-                              <li>
-                                <p><strong>Annotate both functional and test code</strong> There is no need to annotate documentation files.</p>
-                              </li>
-                              <li>
-                                <p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed">e.g., a class, a sequence of methods, a method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p>
-                                <ul>
-                                  <li>If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
-                                  <li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
-                                  <li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
-                                  <li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li>
-                                </ul>
-                              </li>
-                              <li>
-                                <p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
-                                  Individual members are responsible for making sure code attributed to them are correct.
-                                  If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p>
-                              </li>
-                              <li>
-                                <p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
-                                <ul>
-                                  <li>Create a folder called <code v-pre>{project root}/unused</code></li>
-                                  <li>Move unused files (or copies of files containing unused code) to that folder</li>
-                                  <li>use <code v-pre>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code v-pre>unused</code>)
-                                    e.g.</li>
-                                </ul>
-                                <pre><code class="hljs" v-pre><span>//@@author johndoe-unused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
-                                <p>Please put a comment in the code to explain why it was not used.</p>
-                              </li>
-                              <li>
-                                <p><strong>If you reused code from elsewhere,</strong> mark such code as <code v-pre>//@@author {yourGithubUsername}-reused</code> (note the suffix <code v-pre>reused</code>)
-                                  e.g.</p>
-                                <pre><code class="hljs" v-pre><span>//@@author johndoe-reused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre>
-                              </li>
-                              <li>
-                                <p><strong>You can use empty <code v-pre>@@author</code> tags to mark code as not yours when RepoSense attribute the code to you incorrectly.</strong></p>
-                                <ul>
-                                  <li>
-                                    <p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p>
-                                  </li>
-                                  <li>
-                                    <p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p>
-                                  </li>
-                                </ul>
-                              </li>
-                            </ul>
-                          </div>
-                        </panel>
-                      </div>
-                      <ul>
-                        <li>For neither of the above two works, please please post in the <a href="https://github.com/nus-tic4001-AY2021S1/forum/issues">forum</a> or contact us via <code v-pre>tic4001@comp.nus.edu.sg</code> so that we can advise you what to do.</li>
-                      </ul>
-                      <p><mark><strong>We recommend you ensure your code is RepoSense-compatible by v2.0</strong></mark></p>
-                    </div>
-                  </div>
-                </panel>
-              </div>
-              <p></p>
-            </span>
-          </div>
-          <p></p>
-        </div>
-      </div>
+</pre></panel>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="fas fa-cube"></span></span> Example 2: 'upload file' use case of an LMS</span></p></template>
+<div class="text-monospace">
+<ul>
+<li>System: A Learning Management System (LMS)</li>
+<li>Actor: Student</li>
+<li>Use Case: Upload file
+<ol>
+<li>Student requests to upload file</li>
+<li>LMS requests for the file location</li>
+<li>Student specifies the file location</li>
+<li>LMS uploads the file</li></ol></li></ul></div></panel></box>
+<box background-color="white" border-color="white">
+<img class="float-right ml-5" src="/website/book/specifyingRequirements/useCases/introduction/images/ticketMachine.png" width="300">
+<p><strong><span for="modal:uml" trigger="click" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:uml'].show()" class="trigger-click">UML</span> includes a diagram type called use case diagrams that can illustrate use cases of a system visually</strong>, providing a visual ‘table of contents’ of the use cases of a system.</p>
+<p>In the example on the right, note how use cases are shown as ovals and user roles relevant to each use case are shown as stick figures connected to the corresponding ovals.</p>
+<b-modal id="modal:uml" hide-footer size modal-class="mb-zoom" ref="modal:uml" class="algolia-no-index"><template slot="modal-title"><strong>Unified Modeling Language (UML)</strong></template>
+  <div>
+<p><a href="http://www.uml.org/#UML2.0"><strong>Unified Modeling Language (UML)</strong></a> is a graphical notation to describe various aspects of a software system. UML is the brainchild of three software modeling specialists James Rumbaugh, Grady Booch and Ivar Jacobson (also known as the Three Amigos). Each of them has developed their own notation for modeling software systems before joining force to create a unified modeling language (hence, the term ‘Unified’ in UML). UML is currently the <em>de facto</em> modeling notation used in the software industry.</p></div></b-modal></box>
+<p><strong>Use cases capture the <em>functional requirements</em> of a system.</strong></p></div>
+<div></div></div></div></div></b-modal>
+<b-modal id="modal:v10-nfr" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-nfr" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+  <div>
+<div></div><p></p>
+<p><span class="dimmed"><strong><span>Requirements → Requirements →
+</span></strong></span></p>
+<div id="title-and-body">
+<div><h4 id="non-functional-requirements"><span>Non-functional requirements</span><span id="non-functional-requirements" class="anchor"></span><a class="fa fa-anchor" href="#non-functional-requirements" onclick="event.stopPropagation()"></a></h4></div>
+<div id="main">
+<div>
+<p>Requirements can be divided into two in the following way:</p>
+<ol>
+<li><strong><em>Functional requirements</em> specify what the system should do.</strong></li>
+<li><strong><em>Non-functional requirements</em> specify the constraints under which system is developed and operated.</strong></li></ol>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of non-functional requirement categories:</p>
+<ul>
+<li>Data requirements e.g. size, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">how often do data change</span>volatility</span>, <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">saving data permanenetly</span>persistency</span> etc.,</li>
+<li>Environment requirements e.g. technical environment in which system would operate or need to be compatible with.</li>
+<li>Accessibility, Capacity, Compliance with regulations, Documentation, Disaster recovery, Efficiency, Extensibility, Fault tolerance, Interoperability, Maintainability, Privacy, Portability, Quality, Reliability, Response time, Robustness, Scalability, Security, Stability, Testability, and more ...</li></ul>
+<panel type="seamless" expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some concrete examples of NFRs</p></template>
+<ul>
+<li>Business/domain rules:   e.g. the size of the minefield cannot be smaller than five.</li>
+<li>Constraints: e.g.  the system should be backward compatible with data produced by earlier versions of the system; system testers are available only during the last month of the project; the total project cost should not exceed $1.5 million.</li>
+<li>Technical requirements: e.g. the system should work on both 32-bit and 64-bit environments.</li>
+<li>Performance requirements: e.g. the system should respond within two seconds.</li>
+<li>Quality requirements: e.g. the system should be usable by a novice who has never carried out an online purchase.</li>
+<li>Process requirements: e.g. the project is expected to adhere to a schedule that delivers a feature set every one month.</li>
+<li>Notes about project scope: e.g. the product is not required to handle the printing of reports.</li>
+<li>Any other noteworthy points: e.g. the game should not use images deemed offensive to those injured in real mine clearing activities.
+</li></ul></panel></box>
+<p>You may have to spend an extra effort in digging NFRs out as early as possible because,</p>
+<ol>
+<li><strong>NFRs are easier to miss</strong> <span class="dimmed">e.g., stakeholders tend to think of functional requirements first</span></li>
+<li>sometimes <strong>NFRs are critical to the success of the software.</strong> <span class="dimmed">E.g. A web application that is too slow or that has low security is unlikely to succeed even if it has all the right functionality.</span></li></ol></div>
+<div>
+<div>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+  <div>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> TEAMMATES NFRs</p></template>
+<question>
+<p>Given below are some requirements of TEAMMATES (an online peer evaluation system for education). Which one of these are non-functional requirements?</p>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. The response to any use action should become visible within 5 seconds.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. The application admin should be able to view a log of user activities.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. The source code should be open source.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> d. A course should be able to have up to 2000 students.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> e. As a student user, I can view details of my team members so that I can know who they are.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> f. The user interface should be intuitive enough for users who are not IT-savvy.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> g. The product is offered as a free online service.</li></ul>
+<div slot="answer" class="algolia-no-index">
+<p>(a)(c)(d)(f)(g)</p>
+<p>Explanation: (b) are (e) are functions available for a specific user types. Therefore, they are functional requirements. (a), (c), (d), (f) and (g) are either constraints on functionality or constraints on how the project is done, both of which are considered non-functional requirements.</p></div></question></panel></div></panel></div></div></div></div></div></b-modal>
+<b-modal id="modal:v10-glossary" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-glossary" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+  <div>
+<div></div><p></p>
+<p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → Glossary →
+</span></strong></span></p>
+<div id="title-and-body">
+<div><h4 id="what"><span>What</span><span id="what" class="anchor"></span><a class="fa fa-anchor" href="#what" onclick="event.stopPropagation()"></a></h4></div>
+<div id="main">
+<div>
+<box type="definition" seamless>
+<div>
+<p><strong>Glossary</strong>: A glossary serves to ensure that <em>all stakeholders have a common understanding</em> of the noteworthy terms, abbreviations, acronyms etc.</p></div></box>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Here is a partial glossary from a variant of the <em>Snakes and Ladders</em> game:</p>
+<ul>
+<li>Conditional square: A square that specifies a specific face value which a player has to throw before his/her piece can leave the square.</li>
+<li>Normal square: a normal square does not have any conditions, snakes, or ladders in it.</li></ul></box></div>
+<div></div></div></div></div></b-modal>
+<b-modal id="modal:v10-userstories" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v10-userstories" class="algolia-no-index"><template slot="modal-title">Textbook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
+  <div>
+<div></div><p></p>
+<p><span class="dimmed"><strong><span>Requirements → Specifying Requirements → User Stories →
+</span></strong></span></p>
+<div id="title-and-body">
+<div><h4 id="introduction-2"><span>Introduction</span><span id="introduction-2" class="anchor"></span><a class="fa fa-anchor" href="#introduction-2" onclick="event.stopPropagation()"></a></h4></div>
+<div id="main">
+<div>
+<box type="definition" seamless>
+<div>
+<p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p></div></box>
+<p><strong>A common format</strong> for writing user stories is:</p>
+<box type="definition" seamless>
+<div>
+<p><strong>User story format</strong>: <code v-pre>As a {user type/role} I can {function} so that {benefit}</code></p></div></box>
+<box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples (from a <em>Learning Management System</em>):</p>
+<div class="text-monospace">
+<ol>
+<li><span class="dimmed">As a</span> student, <span class="dimmed">I can</span> download files uploaded by lecturers, <span class="dimmed">so that</span> I can get my own copy of the files</li>
+<li><span class="dimmed">As a</span> lecturer, <span class="dimmed">I can</span> create discussion forums, <span class="dimmed">so that</span> students can discuss things online</li>
+<li><span class="dimmed">As a</span> tutor, <span class="dimmed">I can</span> print attendance sheets, <span class="dimmed">so that</span> I can take attendance during the class</li></ol></div></box>
+<p></p>
+<p><strong>You can write user stories on</strong> index cards or sticky notes, and arrange on walls or tables, to facilitate planning and discussion. Alternatively, you can use a software (e.g., <a href="https://help.github.com/articles/about-project-boards/">GitHub Project Boards</a>, Trello, Google Docs, ...) to manage user stories digitally.</p>
+<panel class="non-printable" expanded><template slot="_header"><p><span class="dimmed">User stories in use</span></p></template>
+<panel type="seamless" expanded><template slot="_header"><p>With sticky notes</p></template>
+<img src="/website/book/specifyingRequirements/userStories/introduction/images/workingWithStories.jpg" height="400">
+<p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/2682466984/">https://www.flickr.com/photos/jakuza/2682466984/</a>]</sup></span></p></panel>
+<panel type="seamless" expanded><template slot="_header"><p>With paper</p></template>
+<img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesOnTable.jpg" height="400">
+<p><span class="dimmed"><sup>[credit: <a href="https://www.flickr.com/photos/jakuza/with/2726048607/">https://www.flickr.com/photos/jakuza/with/2726048607/</a>]</sup></span></p></panel>
+<panel type="seamless" expanded><template slot="_header"><p>With software</p></template>
+<img src="/website/book/specifyingRequirements/userStories/introduction/images/userStoriesWithSoftware.png" height="400">
+<p><span class="dimmed"><sup>[credit: <a href="https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png">https://commons.wikimedia.org/wiki/File:User_Story_Map_in_Action.png</a>]</sup></span></p></panel></panel></div>
+<div>
+<div>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+  <div>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which of these are true about user stories?</p></template>
+<question>
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. They are based on stories users tell about similar systems</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> b. They are written from the user/customer perspective</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. They are always written in some physical medium such as index cards or sticky notes</li></ul>
+<div slot="answer" class="algolia-no-index">
+<ul class="contains-task-list">
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> a. Reason: Despite the name, user stories are not related to 'stories' about the software.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" checked type="checkbox"> b.</li>
+<li class="task-list-item enabled"><input class="task-list-item-checkbox" type="checkbox"> c. Reason: It is possible to use software to record user stories. When the team members are not co-located this may be the only option.</li></ul></div></question></panel></div>
+  <div>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> What's wrong with this user story?</p></template>
+<question has-input="true">
+<p>Critique the following user story taken from a software project to build an e-commerce website.</p>
+<p><code v-pre>As a developer, I want to use Python to implement the software, so that we can resue existing Python modules.</code></p>
+<div slot="hint" class="algolia-no-index">
+<p>Refer to the definition of a user story.</p>
+<p><span></span></p>
+<p><strong>User story</strong>: User stories are short, simple descriptions of a feature told from the perspective of the person who desires the new capability, usually a user or customer of the system. <sub>[<a href="https://www.mountaingoatsoftware.com/agile/user-stories">Mike Cohn</a>]</sub></p>
+<p></p></div>
+<div slot="answer" class="algolia-no-index">
+<p>This user story is not written from the perspective of the user/customer.</p></div></question></panel></div>
+  <div>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Extract user stories from customer statement</p></template>
+<question has-input="true">
+<p>Bill wants you to build a Human Resource Management (HRM) system. He mentions that <em>the system will help employees to view their own <span data-mb-component-type="popover" v-b-popover.hover.top.html="popoverInnerGenerator" class="trigger"><span data-mb-html-for="content">The number of leave days not yet taken</span>leave balance</span></em>. What are the user stories you can extract from that statement?</p>
+<div slot="hint" class="algolia-no-index">
+<p>Remember to follow the correct format when writing user stories.</p>
+<div>
+<p><strong>User story format</strong>: <code v-pre>As a {user type/role} I can {function} so that {benefit}</code></p></div></div>
+<div slot="answer" class="algolia-no-index">
+<p><code v-pre>As an employee, I can view my leave balance, so that I can know how many leave days I have left.</code></p>
+<p><span class="dimmed">Note: the <code v-pre>{benefit}</code> part may vary as it is not specifically mentioned in the question.</span></p></div></question></panel></div></panel></div></div></div></div></div></b-modal></div>
+<p></p>
+<h4 id="3-ensure-the-code-reposense-compatible"><span class="badge badge-pill badge-dark p-2"><big><big>3</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Ensure the code RepoSense-compatible</span><span id="3-ensure-the-code-reposense-compatible" class="anchor"></span><a class="fa fa-anchor" href="#3-ensure-the-code-reposense-compatible" onclick="event.stopPropagation()"></a></h4>
+<div>
+<span id="midV13-repoSenseCompatible">
+<ul>
+<li>
+<p><strong>Ensure your code is <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., RepoSense can detect your code as yours</span>RepoSense-compatible</span></strong> and the <strong>code it attributes to you is indeed the code written by you</strong>, as explained below:</p>
+<ul>
+<li>Go to the <a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true">tp Code Dashboard</a>. Click on the <code v-pre>&lt;/&gt;</code> icon against your name and verify that the <mark>lines attributed to you (i.e., lines marked as green)</mark> reflects your code contribution correctly. This is important because some aspects of your project grade (e.g., code quality) will be graded based on those lines.<br>
+    <img src="/website/admin/images/greenLines.png" width="600"></li></ul>
+<p></p>
+<ul>
+<li>More info on how to make the code RepoSense compatible:</li></ul></li></ul>
+<div class="indented-level4">
+<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> Tools → RepoSense <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<div>
+<h2 id="tool-reposense-for-authorship-tracking">Tool: RepoSense (for authorship tracking)<span id="tool-reposense-for-authorship-tracking" class="anchor"></span><a class="fa fa-anchor" href="#tool-reposense-for-authorship-tracking" onclick="event.stopPropagation()"></a></h2>
+<div>
+<p><pic src="https://reposense.org/images/reposenseOverview.png"></pic></p>
+<p>We will be using a tool called <a href="http://reposense.org">RepoSense</a> to make it <strong>easier for you to see (and learn from) code written by others</strong>, and to help us see who wrote which part of the code.</p>
+<pic src="https://reposense.org/images/report-features.png" alt="RepoSense report screenshot">
+  <sub>Figure: RepoSense Report Features</sub></pic>
+<p><strong><strong>Viewing the current status of code authorship data:</strong></strong></p>
+<ul>
+<li>The reports generated by the tool for the individual and team projects will be made available in the module website at some point in the semester. The feature that is most relevant to you is the <em>Code Panel</em> (shown on the right side of the screenshot above). It shows the code attributed to a given author.</li>
+<li>Click on your name to load the code attributed to you (based on Git blame/log data) onto the code panel on the right.</li>
+<li>If the code shown roughly matches the code you wrote, all is fine and there is nothing for you to do.</li></ul>
+<p><strong><strong>If the code does not match the actual authorship:</strong></strong> Given below are the possible reasons for the code shown to mismatch the code you wrote.</p>
+<ul>
+<li>
+<p><strong>Reason 1:</strong> the <code v-pre>Author name</code> of some of your commits is not known to RepoSense -- this is a result of not setting the <code v-pre>git.username</code> property as instructed <a href="/website/admin/tools.html#tool-git-for-revision-control">in our Git setup instructions</a>.<br>
+<strong>How to check:</strong> Find the <code v-pre>Author name</code> of your commits that are <em>missing</em> (you can use SourceTree or the <code v-pre>git log</code> command for that -- it's not possible to do that using the GitHub interface though).<br> Check if that author name is included in the <a href="https://github.com/nus-tic4001-AY2021S1/ip-dashboard/blob/master/configs/author-config.csv">RepoSense config for the iP</a> or the <a href="https://github.com/nus-tic4001-AY2021S1/tp-dashboard/blob/master/configs/author-config.csv">RepoSense config for the tP</a> (whichever the applicable one)<br>
+<strong>Remedy:</strong> Send the missing author name(s) to the prof so that the RepoSense configuration can be updated accordingly.</p></li>
+<li>
+<p><strong>Reason 2:</strong> The actual authorship does not match the authorship determined by git blame/log e.g., another student touched your code after you wrote it, and Git log attributed the code to that student instead.<br>
+<strong>Remedy:</strong> You can add <code v-pre>@@author</code> annotations as explained in the panel below:</p></li></ul>
+<div class="indented-level2">
+<panel class="algolia-no-index"><template slot="_header"><p>Adding <code v-pre>@@author</code> tags to indicate authorship</p></template>
+  <div>
+<h4 id="adding-author-tags-indicate-authorship">Adding <code v-pre>@@author</code> tags indicate authorship<span id="adding-author-tags-indicate-authorship" class="anchor"></span><a class="fa fa-anchor" href="#adding-author-tags-indicate-authorship" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li>
+<p>Mark your code with a <code v-pre>//@@author {yourGithubUsername}</code>. Note the double <code v-pre>@</code>.<br>
+The <code v-pre>//@@author</code> tag should indicates the beginning of the code you wrote. The code up to the next <code v-pre>//@@author</code> tag or the end of the file (whichever comes first) will be considered as was written by that author.
+Here is a sample code file:</p>
+<pre><code class="hljs" v-pre><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author sarahkhoo<br></span><span>method 3 ...<br></span><span>//@@author johndoe<br></span><span>method 4 ...<br></span></code></pre></li>
+<li>
+<p><strong>If you don't know who wrote the code segment below yours</strong>, you may put an empty <code v-pre>//@@author</code> (i.e. no GitHub username) to indicate the end of the code segment you wrote. The author of code below yours can add the GitHub username to the empty tag later.
+Here is a sample code with an empty <code v-pre>author</code> tag:</p>
+<pre><code class="hljs" v-pre><span>method 0 ...<br></span><span>//@@author johndoe<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span><span>//@@author<br></span><span>method 3 ...<br></span><span>method 4 ...<br></span></code></pre></li>
+<li>
+<p><strong>The author tag syntax varies based on file type</strong> e.g. for java, css, fxml. Use the corresponding comment syntax for non-Java files.<br>
+Here is an example code from an xml/fxml file.</p>
+<pre><code class="hljs" v-pre><span>&lt;!-- @@author sereneWong --&gt;<br></span><span>&lt;textbox&gt;<br></span><span>  &lt;label&gt;...&lt;/label&gt;<br></span><span>  &lt;input&gt;...&lt;/input&gt;<br></span><span>&lt;/textbox&gt;<br></span><span>...<br></span></code></pre></li>
+<li>
+<p><strong>Do not put the <code v-pre>//@@author</code> inside java header comments</strong>.<br>
+👎<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>/**<br></span><span>  * Returns true if ...<br></span><span>  * @@author johndoe<br></span><span>  */<br></span></code></pre><p>👍<span><span aria-hidden="true" class="fas fa-arrow-down"></span></span></p>
+<pre><code class="hljs" v-pre><span>//@@author johndoe<br></span><span>/**<br></span><span>  * Returns true if ...<br></span><span>  */<br></span></code></pre></li></ul>
+<h4 id="what-to-and-what-not-to-annotate">What to and what not to annotate<span id="what-to-and-what-not-to-annotate" class="anchor"></span><a class="fa fa-anchor" href="#what-to-and-what-not-to-annotate" onclick="event.stopPropagation()"></a></h4>
+<ul>
+<li>
+<p><strong>Annotate both functional and test code</strong> There is no need to annotate documentation files.</p></li>
+<li>
+<p><strong>Annotate only significant size code blocks that can be reviewed on its own</strong> <span class="dimmed">e.g., a class, a sequence of methods, a  method.</span> <br> <strong>Claiming credit for code blocks smaller than a method is discouraged</strong> but allowed. If you do, do it sparingly and only claim meaningful blocks of code such as a block of statements, a loop, or an if-else statement.</p>
+<ul>
+<li>If an enhancement required you to do tiny changes in many places, there is no need to annotate all those tiny changes; you can describe those changes in the Project Portfolio page instead.</li>
+<li>If a code block was touched by more than one person, either let the person who wrote most of it (e.g. more than 80%) take credit for the entire block, or leave it as 'unclaimed' (i.e., no author tags).</li>
+<li>Related to the above point, <mark>if you claim a code block as your own, more than 80% of the code in that block should have been written by yourself</mark>. For example, no more than 20% of it can be code you reused from somewhere.</li>
+<li><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> GitHub has a <a href="https://help.github.com/articles/tracing-changes-in-a-file/"><em>blame</em> feature and a <em>history</em></a> feature that can help you determine who wrote a piece of code.</li></ul></li>
+<li>
+<p><strong>Do not try to boost the quantity of your contribution using unethical means</strong> such as duplicating the same code in multiple places. In particular, do not copy-paste test cases to create redundant tests. Even repetitive code blocks within test methods should be extracted out as utility methods to reduce code duplication.
+Individual members are responsible for making sure code attributed to them are correct.
+If you notice a team member claiming credit for code that he/she did not write or use other questionable tactics, you can email us (after the final submission) to let us know.</p></li>
+<li>
+<p><strong>If you wrote a significant amount of code that was not used in the final product</strong>,</p>
+<ul>
+<li>Create a folder called <code v-pre>{project root}/unused</code></li>
+<li>Move unused files (or copies of files containing unused code) to that folder</li>
+<li>use <code v-pre>//@@author {yourGithubUsername}-unused</code> to mark unused code in those files (note the suffix <code v-pre>unused</code>)
+e.g.</li></ul>
+<pre><code class="hljs" v-pre><span>//@@author johndoe-unused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre><p>Please put a comment in the code to explain why it was not used.</p></li>
+<li>
+<p><strong>If you reused code from elsewhere,</strong> mark such code as <code v-pre>//@@author {yourGithubUsername}-reused</code> (note the suffix <code v-pre>reused</code>)
+e.g.</p>
+<pre><code class="hljs" v-pre><span>//@@author johndoe-reused<br></span><span>method 1 ...<br></span><span>method 2 ...<br></span></code></pre></li>
+<li>
+<p><strong>You can use empty <code v-pre>@@author</code> tags to mark code as not yours when RepoSense attribute the code to you incorrectly.</strong></p>
+<ul>
+<li>
+<p><strong>Code generated by the IDE/framework,</strong> should not be annotated as your own.</p></li>
+<li>
+<p><strong>Code you modified in minor ways</strong> e.g. adding a parameter. These should not be claimed as yours but you can mention these additional contributions in the Project Portfolio page if you want to claim credit for them.</p></li></ul></li></ul></div></panel></div>
+<ul>
+<li><strong>Reason 3:</strong> Some commits should not be included in the authorship analysis <span class="dimmed">e.g., you committed the code of a third party library by mistake</span>.<br>
+<strong>Remedy:</strong> Let us know the hashes of the commits that need to be omitted from the analysis.</li></ul>
+<p>If none of the above works, please please post in the <a href="https://github.com/nus-tic4001-AY2021S1/forum/issues">forum</a> or contact us via <code v-pre>tic4001@comp.nus.edu.sg</code> so that we can advise you what to do.</p>
+<p><mark><strong>We recommend you ensure your code is RepoSense-compatible by v2.0</strong></mark></p></div></div></panel></div><p></p></span></div>
+<p></p></div></div>
 
-      <nav id="page-nav" class="navbar navbar-light bg-transparent">
-        <div class="border-left-grey nav-inner position-sticky slim-scroll">
+        <nav id="page-nav" class="navbar navbar-light bg-transparent">
+<div class="border-left-grey nav-inner position-sticky slim-scroll">
 
-          <nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
-            <a class="nav-link py-1" href="#week-10-fri-oct-16th-project">Week 10 [Fri, Oct 16th] - Project&#x200E;</a>
-            <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-              <a class="nav-link py-1" href="#tp-mid-v2-0">tP: mid-v2.0&#x200E;</a>
-              <nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
-                <a class="nav-link py-1" href="#1-start-the-next-iteration">1 Start the next iteration&#x200E;</a>
-                <a class="nav-link py-1" href="#2-update-the-dg-user-stories-glossary-nfrs">2 Update the DG: user stories, glossary, NFRs&#x200E;</a>
-                <a class="nav-link py-1" href="#3-ensure-the-code-reposense-compatible">3 Ensure the code RepoSense-compatible&#x200E;</a>
-              </nav>
-            </nav>
+<nav class="nav nav-pills flex-column my-0 small no-flex-wrap">
+<a class="nav-link py-1" href="#week-10-fri-oct-16th-project">Week 10 [Fri, Oct 16th] - Project&#x200E;</a>
+<nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+<a class="nav-link py-1" href="#tp-mid-v2-0">tP: mid-v2.0&#x200E;</a>
+<nav class="nav nav-pills flex-column my-0 nested no-flex-wrap">
+<a class="nav-link py-1" href="#1-start-the-next-iteration">1  Start the next iteration&#x200E;</a>
+<a class="nav-link py-1" href="#2-update-the-dg-user-stories-glossary-nfrs">2  Update the DG: user stories, glossary, NFRs&#x200E;</a>
+<a class="nav-link py-1" href="#3-ensure-the-code-reposense-compatible">3  Ensure the code RepoSense-compatible&#x200E;</a>
+</nav>
+</nav>
 
-          </nav>
-        </div>
-      </nav>
-    </div>
+</nav>
+</div>
+</nav>
+</div>
     <footer>
-
-      <div class="text-center">
-        <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Fri, 23 Oct 2020, 23:45:56 GMT+8]</small>
-      </div>
-    </footer>
-  </div>
+  
+  <div class="text-center">
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Thu, 29 Oct 2020, 15:22:35 GMT+8]</small></div></footer></div>
 </body>
 <script src="../../markbind/js/vue.min.js"></script>
 <script src="../../markbind/js/components.min.js"></script>
@@ -714,21 +486,18 @@ Extensions:
   const enableSearch = true
 </script>
 <script src="../../markbind/js/setup.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
-<script>
-  function initAlgolia() {
-    docsearch({
-      apiKey: "369d0a5a75795bb334b8da938b3bb288",
-      indexName: "nus-tic4001-ay2021s1",
-      inputSelector: "#algolia-search-input",
-      algoliaOptions: {
-        "hitsPerPage": 10
-      },
-      debug: false,
-    });
-  }
-  MarkBind.afterSetup(initAlgolia);
-</script>
+    <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+    <script>
+    function initAlgolia() {
+      docsearch({
+        apiKey: "369d0a5a75795bb334b8da938b3bb288",
+        indexName: "nus-tic4001-ay2021s1",
+        inputSelector: "#algolia-search-input",
+        algoliaOptions: {"hitsPerPage":10},
+        debug: false,
+      });
+    }
+    MarkBind.afterSetup(initAlgolia);
+  </script>
 <script src="../../markbind/layouts/default/scripts.js"></script>
-
 </html>
