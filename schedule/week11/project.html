@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="generator" content="MarkBind 2.17.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC4001 - Week 11 - Project</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
 <div id="app">
     <header fixed>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~tic4001">here</a> when the new semester starts.</strong></span></div>
 <navbar placement="top" type="dark" class="temp-navbar">
 <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
   <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
@@ -69,6 +72,8 @@
     <form class="navbar-form">
         <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
+
+
 <div id="content-wrapper">
 <nav>
 <ul class="pagination mt-2"><li class="page-item"><a class="page-link" href="/website/schedule/week10"><span><span aria-hidden="true" class="glyphicon glyphicon-chevron-left"></span> <strong>Previous Week</strong></span></a></li>
@@ -80,51 +85,51 @@
 <li class="page-item active"><a class="page-link" href="/website/schedule/week11/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week12"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-11-fri-oct-23rd-project">Week 11 <small><small><span class="dimmed">[Fri, Oct 23rd]</span> - Project</small></small><span id="week-11-fri-oct-23rd-project" class="anchor"></span><a class="fa fa-anchor" href="#week-11-fri-oct-23rd-project" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-11-fri-oct-23rd-project"><span id="week-11-fri-oct-23rd-project" class="anchor"></span>Week 11 <small><small><span class="dimmed">[Fri, Oct 23rd]</span> - Project</small></small><a class="fa fa-anchor" href="#week-11-fri-oct-23rd-project" onclick="event.stopPropagation()"></a></h1>
 <div id="summary" class="lead border-left ml-3 mb-3 pl-2" style="color: purple;">
 <p><strong>tP:</strong> <span class="border rounded text-success border-success pr-1 pl-1"><span aria-hidden="true" class="fas fa-tag"></span> <strong>v2.0</strong></span></p>
 <div>
 <ol>
 <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Update the UG</span></li>
 <li><span><span><span aria-hidden="true" class="fas fa-user"></span></span> Deliver v2.0</span> <span class="badge badge-danger font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before next lecture</span></span></li></ol></div></div>
-<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4" id="tp-v2-0">tP: v2.0<span id="tp-v2-0" class="anchor"></span><a class="fa fa-anchor" href="#tp-v2-0" onclick="event.stopPropagation()"></a></h2>
+<h2 class="d-block text-white bg-dark p-1 mb-4 mt-4" id="tp-v2-0"><span id="tp-v2-0" class="anchor"></span>tP: v2.0<a class="fa fa-anchor" href="#tp-v2-0" onclick="event.stopPropagation()"></a></h2>
 <div>
 <div></div>
 <p></p>
-<h4 id="1-update-the-ug"><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Update the UG</span><span id="1-update-the-ug" class="anchor"></span><a class="fa fa-anchor" href="#1-update-the-ug" onclick="event.stopPropagation()"></a></h4>
+<h4 id="1-update-the-ug"><span id="1-update-the-ug" class="anchor"></span><span class="badge badge-pill badge-dark p-2"><big><big>1</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Update the UG</span><a class="fa fa-anchor" href="#1-update-the-ug" onclick="event.stopPropagation()"></a></h4>
 <div>
 <ul>
-<li><strong>Move the draft UG content into the User Guide page</strong> in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., <code v-pre>## Archiving contacts [coming soon]</code>).<br>
-As <span trigger="click" for="modal:v11-divideDocs" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:v11-divideDocs'].show()" class="trigger-click">mentioned before</span>, while it is more convenient for one person to update the entire UG, we recommend that <strong>each person updates their own part of the docs</strong> so that we can easily track the contribution of each member using <a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true">RepoSense</a>.</li></ul>
+<li><strong>Move the draft UG content into the User Guide page</strong> in your repository. Update the content as necessary. If a feature is not implemented in the current version, you can either omit it from the UG or mark it as 'Coming soon' (e.g., <code class="hljs inline no-lang" v-pre>## Archiving contacts [coming soon]</code>).<br>
+As <trigger trigger="click" for="modal:v11-divideDocs">mentioned before</trigger>, while it is more convenient for one person to update the entire UG, we recommend that <strong>each person updates their own part of the docs</strong> so that we can easily track the contribution of each member using <a href="https://nus-tic4001-ay2021s1.github.io/tp-dashboard/#breakdown=true">RepoSense</a>.</li></ul>
 <b-modal id="modal:v11-divideDocs" hide-footer size="lg" modal-class="mb-zoom" ref="modal:v11-divideDocs" class="algolia-no-index"><template slot="modal-title">About Dividing Documentation Work</template>
   <div>
   <box>
-<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">i.e., work related to the User Guide and the Developer Guide</span>documentation work</span> among team members equally; preferably based on enhancements/features each person would be adding</strong> <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
+<p><span class="badge badge-pill badge-warning"><span aria-hidden="true" class="fas fa-lightbulb"></span></span> Recommended: <strong>Divide <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">i.e., work related to the User Guide and the Developer Guide</span>documentation work</span> among team members equally; preferably based on enhancements/features each person would be adding</strong> <span class="dimmed">e.g., If you are the person planing to add a feature X, you should be the person to describe the feature X in the User Guide and in the Developer Guide</span>.</p>
 <p><span class="dimmed">Reason: In the final project evaluation your documentation skills will be graded based on sections of the User/Developer Guide you have written.</span></p>
-<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<panel type class="embedding algolia-no-index" minimized><template slot="header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> <strong>tP: Grading → <mark>Documentation</mark></strong> <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
 <div>
-<h4 id="4-project-grading-documentation-15-marks"><div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 15 marks]</span></div><span id="4-project-grading-documentation-15-marks" class="anchor"></span><a class="fa fa-anchor" href="#4-project-grading-documentation-15-marks" onclick="event.stopPropagation()"></a></h4>
+<h4 id="4-project-grading-documentation-15-marks"><span id="4-project-grading-documentation-15-marks" class="anchor"></span><div class="bg-warning p-1">4. Project Grading: Documentation <span class="dimmed">[<span><span aria-hidden="true" class="fas fa-user"></span></span>/<span><span aria-hidden="true" class="fas fa-users"></span></span> 15 marks]</span></div><a class="fa fa-anchor" href="#4-project-grading-documentation-15-marks" onclick="event.stopPropagation()"></a></h4>
 
 <div tags="m--tic4001">
 <p><strong>Evaluated by</strong> tutors</p>
 <p><strong>Based on</strong> the quality of your UG and DG, adjusted based on your individual contribution to the UG/DG.</p></div></div></panel>
 <p></p></box><p></p></div></b-modal></div>
 <p></p>
-<h4 id="2-deliver-v2-0-midnight-before-next-lecture"><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Deliver v2.0</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before next lecture</span></span><span id="2-deliver-v2-0-midnight-before-next-lecture" class="anchor"></span><a class="fa fa-anchor" href="#2-deliver-v2-0-midnight-before-next-lecture" onclick="event.stopPropagation()"></a></h4>
+<h4 id="2-deliver-v2-0-midnight-before-next-lecture"><span id="2-deliver-v2-0-midnight-before-next-lecture" class="anchor"></span><span class="badge badge-pill badge-dark p-2"><big><big>2</big></big></span> <span><span><span aria-hidden="true" class="fas fa-user"></span></span> Deliver v2.0</span> <span class="badge badge-secondary font-weight-normal"><span><span aria-hidden="true" class="far fa-clock"></span> midnight before next lecture</span></span><a class="fa fa-anchor" href="#2-deliver-v2-0-midnight-before-next-lecture" onclick="event.stopPropagation()"></a></h4>
 <div>
 <ul>
 <li>As before, do a release on GitHub and upload the v2.0 jar file. </li>
 <li><mark>IMPORTANT: ensure your jar file was generated using Java 11 and can work on all major OS'es using JDK 11.</mark></li></ul>
 <div class="indented-level2">
-<panel type class="embedding algolia-no-index" minimized><template slot="_header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-Java-Version <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
+<panel type class="embedding algolia-no-index" minimized><template slot="header"><p>Admin <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span> tP Contstraints → Constraint-Java-Version <span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-star"></span></span></p></template>
 <div>
-<h4 id="constraint-java-version"><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-Java-Version</span><span id="constraint-java-version" class="anchor"></span><a class="fa fa-anchor" href="#constraint-java-version" onclick="event.stopPropagation()"></a></h4>
+<h4 id="constraint-java-version"><span id="constraint-java-version" class="anchor"></span><span class="badge badge-warning text-monospace"><span aria-hidden="true" class="fas fa-ban"></span> Constraint-Java-Version</span><a class="fa fa-anchor" href="#constraint-java-version" onclick="event.stopPropagation()"></a></h4>
 <div class="indented-level2">
 <p>The software should work on a computer that has version 11 of Java <span class="dimmed">i.e., no other Java version installed</span>.</p></div></div></panel></div><p></p>
 <ul>
 <li>Wrap up the milestone on GitHub.</li></ul></div>
-<p></p></div></div>
-
+<p></p></div>
+<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -145,18 +150,13 @@ As <span trigger="click" for="modal:v11-divideDocs" v-b-popover.click.top.html="
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sun, 8 Nov 2020, 0:22:05 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:53:32 GMT+8]</small></div></footer></div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../../markbind/js/polyfill.min.js"></script>
-<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  MarkBind.setupWithSearch()
 </script>
-<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -170,5 +170,5 @@ As <span trigger="click" for="modal:v11-divideDocs" v-b-popover.click.top.html="
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
 </html>

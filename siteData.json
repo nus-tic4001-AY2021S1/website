@@ -2,28 +2,16 @@
   "enableSearch": true,
   "pages": [
     {
-      "title": "Admin: Apdx A: Module Principles",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/appendixA-principles.md",
-      "layout": "default",
+      "title": "Admin: Apdx A: Module Principles",
       "headings": {
         "apdx-a-module-principles-optional": "Apdx A: Module Principles : OPTIONAL"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Apdx B: Module Policies",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/appendixB-policies.md",
-      "layout": "default",
+      "title": "Admin: Apdx B: Module Policies",
       "headings": {
         "apdx-b-module-policies": "Apdx B: Module Policies ",
         "policy-on-following-instructions": "Policy on following instructions ",
@@ -42,14 +30,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Apdx C: FAQ",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/appendixC-faq.md",
-      "layout": "default",
+      "title": "Admin: Apdx C: FAQ",
       "headings": {
         "apdx-c-faq": "Apdx C: FAQ ",
         "where-is-everything": "Where is everything? ",
@@ -60,28 +42,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Apdx D: Getting Help",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/appendixD-help.md",
-      "layout": "default",
+      "title": "Admin: Apdx D: Getting Help",
       "headings": {
         "apdx-d-getting-help": "Apdx D: Getting Help "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Apdx E: Using GitHub",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/appendixE-gitHub.md",
-      "layout": "default",
+      "title": "Admin: Apdx E: Using GitHub",
       "headings": {
         "apdx-e-using-github": "Apdx E: Using GitHub ",
         "creating-a-github-account": "Creating a GitHub Account",
@@ -98,14 +68,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Apdx F: Handling Team Issues",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/appendixF-teamworkIssues.md",
-      "layout": "default",
+      "title": "Admin: Apdx F: Handling Team Issues",
       "headings": {
         "apdx-f-handling-team-issues-optional": "Apdx F: Handling Team Issues : OPTIONAL"
       },
@@ -114,7 +78,6 @@
     {
       "src": "admin/exams.md",
       "title": "",
-      "layout": "default",
       "headings": {
         "sop-deviations-refinements": "SOP deviations/refinements",
         "format": "Format",
@@ -125,83 +88,48 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Grade Breakdown",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/gradeBreakdown.md",
-      "layout": "default",
+      "title": "Admin: Grade Breakdown",
       "headings": {
         "grade-breakdown": "Grade Breakdown "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: TIC4001: SE Practicum I",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/index.md",
-      "layout": "default",
+      "title": "Admin: TIC4001: SE Practicum I",
       "headings": {
         "tic4001-se-practicum-i": "TIC4001: SE Practicum I "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Instructors",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/instructors.md",
-      "layout": "default",
+      "title": "Admin: Instructors",
       "headings": {
         "instructors-optional": "Instructors : OPTIONAL"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Grading",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-grading.md",
-      "layout": "default",
+      "title": "Admin: iP: Grading",
       "headings": {
         "ip-grading": "iP: Grading "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP (Individual Project): Overview",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-overview.md",
-      "layout": "default",
+      "title": "Admin: iP (Individual Project): Overview",
       "headings": {
         "ip-individual-project-overview": "iP (Individual Project): Overview "
       },
       "headingKeywords": {}
     },
     {
-      "title": "iP Showcase",
-      "header": "header.md",
-      "footer": "footer.md",
-      "head": "scheduleHead.md",
-      "pageNav": 2,
       "src": "admin/ip-showcase.md",
-      "layout": "default",
+      "title": "iP Showcase",
       "headings": {
         "tic4001-f18": "TIC4001-F18",
         "tic4001-1": "TIC4001-1",
@@ -230,14 +158,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Week 2",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-w2.md",
-      "layout": "default",
+      "title": "Admin: iP: Week 2",
       "headings": {
         "ip-week-2": "iP: Week 2 ",
         "1-learn-about-the-project": "1 Learn about the project",
@@ -248,14 +170,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Week 3",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-w3.md",
-      "layout": "default",
+      "title": "Admin: iP: Week 3",
       "headings": {
         "ip-week-3": "iP: Week 3 ",
         "1-do-any-leftover-ip-tasks-from-the-previous-week": "1 Do any leftover iP tasks from the previous week",
@@ -265,14 +181,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Week 4",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-w4.md",
-      "layout": "default",
+      "title": "Admin: iP: Week 4",
       "headings": {
         "ip-week-4": "iP: Week 4 ",
         "1-add-increments-as-branches-level-5-a-codequality-a-abstractclasses-a-packages": "1 Add Increments as branches: Level-5, A-CodeQuality, A-AbstractClasses, A-Packages",
@@ -281,14 +191,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Week 5",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-w5.md",
-      "layout": "default",
+      "title": "Admin: iP: Week 5",
       "headings": {
         "ip-week-5": "iP: Week 5 ",
         "1-add-increment-as-pr-level-6": "1 Add Increment as PR: Level-6",
@@ -298,14 +202,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Week 6",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-w6.md",
-      "layout": "default",
+      "title": "Admin: iP: Week 6",
       "headings": {
         "ip-week-6": "iP: Week 6 ",
         "1-add-increment-a-moreoop": "1 Add Increment: A-MoreOOP",
@@ -314,14 +212,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: iP: Week 7",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/ip-w7.md",
-      "layout": "default",
+      "title": "Admin: iP: Week 7",
       "headings": {
         "ip-week-7": "iP: Week 7 ",
         "1-set-up-a-product-website": "1 Set up a product website",
@@ -332,19 +224,12 @@
     {
       "src": "admin/ip-w8.md",
       "title": "",
-      "layout": "default",
       "headings": {},
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Lectures/Tutorials",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/lectures.md",
-      "layout": "default",
+      "title": "Admin: Lectures/Tutorials",
       "headings": {
         "lectures-tutorials": "Lectures/Tutorials ",
         "tips-for-watching-lecture-videos": "Tips for watching lecture videos"
@@ -352,14 +237,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Module Expectations",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/moduleExpectations.md",
-      "layout": "default",
+      "title": "Admin: Module Expectations",
       "headings": {
         "module-expectations": "Module Expectations ",
         "prior-knowledge-se-basics": "Prior Knowledge: SE basics",
@@ -369,28 +248,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: TIC4001: SE Practicum I",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/moduleOverview.md",
-      "layout": "default",
+      "title": "Admin: TIC4001: SE Practicum I",
       "headings": {
         "tic4001-se-practicum-i": "TIC4001: SE Practicum I "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Participation Marks",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/participation.md",
-      "layout": "default",
+      "title": "Admin: Participation Marks",
       "headings": {
         "where-to-find-your-participation-marks-progress": "Where to find your participation marks progress",
         "participation-marks": "Participation Marks "
@@ -398,14 +265,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Peer Evaluations",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/peerEvaluations.md",
-      "layout": "default",
+      "title": "Admin: Peer Evaluations",
       "headings": {
         "peer-evaluations": "Peer Evaluations ",
         "session-practice-peer-evaluation": "Session: Practice Peer Evaluation",
@@ -420,383 +281,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Programming Language",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/programmingLanguages.md",
-      "layout": "default",
+      "title": "Admin: Programming Language",
       "headings": {
         "programming-language": "Programming Language "
       },
       "headingKeywords": {}
     },
     {
-      "src": "admin/projectGrading.md",
-      "title": "",
-      "layout": "default",
-      "headings": {
-        "cs2103-f09-1": "CS2103-F09-1",
-        "feature-fit": " Feature fit:",
-        "demo-quality": " Demo quality:",
-        "cs2103-f09-1-2": "CS2103-F09-1",
-        "cs2103-f09-2": "CS2103-F09-2",
-        "feature-fit-2": " Feature fit:",
-        "demo-quality-2": " Demo quality:",
-        "cs2103-f09-2-2": "CS2103-F09-2",
-        "cs2103-f09-3": "CS2103-F09-3",
-        "feature-fit-3": " Feature fit:",
-        "demo-quality-3": " Demo quality:",
-        "cs2103-f09-3-2": "CS2103-F09-3",
-        "cs2103-f09-4": "CS2103-F09-4",
-        "feature-fit-4": " Feature fit:",
-        "demo-quality-4": " Demo quality:",
-        "cs2103-f09-4-2": "CS2103-F09-4",
-        "cs2103-f10-1": "CS2103-F10-1",
-        "feature-fit-5": " Feature fit:",
-        "demo-quality-5": " Demo quality:",
-        "cs2103-f10-1-2": "CS2103-F10-1",
-        "cs2103-f10-2": "CS2103-F10-2",
-        "feature-fit-6": " Feature fit:",
-        "demo-quality-6": " Demo quality:",
-        "cs2103-f10-2-2": "CS2103-F10-2",
-        "cs2103-f10-3": "CS2103-F10-3",
-        "feature-fit-7": " Feature fit:",
-        "demo-quality-7": " Demo quality:",
-        "cs2103-f10-3-2": "CS2103-F10-3",
-        "cs2103-f10-4": "CS2103-F10-4",
-        "feature-fit-8": " Feature fit:",
-        "demo-quality-8": " Demo quality:",
-        "cs2103-f10-4-2": "CS2103-F10-4",
-        "cs2103t-f11-1": "CS2103T-F11-1",
-        "feature-fit-9": " Feature fit:",
-        "demo-quality-9": " Demo quality:",
-        "cs2103t-f11-1-2": "CS2103T-F11-1",
-        "cs2103t-f11-2": "CS2103T-F11-2",
-        "feature-fit-10": " Feature fit:",
-        "demo-quality-10": " Demo quality:",
-        "cs2103t-f11-2-2": "CS2103T-F11-2",
-        "cs2103t-f11-3": "CS2103T-F11-3",
-        "feature-fit-11": " Feature fit:",
-        "demo-quality-11": " Demo quality:",
-        "cs2103t-f11-3-2": "CS2103T-F11-3",
-        "cs2103t-f11-4": "CS2103T-F11-4",
-        "feature-fit-12": " Feature fit:",
-        "demo-quality-12": " Demo quality:",
-        "cs2103t-f11-4-2": "CS2103T-F11-4",
-        "cs2103t-f12-1": "CS2103T-F12-1",
-        "feature-fit-13": " Feature fit:",
-        "demo-quality-13": " Demo quality:",
-        "cs2103t-f12-1-2": "CS2103T-F12-1",
-        "cs2103t-f12-2": "CS2103T-F12-2",
-        "feature-fit-14": " Feature fit:",
-        "demo-quality-14": " Demo quality:",
-        "cs2103t-f12-2-2": "CS2103T-F12-2",
-        "cs2103t-f12-3": "CS2103T-F12-3",
-        "feature-fit-15": " Feature fit:",
-        "demo-quality-15": " Demo quality:",
-        "cs2103t-f12-3-2": "CS2103T-F12-3",
-        "cs2103t-f12-4": "CS2103T-F12-4",
-        "feature-fit-16": " Feature fit:",
-        "demo-quality-16": " Demo quality:",
-        "cs2103t-f12-4-2": "CS2103T-F12-4",
-        "cs2103t-f13-1": "CS2103T-F13-1",
-        "feature-fit-17": " Feature fit:",
-        "demo-quality-17": " Demo quality:",
-        "cs2103t-f13-1-2": "CS2103T-F13-1",
-        "cs2103t-f13-2": "CS2103T-F13-2",
-        "feature-fit-18": " Feature fit:",
-        "demo-quality-18": " Demo quality:",
-        "cs2103t-f13-2-2": "CS2103T-F13-2",
-        "cs2103t-f13-3": "CS2103T-F13-3",
-        "feature-fit-19": " Feature fit:",
-        "demo-quality-19": " Demo quality:",
-        "cs2103t-f13-3-2": "CS2103T-F13-3",
-        "cs2103t-f13-4": "CS2103T-F13-4",
-        "feature-fit-20": " Feature fit:",
-        "demo-quality-20": " Demo quality:",
-        "cs2103t-f13-4-2": "CS2103T-F13-4",
-        "cs2103t-t09-1": "CS2103T-T09-1",
-        "feature-fit-21": " Feature fit:",
-        "demo-quality-21": " Demo quality:",
-        "cs2103t-t09-1-2": "CS2103T-T09-1",
-        "cs2103t-t09-2": "CS2103T-T09-2",
-        "feature-fit-22": " Feature fit:",
-        "demo-quality-22": " Demo quality:",
-        "cs2103t-t09-2-2": "CS2103T-T09-2",
-        "cs2103t-t09-3": "CS2103T-T09-3",
-        "feature-fit-23": " Feature fit:",
-        "demo-quality-23": " Demo quality:",
-        "cs2103t-t09-3-2": "CS2103T-T09-3",
-        "cs2103t-t09-4": "CS2103T-T09-4",
-        "feature-fit-24": " Feature fit:",
-        "demo-quality-24": " Demo quality:",
-        "cs2103t-t09-4-2": "CS2103T-T09-4",
-        "cs2103t-t10-1": "CS2103T-T10-1",
-        "feature-fit-25": " Feature fit:",
-        "demo-quality-25": " Demo quality:",
-        "cs2103t-t10-1-2": "CS2103T-T10-1",
-        "cs2103t-t10-2": "CS2103T-T10-2",
-        "feature-fit-26": " Feature fit:",
-        "demo-quality-26": " Demo quality:",
-        "cs2103t-t10-2-2": "CS2103T-T10-2",
-        "cs2103t-t10-3": "CS2103T-T10-3",
-        "feature-fit-27": " Feature fit:",
-        "demo-quality-27": " Demo quality:",
-        "cs2103t-t10-3-2": "CS2103T-T10-3",
-        "cs2103t-t10-4": "CS2103T-T10-4",
-        "feature-fit-28": " Feature fit:",
-        "demo-quality-28": " Demo quality:",
-        "cs2103t-t10-4-2": "CS2103T-T10-4",
-        "cs2103t-t11-1": "CS2103T-T11-1",
-        "feature-fit-29": " Feature fit:",
-        "demo-quality-29": " Demo quality:",
-        "cs2103t-t11-1-2": "CS2103T-T11-1",
-        "cs2103t-t11-2": "CS2103T-T11-2",
-        "feature-fit-30": " Feature fit:",
-        "demo-quality-30": " Demo quality:",
-        "cs2103t-t11-2-2": "CS2103T-T11-2",
-        "cs2103t-t11-3": "CS2103T-T11-3",
-        "feature-fit-31": " Feature fit:",
-        "demo-quality-31": " Demo quality:",
-        "cs2103t-t11-3-2": "CS2103T-T11-3",
-        "cs2103t-t11-4": "CS2103T-T11-4",
-        "feature-fit-32": " Feature fit:",
-        "demo-quality-32": " Demo quality:",
-        "cs2103t-t11-4-2": "CS2103T-T11-4",
-        "cs2103t-t12-1": "CS2103T-T12-1",
-        "feature-fit-33": " Feature fit:",
-        "demo-quality-33": " Demo quality:",
-        "cs2103t-t12-1-2": "CS2103T-T12-1",
-        "cs2103t-t12-2": "CS2103T-T12-2",
-        "feature-fit-34": " Feature fit:",
-        "demo-quality-34": " Demo quality:",
-        "cs2103t-t12-2-2": "CS2103T-T12-2",
-        "cs2103t-t12-3": "CS2103T-T12-3",
-        "feature-fit-35": " Feature fit:",
-        "demo-quality-35": " Demo quality:",
-        "cs2103t-t12-3-2": "CS2103T-T12-3",
-        "cs2103t-t12-4": "CS2103T-T12-4",
-        "feature-fit-36": " Feature fit:",
-        "demo-quality-36": " Demo quality:",
-        "cs2103t-t12-4-2": "CS2103T-T12-4",
-        "cs2103t-t13-1": "CS2103T-T13-1",
-        "feature-fit-37": " Feature fit:",
-        "demo-quality-37": " Demo quality:",
-        "cs2103t-t13-1-2": "CS2103T-T13-1",
-        "cs2103t-t13-2": "CS2103T-T13-2",
-        "feature-fit-38": " Feature fit:",
-        "demo-quality-38": " Demo quality:",
-        "cs2103t-t13-2-2": "CS2103T-T13-2",
-        "cs2103t-t13-3": "CS2103T-T13-3",
-        "feature-fit-39": " Feature fit:",
-        "demo-quality-39": " Demo quality:",
-        "cs2103t-t13-3-2": "CS2103T-T13-3",
-        "cs2103t-t13-4": "CS2103T-T13-4",
-        "feature-fit-40": " Feature fit:",
-        "demo-quality-40": " Demo quality:",
-        "cs2103t-t13-4-2": "CS2103T-T13-4",
-        "cs2103-t14-1": "CS2103-T14-1",
-        "feature-fit-41": " Feature fit:",
-        "demo-quality-41": " Demo quality:",
-        "cs2103-t14-1-2": "CS2103-T14-1",
-        "cs2103-t14-2": "CS2103-T14-2",
-        "feature-fit-42": " Feature fit:",
-        "demo-quality-42": " Demo quality:",
-        "cs2103-t14-2-2": "CS2103-T14-2",
-        "cs2103-t14-3": "CS2103-T14-3",
-        "feature-fit-43": " Feature fit:",
-        "demo-quality-43": " Demo quality:",
-        "cs2103-t14-3-2": "CS2103-T14-3",
-        "cs2103-t14-4": "CS2103-T14-4",
-        "feature-fit-44": " Feature fit:",
-        "demo-quality-44": " Demo quality:",
-        "cs2103-t14-4-2": "CS2103-T14-4",
-        "cs2103t-t15-1": "CS2103T-T15-1",
-        "feature-fit-45": " Feature fit:",
-        "demo-quality-45": " Demo quality:",
-        "cs2103t-t15-1-2": "CS2103T-T15-1",
-        "cs2103t-t15-2": "CS2103T-T15-2",
-        "feature-fit-46": " Feature fit:",
-        "demo-quality-46": " Demo quality:",
-        "cs2103t-t15-2-2": "CS2103T-T15-2",
-        "cs2103t-t15-3": "CS2103T-T15-3",
-        "feature-fit-47": " Feature fit:",
-        "demo-quality-47": " Demo quality:",
-        "cs2103t-t15-3-2": "CS2103T-T15-3",
-        "cs2103t-t15-4": "CS2103T-T15-4",
-        "feature-fit-48": " Feature fit:",
-        "demo-quality-48": " Demo quality:",
-        "cs2103t-t15-4-2": "CS2103T-T15-4",
-        "cs2103-t16-1": "CS2103-T16-1",
-        "feature-fit-49": " Feature fit:",
-        "demo-quality-49": " Demo quality:",
-        "cs2103-t16-1-2": "CS2103-T16-1",
-        "cs2103-t16-2": "CS2103-T16-2",
-        "feature-fit-50": " Feature fit:",
-        "demo-quality-50": " Demo quality:",
-        "cs2103-t16-2-2": "CS2103-T16-2",
-        "cs2103-t16-3": "CS2103-T16-3",
-        "feature-fit-51": " Feature fit:",
-        "demo-quality-51": " Demo quality:",
-        "cs2103-t16-3-2": "CS2103-T16-3",
-        "cs2103-t16-4": "CS2103-T16-4",
-        "feature-fit-52": " Feature fit:",
-        "demo-quality-52": " Demo quality:",
-        "cs2103-t16-4-2": "CS2103-T16-4",
-        "cs2103t-t17-1": "CS2103T-T17-1",
-        "feature-fit-53": " Feature fit:",
-        "demo-quality-53": " Demo quality:",
-        "cs2103t-t17-1-2": "CS2103T-T17-1",
-        "cs2103t-t17-2": "CS2103T-T17-2",
-        "feature-fit-54": " Feature fit:",
-        "demo-quality-54": " Demo quality:",
-        "cs2103t-t17-2-2": "CS2103T-T17-2",
-        "cs2103t-t17-3": "CS2103T-T17-3",
-        "feature-fit-55": " Feature fit:",
-        "demo-quality-55": " Demo quality:",
-        "cs2103t-t17-3-2": "CS2103T-T17-3",
-        "cs2103t-t17-4": "CS2103T-T17-4",
-        "feature-fit-56": " Feature fit:",
-        "demo-quality-56": " Demo quality:",
-        "cs2103t-t17-4-2": "CS2103T-T17-4",
-        "cs2103t-w10-1": "CS2103T-W10-1",
-        "feature-fit-57": " Feature fit:",
-        "demo-quality-57": " Demo quality:",
-        "cs2103t-w10-1-2": "CS2103T-W10-1",
-        "cs2103t-w10-2": "CS2103T-W10-2",
-        "feature-fit-58": " Feature fit:",
-        "demo-quality-58": " Demo quality:",
-        "cs2103t-w10-2-2": "CS2103T-W10-2",
-        "cs2103t-w10-3": "CS2103T-W10-3",
-        "feature-fit-59": " Feature fit:",
-        "demo-quality-59": " Demo quality:",
-        "cs2103t-w10-3-2": "CS2103T-W10-3",
-        "cs2103t-w10-4": "CS2103T-W10-4",
-        "feature-fit-60": " Feature fit:",
-        "demo-quality-60": " Demo quality:",
-        "cs2103t-w10-4-2": "CS2103T-W10-4",
-        "cs2103t-w11-1": "CS2103T-W11-1",
-        "feature-fit-61": " Feature fit:",
-        "demo-quality-61": " Demo quality:",
-        "cs2103t-w11-1-2": "CS2103T-W11-1",
-        "cs2103t-w11-2": "CS2103T-W11-2",
-        "feature-fit-62": " Feature fit:",
-        "demo-quality-62": " Demo quality:",
-        "cs2103t-w11-2-2": "CS2103T-W11-2",
-        "cs2103t-w11-3": "CS2103T-W11-3",
-        "feature-fit-63": " Feature fit:",
-        "demo-quality-63": " Demo quality:",
-        "cs2103t-w11-3-2": "CS2103T-W11-3",
-        "cs2103t-w11-4": "CS2103T-W11-4",
-        "feature-fit-64": " Feature fit:",
-        "demo-quality-64": " Demo quality:",
-        "cs2103t-w11-4-2": "CS2103T-W11-4",
-        "cs2103t-w12-1": "CS2103T-W12-1",
-        "feature-fit-65": " Feature fit:",
-        "demo-quality-65": " Demo quality:",
-        "cs2103t-w12-1-2": "CS2103T-W12-1",
-        "cs2103t-w12-2": "CS2103T-W12-2",
-        "feature-fit-66": " Feature fit:",
-        "demo-quality-66": " Demo quality:",
-        "cs2103t-w12-2-2": "CS2103T-W12-2",
-        "cs2103t-w12-3": "CS2103T-W12-3",
-        "feature-fit-67": " Feature fit:",
-        "demo-quality-67": " Demo quality:",
-        "cs2103t-w12-3-2": "CS2103T-W12-3",
-        "cs2103t-w12-4": "CS2103T-W12-4",
-        "feature-fit-68": " Feature fit:",
-        "demo-quality-68": " Demo quality:",
-        "cs2103t-w12-4-2": "CS2103T-W12-4",
-        "cs2103t-w13-1": "CS2103T-W13-1",
-        "feature-fit-69": " Feature fit:",
-        "demo-quality-69": " Demo quality:",
-        "cs2103t-w13-1-2": "CS2103T-W13-1",
-        "cs2103t-w13-2": "CS2103T-W13-2",
-        "feature-fit-70": " Feature fit:",
-        "demo-quality-70": " Demo quality:",
-        "cs2103t-w13-2-2": "CS2103T-W13-2",
-        "cs2103t-w13-3": "CS2103T-W13-3",
-        "feature-fit-71": " Feature fit:",
-        "demo-quality-71": " Demo quality:",
-        "cs2103t-w13-3-2": "CS2103T-W13-3",
-        "cs2103t-w13-4": "CS2103T-W13-4",
-        "feature-fit-72": " Feature fit:",
-        "demo-quality-72": " Demo quality:",
-        "cs2103t-w13-4-2": "CS2103T-W13-4",
-        "cs2103-w14-1": "CS2103-W14-1",
-        "feature-fit-73": " Feature fit:",
-        "demo-quality-73": " Demo quality:",
-        "cs2103-w14-1-2": "CS2103-W14-1",
-        "cs2103-w14-2": "CS2103-W14-2",
-        "feature-fit-74": " Feature fit:",
-        "demo-quality-74": " Demo quality:",
-        "cs2103-w14-2-2": "CS2103-W14-2",
-        "cs2103-w14-3": "CS2103-W14-3",
-        "feature-fit-75": " Feature fit:",
-        "demo-quality-75": " Demo quality:",
-        "cs2103-w14-3-2": "CS2103-W14-3",
-        "cs2103-w14-4": "CS2103-W14-4",
-        "feature-fit-76": " Feature fit:",
-        "demo-quality-76": " Demo quality:",
-        "cs2103-w14-4-2": "CS2103-W14-4",
-        "cs2103t-w15-1": "CS2103T-W15-1",
-        "feature-fit-77": " Feature fit:",
-        "demo-quality-77": " Demo quality:",
-        "cs2103t-w15-1-2": "CS2103T-W15-1",
-        "cs2103t-w15-2": "CS2103T-W15-2",
-        "feature-fit-78": " Feature fit:",
-        "demo-quality-78": " Demo quality:",
-        "cs2103t-w15-2-2": "CS2103T-W15-2",
-        "cs2103t-w15-3": "CS2103T-W15-3",
-        "feature-fit-79": " Feature fit:",
-        "demo-quality-79": " Demo quality:",
-        "cs2103t-w15-3-2": "CS2103T-W15-3",
-        "cs2103t-w15-4": "CS2103T-W15-4",
-        "feature-fit-80": " Feature fit:",
-        "demo-quality-80": " Demo quality:",
-        "cs2103t-w15-4-2": "CS2103T-W15-4",
-        "cs2103t-w16-1": "CS2103T-W16-1",
-        "feature-fit-81": " Feature fit:",
-        "demo-quality-81": " Demo quality:",
-        "cs2103t-w16-1-2": "CS2103T-W16-1",
-        "cs2103t-w16-2": "CS2103T-W16-2",
-        "feature-fit-82": " Feature fit:",
-        "demo-quality-82": " Demo quality:",
-        "cs2103t-w16-2-2": "CS2103T-W16-2",
-        "cs2103t-w16-3": "CS2103T-W16-3",
-        "feature-fit-83": " Feature fit:",
-        "demo-quality-83": " Demo quality:",
-        "cs2103t-w16-3-2": "CS2103T-W16-3",
-        "cs2103t-w16-4": "CS2103T-W16-4",
-        "feature-fit-84": " Feature fit:",
-        "demo-quality-84": " Demo quality:",
-        "cs2103t-w16-4-2": "CS2103T-W16-4",
-        "cs2103t-w17-1": "CS2103T-W17-1",
-        "feature-fit-85": " Feature fit:",
-        "demo-quality-85": " Demo quality:",
-        "cs2103t-w17-1-2": "CS2103T-W17-1",
-        "cs2103t-w17-2": "CS2103T-W17-2",
-        "feature-fit-86": " Feature fit:",
-        "demo-quality-86": " Demo quality:",
-        "cs2103t-w17-2-2": "CS2103T-W17-2",
-        "cs2103t-w17-3": "CS2103T-W17-3",
-        "feature-fit-87": " Feature fit:",
-        "demo-quality-87": " Demo quality:",
-        "cs2103t-w17-3-2": "CS2103T-W17-3",
-        "cs2103t-w17-4": "CS2103T-W17-4",
-        "feature-fit-88": " Feature fit:",
-        "demo-quality-88": " Demo quality:",
-        "cs2103t-w17-4-2": "CS2103T-W17-4"
-      },
-      "headingKeywords": {}
-    },
-    {
       "src": "admin/reposenseAuthorAnnotation.md",
       "title": "",
-      "layout": "default",
       "headings": {
         "adding-author-tags-indicate-authorship": "Adding @@author tags indicate authorship",
         "what-to-and-what-not-to-annotate": "What to and what not to annotate"
@@ -804,12 +298,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "config.json File Templates for RepoSense",
-      "header": "header.md",
-      "footer": "footer.md",
-      "head": "scheduleHead.md",
       "src": "admin/reposenseConfigTemplates.md",
-      "layout": "default",
+      "title": "config.json File Templates for RepoSense",
       "headings": {
         "w10-1": "W10-1",
         "w10-2": "W10-2",
@@ -866,14 +356,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Standards/Conventions",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/standardsAndConventions.md",
-      "layout": "default",
+      "title": "Admin: Standards/Conventions",
       "headings": {
         "standards-conventions": "Standards/Conventions ",
         "java-2": "Java",
@@ -884,13 +368,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "tP Teams List",
-      "header": "header.md",
-      "footer": "footer.md",
-      "head": "scheduleHead.md",
-      "pageNav": 2,
       "src": "admin/teamList.md",
-      "layout": "default",
+      "title": "tP Teams List",
       "headings": {
         "tic4001-f18": "TIC4001-F18",
         "tic4001-1": "TIC4001-1     ",
@@ -902,28 +381,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Textbooks",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/textbooks.md",
-      "layout": "default",
+      "title": "Admin: Textbooks",
       "headings": {
         "textbooks": "Textbooks "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Tools",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tools.md",
-      "layout": "default",
+      "title": "Admin: Tools",
       "headings": {
         "tools": "Tools ",
         "tool-learning-management-system": "Tool: Learning Management System",
@@ -941,14 +408,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP: Constraints",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-constraints.md",
-      "layout": "default",
+      "title": "Admin: tP: Constraints",
       "headings": {
         "tp-constraints": "tP: Constraints ",
         "constraint-typing-preferred": " Constraint-Typing-Preferred",
@@ -971,14 +432,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP: Deliverables",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-deliverables.md",
-      "layout": "default",
+      "title": "Admin: tP: Deliverables",
       "headings": {
         "tp-deliverables": "tP: Deliverables ",
         "deliverable-executable": "Deliverable: Executable",
@@ -1006,14 +461,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP (team project): Expectations",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-expectations.md",
-      "layout": "default",
+      "title": "Admin: tP (team project): Expectations",
       "headings": {
         "tp-team-project-expectations": "tP (team project): Expectations ",
         "outcomes": "Outcomes",
@@ -1034,14 +483,8 @@
       }
     },
     {
-      "title": "Admin: tP: Grading",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-grading.md",
-      "layout": "default",
+      "title": "Admin: tP: Grading",
       "headings": {
         "tp-grading": "tP: Grading ",
         "1-project-grading-product-design-5-marks": "1. Project Grading: Product Design [ 5 marks]",
@@ -1055,7 +498,6 @@
     {
       "src": "admin/tp-pe.md",
       "title": "",
-      "layout": "default",
       "headings": {
         "tp-practical-exam-dry-run-pe-d": "tP: Practical Exam Dry Run (PE-D)",
         "pe-d-overview": "PE-D Overview",
@@ -1079,28 +521,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP: Supervision",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-supervision.md",
-      "layout": "default",
+      "title": "Admin: tP: Supervision",
       "headings": {
         "tp-supervision": "tP: Supervision "
       },
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP: Forming Teams",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-teams.md",
-      "layout": "default",
+      "title": "Admin: tP: Forming Teams",
       "headings": {
         "tp-forming-teams": "tP: Forming Teams ",
         "when-to-form-teams": "When to form teams",
@@ -1112,14 +542,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP: Timeline",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-timeline.md",
-      "layout": "default",
+      "title": "Admin: tP: Timeline",
       "headings": {
         "tp-timeline": "tP: Timeline ",
         "week-3-kickoff": "Week 3 Kickoff",
@@ -1134,14 +558,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 10: mid-v2.0",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w10.md",
-      "layout": "default",
+      "title": "Admin: tP week 10: mid-v2.0",
       "headings": {
         "tp-week-10-mid-v2-0": "tP week 10: mid-v2.0 ",
         "1-start-the-next-iteration": "1  Start the next iteration",
@@ -1151,14 +569,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 11: v2.0",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w11.md",
-      "layout": "default",
+      "title": "Admin: tP week 11: v2.0",
       "headings": {
         "tp-week-11-v2-0": "tP week 11: v2.0 ",
         "1-update-the-ug": "1  Update the UG",
@@ -1167,14 +579,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 12: mid-v3.0",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w12.md",
-      "layout": "default",
+      "title": "Admin: tP week 12: mid-v3.0",
       "headings": {
         "admin-tp-deliverables-dg-tips": "  Admin  tP Deliverables → DG → Tips",
         "tp-week-12-mid-v3-0": "tP week 12: mid-v3.0 ",
@@ -1185,14 +591,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 13: v3.0",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w13.md",
-      "layout": "default",
+      "title": "Admin: tP week 13: v3.0",
       "headings": {
         "tp-week-13-v3-0": "tP week 13: v3.0 ",
         "1-submit-deliverables-sat-nov-14th-2359": "1  Submit deliverables  Sat, Nov 14th 2359",
@@ -1201,14 +601,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 3: Kickoff",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w3.md",
-      "layout": "default",
+      "title": "Admin: tP week 3: Kickoff",
       "headings": {
         "tp-week-3-kickoff": "tP week 3: Kickoff ",
         "1-set-up-a-project-meeting-time-by-the-end-of-the-lecture": "1  Set up a project meeting time  by the end of the lecture"
@@ -1216,14 +610,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 4: Set direction",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w4.md",
-      "layout": "default",
+      "title": "Admin: tP week 4: Set direction",
       "headings": {
         "tp-week-4-set-direction": "tP week 4: Set direction ",
         "1-start-weekly-project-meetings": "1  Start weekly project meetings",
@@ -1237,14 +625,8 @@
       }
     },
     {
-      "title": "Admin: tP week 5: Gather requirements",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w5.md",
-      "layout": "default",
+      "title": "Admin: tP week 5: Gather requirements",
       "headings": {
         "tp-week-5-gather-requirements": "tP week 5: Gather requirements ",
         "1-brainstorm-user-stories-before-next-lecture": "1  Brainstorm user stories  before next lecture"
@@ -1252,14 +634,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 6: Conceptualize the product",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w6.md",
-      "layout": "default",
+      "title": "Admin: tP week 6: Conceptualize the product",
       "headings": {
         "tp-week-6-conceptualize-the-product": "tP week 6: Conceptualize the product ",
         "1-choose-user-stories-for-v1-0-during-the-lecture": "1  Choose user stories for v1.0  during the lecture",
@@ -1271,14 +647,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 7: Get ready for iterations",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w7.md",
-      "layout": "default",
+      "title": "Admin: tP week 7: Get ready for iterations",
       "headings": {
         "tp-week-7-get-ready-for-iterations": "tP week 7: Get ready for iterations ",
         "1-set-up-the-project-repo-during-the-lecture": "1  Set up the project repo  during the lecture",
@@ -1288,14 +658,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 8: mid-v1.0",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w8.md",
-      "layout": "default",
+      "title": "Admin: tP week 8: mid-v1.0",
       "headings": {
         "tp-week-8-mid-v1-0": "tP week 8: mid-v1.0 ",
         "1-ensure-you-know-tp-expectations": "1  Ensure you know tP expectations",
@@ -1306,14 +670,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: tP week 9: v1.0",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/tp-w9.md",
-      "layout": "default",
+      "title": "Admin: tP week 9: v1.0",
       "headings": {
         "tp-week-9-v1-0": "tP week 9: v1.0 ",
         "1-make-the-code-more-defensive": "1  Make the code more defensive",
@@ -1325,7 +683,6 @@
     {
       "src": "admin/tutorials.md",
       "title": "",
-      "layout": "default",
       "headings": {
         "tutorial-timetable": "Tutorial Timetable",
         "tutorial-structure": "Tutorial Structure"
@@ -1333,14 +690,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Using this Website",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/usingThisWebsite.md",
-      "layout": "default",
+      "title": "Admin: Using this Website",
       "headings": {
         "using-this-website": "Using this Website ",
         "browser-compatibility": "Browser compatibility",
@@ -1356,14 +707,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Admin: Weekly Schedule",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "adminSiteNav.md",
-      "head": "adminHead.md",
-      "pageNav": 4,
       "src": "admin/weeklySchedule.md",
-      "layout": "default",
+      "title": "Admin: Weekly Schedule",
       "headings": {
         "weekly-schedule": "Weekly Schedule ",
         "tic4001-week-vs-normal-academic-week": "TIC4001 week vs normal academic week",
@@ -1372,10 +717,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "About: Acknowledgements",
-      "pageNav": 3,
       "src": "book/about/acknowledgements.md",
-      "layout": "default",
+      "title": "About: Acknowledgements",
       "headings": {
         "license": "License",
         "bug-reports-suggestions": "Bug reports, suggestions",
@@ -1386,26 +729,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook",
-      "header": "header.md",
-      "footer": "footer.md",
-      "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/index.md",
-      "layout": "default",
+      "title": "Textbook",
       "headings": {
         "software-engineering-for-self-directed-learners-tic4001-edition-2020": "Software Engineering for Self-Directed Learners TIC4001 edition - 2020"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Architecture",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/architecture.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Architecture",
       "headings": {
         "introduction": "Introduction",
         "architecture-diagrams": "Architecture diagrams",
@@ -1417,14 +750,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Code Quality",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/codeQuality.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Code Quality",
       "headings": {
         "introduction": "Introduction",
         "guideline-maximise-readability": "Guideline: Maximise readability",
@@ -1478,14 +805,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : C++ to Java",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/cppToJava.md",
-      "layout": "default",
+      "title": "Textbook Chapter : C++ to Java",
       "headings": {
         "about-this-book-chapter": "About this Book Chapter",
         "the-java-world": "The Java world",
@@ -1613,14 +934,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Design",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/design.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Design",
       "headings": {
         "introduction": "Introduction",
         "what": "What",
@@ -1629,14 +944,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Design Approaches",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designApproaches.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Design Approaches",
       "headings": {
         "multi-level-design": "Multi-level design",
         "what": "What",
@@ -1645,14 +954,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Design Fundamentals",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designFundamentals.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Design Fundamentals",
       "headings": {
         "abstraction": "Abstraction",
         "coupling": "Coupling",
@@ -1668,14 +971,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Software Design Patterns",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/designPatterns.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Software Design Patterns",
       "headings": {
         "introduction": "Introduction",
         "singleton-pattern": "Singleton pattern",
@@ -1691,14 +988,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Documentation",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/documentation.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Documentation",
       "headings": {
         "introduction": "Introduction",
         "tools": "Tools",
@@ -1711,14 +1002,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Error Handling",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/errorHandling.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Error Handling",
       "headings": {
         "introduction": "Introduction",
         "exceptions": "Exceptions",
@@ -1738,14 +1023,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Gathering Requirements",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gatheringRequirements.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Gathering Requirements",
       "headings": {
         "brainstorming": "Brainstorming",
         "user-surveys": "User Surveys",
@@ -1759,14 +1038,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Git and Github",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/gitAndGithub.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Git and Github",
       "headings": {
         "init-getting-started": "init: Getting started",
         "commit-saving-changes-to-history": "commit: Saving changes to history",
@@ -1785,7 +1058,7 @@
         "reviewing-prs": "Reviewing PRs",
         "merging-prs": "Merging PRs",
         "forking-workflow": "Forking Workflow",
-        "the-ignore-file": "The .ignore file",
+        "the-gitignore-file": "The .gitignore file",
         "working-with-multiple-remotes": "Working with multiple remotes",
         "pushing-a-branch-to-a-remote-repo": "Pushing a branch to a remote repo",
         "git-and-github": "Git and GitHub"
@@ -1793,14 +1066,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : IDEs",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/ides.md",
-      "layout": "default",
+      "title": "Textbook Chapter : IDEs",
       "headings": {
         "introduction": "Introduction",
         "debugging": "Debugging",
@@ -1811,14 +1078,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Integration",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/integration.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Integration",
       "headings": {
         "introduction": "Introduction",
         "build-automation": "Build Automation",
@@ -1830,34 +1091,22 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Intellij IDEA",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/intellij.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Intellij IDEA",
       "headings": {
         "project-setup": "Project Setup",
         "code-navigation": "Code Navigation",
         "productivity-shortcuts": "Productivity Shortcuts",
         "debugging-basic": "Debugging: Basic",
         "refactoring": "Refactoring",
-        "running-intellij-idea-for-the-first-time": "Running Intellij IDEA for the First Time",
-        "intellij-idea": "Intellij IDEA"
+        "running-intellij-idea-for-the-first-time": "Running IntelliJ IDEA for the First Time",
+        "intellij-idea": "IntelliJ IDEA"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Modeling",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/modeling.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Modeling",
       "headings": {
         "introduction": "Introduction",
         "modeling-structures": "Modeling structures",
@@ -1898,14 +1147,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Object-Oriented Programming",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/oop.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Object-Oriented Programming",
       "headings": {
         "introduction": "Introduction",
         "objects": "Objects",
@@ -1948,14 +1191,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Principles",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/principles.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Principles",
       "headings": {
         "single-responsibility-principle": "Single Responsibility Principle",
         "open-closed-principle": "Open-Closed Principle",
@@ -1965,14 +1202,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : SDLC Process Models",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/processModels.md",
-      "layout": "default",
+      "title": "Textbook Chapter : SDLC Process Models",
       "headings": {
         "introduction": "Introduction",
         "what": "What",
@@ -1983,14 +1214,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Project Planning",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/projectPlanning.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Project Planning",
       "headings": {
         "work-breakdown-structure": "Work Breakdown Structure",
         "milestones": "Milestones",
@@ -2003,14 +1228,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Quality Assurance",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/qualityAssurance.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Quality Assurance",
       "headings": {
         "introduction": "Introduction",
         "code-reviews": "Code reviews",
@@ -2026,14 +1245,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Refactoring",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/refactoring.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Refactoring",
       "headings": {
         "what": "What",
         "how": "How",
@@ -2043,14 +1256,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Requirements",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/requirements.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Requirements",
       "headings": {
         "introduction": "Introduction",
         "non-functional-requirements": "Non-Functional Requirements",
@@ -2061,14 +1268,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Reuse",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/reuse.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Reuse",
       "headings": {
         "introduction": "Introduction",
         "apis": "APIs",
@@ -2080,14 +1281,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Revision Control",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/revisionControl.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Revision Control",
       "headings": {
         "what": "What",
         "repositories": "Repositories",
@@ -2108,19 +1303,12 @@
     {
       "src": "se-book-adapted/chapters/softwareEngineering.md",
       "title": "",
-      "layout": "default",
       "headings": {},
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Specifying Requirements",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/specifyingRequirements.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Specifying Requirements",
       "headings": {
         "prose": "Prose",
         "feature-lists": "Feature lists",
@@ -2145,14 +1333,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Teamwork",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/teamwork.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Teamwork",
       "headings": {
         "team-structures": "Team Structures",
         "teamwork": "Teamwork"
@@ -2162,19 +1344,12 @@
     {
       "src": "se-book-adapted/chapters/test.md",
       "title": "",
-      "layout": "default",
       "headings": {},
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Test Case Design",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testCaseDesign.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Test Case Design",
       "headings": {
         "introduction": "Introduction",
         "equivalence-partitions": "Equivalence partitions",
@@ -2193,14 +1368,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : Testing",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/testing.md",
-      "layout": "default",
+      "title": "Textbook Chapter : Testing",
       "headings": {
         "introduction": "Introduction",
         "testing-types": "Testing types",
@@ -2249,14 +1418,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Textbook Chapter : UML",
-      "footer": "footer.md",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
-      "head": "bookHead.md",
       "src": "se-book-adapted/chapters/uml.md",
-      "layout": "default",
+      "title": "Textbook Chapter : UML",
       "headings": {
         "class-diagrams": "Class diagrams",
         "sequence-diagrams": "Sequence diagrams",
@@ -2315,11 +1478,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Definitions",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/common/definitions.md",
-      "layout": "default",
+      "title": "Definitions",
       "headings": {
         "definitions": "Definitions",
         "a": "A",
@@ -2343,23 +1503,16 @@
       "headingKeywords": {}
     },
     {
-      "title": "Combined Exercises",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
       "src": "se-book-adapted/common/exercises.md",
-      "layout": "default",
+      "title": "Combined Exercises",
       "headings": {
         "combined-exercises": "Combined Exercises"
       },
       "headingKeywords": {}
     },
     {
-      "title": "Project Duke",
-      "header": "header.md",
-      "siteNav": "se-book-adapted-sitenav.md",
-      "pageNav": 4,
       "src": "se-book-adapted/projectDuke/index.md",
-      "layout": "default",
+      "title": "Project Duke",
       "headings": {
         "project-duke": "Project Duke",
         "levels": "Levels",
@@ -2440,10 +1593,8 @@
       "headingKeywords": {}
     },
     {
-      "title": "Combined Exercises",
-      "pageNav": 3,
       "src": "book/combined/exercises.md",
-      "layout": "default",
+      "title": "Combined Exercises",
       "headings": {
         "combined-exercises": "Combined Exercises"
       },

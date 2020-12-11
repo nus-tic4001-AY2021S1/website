@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.15.2">
+    <meta name="generator" content="MarkBind 2.17.0">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC4001 - Week 13 - Lecture</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/github.min.css">
-    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
+    <script src="../../markbind/js/vue.min.js"></script>
+    <script src="../../markbind/js/markbind.min.js"></script>
+    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
 <div id="app">
     <header fixed>
+<div class="w-100 p-1 bg-warning text-center"><span><strong>This site is from a past semester! The current version will be <a href="http://www.comp.nus.edu.sg/~tic4001">here</a> when the new semester starts.</strong></span></div>
 <navbar placement="top" type="dark" class="temp-navbar">
 <a slot="brand" href="/website/index.html" title="Home" class="navbar-brand"><span class="badge badge-pill badge-info">TIC4001 <small>2020</small></span></a>
   <div class="nav-link temp-dropdown-placeholder">**Schedule**</div><dropdown class="nav-link temp-dropdown algolia-no-index"><template slot="_header"><strong>Schedule</strong></template>
@@ -69,6 +72,8 @@
     <form class="navbar-form">
         <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
+
+
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -81,32 +86,66 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week13/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item disabled"><a class="page-link" href="/website/schedule/week14"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-13-fri-nov-6th-lecture">Week 13 <small><small><span class="dimmed">[Fri, Nov 6th]</span> - Lecture</small></small><span id="week-13-fri-nov-6th-lecture" class="anchor"></span><a class="fa fa-anchor" href="#week-13-fri-nov-6th-lecture" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-13-fri-nov-6th-lecture"><span id="week-13-fri-nov-6th-lecture" class="anchor"></span>Week 13 <small><small><span class="dimmed">[Fri, Nov 6th]</span> - Lecture</small></small><a class="fa fa-anchor" href="#week-13-fri-nov-6th-lecture" onclick="event.stopPropagation()"></a></h1>
 <div>
-<h4 id="exercise-draw-a-sequence-diagram">Exercise: draw a sequence diagram<span id="exercise-draw-a-sequence-diagram" class="anchor"></span><a class="fa fa-anchor" href="#exercise-draw-a-sequence-diagram" onclick="event.stopPropagation()"></a></h4>
+<h4 id="exercise-draw-a-sequence-diagram"><span id="exercise-draw-a-sequence-diagram" class="anchor"></span>Exercise: draw a sequence diagram<a class="fa fa-anchor" href="#exercise-draw-a-sequence-diagram" onclick="event.stopPropagation()"></a></h4>
 <ul>
 <li><strong><mark>[before the lecture]</mark> Do the following exercise</strong> (you may hand-draw or use a drawing software e.g. PowerPoint, <a href="http://draw.io">draw.io</a>.</li></ul>
 <div class="indented-level2">
 <div>
-<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code v-pre>PersonList</code>, <code v-pre>Person</code>, <code v-pre>Tag</code>)</p></template>
+<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span> Draw a Sequence Diagram for the code (<code class="hljs inline no-lang" v-pre>PersonList</code>, <code class="hljs inline no-lang" v-pre>Person</code>, <code class="hljs inline no-lang" v-pre>Tag</code>)</p></template>
 <question>
 <p>Consider the code below:</p>
 <div class="row">
   <div class="col-sm-7">
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span></span>{<br></span><span>    Tag tag;<br></span><span>    String name;<br></span><span><br></span><span>    Person(String personName, String tagName){<br></span><span>        name = personName;<br></span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);<br></span><span>    }<br></span><span>}<br></span></code></pre></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Person</span> </span>{
+</span><span>    Tag tag;
+</span><span>    String name;
+</span><span>
+</span><span>    Person(String personName, String tagName) {
+</span><span>        name = personName;
+</span><span>        tag = <span class="hljs-keyword">new</span> Tag(tagName);
+</span><span>    }
+</span><span>}
+</span></code></pre></div>
   <div class="col-sm-5">
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span></span>{<br></span><span>    Tag(String value){<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre></div></div>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Tag</span> </span>{
+</span><span>    Tag(String value) {
+</span><span>        <span class="hljs-comment">// ...</span>
+</span><span>    }
+</span><span>}
+</span><span>
+</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span> </span>{
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span> </span>{
+</span><span>        <span class="hljs-comment">// ...</span>
+</span><span>    }
+</span><span>}
+</span></code></pre></div></div>
 <p>Draw a sequence diagram to illustrate the object interactions that happen in the code snippet below:</p>
-<pre><code class="hljs java" v-pre><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();<br></span><span><span class="hljs-keyword">while</span> (hasRoom){<br></span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);<br></span><span>    personList.addPerson(p);<br></span><span>}<br></span></code></pre></question></panel></div>
+<pre><code class="hljs java" v-pre><span>PersonList personList = <span class="hljs-keyword">new</span> PersonList();
+</span><span><span class="hljs-keyword">while</span> (hasRoom) {
+</span><span>    Person p = <span class="hljs-keyword">new</span> Person(<span class="hljs-string">"Adam"</span>, <span class="hljs-string">"friend"</span>);
+</span><span>    personList.addPerson(p);
+</span><span>}
+</span></code></pre></question></panel></div>
 <p></p>
-<p><strong>How would you update the diagram</strong> if the <code v-pre>PersonList</code> class was updated as follows?</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        add(p);<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Person p)</span></span>{<br></span><span>        <span class="hljs-comment">//...</span><br></span><span>    }<br></span><span>}<br></span></code></pre></div>
+<p><strong>How would you update the diagram</strong> if the <code class="hljs inline no-lang" v-pre>PersonList</code> class was updated as follows?</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">PersonList</span></span>{
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">addPerson</span><span class="hljs-params">(Person p)</span></span>{
+</span><span>        add(p);
+</span><span>    }
+</span><span>
+</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(Person p)</span></span>{
+</span><span>        <span class="hljs-comment">//...</span>
+</span><span>    }
+</span><span>}
+</span></code></pre></div>
 <hr>
 <hr>
-<h1 id="lecture-2-fri-nov-13th">Lecture 2 <small><span class="dimmed">[Fri, Nov 13th ]</span></small><span id="lecture-2-fri-nov-13th" class="anchor"></span><a class="fa fa-anchor" href="#lecture-2-fri-nov-13th" onclick="event.stopPropagation()"></a></h1>
+<h1 id="lecture-2-fri-nov-13th"><span id="lecture-2-fri-nov-13th" class="anchor"></span>Lecture 2 <small><span class="dimmed">[Fri, Nov 13th ]</span></small><a class="fa fa-anchor" href="#lecture-2-fri-nov-13th" onclick="event.stopPropagation()"></a></h1>
 <ul>
-<li>No formal lecture but instructors are available for consultation. Use this slot to work on the project.</li></ul></div></div></div>
-
+<li>No formal lecture but instructors are available for consultation. Use this slot to work on the project.</li></ul></div></div>
+<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -124,18 +163,13 @@
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Sun, 8 Nov 2020, 0:22:05 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:53:32 GMT+8]</small></div></footer></div>
 </body>
-<script src="../../markbind/js/vue.min.js"></script>
-<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
-<script src="../../markbind/js/polyfill.min.js"></script>
-<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  const enableSearch = true
+  MarkBind.setupWithSearch()
 </script>
-<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -149,5 +183,5 @@
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script>
+<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
 </html>
