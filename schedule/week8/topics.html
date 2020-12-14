@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.17.0">
+    <meta name="generator" content="MarkBind 2.15.2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC4001 - Week 8 - Topics</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
-    <script src="../../markbind/js/vue.min.js"></script>
-    <script src="../../markbind/js/markbind.min.js"></script>
-    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
@@ -70,10 +68,8 @@
     <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-        <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
-
-
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -86,10 +82,10 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week8/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week9"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-8-fri-oct-2nd-topics"><span id="week-8-fri-oct-2nd-topics" class="anchor"></span>Week 8 <small><small><span class="dimmed">[Fri, Oct 2nd]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-8-fri-oct-2nd-topics" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-8-fri-oct-2nd-topics">Week 8 <small><small><span class="dimmed">[Fri, Oct 2nd]</span> - Topics</small></small><span id="week-8-fri-oct-2nd-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-8-fri-oct-2nd-topics" onclick="event.stopPropagation()"></a></h1>
 <div>
 </div>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
 <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week8/topics.html#W8-1">W8.1</a>] <strong>Design: Fundamentals</strong> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></li></ul>
@@ -201,7 +197,7 @@
 <p>As you do projects, you'll have to make design decisions e.g., decide between multiple design alternatives. Let us learn three fundamental design concepts that you can use in those decisions.</p>
 <p>It is extremely important for you to know these three because <strong>they are like the DNA of every higher-level design concept</strong>.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-1-design-fundamentals">
-<span slot="header" class="card-title"><div><h2 id="w8-1-design-fundamentals"><span id="w8-1-design-fundamentals" class="anchor"></span><span class="dimmed">[W8.1]</span> <strong>Design: Fundamentals</strong> <small><small><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></small></small><a class="fa fa-anchor" href="#w8-1-design-fundamentals" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-1-design-fundamentals"><span class="dimmed">[W8.1]</span> <strong>Design: Fundamentals</strong> <small><small><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></small></small><span id="w8-1-design-fundamentals" class="anchor"></span><a class="fa fa-anchor" href="#w8-1-design-fundamentals" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=9c7ce7f2-2b96-4e86-a9b1-ac3700bab81c&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -209,13 +205,13 @@
 <div class="indented-level1">
 <br>
 <div></div>
-<h3 id="abstraction"><span id="abstraction" class="anchor"></span><span class="dimmed"><strong>Abstraction</strong></span><a class="fa fa-anchor" href="#abstraction" onclick="event.stopPropagation()"></a></h3>
+<h3 id="abstraction"><span class="dimmed"><strong>Abstraction</strong></span><span id="abstraction" class="anchor"></span><a class="fa fa-anchor" href="#abstraction" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W8-1a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/abstraction/what" id="design-design-fundamentals-abstraction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-abstraction-what"><span id="design-design-fundamentals-abstraction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Abstraction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-abstraction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-abstraction-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Abstraction →</span></span></small> <strong><span>What</span></strong><span id="design-design-fundamentals-abstraction-what" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-abstraction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -231,11 +227,11 @@
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Within a certain software component, you might deal with a <em>user</em> data type, while ignoring the details contained in the user data item such as <em>name</em>, and <em>date of birth</em>. These details have been ‘abstracted away’ as they do not affect the task of that software component.</p></box>
 <p><strong><mark><em>Control abstraction</em></mark>: abstracting away details of the actual control flow to focus on tasks at a higher level</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code class="hljs inline no-lang" v-pre>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> <code v-pre>print(“Hello”)</code> is an abstraction of the actual output mechanism within the computer.</p></box>
 <p><strong>Abstraction can be applied repeatedly to obtain progressively <em>higher levels of abstraction</em>.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code class="hljs inline no-lang" v-pre>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code class="hljs inline no-lang" v-pre>execute(Game)</code> is at a higher level than <code class="hljs inline no-lang" v-pre>print(Char)</code> which is at a higher level than an Assembly language instruction <code class="hljs inline no-lang" v-pre>MOV</code>.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of data abstraction: a <code v-pre>File</code> is a data item that is at a higher level than an array and an array is at a higher level than a bit.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example of different levels of control abstraction: <code v-pre>execute(Game)</code> is at a higher level than <code v-pre>print(Char)</code> which is at a higher level than an Assembly language instruction <code v-pre>MOV</code>.</p></box>
 <p><strong>Abstraction is a general concept that is not limited to just data or control abstractions.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some more general examples of abstraction:</p>
@@ -249,13 +245,13 @@
 <div></div></div>
 <br>
 <div></div>
-<h3 id="coupling"><span id="coupling" class="anchor"></span><span class="dimmed"><strong>Coupling</strong></span><a class="fa fa-anchor" href="#coupling" onclick="event.stopPropagation()"></a></h3>
+<h3 id="coupling"><span class="dimmed"><strong>Coupling</strong></span><span id="coupling" class="anchor"></span><a class="fa fa-anchor" href="#coupling" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W8-1b"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/what" id="design-design-fundamentals-coupling-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-coupling-what"><span id="design-design-fundamentals-coupling-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-coupling-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>What</span></strong><span id="design-design-fundamentals-coupling-what" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -268,35 +264,35 @@
 <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
 <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li></ul>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code class="hljs inline no-lang" v-pre>A</code> appears to have more coupling between the components than design <code class="hljs inline no-lang" v-pre>B</code>.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code v-pre>A</code> appears to have more coupling between the components than design <code v-pre>B</code>.</p>
 <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
 <p></p></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
 <question has-input="true">
 <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
 <box>
 <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
 <p></p></box>
 <div slot="answer" class="algolia-no-index">
-<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code class="hljs inline no-lang" v-pre>A</code> is highly-coupled to the rest of the system while <code class="hljs inline no-lang" v-pre>B</code>, <code class="hljs inline no-lang" v-pre>C</code>, <code class="hljs inline no-lang" v-pre>D</code>, and <code class="hljs inline no-lang" v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code class="hljs inline no-lang" v-pre>A</code> of <em>x</em>. However, only <code class="hljs inline no-lang" v-pre>D</code> and <code class="hljs inline no-lang" v-pre>E</code> are standalone.</p></div></question></panel></div>
+<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code v-pre>A</code> is highly-coupled to the rest of the system while <code v-pre>B</code>, <code v-pre>C</code>, <code v-pre>D</code>, and <code v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code v-pre>A</code> of <em>x</em>. However, only <code v-pre>D</code> and <code v-pre>E</code> are standalone.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
 <question has-input="true">
 <p>Explain the link (if any) between regressions and coupling.</p>
 <div slot="answer" class="algolia-no-index">
-<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code class="hljs inline no-lang" v-pre>A</code> is modified, all components ‘coupled’ to component <code class="hljs inline no-lang" v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
+<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code v-pre>A</code> is modified, all components ‘coupled’ to component <code v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
 <question has-input="true">
-<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
+<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
 <div slot="answer" class="algolia-no-index">
-<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
+<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
 <question>
 <p>Choose the correct statements.</p>
 <ul class="contains-task-list">
@@ -316,48 +312,33 @@
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/how" id="design-design-fundamentals-coupling-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-coupling-how"><span id="design-design-fundamentals-coupling-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-coupling-how"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>How</span></strong><span id="design-design-fundamentals-coupling-how" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can reduce coupling</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>X is <em>coupled</em> to Y if a change to Y can <mark>potentially</mark> require a change in X</strong>.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code class="hljs inline no-lang" v-pre>Foo</code> class calls the method <code class="hljs inline no-lang" v-pre>Bar#read()</code>, <code class="hljs inline no-lang" v-pre>Foo</code> is coupled to <code class="hljs inline no-lang" v-pre>Bar</code> because a change to <code class="hljs inline no-lang" v-pre>Bar</code> can potentially (but not always) require a change in the <code class="hljs inline no-lang" v-pre>Foo</code> class <span class="dimmed">e.g. if the signature of <code class="hljs inline no-lang" v-pre>Bar#read()</code> is changed, <code class="hljs inline no-lang" v-pre>Foo</code> needs to change as well, but a change to the <code class="hljs inline no-lang" v-pre>Bar#write()</code> method may not require a change in the <code class="hljs inline no-lang" v-pre>Foo</code> class because <code class="hljs inline no-lang" v-pre>Foo</code> does not call <code class="hljs inline no-lang" v-pre>Bar#write()</code></span>.</p>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed">code for the above example</span></p></template>
-<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{
-</span><span>    ...
-</span><span>    <span class="hljs-keyword">new</span> Bar().read();
-</span><span>    ...
-</span><span>}
-</span><span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>{
-</span><span>        ...
-</span><span>    }
-</span><span>    
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span> </span>{
-</span><span>        ...
-</span><span>    }
-</span><span>}
-</span></code></pre></panel></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the <code v-pre>Foo</code> class calls the method <code v-pre>Bar#read()</code>, <code v-pre>Foo</code> is coupled to <code v-pre>Bar</code> because a change to <code v-pre>Bar</code> can potentially (but not always) require a change in the <code v-pre>Foo</code> class <span class="dimmed">e.g. if the signature of <code v-pre>Bar#read()</code> is changed, <code v-pre>Foo</code> needs to change as well, but a change to the <code v-pre>Bar#write()</code> method may not require a change in the <code v-pre>Foo</code> class because <code v-pre>Foo</code> does not call <code v-pre>Bar#write()</code></span>.</p>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed">code for the above example</span></p></template>
+<pre><code class="hljs java" v-pre><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Foo</span> </span>{<br></span><span>    ...<br></span><span>    <span class="hljs-keyword">new</span> Bar().read();<br></span><span>    ...<br></span><span>}<br></span><span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bar</span> </span>{<br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">()</span> </span>{<br></span><span>        ...<br></span><span>    }<br></span><span>    <br></span><span>    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">()</span> </span>{<br></span><span>        ...<br></span><span>    }<br></span><span>}<br></span></code></pre></panel></box>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of coupling: <code class="hljs inline no-lang" v-pre>A</code> is coupled to <code class="hljs inline no-lang" v-pre>B</code> if,</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Some examples of coupling: <code v-pre>A</code> is coupled to <code v-pre>B</code> if,</p>
 <ul>
-<li><code class="hljs inline no-lang" v-pre>A</code> has access to the internal structure of <code class="hljs inline no-lang" v-pre>B</code> (this results in a very high level of coupling)</li>
-<li><code class="hljs inline no-lang" v-pre>A</code> and <code class="hljs inline no-lang" v-pre>B</code> depend on the same global variable</li>
-<li><code class="hljs inline no-lang" v-pre>A</code> calls <code class="hljs inline no-lang" v-pre>B</code></li>
-<li><code class="hljs inline no-lang" v-pre>A</code> receives an object of <code class="hljs inline no-lang" v-pre>B</code> as a parameter or a return value</li>
-<li><code class="hljs inline no-lang" v-pre>A</code> inherits from <code class="hljs inline no-lang" v-pre>B</code></li>
-<li><code class="hljs inline no-lang" v-pre>A</code> and <code class="hljs inline no-lang" v-pre>B</code> are required to follow the same data format or communication protocol</li></ul></box></div>
+<li><code v-pre>A</code> has access to the internal structure of <code v-pre>B</code> (this results in a very high level of coupling)</li>
+<li><code v-pre>A</code> and <code v-pre>B</code> depend on the same global variable</li>
+<li><code v-pre>A</code> calls <code v-pre>B</code></li>
+<li><code v-pre>A</code> receives an object of <code v-pre>B</code> as a parameter or a return value</li>
+<li><code v-pre>A</code> inherits from <code v-pre>B</code></li>
+<li><code v-pre>A</code> and <code v-pre>B</code> are required to follow the same data format or communication protocol</li></ul></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which indicate coupling?</p></template>
 <question>
 <p>Which of these indicate coupling between components A and B?</p>
 <ul class="contains-task-list">
@@ -378,11 +359,11 @@
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/coupling/types" id="design-design-fundamentals-coupling-types-of-coupling">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-coupling-types-of-coupling"><span id="design-design-fundamentals-coupling-types-of-coupling" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>Types of coupling</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-types-of-coupling" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-coupling-types-of-coupling"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Coupling →</span></span></small> <strong><span>Types of coupling</span></strong><span id="design-design-fundamentals-coupling-types-of-coupling" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-coupling-types-of-coupling" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/designFundamentals/coupling/what/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/designFundamentals/coupling/what" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Coupling → What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can identify types of coupling</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
@@ -401,13 +382,13 @@
 <div></div></div>
 <br>
 <div></div>
-<h3 id="cohesion"><span id="cohesion" class="anchor"></span><span class="dimmed"><strong>Cohesion</strong></span><a class="fa fa-anchor" href="#cohesion" onclick="event.stopPropagation()"></a></h3>
+<h3 id="cohesion"><span class="dimmed"><strong>Cohesion</strong></span><span id="cohesion" class="anchor"></span><a class="fa fa-anchor" href="#cohesion" onclick="event.stopPropagation()"></a></h3>
 <p><span id="W8-1e"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/what" id="design-design-fundamentals-cohesion-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1e</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-cohesion-what"><span id="design-design-fundamentals-cohesion-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-cohesion-what"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>What</span></strong><span id="design-design-fundamentals-cohesion-what" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -429,69 +410,30 @@
 <panel type="seamless" expanded popup-url="/website/book/designFundamentals/cohesion/how" id="design-design-fundamentals-cohesion-how">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.1f</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="design-design-fundamentals-cohesion-how"><span id="design-design-fundamentals-cohesion-how" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>How</span></strong><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-how" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="design-design-fundamentals-cohesion-how"><small><span class="font-weight-bold text-muted"><span>Design → Design Fundamentals → Cohesion →</span></span></small> <strong><span>How</span></strong><span id="design-design-fundamentals-cohesion-how" class="anchor"></span><a class="fa fa-anchor" href="#design-design-fundamentals-cohesion-how" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Cohesion →
+<p><panel src="/website/book/designFundamentals/cohesion/what/unit-inElsewhere-asFlat._include_.html" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Design → Design Fundamentals → Cohesion →
 What</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can increase cohesion</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
 <p><strong>Cohesion can be present in many forms</strong>. Some examples:</p>
 <ul>
-<li>Code related to a single concept is kept together, e.g. the <code class="hljs inline no-lang" v-pre>Student</code> component handles everything related to students.</li>
+<li>Code related to a single concept is kept together, e.g. the <code v-pre>Student</code> component handles everything related to students.</li>
 <li>Code that is invoked close together in time is kept together, e.g. all code related to initializing the system is kept together.</li>
-<li>Code that manipulates the same data structure is kept together, e.g. the <code class="hljs inline no-lang" v-pre>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li></ul>
+<li>Code that manipulates the same data structure is kept together, e.g. the <code v-pre>GameArchive</code> component handles everything related to the storage and retrieval of game sessions.</li></ul>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span>  Suppose a Payroll application contains a class that deals with writing data to the database. If the class includes some code to show an error dialog to the user if the database is unreachable, that class is not cohesive because it seems to be interacting with the user as well as the database.</p></box></div>
 <div>
   <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which class is more cohesive?</p></template>
 <question has-input="true">
-<p>Compare the cohesion of the following two versions of the <code class="hljs inline no-lang" v-pre>EmailMessage</code> class. Which one is more cohesive and why?</p>
-<pre><code class="hljs java" v-pre><span><span class="hljs-comment">// version-1</span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> String sendTo;
-</span><span>    <span class="hljs-keyword">private</span> String subject;
-</span><span>    <span class="hljs-keyword">private</span> String message;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-</span><span>        <span class="hljs-keyword">this</span>.subject = subject;
-</span><span>        <span class="hljs-keyword">this</span>.message = message;
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-</span><span>    }
-</span><span>}
-</span><span>
-</span><span><span class="hljs-comment">// version-2</span>
-</span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{
-</span><span>    <span class="hljs-keyword">private</span> String sendTo;
-</span><span>    <span class="hljs-keyword">private</span> String subject;
-</span><span>    <span class="hljs-keyword">private</span> String message;
-</span><span>    <span class="hljs-keyword">private</span> String username;
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;
-</span><span>        <span class="hljs-keyword">this</span>.subject = subject;
-</span><span>        <span class="hljs-keyword">this</span>.message = message;
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{
-</span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span>
-</span><span>    }
-</span><span>
-</span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{
-</span><span>        <span class="hljs-keyword">this</span>.username = username;
-</span><span>        <span class="hljs-comment">// code to login</span>
-</span><span>    }
-</span><span>}
-</span></code></pre><div slot="answer" class="algolia-no-index">
+<p>Compare the cohesion of the following two versions of the <code v-pre>EmailMessage</code> class. Which one is more cohesive and why?</p>
+<pre><code class="hljs java" v-pre><span><span class="hljs-comment">// version-1</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> String sendTo;<br></span><span>    <span class="hljs-keyword">private</span> String subject;<br></span><span>    <span class="hljs-keyword">private</span> String message;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;<br></span><span>        <span class="hljs-keyword">this</span>.subject = subject;<br></span><span>        <span class="hljs-keyword">this</span>.message = message;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span><br></span><span>    }<br></span><span>}<br></span><span><br></span><span><span class="hljs-comment">// version-2</span><br></span><span><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">EmailMessage</span> </span>{<br></span><span>    <span class="hljs-keyword">private</span> String sendTo;<br></span><span>    <span class="hljs-keyword">private</span> String subject;<br></span><span>    <span class="hljs-keyword">private</span> String message;<br></span><span>    <span class="hljs-keyword">private</span> String username;<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">EmailMessage</span><span class="hljs-params">(String sendTo, String subject, String message)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.sendTo = sendTo;<br></span><span>        <span class="hljs-keyword">this</span>.subject = subject;<br></span><span>        <span class="hljs-keyword">this</span>.message = message;<br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">sendMessage</span><span class="hljs-params">()</span> </span>{<br></span><span>        <span class="hljs-comment">// sends message using sendTo, subject and message</span><br></span><span>    }<br></span><span><br></span><span>    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">login</span><span class="hljs-params">(String username, String password)</span> </span>{<br></span><span>        <span class="hljs-keyword">this</span>.username = username;<br></span><span>        <span class="hljs-comment">// code to login</span><br></span><span>    }<br></span><span>}<br></span></code></pre><div slot="answer" class="algolia-no-index">
 <p>Version 2 is less cohesive.</p>
 <p>Explanation: Version 2 is handling functionality related to login, which is not directly related to the concept of ‘email message’ that the class is supposed to represent. On a related note, you can improve the cohesion of both versions by removing the sendMessage functionality. Although sending messages is related to emails, this class is supposed to represent an email message, not an email server.</p></div></question></panel></div></panel></div></div></div></div></panel>
 <p></p>
@@ -510,14 +452,14 @@ What</span></p></template></panel></p></div><p></p>
 <p>As you are still in the early stage of the project, <strong>this is a good time to learn some design principles that you can try to apply in the internal design of your product</strong>.</p>
 <p>These principles build on top of the design fundamentals you learned earlier (i.e., abstraction, coupling, cohesion).</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-2-design-principles-soc-srp">
-<span slot="header" class="card-title"><div><h2 id="w8-2-design-principles-soc-srp"><span id="w8-2-design-principles-soc-srp" class="anchor"></span><span class="dimmed">[W8.2]</span> <strong>Design Principles: SoC, SRP</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-2-design-principles-soc-srp" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-2-design-principles-soc-srp"><span class="dimmed">[W8.2]</span> <strong>Design Principles: SoC, SRP</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-2-design-principles-soc-srp" class="anchor"></span><a class="fa fa-anchor" href="#w8-2-design-principles-soc-srp" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-2a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/principles/separationOfConcernsPrinciple" id="principles-separation-of-concerns-principle">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.2a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="principles-separation-of-concerns-principle"><span id="principles-separation-of-concerns-principle" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Separation of concerns principle</span></strong><a class="fa fa-anchor" href="#principles-separation-of-concerns-principle" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-separation-of-concerns-principle"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Separation of concerns principle</span></strong><span id="principles-separation-of-concerns-principle" class="anchor"></span><a class="fa fa-anchor" href="#principles-separation-of-concerns-principle" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e2b68479-4455-4c13-a154-ac4400f03453&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -535,15 +477,15 @@ What</span></p></template></panel></p></div><p></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Examples for <em>concerns</em>:</p>
 <ul>
-<li>A specific feature, such as the code related to the <code class="hljs inline no-lang" v-pre>add employee</code> feature</li>
-<li>A specific aspect, such as the code related to <code class="hljs inline no-lang" v-pre>persistence</code> or <code class="hljs inline no-lang" v-pre>security</code></li>
-<li>A specific entity, such as the code related to the <code class="hljs inline no-lang" v-pre>Employee</code> entity</li></ul></box>
-<p><strong>Applying <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Separation of Concerns</span>SoC</span> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
+<li>A specific feature, such as the code related to the <code v-pre>add employee</code> feature</li>
+<li>A specific aspect, such as the code related to <code v-pre>persistence</code> or <code v-pre>security</code></li>
+<li>A specific entity, such as the code related to the <code v-pre>Employee</code> entity</li></ul></box>
+<p><strong>Applying <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Separation of Concerns</span>SoC</span> reduces functional overlaps among code sections and also limits the ripple effect when changes are introduced to a specific part of the system.</strong></p>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> If the code related to <em>persistence</em> is separated from the code related to <em>security</em>, a change to how the data are persisted will not need changes to how the security is implemented.</p></box>
 <p><strong>This principle can be applied at the class level, as well as at higher levels.</strong></p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <trigger trigger="click" for="modal:soc-nTier">n-tier architecture</trigger> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> The <span trigger="click" for="modal:soc-nTier" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:soc-nTier'].show()" class="trigger-click">n-tier architecture</span> utilizes this principle. Each layer in the architecture has a well-defined functionality that has no functional overlap with each other.</p></box>
 <b-modal id="modal:soc-nTier" hide-footer size modal-class="mb-zoom" ref="modal:soc-nTier" class="algolia-no-index"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
   <div>
 <div class="indented">
@@ -558,7 +500,7 @@ What</span></p></template></panel></p></div><p></p>
 <img src="/website/book/architecture/architecturalStyles/nTier/what/images/nTierExamples.png" height="150"></p></box>
 <p></p></div>
 <div></div></div></div></b-modal>
-<p><strong>This principle should lead to higher <trigger trigger="click" for="soc-cohesion">cohesion</trigger> and lower <trigger trigger="click" for="soc-coupling">coupling</trigger>.</strong></p>
+<p><strong>This principle should lead to higher <span trigger="click" for="soc-cohesion" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-cohesion'].show()" class="trigger-click">cohesion</span> and lower <span trigger="click" for="soc-coupling" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['soc-coupling'].show()" class="trigger-click">coupling</span>.</strong></p>
 <b-modal id="soc-coupling" hide-footer size modal-class="mb-zoom" ref="soc-coupling" class="algolia-no-index"><template slot="modal-title">TextBook <span><span aria-hidden="true" class="glyphicon glyphicon-log-in"></span></span></template>
   <div>
 <div class="indented">
@@ -572,35 +514,35 @@ What</span></p></template></panel></p></div><p></p>
 <li><strong>Integration is harder</strong> because multiple components coupled with each other have to be integrated at the same time.</li>
 <li><strong>Testing and reuse of the module is harder</strong> due to its dependence on other modules.</li></ul>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code class="hljs inline no-lang" v-pre>A</code> appears to have more coupling between the components than design <code class="hljs inline no-lang" v-pre>B</code>.</p>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> In the example below, design <code v-pre>A</code> appears to have more coupling between the components than design <code v-pre>B</code>.</p>
 <img src="/website/book/designFundamentals/coupling/what/images/playerPuzzleManager.png" height="220">
 <p></p></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling levels of alternative designs</p></template>
 <question has-input="true">
 <p>Discuss the coupling levels of alternative designs <em>x</em> and <em>y</em>.</p>
 <box>
 <img src="/website/book/designFundamentals/coupling/what/images/alternativeDesigns.png" height="180">
 <p></p></box>
 <div slot="answer" class="algolia-no-index">
-<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code class="hljs inline no-lang" v-pre>A</code> is highly-coupled to the rest of the system while <code class="hljs inline no-lang" v-pre>B</code>, <code class="hljs inline no-lang" v-pre>C</code>, <code class="hljs inline no-lang" v-pre>D</code>, and <code class="hljs inline no-lang" v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code class="hljs inline no-lang" v-pre>A</code> of <em>x</em>. However, only <code class="hljs inline no-lang" v-pre>D</code> and <code class="hljs inline no-lang" v-pre>E</code> are standalone.</p></div></question></panel></div>
+<p>Overall coupling levels in <em>x</em> and <em>y</em> seem to be similar (neither has more dependencies than the other). (Note that the number of dependency links is not a definitive measure of the level of coupling. Some links may be stronger than the others.). However, in <em>x</em>, <code v-pre>A</code> is highly-coupled to the rest of the system while <code v-pre>B</code>, <code v-pre>C</code>, <code v-pre>D</code>, and <code v-pre>E</code> are standalone (do not depend on anything else). In <em>y</em>, no component is as highly-coupled as <code v-pre>A</code> of <em>x</em>. However, only <code v-pre>D</code> and <code v-pre>E</code> are standalone.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Regressions and coupling</p></template>
 <question has-input="true">
 <p>Explain the link (if any) between regressions and coupling.</p>
 <div slot="answer" class="algolia-no-index">
-<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code class="hljs inline no-lang" v-pre>A</code> is modified, all components ‘coupled’ to component <code class="hljs inline no-lang" v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
+<p>When the system is highly-coupled, the risk of regressions is higher too <span class="dimmed">e.g. when component <code v-pre>A</code> is modified, all components ‘coupled’ to component <code v-pre>A</code> risk ‘unintended behavioral changes’</span>.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Coupling and testability</p></template>
 <question has-input="true">
-<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
+<p>Discuss the relationship between coupling and <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">a measure of how easily a given component can be tested</span>testability</span>.</p>
 <div slot="answer" class="algolia-no-index">
-<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-slot-name="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
+<p>Coupling decreases testability because if the <span data-mb-component-type="tooltip" v-b-tooltip.hover.top.html="tooltipInnerContentGetter" class="trigger"><span data-mb-html-for="_content">Software Under Test</span>SUT</span> is coupled to many other components, it becomes difficult to test the SUT in isolation of its dependencies.</p></div></question></panel></div>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about coupling</p></template>
 <question>
 <p>Choose the correct statements.</p>
 <ul class="contains-task-list">
@@ -628,9 +570,9 @@ What</span></p></template></panel></p></div><p></p>
 <div></div></div></div></b-modal></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Correct statements about SoC</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Correct statements about SoC</p></template>
 <question>
 <p>“Only the GUI class should interact with the user. The GUI class should only concern itself with user interactions”. This statement follows from,</p>
 <ul class="contains-task-list">
@@ -648,7 +590,7 @@ What</span></p></template></panel></p></div><p></p>
 <panel type="seamless" expanded popup-url="/website/book/principles/singleResponsibilityPrinciple" id="principles-single-responsibility-principle">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.2b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="principles-single-responsibility-principle"><span id="principles-single-responsibility-principle" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Single responsibility principle</span></strong><a class="fa fa-anchor" href="#principles-single-responsibility-principle" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="principles-single-responsibility-principle"><small><span class="font-weight-bold text-muted"><span>Principles →</span></span></small> <strong><span>Single responsibility principle</span></strong><span id="principles-single-responsibility-principle" class="anchor"></span><a class="fa fa-anchor" href="#principles-single-responsibility-principle" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=f7d3b1a6-89f3-4781-80e6-ac4400f03413&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -664,12 +606,12 @@ What</span></p></template></panel></p></div><p></p>
 <p><strong>Single responsibility principle (SRP)</strong>: A class should have one, and only one, reason to change. <sub>-- Robert C. Martin</sub></p></div></box>
 <p>If a class has only one responsibility, it needs to change only when there is a change to that responsibility.</p>
 <box>
-<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a <code class="hljs inline no-lang" v-pre>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p></box>
+<p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Consider a <code v-pre>TextUi</code> class that does parsing of the user commands as well as interacting with the user. That class needs to change when the formatting of the UI changes as well as when the syntax of the user command changes. Hence, such a class does not follow the SRP.</p></box>
 <blockquote>
 <p><span aria-hidden="true" class="fas fa-quote-left"></span> Gather together the things that change for the same reasons. Separate those things that change for different reasons. <span aria-hidden="true" class="fas fa-quote-right"></span> <sub>―- <em>Agile Software Development, Principles, Patterns, and Practices</em> by Robert C. Martin</sub></p></blockquote></div>
 <div>
 <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span>  Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span>  Resources</p></template>
 <ul>
 <li><a href="http://www.oodesign.com/single-responsibility-principle.html">An explanation of the SRP</a> from <a href="http://www.oodesign.com">www.oodesign.com</a></li>
 <li><a href="http://code.tutsplus.com/tutorials/solid-part-1-the-single-responsibility-principle--net-36074">Another explanation (more detailed)</a>
@@ -691,7 +633,7 @@ by Patkos Csaba</li>
 <div>
 <p><span tags="m--cs2103 m--cs2113 m--tic4001">Coordinating a team project is not easy.</span> Given below are some very basic tools and techniques that are often used in planning, scheduling, and tracking projects.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-3-project-mgt-scheduling-and-tracking">
-<span slot="header" class="card-title"><div><h2 id="w8-3-project-mgt-scheduling-and-tracking"><span id="w8-3-project-mgt-scheduling-and-tracking" class="anchor"></span><span class="dimmed">[W8.3]</span> <strong>Project Mgt: Scheduling and Tracking</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w8-3-project-mgt-scheduling-and-tracking" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-3-project-mgt-scheduling-and-tracking"><span class="dimmed">[W8.3]</span> <strong>Project Mgt: Scheduling and Tracking</strong> <small><small><span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w8-3-project-mgt-scheduling-and-tracking" class="anchor"></span><a class="fa fa-anchor" href="#w8-3-project-mgt-scheduling-and-tracking" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=e4bdedb1-34a1-4da1-9b57-ac390047588e&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -702,7 +644,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/milestones" id="project-management-project-planning-milestones">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-milestones"><span id="project-management-project-planning-milestones" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Milestones</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-milestones" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-milestones"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Milestones</span></strong><span id="project-management-project-planning-milestones" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-milestones" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -738,7 +680,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/buffers" id="project-management-project-planning-buffers">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-buffers"><span id="project-management-project-planning-buffers" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Buffers</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-buffers" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-buffers"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Buffers</span></strong><span id="project-management-project-planning-buffers" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-buffers" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -756,7 +698,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/issueTrackers" id="project-management-project-planning-issue-trackers">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-issue-trackers"><span id="project-management-project-planning-issue-trackers" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Issue trackers</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-issue-trackers" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-issue-trackers"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Issue trackers</span></strong><span id="project-management-project-planning-issue-trackers" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-issue-trackers" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -779,7 +721,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/workBreakdownStructure" id="project-management-project-planning-work-breakdown-structure">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-work-breakdown-structure"><span id="project-management-project-planning-work-breakdown-structure" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Work breakdown structure</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-work-breakdown-structure" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-work-breakdown-structure"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Work breakdown structure</span></strong><span id="project-management-project-planning-work-breakdown-structure" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-work-breakdown-structure" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -898,9 +840,9 @@ by Patkos Csaba</li>
 <td>find a suitable tool for testing the UI</td></tr></tbody></table></div></div></box></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not a well-defined task?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which one is not a well-defined task?</p></template>
 <question>
 <p>Which one these project tasks is not well-defined?</p>
 <ul radio-group="9211e" class="radio-list">
@@ -920,7 +862,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/ganttCharts" id="project-management-project-planning-gantt-charts">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3e</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-gantt-charts"><span id="project-management-project-planning-gantt-charts" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Gantt charts</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-gantt-charts" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-gantt-charts"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>Gantt charts</span></strong><span id="project-management-project-planning-gantt-charts" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-gantt-charts" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -942,7 +884,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/projectPlanning/pertCharts" id="project-management-project-planning-pert-charts">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3f</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-project-planning-pert-charts"><span id="project-management-project-planning-pert-charts" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>PERT charts</span></strong><a class="fa fa-anchor" href="#project-management-project-planning-pert-charts" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-project-planning-pert-charts"><small><span class="font-weight-bold text-muted"><span>Project Management → Project Planning →</span></span></small> <strong><span>PERT charts</span></strong><span id="project-management-project-planning-pert-charts" class="anchor"></span><a class="fa fa-anchor" href="#project-management-project-planning-pert-charts" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -956,11 +898,11 @@ by Patkos Csaba</li>
 <box>
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> An example PERT chart for a simple software project</p>
 <p><img src="/website/book/projectPlanning/pertCharts/images/pert.jpg" height="320"><br>
-<code class="hljs inline no-lang" v-pre>md</code> = man days</p></box>
+<code v-pre>md</code> = man days</p></box>
 <p>A PERT chart can help determine the following important information:</p>
 <ul>
-<li>The order of tasks. <span class="dimmed">In the example above, <code class="hljs inline no-lang" v-pre>Final Testing</code> cannot begin until all coding of individual subsystems have been completed.</span></li>
-<li>Which tasks can be done concurrently. <span class="dimmed">In the example above, the various subsystem designs can start independently once the <code class="hljs inline no-lang" v-pre>High level design</code> is completed.</span></li>
+<li>The order of tasks. <span class="dimmed">In the example above, <code v-pre>Final Testing</code> cannot begin until all coding of individual subsystems have been completed.</span></li>
+<li>Which tasks can be done concurrently. <span class="dimmed">In the example above, the various subsystem designs can start independently once the <code v-pre>High level design</code> is completed.</span></li>
 <li>The shortest possible completion time. <span class="dimmed">In the example above, there is a path (indicated by the shaded boxes) from start to end that determines the shortest possible completion time.</span></li>
 <li>The Critical Path. <span class="dimmed">In the example above, the shortest possible path is also the critical path</span>.</li></ul>
 <box type="definition" seamless>
@@ -974,7 +916,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/teamwork/teamStructures" id="project-management-teamwork-team-structures">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.3g</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-teamwork-team-structures"><span id="project-management-teamwork-team-structures" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Teamwork →</span></span></small> <strong><span>Team structures</span></strong><a class="fa fa-anchor" href="#project-management-teamwork-team-structures" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-teamwork-team-structures"><small><span class="font-weight-bold text-muted"><span>Project Management → Teamwork →</span></span></small> <strong><span>Team structures</span></strong><span id="project-management-teamwork-team-structures" class="anchor"></span><a class="fa fa-anchor" href="#project-management-teamwork-team-structures" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -995,9 +937,9 @@ by Patkos Csaba</li>
 <p>In a large, resource-intensive, complex project, this could be a good team structure to reduce communication overhead.</p></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which team structure is the most suitable for a school project?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Which team structure is the most suitable for a school project?</p></template>
 <question>
 <p>Which team structure is the most suitable for a school project?</p>
 <ul radio-group="8ee7d" class="radio-list">
@@ -1023,14 +965,14 @@ by Patkos Csaba</li>
 <div>
 <p>Testing is the first thing that comes to mind when you hear 'Quality Assurance' but there are other QA techniques that can complement testing. Let's first take a step back and take a look at QA in general, followed by a look at some other QA techniques.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-4-other-qa-techniques">
-<span slot="header" class="card-title"><div><h2 id="w8-4-other-qa-techniques"><span id="w8-4-other-qa-techniques" class="anchor"></span><span class="dimmed">[W8.4]</span> <strong>Other QA Techniques</strong> <small><small><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></small></small><a class="fa fa-anchor" href="#w8-4-other-qa-techniques" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-4-other-qa-techniques"><span class="dimmed">[W8.4]</span> <strong>Other QA Techniques</strong> <small><small><span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span></span></small></small><span id="w8-4-other-qa-techniques" class="anchor"></span><a class="fa fa-anchor" href="#w8-4-other-qa-techniques" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-4a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/what" id="quality-assurance-quality-assurance-introduction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-quality-assurance-introduction-what"><span id="quality-assurance-quality-assurance-introduction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-quality-assurance-introduction-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-quality-assurance-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1048,7 +990,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/introduction/validationVsVerification" id="quality-assurance-quality-assurance-introduction-validation-versus-verification">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-quality-assurance-introduction-validation-versus-verification"><span id="quality-assurance-quality-assurance-introduction-validation-versus-verification" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>Validation versus verification</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-validation-versus-verification" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-quality-assurance-introduction-validation-versus-verification"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Introduction →</span></span></small> <strong><span>Validation versus verification</span></strong><span id="quality-assurance-quality-assurance-introduction-validation-versus-verification" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-introduction-validation-versus-verification" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1063,9 +1005,9 @@ by Patkos Csaba</li>
 <p>Whether something belongs under validation or verification is not that important. What is more important is that both are done, instead of limiting to only verification (i.e., remember that the requirements can be wrong too).</p></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about validation and verification</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Statements about validation and verification</p></template>
 <question>
 <p>Choose the correct statements about validation and verification.</p>
 <ul class="contains-task-list">
@@ -1090,7 +1032,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/codeReviews/what" id="quality-assurance-quality-assurance-code-reviews-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4c</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-quality-assurance-code-reviews-what"><span id="quality-assurance-quality-assurance-code-reviews-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Code Reviews →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-code-reviews-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-quality-assurance-code-reviews-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Code Reviews →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-quality-assurance-code-reviews-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-code-reviews-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1105,7 +1047,7 @@ by Patkos Csaba</li>
 <ul>
 <li>Project Management Platforms such as GitHub and BitBucket allow the new code to be proposed as <em>Pull Requests</em> and provide the ability for others to review the code in the PR.</li></ul></li>
 <li>
-<p><strong>In <trigger trigger="click" for="modal:codeReview-pairProgramming">pair programming</trigger></strong></p>
+<p><strong>In <span trigger="click" for="modal:codeReview-pairProgramming" v-b-popover.click.top.html="popoverGenerator" v-b-tooltip.click.top.html="tooltipContentGetter" v-on:click="$refs['modal:codeReview-pairProgramming'].show()" class="trigger-click">pair programming</span></strong></p>
 <ul>
 <li>As pair programming involves two programmers working on the same code at the same time, there is an implicit review of the code by the other member of the pair.</li></ul></li></ul>
 <b-modal id="modal:codeReview-pairProgramming" hide-footer size="lg" modal-class="mb-zoom" ref="modal:codeReview-pairProgramming" class="algolia-no-index"><template slot="modal-title">Pair Programming</template>
@@ -1139,7 +1081,7 @@ by Patkos Csaba</li>
 <li>It is a manual process and therefore, error prone.</li></ul></div>
 <div>
 <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <ul>
 <li><a href="https://developers.redhat.com/blog/2019/07/08/10-tips-for-reviewing-code-you-dont-like/"><strong>10 tips for reviewing code you don’t like</strong></a> - a blog post by David Lloyd (a Red Hat developer).</li></ul></panel></div></div></div></div></panel>
 <p></p>
@@ -1150,7 +1092,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/staticAnalysis/what" id="quality-assurance-quality-assurance-static-analysis-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4d</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-quality-assurance-static-analysis-what"><span id="quality-assurance-quality-assurance-static-analysis-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Static Analysis →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-static-analysis-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-quality-assurance-static-analysis-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Static Analysis →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-quality-assurance-static-analysis-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-static-analysis-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1175,7 +1117,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/qualityAssurance/formalVerification/what" id="quality-assurance-quality-assurance-formal-verification-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.4e</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-quality-assurance-formal-verification-what"><span id="quality-assurance-quality-assurance-formal-verification-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Formal Verification →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-formal-verification-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-quality-assurance-formal-verification-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Quality Assurance → Formal Verification →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-quality-assurance-formal-verification-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-quality-assurance-formal-verification-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1183,7 +1125,7 @@ by Patkos Csaba</li>
 <p></p>
 <div>
 <p><strong>Formal verification uses mathematical techniques to prove the correctness of a program.</strong></p>
-<panel type="seamless" class="non-printable algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p></template>
+<panel type="seamless" class="non-printable algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> An introduction to Formal Methods</p></template>
 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/89fKiaMxHrA" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
 <p>by <a href="http://www.cs.utoronto.ca/~hehner/">Eric Hehner</a></p>
 <p></p></panel><p></p><p></p>
@@ -1196,9 +1138,9 @@ by Patkos Csaba</li>
 <li>It requires highly specialized notations and knowledge which makes it an expensive technique to administer. Therefore, <strong>formal verifications are more commonly used in safety-critical software such as flight control systems</strong>.</li></ul></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Absence of errors</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> Absence of errors</p></template>
 <question>
 <p>Testing cannot prove the absence of errors. It can only prove the presence of errors. However, formal methods can prove the absence of errors.</p>
 <ul radio-group="cefed" class="radio-list">
@@ -1223,14 +1165,14 @@ by Patkos Csaba</li>
 <p>One of the primary goals of a software engineer is to avoid bugs. You certainly don't want to be the person responsible for causing a major bug that caused heavy damages to some party. That's why we need to focus heavily on testing -- one of the main defences against bugs.</p>
 <p>The next few sections cover some intermediate level testing topics that you are very likely to encounter in software engineering.</p></div></div></div></div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w8-5-testing-intermediate-concepts-optional">
-<span slot="header" class="card-title"><div><h2 id="w8-5-testing-intermediate-concepts-optional"><span id="w8-5-testing-intermediate-concepts-optional" class="anchor"></span><span class="dimmed">[W8.5]</span> <strong>Testing: Intermediate Concepts</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><a class="fa fa-anchor" href="#w8-5-testing-intermediate-concepts-optional" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w8-5-testing-intermediate-concepts-optional"><span class="dimmed">[W8.5]</span> <strong>Testing: Intermediate Concepts</strong> <small><small><span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span></small></small><span id="w8-5-testing-intermediate-concepts-optional" class="anchor"></span><a class="fa fa-anchor" href="#w8-5-testing-intermediate-concepts-optional" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W8-5a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/testing/introduction/testability" id="quality-assurance-testing-introduction-testability">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.5a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="quality-assurance-testing-introduction-testability"><span id="quality-assurance-testing-introduction-testability" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Introduction →</span></span></small> <strong><span>Testability</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-introduction-testability" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-introduction-testability"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Introduction →</span></span></small> <strong><span>Testability</span></strong><span id="quality-assurance-testing-introduction-testability" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-introduction-testability" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1247,7 +1189,7 @@ by Patkos Csaba</li>
 <panel type="seamless" expanded popup-url="/website/book/cppToJava/junit/intermediate" id="c-to-java-junit-junit-intermediate">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.5b</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="c-to-java-junit-junit-intermediate"><span id="c-to-java-junit-junit-intermediate" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>C++ to Java → JUnit →</span></span></small> <strong><span>JUnit: Intermediate</span></strong><a class="fa fa-anchor" href="#c-to-java-junit-junit-intermediate" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="c-to-java-junit-junit-intermediate"><small><span class="font-weight-bold text-muted"><span>C++ to Java → JUnit →</span></span></small> <strong><span>JUnit: Intermediate</span></strong><span id="c-to-java-junit-junit-intermediate" class="anchor"></span><a class="fa fa-anchor" href="#c-to-java-junit-junit-intermediate" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -1264,7 +1206,7 @@ by Patkos Csaba</li>
 <panel type="seamless" popup-url="/website/book/testing/tdd/what" id="quality-assurance-testing-test-driven-development-what" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W8.5c</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="quality-assurance-testing-test-driven-development-what"><span id="quality-assurance-testing-test-driven-development-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test-Driven Development →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#quality-assurance-testing-test-driven-development-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="quality-assurance-testing-test-driven-development-what"><small><span class="font-weight-bold text-muted"><span>Quality Assurance → Testing → Test-Driven Development →</span></span></small> <strong><span>What</span></strong><span id="quality-assurance-testing-test-driven-development-what" class="anchor"></span><a class="fa fa-anchor" href="#quality-assurance-testing-test-driven-development-what" onclick="event.stopPropagation()"></a></h4></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=6c561949-dcbb-40bc-b731-ac4400edca2a&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -1278,9 +1220,9 @@ by Patkos Csaba</li>
 <p><strong><em>Test-Driven Development(TDD)</em> advocates writing the tests before writing the SUT, while evolving functionality and tests in small increments</strong>. In TDD you first define the precise behavior of the SUT using test cases, and then write the SUT to match the specified behavior. While TDD has its fair share of detractors, there are many who consider it a good way to reduce defects. One big advantage of TDD is that it guarantees the code is testable.</p></div>
 <div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> When do we write tests in TDD?</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> When do we write tests in TDD?</p></template>
 <question>
 <p>A) In TDD, we write all the test cases before we start writing functional code.</p>
 <ul radio-group="d75ae" class="radio-list">
@@ -1309,8 +1251,8 @@ by Patkos Csaba</li>
 <div></div></div>
 <p></p></div>
 <div id="notices" class="d-none">
-</div>
-<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
+</div></div>
+
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -1336,13 +1278,18 @@ by Patkos Csaba</li>
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:53:32 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Dec 2020, 23:51:25 GMT+8]</small></div></footer></div>
 </body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  MarkBind.setupWithSearch()
+  const enableSearch = true
 </script>
+<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -1356,5 +1303,5 @@ by Patkos Csaba</li>
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

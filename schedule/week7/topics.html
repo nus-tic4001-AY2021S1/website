@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.17.0">
+    <meta name="generator" content="MarkBind 2.15.2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC4001 - Week 7 - Topics</title>
     <link rel="stylesheet" href="../../markbind/css/bootstrap.min.css">
@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="../../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../../markbind/css/markbind.min.css"><script src="../../markbind/js/polyfill.min.js"></script>
-    <script src="../../markbind/js/vue.min.js"></script>
-    <script src="../../markbind/js/markbind.min.js"></script>
-    <script src="../../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
+    <link rel="stylesheet" href="../../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../../markbind/layouts/default/styles.css"><link rel="stylesheet" href="../../markbind/css/page-nav.css"><link rel="stylesheet" href="/website/book/css/textbook.css">
     <link rel="stylesheet" href="/website/css/main.css">
     <link rel="stylesheet" href="/website/css/schedule.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body  data-spy="scroll" data-target="#page-nav" data-offset="100" >
@@ -70,10 +68,8 @@
     <li><a href="https://nus-tic4001-ay2021s1.github.io/dashboards/contents/tp-progress.html" target="_blank" class="dropdown-item text-success"><span><span aria-hidden="true" class="fas fa-trophy"></span> tP Progress Dashboard</span></a></li></dropdown>
   <li slot="right" class="nav-link">
     <form class="navbar-form">
-        <searchbar placeholder="Search" algolia menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
+      <searchbar :data="searchData" placeholder="Search" :on-hit="searchCallback" menu-align-right></searchbar></form></li></navbar></header><div id="flex-body">
         
-
-
 <div id="content-wrapper">
 <div class="website-content">
 <nav>
@@ -86,9 +82,9 @@
 <li class="page-item"><a class="page-link" href="/website/schedule/week7/project.html"><span><span><span aria-hidden="true" class="fas fa-drafting-compass"></span></span></span> Project</a></li>
 <li class="page-item">&nbsp;&nbsp;&nbsp;</li><li class="page-item"><a class="page-link" href="/website/schedule/week8"><span><strong>Next Week</strong> <span aria-hidden="true" class="glyphicon glyphicon-chevron-right"></span></span></a></li></ul></nav>
 <p></p>
-<h1 id="week-7-fri-sep-18th-topics"><span id="week-7-fri-sep-18th-topics" class="anchor"></span>Week 7 <small><small><span class="dimmed">[Fri, Sep 18th]</span> - Topics</small></small><a class="fa fa-anchor" href="#week-7-fri-sep-18th-topics" onclick="event.stopPropagation()"></a></h1>
+<h1 id="week-7-fri-sep-18th-topics">Week 7 <small><small><span class="dimmed">[Fri, Sep 18th]</span> - Topics</small></small><span id="week-7-fri-sep-18th-topics" class="anchor"></span><a class="fa fa-anchor" href="#week-7-fri-sep-18th-topics" onclick="event.stopPropagation()"></a></h1>
 <div></div>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span aria-hidden="true" class="fas fa-list-ol"></span> Detailed Table of Contents</span></p></template>
 <span id="toc">
 <ul>
 <li>[<a href="/website/schedule/week7/topics.html#W7-1">W7.1</a>] <strong>SDLC Process Models: Basics</strong> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></li></ul>
@@ -143,14 +139,14 @@
 <p><span id="W7-1"></span></p>
 <div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-1-sdlc-process-models-basics">
-<span slot="header" class="card-title"><div><h2 id="w7-1-sdlc-process-models-basics"><span id="w7-1-sdlc-process-models-basics" class="anchor"></span><span class="dimmed">[W7.1]</span> <strong>SDLC Process Models: Basics</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-1-sdlc-process-models-basics" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-1-sdlc-process-models-basics"><span class="dimmed">[W7.1]</span> <strong>SDLC Process Models: Basics</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-1-sdlc-process-models-basics" class="anchor"></span><a class="fa fa-anchor" href="#w7-1-sdlc-process-models-basics" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W7-1a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/processModels/introduction/what" id="project-management-sdlc-process-models-introduction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.1a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-sdlc-process-models-introduction-what"><span id="project-management-sdlc-process-models-introduction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-sdlc-process-models-introduction-what"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>What</span></strong><span id="project-management-sdlc-process-models-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -167,7 +163,7 @@
 <panel type="seamless" expanded popup-url="/website/book/processModels/introduction/sequentialModels" id="project-management-sdlc-process-models-introduction-sequential-models">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.1b</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-sdlc-process-models-introduction-sequential-models"><span id="project-management-sdlc-process-models-introduction-sequential-models" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>Sequential models</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-sequential-models" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-sdlc-process-models-introduction-sequential-models"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>Sequential models</span></strong><span id="project-management-sdlc-process-models-introduction-sequential-models" class="anchor"></span><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-sequential-models" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -189,7 +185,7 @@
 <panel type="seamless" expanded popup-url="/website/book/processModels/introduction/iterativeModels" id="project-management-sdlc-process-models-introduction-iterative-models">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.1c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-sdlc-process-models-introduction-iterative-models"><span id="project-management-sdlc-process-models-introduction-iterative-models" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>Iterative models</span></strong><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-iterative-models" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-sdlc-process-models-introduction-iterative-models"><small><span class="font-weight-bold text-muted"><span>Project Management → SDLC Process Models → Introduction →</span></span></small> <strong><span>Iterative models</span></strong><span id="project-management-sdlc-process-models-introduction-iterative-models" class="anchor"></span><a class="fa fa-anchor" href="#project-management-sdlc-process-models-introduction-iterative-models" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -215,14 +211,14 @@
 <p><span id="W7-2"></span></p>
 <div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-2-continuous-integration-deployment">
-<span slot="header" class="card-title"><div><h2 id="w7-2-continuous-integration-deployment"><span id="w7-2-continuous-integration-deployment" class="anchor"></span><span class="dimmed">[W7.2]</span> <strong>Continuous Integration/Deployment</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-2-continuous-integration-deployment" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-2-continuous-integration-deployment"><span class="dimmed">[W7.2]</span> <strong>Continuous Integration/Deployment</strong> <small><small><span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-2-continuous-integration-deployment" class="anchor"></span><a class="fa fa-anchor" href="#w7-2-continuous-integration-deployment" onclick="event.stopPropagation()"></a></h2></div></span>
 <div class="indented-level1">
 <p><span id="W7-2a"></span></p>
 <div></div>
 <panel type="seamless" expanded popup-url="/website/book/integration/introduction/what" id="implementation-integration-introduction-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.2a</span> <span class="badge badge-pill badge-secondary"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> : <span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-integration-introduction-what"><span id="implementation-integration-introduction-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Introduction →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-integration-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-integration-introduction-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Introduction →</span></span></small> <strong><span>What</span></strong><span id="implementation-integration-introduction-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-integration-introduction-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -239,7 +235,7 @@
 <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/what" id="implementation-integration-build-automation-what">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.2b</span> <span class="badge badge-pill badge-light text-danger"><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-integration-build-automation-what"><span id="implementation-integration-build-automation-what" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>What</span></strong><a class="fa fa-anchor" href="#implementation-integration-build-automation-what" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-integration-build-automation-what"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>What</span></strong><span id="implementation-integration-build-automation-what" class="anchor"></span><a class="fa fa-anchor" href="#implementation-integration-build-automation-what" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -258,16 +254,16 @@
 <p><span><span aria-hidden="true" class="fas fa-cube"></span></span> Maven and Gradle, in addition to managing the build process, can play the role of dependency management tools too.</p></box></div>
 <div>
 <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template> 
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template> 
 <ul>
 <li><a href="https://gradle.org/docs/#getting-started"><strong>Getting Started with Gradle</strong></a> -- documentation from Gradle</li>
 <li><a href="http://www.tutorialspoint.com/gradle/"><strong>Gradle Tutorial</strong></a> -- from <a href="http://tutorialspoint.com">tutorialspoint.com</a></li></ul>
-<panel type="seamless" class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Working With Gradle in Intellij IDEA (6 minutes)</p></template>
+<panel type="seamless" class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Working With Gradle in Intellij IDEA (6 minutes)</p></template>
 <div class="block-embed block-embed-service-youtube"><iframe type="text/html" src="//www.youtube.com/embed/JwPYjnhah3g" frameborder="0" width="640" height="390" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div></panel></panel></div>
 <div>
-<panel expandable class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
+<panel expandable class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-dumbbell"></span></span> Exercises</p></template>
   <div>
-<panel class="algolia-no-index"><template slot="header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> <em>Gradle</em> is a tool for ...</p></template>
+<panel class="algolia-no-index"><template slot="_header"><p><span><span aria-hidden="true" class="glyphicon glyphicon-question-sign"></span></span><span aria-hidden="true" class="glyphicon glyphicon-ok-sign"></span> <em>Gradle</em> is a tool for ...</p></template>
 <question>
 <p><em>Gradle</em> is used for,</p>
 <ul class="contains-task-list">
@@ -285,7 +281,7 @@
 <panel type="seamless" expanded popup-url="/website/book/integration/buildAutomation/continuousIntegrationDeployment" id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.2c</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment"><span id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>Continuous integration and continuous deployment</span></strong><a class="fa fa-anchor" href="#implementation-integration-build-automation-continuous-integration-and-continuous-deployment" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment"><small><span class="font-weight-bold text-muted"><span>Implementation → Integration → Build Automation →</span></span></small> <strong><span>Continuous integration and continuous deployment</span></strong><span id="implementation-integration-build-automation-continuous-integration-and-continuous-deployment" class="anchor"></span><a class="fa fa-anchor" href="#implementation-integration-build-automation-continuous-integration-and-continuous-deployment" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -306,7 +302,7 @@
 <p><span id="W7-3"></span></p>
 <div></div>
 <panel type="seamless" no-close expandable="true" expanded id="w7-3-project-mgt-workflows">
-<span slot="header" class="card-title"><div><h2 id="w7-3-project-mgt-workflows"><span id="w7-3-project-mgt-workflows" class="anchor"></span><span class="dimmed">[W7.3]</span> <strong>Project Mgt: Workflows</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><a class="fa fa-anchor" href="#w7-3-project-mgt-workflows" onclick="event.stopPropagation()"></a></h2></div></span>
+<span slot="header" class="card-title"><div><h2 id="w7-3-project-mgt-workflows"><span class="dimmed">[W7.3]</span> <strong>Project Mgt: Workflows</strong> <small><small><span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span></small></small><span id="w7-3-project-mgt-workflows" class="anchor"></span><a class="fa fa-anchor" href="#w7-3-project-mgt-workflows" onclick="event.stopPropagation()"></a></h2></div></span>
 <panel type="seamless" class="algolia-no-index">
   <div slot="header"><span class="badge badge-pill badge-danger"><big><span><span aria-hidden="true" class="glyphicon glyphicon-facetime-video"></span></span> Video</big></span> <span></span></div>
 <iframe src="https://mediaweb.ap.panopto.com/Panopto/Pages/Embed.aspx?id=050c0949-853c-4b7d-b1fb-ac3700d88202&autoplay=false&offerviewer=true&showtitle=true&showbrand=false&start=0&interactivity=all" style="width: 720px; height: 540px; border: 1px solid #464646;" allowfullscreen allow="autoplay"></iframe></panel>
@@ -317,7 +313,7 @@
 <panel type="seamless" expanded popup-url="/website/book/revisionControl/forkingWorkflow" id="project-management-revision-control-forking-flow">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.3a</span> <span class="badge badge-pill badge-light text-warning"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-revision-control-forking-flow"><span id="project-management-revision-control-forking-flow" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Forking flow</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-forking-flow" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-revision-control-forking-flow"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Forking flow</span></strong><span id="project-management-revision-control-forking-flow" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-forking-flow" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -330,7 +326,7 @@
 <p>To illustrate how the workflow goes, let’s assume Jean wants to fix a bug in the code. Here are the steps:</p>
 <ol>
 <li>Jean creates a separate branch in her local repo and fixes the bug in that branch.<br>
-<font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Common mistake: Doing the proposed changes in the <code class="hljs inline no-lang" v-pre>master</code> branch -- if Jean does that, she will not be able to have more than one PR open at any time because any changes to the <code class="hljs inline no-lang" v-pre>master</code> branch will be reflected in all open PRs.</li>
+<font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Common mistake: Doing the proposed changes in the <code v-pre>master</code> branch -- if Jean does that, she will not be able to have more than one PR open at any time because any changes to the <code v-pre>master</code> branch will be reflected in all open PRs.</li>
 <li>Jean pushes the branch to her fork.</li>
 <li>Jean creates a pull request from that branch in her fork to the main repo.</li>
 <li>Other members review Jean’s pull request.</li>
@@ -340,7 +336,7 @@
 <font color="red"><big><span aria-hidden="true" class="glyphicon glyphicon-exclamation-sign"></span></big></font> Possible mistake: Creating another 'reverse' PR from the team repo to the team member's fork to sync the member's fork with the merged code. PRs are meant to go from downstream repos to upstream repos, not in the other direction.</li></ol></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <ul>
 <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#forking-workflow">A detailed explanation of the Forking Workflow</a> - From Atlassian</li></ul></panel></div></div></div></div></panel>
 <p></p>
@@ -351,11 +347,11 @@
 <panel type="seamless" expanded popup-url="/website/book/gitAndGithub/forkingWorkflow" id="tools-git-and-github-forking-workflow">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.3b</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="tools-git-and-github-forking-workflow"><span id="tools-git-and-github-forking-workflow" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Forking workflow</span></strong><a class="fa fa-anchor" href="#tools-git-and-github-forking-workflow" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="tools-git-and-github-forking-workflow"><small><span class="font-weight-bold text-muted"><span>Tools → Git and GitHub →</span></span></small> <strong><span>Forking workflow</span></strong><span id="tools-git-and-github-forking-workflow" class="anchor"></span><a class="fa fa-anchor" href="#tools-git-and-github-forking-workflow" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Forking Workflow</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Forking Workflow</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can follow Forking Workflow</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
@@ -366,25 +362,25 @@
 <li>
 <p><a href="https://help.github.com/articles/creating-a-new-organization-from-scratch/"><strong>Create a GitHub organization</strong></a> for your team.  The org name is up to you. We'll refer to this organization as <em>team org</em> from now on.</p></li>
 <li>
-<p><a href="https://help.github.com/enterprise/2.10/admin/guides/user-management/creating-teams/"><strong>Add a team</strong></a> called <code class="hljs inline no-lang" v-pre>developers</code> to your team org.</p></li>
+<p><a href="https://help.github.com/enterprise/2.10/admin/guides/user-management/creating-teams/"><strong>Add a team</strong></a> called <code v-pre>developers</code> to your team org.</p></li>
 <li>
-<p><a href="https://help.github.com/enterprise/2.0/admin/guides/user-management/adding-or-inviting-people-to-teams/"><strong>Add team members</strong></a> to the <code class="hljs inline no-lang" v-pre>developers</code> team.</p></li>
+<p><a href="https://help.github.com/enterprise/2.0/admin/guides/user-management/adding-or-inviting-people-to-teams/"><strong>Add team members</strong></a> to the <code v-pre>developers</code> team.</p></li>
 <li>
 <p><strong>Fork</strong> <a href="https://github.com/se-edu/samplerepo-workflow-practice">se-edu/samplerepo-workflow-practice</a> to your team org. We'll refer to this as the <em>team repo</em>.</p></li>
 <li>
-<p><strong><a href="https://help.github.com/articles/managing-team-access-to-an-organization-repository/">Add the forked repo</a> to the <code class="hljs inline no-lang" v-pre>developers</code> team.</strong> Give write access.</p></li></ol>
+<p><strong><a href="https://help.github.com/articles/managing-team-access-to-an-organization-repository/">Add the forked repo</a> to the <code v-pre>developers</code> team.</strong> Give write access.</p></li></ol>
 <p><strong>Step 2. Each team member: create PRs via own fork.</strong></p>
 <ol>
 <li>
 <p><strong>Fork that repo</strong> from your team org to your own GitHub account.</p></li>
 <li>
-<p><strong>Create a branch</strong> named <code class="hljs inline no-lang" v-pre>add-{your name}-info</code> (e.g. <code class="hljs inline no-lang" v-pre>add-johnTan-info</code>) in the local repo.</p></li>
+<p><strong>Create a branch</strong> named <code v-pre>add-{your name}-info</code> (e.g. <code v-pre>add-johnTan-info</code>) in the local repo.</p></li>
 <li>
-<p><strong>Add a file</strong> <code class="hljs inline no-lang" v-pre>yourName.md</code> into the <code class="hljs inline no-lang" v-pre>members</code> directory (e.g., <code class="hljs inline no-lang" v-pre>members/jonhTan.md</code>) containing some info about you into that branch.</p></li>
+<p><strong>Add a file</strong> <code v-pre>yourName.md</code> into the <code v-pre>members</code> directory (e.g., <code v-pre>members/jonhTan.md</code>) containing some info about you into that branch.</p></li>
 <li>
 <p><strong>Push that branch to your fork</strong>.</p></li>
 <li>
-<p><strong>Create a PR</strong> from that branch to the <code class="hljs inline no-lang" v-pre>master</code> branch of the team repo.</p></li></ol>
+<p><strong>Create a PR</strong> from that branch to the <code v-pre>master</code> branch of the team repo.</p></li></ol>
 <p><strong>Step 3. For each PR: review, update, and merge.</strong></p>
 <ol>
 <li>
@@ -398,9 +394,9 @@
 <p><strong>Step 4. Create conflicting PRs.</strong></p>
 <ol>
 <li>
-<p><strong>[One member]: Update README:</strong> In the <code class="hljs inline no-lang" v-pre>master</code> branch, remove John Doe and Jane Doe from the <code class="hljs inline no-lang" v-pre>README.md</code>, commit, and push to the main repo.</p></li>
+<p><strong>[One member]: Update README:</strong> In the <code v-pre>master</code> branch, remove John Doe and Jane Doe from the <code v-pre>README.md</code>, commit, and push to the main repo.</p></li>
 <li>
-<p><strong>[Each team member] Create a PR</strong> to add yourself under the <code class="hljs inline no-lang" v-pre>Team Members</code> section in the <code class="hljs inline no-lang" v-pre>README.md</code>. Use a new branch for the PR e.g., <code class="hljs inline no-lang" v-pre>add-johnTan-name</code>.</p></li></ol>
+<p><strong>[Each team member] Create a PR</strong> to add yourself under the <code v-pre>Team Members</code> section in the <code v-pre>README.md</code>. Use a new branch for the PR e.g., <code v-pre>add-johnTan-name</code>.</p></li></ol>
 <p><strong>Step 5. Merge conflicting PRs</strong> one at a time. Before merging a PR, you’ll have to resolve conflicts.</p>
 <ol>
 <li>
@@ -408,8 +404,8 @@
 <li>
 <p><strong>[PR author] Resolve the conflict locally</strong>:</p>
 <ol>
-<li>Pull the <code class="hljs inline no-lang" v-pre>master</code> branch from the repo in your team org.</li>
-<li>Merge the pulled <code class="hljs inline no-lang" v-pre>master</code> branch to your PR branch.</li>
+<li>Pull the <code v-pre>master</code> branch from the repo in your team org.</li>
+<li>Merge the pulled <code v-pre>master</code> branch to your PR branch.</li>
 <li>Resolve the merge conflict that crops up during the merge.</li>
 <li>Push the updated PR branch to your fork.</li></ol></li>
 <li>
@@ -423,7 +419,7 @@
 <panel type="seamless" expanded popup-url="/website/book/revisionControl/drcsVsCrcs" id="project-management-revision-control-drcs-vs-crcs">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.3c</span> <span class="badge badge-pill badge-light text-primary"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span></span>
-<h4 id="project-management-revision-control-drcs-vs-crcs"><span id="project-management-revision-control-drcs-vs-crcs" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>DRCS vs CRCS</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-drcs-vs-crcs" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-revision-control-drcs-vs-crcs"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>DRCS vs CRCS</span></strong><span id="project-management-revision-control-drcs-vs-crcs" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-drcs-vs-crcs" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div></div><p></p>
@@ -446,20 +442,20 @@
 <panel type="seamless" popup-url="/website/book/revisionControl/featureBranchFlow" id="project-management-revision-control-feature-branch-flow" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.3d</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="project-management-revision-control-feature-branch-flow"><span id="project-management-revision-control-feature-branch-flow" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Feature branch flow</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-feature-branch-flow" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-revision-control-feature-branch-flow"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Feature branch flow</span></strong><span id="project-management-revision-control-feature-branch-flow" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-feature-branch-flow" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Forking Workflow</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/revisionControl/forkingWorkflow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/forkingWorkflow" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Forking Workflow</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain feature branch flow</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature (or bug fix, or any other modification) is done in a separate branch and merged to the <code class="hljs inline no-lang" v-pre>master</code> branch when ready.</p>
+<p><strong><em>Feature branch</em> workflow is similar to forking workflow except there are no forks.</strong> Everyone is pushing/pulling from the same remote repo. The phrase <em>feature branch</em> is used because each new feature (or bug fix, or any other modification) is done in a separate branch and merged to the <code v-pre>master</code> branch when ready.</p>
 <img src="/website/book/revisionControl/featureBranchFlow/images/diagram.png" height="330">
 <p></p></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <ul>
 <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#feature-branch-workflow">A detailed explanation of the Feature Branch Workflow</a> - From Atlassian</li></ul></panel></div></div></div></div></panel>
 <p></p>
@@ -470,18 +466,18 @@
 <panel type="seamless" popup-url="/website/book/revisionControl/centralizedFlow" id="project-management-revision-control-centralized-flow" class="algolia-no-index">
 <span slot="header" class="card-title">
 <span class="badge badge-pill badge-light text-mute">W7.3e</span> <span class="badge badge-pill badge-success"><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span><span class="glyphicon glyphicon-star" aria-hidden="true"></span>: OPTIONAL</span>
-<h4 id="project-management-revision-control-centralized-flow"><span id="project-management-revision-control-centralized-flow" class="anchor"></span><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Centralized flow</span></strong><a class="fa fa-anchor" href="#project-management-revision-control-centralized-flow" onclick="event.stopPropagation()"></a></h4></span>
+<h4 id="project-management-revision-control-centralized-flow"><small><span class="font-weight-bold text-muted"><span>Project Management → Revision Control →</span></span></small> <strong><span>Centralized flow</span></strong><span id="project-management-revision-control-centralized-flow" class="anchor"></span><a class="fa fa-anchor" href="#project-management-revision-control-centralized-flow" onclick="event.stopPropagation()"></a></h4></span>
   <div>
 <div class="indented">
 <div>
-<p><panel src="/website/book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/featureBranchFlow" class="algolia-no-index"><template slot="header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Feature Branch Workflow</span></p></template></panel></p></div><p></p>
+<p><panel src="/website/book/revisionControl/featureBranchFlow/unit-inElsewhere-asFlat._include_.html" popup-url="/website/book/revisionControl/featureBranchFlow" class="algolia-no-index"><template slot="_header"><p><span class="dimmed"><span><span aria-hidden="true" class="glyphicon glyphicon-education"></span></span> Revision Control → Feature Branch Workflow</span></p></template></panel></p></div><p></p>
 <p><span class="badge badge-light"><span><span class="dimmed"><span><span><span aria-hidden="true" class="fas fa-trophy"></span></span> Can explain centralized flow</span></span></span></span></p><p></p><p></p>
 <p></p>
 <div>
-<p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the <code class="hljs inline no-lang" v-pre>master</code> branch.</strong></p></div>
+<p><strong>The <em>centralized workflow</em> is similar to the feature branch workflow except all changes are done in the <code v-pre>master</code> branch.</strong></p></div>
 <div>
   <div>
-<panel expanded><template slot="header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
+<panel expanded><template slot="_header"><p><span><span aria-hidden="true" class="fas fa-paperclip"></span></span> Resources</p></template>
 <ul>
 <li><a href="https://www.atlassian.com/git/tutorials/comparing-workflows#centralized-workflow">A detailed explanation of the Centralized Workflow</a> - From Atlassian</li></ul></panel></div></div></div></div></panel>
 <p></p>
@@ -490,8 +486,8 @@
 <p></p>
 <div class="indented">
 <div></div></div>
-<p></p></div>
-<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
+<p></p></div></div>
+
         <nav id="page-nav" class="navbar navbar-light bg-transparent">
 <div class="border-left-grey nav-inner position-sticky slim-scroll">
 
@@ -510,13 +506,18 @@
     <footer>
   
   <div class="text-center">
-    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.17.0</a>, generated on Fri, 11 Dec 2020, 23:53:32 GMT+8]</small></div></footer></div>
+    <small>[<span><strong>Powered by</strong></span> <img src="https://markbind.org/favicon.ico" width="30"> <a href="https://markbind.org/">MarkBind 2.15.2</a>, generated on Mon, 14 Dec 2020, 23:51:25 GMT+8]</small></div></footer></div>
 </body>
+<script src="../../markbind/js/vue.min.js"></script>
+<script src="../../markbind/js/components.min.js"></script>
 <script src="../../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../../markbind/js/polyfill.min.js"></script>
+<script src="../../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  MarkBind.setupWithSearch()
+  const enableSearch = true
 </script>
+<script src="../../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -530,5 +531,5 @@
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
+<script src="../../markbind/layouts/default/scripts.js"></script>
 </html>

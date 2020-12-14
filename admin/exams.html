@@ -4,7 +4,7 @@
     
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="generator" content="MarkBind 2.17.0">
+    <meta name="generator" content="MarkBind 2.15.2">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>TIC4001</title>
     <link rel="stylesheet" href="../markbind/css/bootstrap.min.css">
@@ -12,10 +12,8 @@
     <link rel="stylesheet" href="../markbind/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="../markbind/glyphicons/css/bootstrap-glyphicons.min.css">
     <link rel="stylesheet" href="../markbind/css/octicons.css">
-    <link rel="stylesheet" href="../markbind/css/codeblock-light.min.css"><link rel="stylesheet" href="../markbind/css/markbind.min.css"><script src="../markbind/js/polyfill.min.js"></script>
-    <script src="../markbind/js/vue.min.js"></script>
-    <script src="../markbind/js/markbind.min.js"></script>
-    <script src="../markbind/js/jquery.min.js"></script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../markbind/layouts/default/styles.css"><link rel="icon" href="/website/favicon.ico"></head>
+    <link rel="stylesheet" href="../markbind/css/github.min.css">
+    <link rel="stylesheet" href="../markbind/css/markbind.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css"><link rel="stylesheet" href="/website/plugins/markbind-plugin-anchors/markbind-plugin-anchors.css"><link rel="stylesheet" href="../markbind/layouts/default/styles.css"><link rel="icon" href="/website/favicon.ico"></head>
 <body >
 <div id="app">
     <div id="flex-body">
@@ -26,7 +24,7 @@
 <li>The final exam will be as per the normal exam schedule, and will count for 30% of the final grade.</li>
 <li>The exam will be done online.</li>
 <li><mark><strong>We will be following the <a href="https://mysoc.nus.edu.sg/academic/e-exam-sop-for-students/">SoC's E-Exam SOP</a></strong></mark>, combined with the deviations/refinements given in the section below. Please read the SOP carefully and ensure you follow all instructions.</li></ul>
-<h2 id="sop-deviations-refinements"><span id="sop-deviations-refinements" class="anchor"></span>SOP deviations/refinements<a class="fa fa-anchor" href="#sop-deviations-refinements" onclick="event.stopPropagation()"></a></h2>
+<h2 id="sop-deviations-refinements">SOP deviations/refinements<a class="fa fa-anchor" href="#sop-deviations-refinements" onclick="event.stopPropagation()"></a></h2>
 <ol>
 <li>
 <p><strong>Tools: LumiNUS, Zoom, Microsoft Teams (MST), PDF scanner</strong>, PDF reader.</p></li>
@@ -58,10 +56,10 @@ It turns out that the textbook PDF file plays better with browsers than PDF view
 <p><strong>If you encounter a serious problem</strong> that prevents you from proceeding with the exam (e.g., the password to open the quiz doesn't work), PM the invigilator using MS Teams (failing that, use Zoom chat).</p></li>
 <li>
 <p><strong>If your computer crashed/restarted</strong> during the exam, try to get it up again and resume the exam. LumiNUS will allow you to resume from where you stopped earlier. However, note that there is a deadline to finish the quiz and you will overrun that deadline if you lose more than 5 minutes due to the computer outage.</p></li></ol>
-<h2 id="format"><span id="format" class="anchor"></span>Format<a class="fa fa-anchor" href="#format" onclick="event.stopPropagation()"></a></h2>
+<h2 id="format">Format<a class="fa fa-anchor" href="#format" onclick="event.stopPropagation()"></a></h2>
 <ul>
 <li>The exam will be divided into 2 parts.</li></ul>
-<h3 id="final-exam-part-1"><span id="final-exam-part-1" class="anchor"></span>Final exam - part 1<a class="fa fa-anchor" href="#final-exam-part-1" onclick="event.stopPropagation()"></a></h3>
+<h3 id="final-exam-part-1">Final exam - part 1<a class="fa fa-anchor" href="#final-exam-part-1" onclick="event.stopPropagation()"></a></h3>
 <ul>
 <li>A LumiNUS quiz containing 16 MCQ questions. All questions are estimated to be equal size/difficulty.</li>
 <li>You only need to answer 15 questions correctly to get full marks. The extra question is there to cushion you against careless mistakes or misinterpreting a question.</li>
@@ -72,7 +70,7 @@ It turns out that the textbook PDF file plays better with browsers than PDF view
 2. not unreasonable for the materials tested and the proficiency level expected -- i.e., when using this knowledge in a real life SE project discussion, it will be rare for you to go back to revise what you said earlier in the discussion</span></li>
 <li>Duration: <strong>35 minutes</strong> </li>
 <li>You are required to give a justification for your answer. <mark>The question will specify what should be included in the justification. <strong>Answers without the correct justification may not earn full marks.</strong></mark> However, we'll give full marks up to two correct answers (per 16 questions) that do not have justifications <span class="dimmed">(to cater for cases where you accidentally proceeded to the next question before adding the justification)</span>.</li>
-<li>Here is an example question. The answer is <code class="hljs inline no-lang" v-pre>a</code> and the justification can be <code class="hljs inline no-lang" v-pre>OOP is only one of the choices for an SE project</code>.</li></ul>
+<li>Here is an example question. The answer is <code v-pre>a</code> and the justification can be <code v-pre>OOP is only one of the choices for an SE project</code>.</li></ul>
 <div class="indented-level2">
 <panel haader="A sample question" expanded>
 <p>Choose the incorrect statement.</p>
@@ -88,24 +86,28 @@ It turns out that the textbook PDF file plays better with browsers than PDF view
 <li>
 <p>There will be a 5-minutes toilet break after this part</p></li></ul>
 
-<h3 id="final-exam-part-2-2"><span id="final-exam-part-2-2" class="anchor"></span>Final exam - part 2<a class="fa fa-anchor" href="#final-exam-part-2-2" onclick="event.stopPropagation()"></a></h3>
+<h3 id="final-exam-part-2-2">Final exam - part 2<a class="fa fa-anchor" href="#final-exam-part-2-2" onclick="event.stopPropagation()"></a></h3>
 <ul>
 <li>Similar to part 1 (e.g., 16 questions, same length).</li></ul>
-<h2 id="exam-briefing-mock-exam-practice-exam-paper"><span id="exam-briefing-mock-exam-practice-exam-paper" class="anchor"></span>Exam briefing, mock exam, practice exam paper<a class="fa fa-anchor" href="#exam-briefing-mock-exam-practice-exam-paper" onclick="event.stopPropagation()"></a></h2>
+<h2 id="exam-briefing-mock-exam-practice-exam-paper">Exam briefing, mock exam, practice exam paper<a class="fa fa-anchor" href="#exam-briefing-mock-exam-practice-exam-paper" onclick="event.stopPropagation()"></a></h2>
 <ul>
 <li>There will be an exam briefing in the penultimate lecture. It will include a minimal mock exam, just to help you understand the structure.</li>
 <li>You will be given a practice exam paper (half the size of the full paper) to help you practice timing. That practice paper will be released at least one week before the exam.</li></ul></div>
 
-<br>
-<p><i class="fa fa-arrow-circle-up fa-lg" id="scroll-top-button" onclick="handleScrollTop()" aria-hidden="true"></i></p></div>
+<br></div>
         </div>
     </div>
 </body>
+<script src="../markbind/js/vue.min.js"></script>
+<script src="../markbind/js/components.min.js"></script>
 <script src="../markbind/js/bootstrap-utility.min.js"></script>
+<script src="../markbind/js/polyfill.min.js"></script>
+<script src="../markbind/js/bootstrap-vue.min.js"></script>
 <script>
   const baseUrl = '/website'
-  MarkBind.setupWithSearch()
+  const enableSearch = true
 </script>
+<script src="../markbind/js/setup.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
     <script>
     function initAlgolia() {
@@ -119,5 +121,5 @@ It turns out that the textbook PDF file plays better with browsers than PDF view
     }
     MarkBind.afterSetup(initAlgolia);
   </script>
-<script src="../markbind/layouts/default/scripts.js"></script><script>if (MarkBind.AfterSetup) MarkBind.AfterSetup()</script>
+<script src="../markbind/layouts/default/scripts.js"></script>
 </html>
